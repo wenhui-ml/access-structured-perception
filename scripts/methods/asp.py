@@ -31,8 +31,8 @@ for _v in ("OMP_NUM_THREADS", "MKL_NUM_THREADS", "OPENBLAS_NUM_THREADS",
 
 # device="cpu" is deliberate and must stay. Every backbone call goes to the OpenRouter API;
 # the only local computation is this embedder. sentence-transformers grabs CUDA whenever it
-# is visible, which would put an unscheduled process on a shared accelerator -- on this
-# host GPU work goes through slurm. The embedder is CLIP-ViT-B/32 over a few thousand
+# is visible, which would put an unscheduled process on a shared accelerator that
+# is not ours to occupy. The embedder is CLIP-ViT-B/32 over a few thousand
 # frames, which is seconds of CPU per episode and is cached to disk besides.
 try:
     from PIL import Image

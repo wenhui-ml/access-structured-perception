@@ -1,4 +1,24 @@
-deviations log (empty)
+# Deviation log
+
+Every departure from the pre-registration, in the order it happened, with its reason. This is
+the development log verbatim: it is not a summary written afterwards, which is the point --- a
+reader can see what was changed, when, and whether the change was made before or after the
+measurement it affects. Entries marked BUG are defects in our own code that invalidated cells
+we had already paid for.
+
+Two things to know before reading:
+
+  * ONE REDACTION was made for public release, marked inline as [REDACTED FOR RELEASE]. It
+    removes two lines of per-author affiliation and name-spelling bookkeeping. Nothing
+    scientific is redacted, and the redaction is marked rather than silent so that its scope
+    is auditable.
+  * SOME PATHS REFERENCED HERE ARE DEVELOPMENT-ONLY and are not in the release: SUBMIT.md (an
+    internal pre-submission checklist), PILOT.md and pilot.json (a pre-registration pilot
+    whose numbers never entered the paper, by design), paper/asp/legacy_components/ (the
+    pre-single-file draft), results/superseded/ and results/logs/. The three quarantines the
+    paper does commit to releasing -- results/cells_pre_bm25fix/, cells_pre_bsfix/,
+    cells_pre_cmpfix/ -- are all present.
+
 2026-08-21 (pre-run revision, logged before any measurement):
  - Added Theorem 4 (unconditional round wall via pointer chasing); Thm 3 now explicitly secondary/conditional.
  - Serving: PRIMARY = local vLLM on B300 (BF16, pinned, no prefix cache, bs=1); OpenRouter demoted to replication arm. No on-device latency claims anywhere; edge-scale = model class + budget (Sec 4.5 cost model).
@@ -47,9 +67,10 @@ deviations log (empty)
  - Paper 18 -> 25 pages. Clean build, 0 undefined refs/cites, 0 multiply-defined labels,
    2 sub-4pt overfull boxes (both pre-existing).
 2026-08-22 (front matter, no claim or number changed):
- - De-anonymized: six authors / three affiliations via authblk. Peiji Long assigned
-   affil 3 (Independent Researcher), name spelling aligned to longpeiji@gmail.com.
-   Chi Man Vong marked corresponding.
+ - De-anonymized: six authors / three affiliations via authblk.
+   [REDACTED FOR RELEASE: two lines recording per-author affiliation and name-spelling
+   decisions. Front-matter bookkeeping about individuals, with no bearing on any claim,
+   number, or method. The names and affiliations as published are in the paper itself.]
  - Added \ifanon switch (asp.tex L50-52) so one source builds both the named preprint
    and the double-blind submission. Anonymous build verified: 0 names/emails/affils on p1.
  - Title wrapped to \Large so the three intended manual line breaks actually fit; before
