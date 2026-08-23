@@ -1,0 +1,444 @@
+{
+ "model": "ministral-14b",
+ "method": "asp",
+ "bench": "sew",
+ "subset": "TRK",
+ "budget": 4096,
+ "tau_g": 0.0,
+ "judge_deferred": 0,
+ "mean": 8.33,
+ "items": [
+  {
+   "episode": "ep1",
+   "subset": "TRK",
+   "q": "How many mugs did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "7",
+   "pred": "0",
+   "score": 0.0,
+   "spent": 1244,
+   "n_calls": 4,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.199,
+    "Br": 0.0,
+    "Bc": 0.63,
+    "rho": 0.171
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "TRK",
+   "q": "How many books did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "4",
+   "pred": "0",
+   "score": 0.0,
+   "spent": 1227,
+   "n_calls": 4,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.201,
+    "Br": 0.0,
+    "Bc": 0.626,
+    "rho": 0.173
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "TRK",
+   "q": "How many lamps did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "9",
+   "pred": "1",
+   "score": 0.0,
+   "spent": 1169,
+   "n_calls": 4,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.209,
+    "Br": 0.0,
+    "Bc": 0.612,
+    "rho": 0.179
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "TRK",
+   "q": "How many vases did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "7",
+   "pred": "0",
+   "score": 0.0,
+   "spent": 1233,
+   "n_calls": 4,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.2,
+    "Br": 0.0,
+    "Bc": 0.627,
+    "rho": 0.173
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "TRK",
+   "q": "Was the door open or closed at the end of the walkthrough?",
+   "gold": "open",
+   "pred": "closed",
+   "score": 0.0,
+   "spent": 1276,
+   "n_calls": 4,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.195,
+    "Br": 0.0,
+    "Bc": 0.641,
+    "rho": 0.164
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "TRK",
+   "q": "How many times did the door change between open and closed? Answer with a number.",
+   "gold": "7",
+   "pred": "3",
+   "score": 0.0,
+   "spent": 1216,
+   "n_calls": 4,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.203,
+    "Br": 0.0,
+    "Bc": 0.625,
+    "rho": 0.172
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "TRK",
+   "q": "How many mugs did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "8",
+   "pred": "0",
+   "score": 0.0,
+   "spent": 1268,
+   "n_calls": 4,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.189,
+    "Br": 0.0,
+    "Bc": 0.639,
+    "rho": 0.172
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "TRK",
+   "q": "How many books did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "7",
+   "pred": "0",
+   "score": 0.0,
+   "spent": 1191,
+   "n_calls": 4,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.199,
+    "Br": 0.0,
+    "Bc": 0.621,
+    "rho": 0.18
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "TRK",
+   "q": "How many lamps did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "6",
+   "pred": "0",
+   "score": 0.0,
+   "spent": 1171,
+   "n_calls": 4,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.201,
+    "Br": 0.0,
+    "Bc": 0.616,
+    "rho": 0.183
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "TRK",
+   "q": "How many vases did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "4",
+   "pred": "0",
+   "score": 0.0,
+   "spent": 1145,
+   "n_calls": 4,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.205,
+    "Br": 0.0,
+    "Bc": 0.608,
+    "rho": 0.187
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "TRK",
+   "q": "Was the door open or closed at the end of the walkthrough?",
+   "gold": "closed",
+   "pred": "The door was closed at the end of the walkthrough.",
+   "score": 100.0,
+   "spent": 1171,
+   "n_calls": 4,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.201,
+    "Br": 0.0,
+    "Bc": 0.619,
+    "rho": 0.179
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "TRK",
+   "q": "How many times did the door change between open and closed? Answer with a number.",
+   "gold": "6",
+   "pred": "1",
+   "score": 0.0,
+   "spent": 1200,
+   "n_calls": 4,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.197,
+    "Br": 0.0,
+    "Bc": 0.625,
+    "rho": 0.178
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "TRK",
+   "q": "How many mugs did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "6",
+   "pred": "8",
+   "score": 0.0,
+   "spent": 1366,
+   "n_calls": 4,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.205,
+    "Br": 0.0,
+    "Bc": 0.629,
+    "rho": 0.165
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "TRK",
+   "q": "How many books did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "7",
+   "pred": "0",
+   "score": 0.0,
+   "spent": 1314,
+   "n_calls": 4,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.212,
+    "Br": 0.0,
+    "Bc": 0.618,
+    "rho": 0.17
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "TRK",
+   "q": "How many lamps did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "6",
+   "pred": "0",
+   "score": 0.0,
+   "spent": 1311,
+   "n_calls": 4,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.212,
+    "Br": 0.0,
+    "Bc": 0.618,
+    "rho": 0.17
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "TRK",
+   "q": "How many vases did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "3",
+   "pred": "0",
+   "score": 0.0,
+   "spent": 1322,
+   "n_calls": 4,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.211,
+    "Br": 0.0,
+    "Bc": 0.62,
+    "rho": 0.17
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "TRK",
+   "q": "Was the door open or closed at the end of the walkthrough?",
+   "gold": "open",
+   "pred": "The door was closed at the end of the walkthrough.",
+   "score": 0.0,
+   "spent": 1298,
+   "n_calls": 4,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.214,
+    "Br": 0.0,
+    "Bc": 0.618,
+    "rho": 0.168
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "TRK",
+   "q": "How many times did the door change between open and closed? Answer with a number.",
+   "gold": "9",
+   "pred": "4",
+   "score": 0.0,
+   "spent": 1287,
+   "n_calls": 4,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.215,
+    "Br": 0.0,
+    "Bc": 0.613,
+    "rho": 0.171
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "TRK",
+   "q": "How many mugs did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "4",
+   "pred": "1",
+   "score": 0.0,
+   "spent": 1270,
+   "n_calls": 4,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.211,
+    "Br": 0.0,
+    "Bc": 0.611,
+    "rho": 0.178
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "TRK",
+   "q": "How many books did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "4",
+   "pred": "0",
+   "score": 0.0,
+   "spent": 1320,
+   "n_calls": 4,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.205,
+    "Br": 0.0,
+    "Bc": 0.623,
+    "rho": 0.172
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "TRK",
+   "q": "How many lamps did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "5",
+   "pred": "0",
+   "score": 0.0,
+   "spent": 1293,
+   "n_calls": 4,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.208,
+    "Br": 0.0,
+    "Bc": 0.617,
+    "rho": 0.175
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "TRK",
+   "q": "How many vases did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "7",
+   "pred": "0",
+   "score": 0.0,
+   "spent": 1311,
+   "n_calls": 4,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.206,
+    "Br": 0.0,
+    "Bc": 0.62,
+    "rho": 0.174
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "TRK",
+   "q": "Was the door open or closed at the end of the walkthrough?",
+   "gold": "closed",
+   "pred": "closed",
+   "score": 100.0,
+   "spent": 1278,
+   "n_calls": 4,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.21,
+    "Br": 0.0,
+    "Bc": 0.616,
+    "rho": 0.174
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "TRK",
+   "q": "How many times did the door change between open and closed? Answer with a number.",
+   "gold": "6",
+   "pred": "1",
+   "score": 0.0,
+   "spent": 1276,
+   "n_calls": 4,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.21,
+    "Br": 0.0,
+    "Bc": 0.614,
+    "rho": 0.176
+   }
+  }
+ ]
+}

@@ -1,0 +1,444 @@
+{
+ "model": "gemma-3-12b",
+ "method": "state_only",
+ "bench": "sew",
+ "subset": "CMP",
+ "budget": 4096,
+ "tau_g": 0.0,
+ "judge_deferred": 23,
+ "mean": 4.17,
+ "items": [
+  {
+   "episode": "ep1",
+   "subset": "CMP",
+   "q": "You saw a clock exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "red",
+   "pred": "This scene data doesn't mention a clock.",
+   "score": 0.0,
+   "spent": 687,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 1.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "CMP",
+   "q": "You saw a radio exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "yellow",
+   "pred": "This walkthrough data doesn't mention a radio.",
+   "score": 0.0,
+   "spent": 687,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 1.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "CMP",
+   "q": "You saw a globe exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "green",
+   "pred": "This is a trick question. The scene state indicates the globe was only seen once. Therefore, it's impossible to determine the color of the globe the second time.",
+   "score": 0.0,
+   "spent": 711,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 1.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "CMP",
+   "q": "You saw a statue exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "red",
+   "pred": "This scene data doesn't mention a statue.",
+   "score": 0.0,
+   "spent": 687,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 1.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "CMP",
+   "q": "Did you see the sieve before or after the stapler? Answer 'before' or 'after'.",
+   "gold": "before",
+   "pred": "Before.",
+   "score": 100.0,
+   "spent": 674,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 1.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "CMP",
+   "q": "Did you see the trivet before or after the colander? Answer 'before' or 'after'.",
+   "gold": "after",
+   "pred": "The provided scene state does not mention a trivet or colander.",
+   "score": 0.0,
+   "spent": 687,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 1.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "CMP",
+   "q": "You saw a clock exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "green",
+   "pred": "This walkthrough data doesn't mention a clock.",
+   "score": 0.0,
+   "spent": 609,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 1.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "CMP",
+   "q": "You saw a radio exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "yellow",
+   "pred": "This walkthrough data doesn't mention a radio.",
+   "score": 0.0,
+   "spent": 609,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 1.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "CMP",
+   "q": "You saw a globe exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "blue",
+   "pred": "This walkthrough data doesn't mention a globe.",
+   "score": 0.0,
+   "spent": 609,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 1.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "CMP",
+   "q": "You saw a statue exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "purple",
+   "pred": "This walkthrough data doesn't mention a statue.",
+   "score": 0.0,
+   "spent": 609,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 1.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "CMP",
+   "q": "Did you see the kettle before or after the thermos? Answer 'before' or 'after'.",
+   "gold": "after",
+   "pred": "This data doesn't mention a kettle or thermos.",
+   "score": 0.0,
+   "spent": 604,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 1.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "CMP",
+   "q": "Did you see the ladle before or after the colander? Answer 'before' or 'after'.",
+   "gold": "after",
+   "pred": "This data doesn't mention ladles or colanders.\n",
+   "score": 0.0,
+   "spent": 607,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 1.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "CMP",
+   "q": "You saw a clock exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "brown",
+   "pred": "This walkthrough data doesn't mention a clock.",
+   "score": 0.0,
+   "spent": 613,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 1.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "CMP",
+   "q": "You saw a radio exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "purple",
+   "pred": "This walkthrough data doesn't mention a radio.",
+   "score": 0.0,
+   "spent": 613,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 1.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "CMP",
+   "q": "You saw a globe exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "red",
+   "pred": "This walkthrough data doesn't mention a globe.",
+   "score": 0.0,
+   "spent": 613,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 1.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "CMP",
+   "q": "You saw a statue exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "blue",
+   "pred": "This scene data doesn't mention a statue.",
+   "score": 0.0,
+   "spent": 613,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 1.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "CMP",
+   "q": "Did you see the trivet before or after the whisk? Answer 'before' or 'after'.",
+   "gold": "before",
+   "pred": "The provided scene state doesn't mention a trivet or whisk.",
+   "score": 0.0,
+   "spent": 612,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 1.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "CMP",
+   "q": "Did you see the mortar before or after the teapot? Answer 'before' or 'after'.",
+   "gold": "before",
+   "pred": "The provided scene state doesn't mention a mortar or teapot.",
+   "score": 0.0,
+   "spent": 610,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 1.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "CMP",
+   "q": "You saw a clock exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "purple",
+   "pred": "This walkthrough data doesn't mention a clock.",
+   "score": 0.0,
+   "spent": 692,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 1.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "CMP",
+   "q": "You saw a radio exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "white",
+   "pred": "This walkthrough data does not mention a radio.",
+   "score": 0.0,
+   "spent": 691,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 1.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "CMP",
+   "q": "You saw a globe exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "yellow",
+   "pred": "This walkthrough data does not mention a globe.",
+   "score": 0.0,
+   "spent": 691,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 1.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "CMP",
+   "q": "You saw a statue exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "brown",
+   "pred": "This walkthrough data doesn't mention a statue.",
+   "score": 0.0,
+   "spent": 692,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 1.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "CMP",
+   "q": "Did you see the sieve before or after the tongs? Answer 'before' or 'after'.",
+   "gold": "after",
+   "pred": "This data doesn't mention sieves or tongs.",
+   "score": 0.0,
+   "spent": 687,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 1.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "CMP",
+   "q": "Did you see the whisk before or after the stapler? Answer 'before' or 'after'.",
+   "gold": "before",
+   "pred": "This data doesn't mention a whisk or stapler.\n",
+   "score": 0.0,
+   "spent": 690,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 1.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  }
+ ]
+}

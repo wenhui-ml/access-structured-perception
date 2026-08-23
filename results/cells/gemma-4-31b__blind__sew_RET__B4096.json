@@ -1,0 +1,556 @@
+{
+ "model": "gemma-4-31b",
+ "method": "blind",
+ "bench": "sew",
+ "subset": "RET",
+ "budget": 4096,
+ "tau_g": 0.0,
+ "judge_deferred": 32,
+ "mean": 0.0,
+ "items": [
+  {
+   "episode": "ep1",
+   "subset": "RET",
+   "q": "You saw a sieve exactly once during the walkthrough. What colour was it?",
+   "gold": "green",
+   "pred": "Please provide the walkthrough text or context so I can identify the colour of the sieve.",
+   "score": 0.0,
+   "spent": 49,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "RET",
+   "q": "You saw a stapler exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "C",
+   "pred": "I do not have access to the walkthrough you are referring to. Please provide the context or the image/text from the walkthrough.",
+   "score": 0.0,
+   "spent": 63,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "RET",
+   "q": "You saw a colander exactly once during the walkthrough. What colour was it?",
+   "gold": "green",
+   "pred": "Please provide the walkthrough text or image so I can identify the colour of the colander.",
+   "score": 0.0,
+   "spent": 51,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "RET",
+   "q": "You saw a trivet exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "B",
+   "pred": "Since you haven't provided the walkthrough text or image, I don't have the information needed to answer. Please provide the source material!",
+   "score": 0.0,
+   "spent": 66,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "RET",
+   "q": "You saw a kettle exactly once during the walkthrough. What colour was it?",
+   "gold": "green",
+   "pred": "Please provide the text or context of the walkthrough so I can identify the colour of the kettle.",
+   "score": 0.0,
+   "spent": 51,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "RET",
+   "q": "You saw a teapot exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "D",
+   "pred": "Since you haven't provided the walkthrough or the image/text associated with it, I don't have the information needed to answer. Please provide the source material!",
+   "score": 0.0,
+   "spent": 70,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "RET",
+   "q": "You saw a ladle exactly once during the walkthrough. What colour was it?",
+   "gold": "red",
+   "pred": "Please provide the walkthrough text or context so I can identify the colour of the ladle.",
+   "score": 0.0,
+   "spent": 49,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "RET",
+   "q": "You saw a thermos exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "E",
+   "pred": "Please provide the walkthrough text or image, as you have not yet shared the source material containing the thermos.",
+   "score": 0.0,
+   "spent": 57,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "RET",
+   "q": "You saw a thermos exactly once during the walkthrough. What colour was it?",
+   "gold": "yellow",
+   "pred": "Please provide the walkthrough text or image so I can identify the color of the thermos.",
+   "score": 0.0,
+   "spent": 49,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "RET",
+   "q": "You saw a kettle exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "E",
+   "pred": "Please provide the walkthrough text or image, as you have not yet shared the source material containing the kettle.",
+   "score": 0.0,
+   "spent": 57,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "RET",
+   "q": "You saw a colander exactly once during the walkthrough. What colour was it?",
+   "gold": "green",
+   "pred": "Please provide the walkthrough text or image so I can identify the colour of the colander.",
+   "score": 0.0,
+   "spent": 51,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "RET",
+   "q": "You saw a ladle exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "G",
+   "pred": "Since you haven't provided the walkthrough text or context, I cannot see the ladle. Please provide the text!",
+   "score": 0.0,
+   "spent": 59,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "RET",
+   "q": "You saw a whisk exactly once during the walkthrough. What colour was it?",
+   "gold": "purple",
+   "pred": "Please provide the walkthrough text or context so I can identify the colour of the whisk.",
+   "score": 0.0,
+   "spent": 49,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "RET",
+   "q": "You saw a decanter exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "C",
+   "pred": "Please provide the text or context of the walkthrough you are referring to so I can identify the letter.",
+   "score": 0.0,
+   "spent": 57,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "RET",
+   "q": "You saw a mortar exactly once during the walkthrough. What colour was it?",
+   "gold": "blue",
+   "pred": "Please provide the walkthrough text or image, as you haven't shared the context yet.",
+   "score": 0.0,
+   "spent": 50,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "RET",
+   "q": "You saw a tongs exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "E",
+   "pred": "Since you haven't provided the walkthrough text or image, I don't have the context to answer this. Please provide the material!",
+   "score": 0.0,
+   "spent": 64,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "RET",
+   "q": "You saw a trivet exactly once during the walkthrough. What colour was it?",
+   "gold": "purple",
+   "pred": "Please provide the text or context of the walkthrough so I can identify the color of the trivet for you.",
+   "score": 0.0,
+   "spent": 55,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "RET",
+   "q": "You saw a whisk exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "B",
+   "pred": "Please provide the walkthrough text or image so I can identify the letter for you.",
+   "score": 0.0,
+   "spent": 52,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "RET",
+   "q": "You saw a mortar exactly once during the walkthrough. What colour was it?",
+   "gold": "purple",
+   "pred": "I do not have access to your walkthrough; please provide the details or the image.",
+   "score": 0.0,
+   "spent": 49,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "RET",
+   "q": "You saw a teapot exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "E",
+   "pred": "Please provide the walkthrough text or image, as you have not yet shared the content I need to analyze.",
+   "score": 0.0,
+   "spent": 57,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "RET",
+   "q": "You saw a colander exactly once during the walkthrough. What colour was it?",
+   "gold": "brown",
+   "pred": "Please provide the walkthrough text or image so I can identify the colour of the colander.",
+   "score": 0.0,
+   "spent": 51,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "RET",
+   "q": "You saw a ladle exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "A",
+   "pred": "Please provide the text or context of the walkthrough, as you have not yet shared the story or scenario.",
+   "score": 0.0,
+   "spent": 57,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "RET",
+   "q": "You saw a tongs exactly once during the walkthrough. What colour was it?",
+   "gold": "purple",
+   "pred": "Please provide the walkthrough text or image so I can identify the colour of the tongs.",
+   "score": 0.0,
+   "spent": 49,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "RET",
+   "q": "You saw a stapler exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "A",
+   "pred": "I do not have access to the walkthrough you are referring to. Please provide the context or the image/text from the walkthrough.",
+   "score": 0.0,
+   "spent": 63,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "RET",
+   "q": "You saw a tongs exactly once during the walkthrough. What colour was it?",
+   "gold": "green",
+   "pred": "I do not have access to a walkthrough or any visual information. Please provide the context or the image you are referring to.",
+   "score": 0.0,
+   "spent": 57,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "RET",
+   "q": "You saw a sieve exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "B",
+   "pred": "Please provide the text or context of the walkthrough, as you have not yet shared the story or scenario.",
+   "score": 0.0,
+   "spent": 57,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "RET",
+   "q": "You saw a whisk exactly once during the walkthrough. What colour was it?",
+   "gold": "green",
+   "pred": "Please provide the walkthrough text or image so I can identify the colour of the whisk.",
+   "score": 0.0,
+   "spent": 49,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "RET",
+   "q": "You saw a stapler exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "F",
+   "pred": "I do not have access to the walkthrough you are referring to. Please provide the context or the image/text from the walkthrough.",
+   "score": 0.0,
+   "spent": 63,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "RET",
+   "q": "You saw a trivet exactly once during the walkthrough. What colour was it?",
+   "gold": "brown",
+   "pred": "Please provide the text or context of the walkthrough so I can identify the color of the trivet for you.",
+   "score": 0.0,
+   "spent": 55,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "RET",
+   "q": "You saw a mortar exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "H",
+   "pred": "Please provide the walkthrough text or image you are referring to so I can identify the letter.",
+   "score": 0.0,
+   "spent": 54,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "RET",
+   "q": "You saw a colander exactly once during the walkthrough. What colour was it?",
+   "gold": "red",
+   "pred": "Please provide the walkthrough text or image so I can identify the colour of the colander.",
+   "score": 0.0,
+   "spent": 51,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "RET",
+   "q": "You saw a teapot exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "B",
+   "pred": "Since you haven't provided the walkthrough or the image/text associated with it, I cannot see the teapot. Please provide the source material.",
+   "score": 0.0,
+   "spent": 65,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  }
+ ]
+}

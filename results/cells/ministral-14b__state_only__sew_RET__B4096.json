@@ -1,0 +1,588 @@
+{
+ "model": "ministral-14b",
+ "method": "state_only",
+ "bench": "sew",
+ "subset": "RET",
+ "budget": 4096,
+ "tau_g": 0.0,
+ "judge_deferred": 26,
+ "mean": 0.0,
+ "items": [
+  {
+   "episode": "ep1",
+   "subset": "RET",
+   "q": "You saw a sieve exactly once during the walkthrough. What colour was it?",
+   "gold": "green",
+   "pred": "The provided scene state does not mention a **sieve** at all, so its color cannot be determined from the given data.",
+   "score": 0.0,
+   "spent": 555,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 1.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "RET",
+   "q": "You saw a stapler exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "C",
+   "pred": "**S**",
+   "score": 0.0,
+   "spent": 537,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 1.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "RET",
+   "q": "You saw a colander exactly once during the walkthrough. What colour was it?",
+   "gold": "green",
+   "pred": "The provided scene state does not mention a **colander** at all, so its color cannot be determined from this data. The objects listed do not include a colander.",
+   "score": 0.0,
+   "spent": 565,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 1.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "RET",
+   "q": "You saw a trivet exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "B",
+   "pred": "**T**",
+   "score": 0.0,
+   "spent": 537,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 1.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "RET",
+   "q": "You saw a kettle exactly once during the walkthrough. What colour was it?",
+   "gold": "green",
+   "pred": "The provided scene state does not mention a **kettle** at all, so its color cannot be determined from this data.\n\n*(Answer: **No information available**.)*",
+   "score": 0.0,
+   "spent": 566,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 1.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "RET",
+   "q": "You saw a teapot exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "D",
+   "pred": "**T**",
+   "score": 0.0,
+   "spent": 537,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 1.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "RET",
+   "q": "You saw a ladle exactly once during the walkthrough. What colour was it?",
+   "gold": "red",
+   "pred": "The scene state provided does not mention a **ladle** at all\u2014only a **spoon** (count: 3). Since no ladle appears in the data, its color cannot be determined.\n\n*(Possible error: The object may have been misremembered or omitted from the log.)*",
+   "score": 0.0,
+   "spent": 591,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 1.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "RET",
+   "q": "You saw a thermos exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "E",
+   "pred": "**T**",
+   "score": 0.0,
+   "spent": 537,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 1.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "RET",
+   "q": "You saw a thermos exactly once during the walkthrough. What colour was it?",
+   "gold": "yellow",
+   "pred": "The provided scene state does **not** mention a thermos at all, so its color cannot be determined from this data. The walkthrough does not include a thermos in the logs or counts.",
+   "score": 0.0,
+   "spent": 530,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 1.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "RET",
+   "q": "You saw a kettle exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "E",
+   "pred": "**K**",
+   "score": 0.0,
+   "spent": 497,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 1.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "RET",
+   "q": "You saw a colander exactly once during the walkthrough. What colour was it?",
+   "gold": "green",
+   "pred": "The provided scene state does not mention a **colander** at all\u2014only a **decanter** (count: 1) and other objects. Since no colander is listed, its color cannot be determined from this data.\n\n*(Possible answer: The data does not include a colander.)*",
+   "score": 0.0,
+   "spent": 552,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 1.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "RET",
+   "q": "You saw a ladle exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "G",
+   "pred": "**L**",
+   "score": 0.0,
+   "spent": 497,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 1.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "RET",
+   "q": "You saw a whisk exactly once during the walkthrough. What colour was it?",
+   "gold": "purple",
+   "pred": "The provided scene state does not mention a whisk at all, so its color cannot be determined from the given data.",
+   "score": 0.0,
+   "spent": 512,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 1.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "RET",
+   "q": "You saw a decanter exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "C",
+   "pred": "**D**",
+   "score": 0.0,
+   "spent": 497,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 1.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "RET",
+   "q": "You saw a mortar exactly once during the walkthrough. What colour was it?",
+   "gold": "blue",
+   "pred": "The provided scene state does **not** mention a mortar at all, so its color cannot be determined from this data. The walkthrough only lists the objects in the `counts` and `event_log`, and \"mortar\" is not among them.",
+   "score": 0.0,
+   "spent": 541,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 1.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "RET",
+   "q": "You saw a tongs exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "E",
+   "pred": "**T**",
+   "score": 0.0,
+   "spent": 497,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 1.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "RET",
+   "q": "You saw a trivet exactly once during the walkthrough. What colour was it?",
+   "gold": "purple",
+   "pred": "The scene state provided does not mention a **trivet** at all, so its color cannot be determined from the given data.",
+   "score": 0.0,
+   "spent": 627,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 1.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "RET",
+   "q": "You saw a whisk exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "B",
+   "pred": "The scene state does not mention a whisk at all, so there is no capital letter associated with it. The only capital letters listed are **D, G, H, A, F, E**, none of which correspond to a whisk.",
+   "score": 0.0,
+   "spent": 652,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 1.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "RET",
+   "q": "You saw a mortar exactly once during the walkthrough. What colour was it?",
+   "gold": "purple",
+   "pred": "The provided scene state does not mention a **mortar** at all, so its color cannot be determined from this data. The walkthrough only includes objects listed in the `counts` and `objects` sections, and \"mortar\" is not among them.",
+   "score": 0.0,
+   "spent": 654,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 1.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "RET",
+   "q": "You saw a teapot exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "E",
+   "pred": "D",
+   "score": 0.0,
+   "spent": 606,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 1.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "RET",
+   "q": "You saw a colander exactly once during the walkthrough. What colour was it?",
+   "gold": "brown",
+   "pred": "The scene state provided does not mention a colander at all, so there is no information about its color.",
+   "score": 0.0,
+   "spent": 623,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 1.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "RET",
+   "q": "You saw a ladle exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "A",
+   "pred": "D",
+   "score": 0.0,
+   "spent": 606,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 1.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "RET",
+   "q": "You saw a tongs exactly once during the walkthrough. What colour was it?",
+   "gold": "purple",
+   "pred": "The provided scene state does not mention a \"tongs\" at all, so there is no information about its color.",
+   "score": 0.0,
+   "spent": 625,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 1.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "RET",
+   "q": "You saw a stapler exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "A",
+   "pred": "F",
+   "score": 0.0,
+   "spent": 606,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 1.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "RET",
+   "q": "You saw a tongs exactly once during the walkthrough. What colour was it?",
+   "gold": "green",
+   "pred": "The provided scene state does not mention a **tongs** at all\u2014only objects like *fork*, *spoon*, *cup*, etc. Since it was never recorded, **no color can be determined**.\n\n*(If you meant a different object, clarify!)*",
+   "score": 0.0,
+   "spent": 633,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 1.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "RET",
+   "q": "You saw a sieve exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "B",
+   "pred": "G",
+   "score": 0.0,
+   "spent": 583,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 1.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "RET",
+   "q": "You saw a whisk exactly once during the walkthrough. What colour was it?",
+   "gold": "green",
+   "pred": "The scene state provided does not mention a whisk at all, so there is no information about its color.",
+   "score": 0.0,
+   "spent": 599,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 1.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "RET",
+   "q": "You saw a stapler exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "F",
+   "pred": "None of the objects in the provided scene state include a \"stapler,\" so there is no capital letter associated with it in this walkthrough.",
+   "score": 0.0,
+   "spent": 613,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 1.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "RET",
+   "q": "You saw a trivet exactly once during the walkthrough. What colour was it?",
+   "gold": "brown",
+   "pred": "The provided scene state does not mention a **trivet** at all, so its color cannot be determined from the given data. The walkthrough log does not include it either.",
+   "score": 0.0,
+   "spent": 615,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 1.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "RET",
+   "q": "You saw a mortar exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "H",
+   "pred": "None of the objects in the provided scene state include a \"mortar,\" so there is no capital letter associated with it in this walkthrough.",
+   "score": 0.0,
+   "spent": 611,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 1.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "RET",
+   "q": "You saw a colander exactly once during the walkthrough. What colour was it?",
+   "gold": "red",
+   "pred": "The provided scene state does not mention a **colander** at all, so its color cannot be determined from the given data.",
+   "score": 0.0,
+   "spent": 605,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 1.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "RET",
+   "q": "You saw a teapot exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "B",
+   "pred": "G",
+   "score": 0.0,
+   "spent": 584,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 1.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  }
+ ]
+}

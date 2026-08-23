@@ -1,0 +1,818 @@
+[
+  {
+    "subset": "RET",
+    "episode": "ep1",
+    "frames_dir": "data/sew/frames/ep1",
+    "question": "You saw a sieve exactly once during the walkthrough. What colour was it?",
+    "answer": "green",
+    "target_t": [
+      19
+    ],
+    "d_q": 1
+  },
+  {
+    "subset": "RET",
+    "episode": "ep1",
+    "frames_dir": "data/sew/frames/ep1",
+    "question": "You saw a stapler exactly once during the walkthrough. What single capital letter was printed on it?",
+    "answer": "C",
+    "target_t": [
+      62
+    ],
+    "d_q": 1
+  },
+  {
+    "subset": "RET",
+    "episode": "ep1",
+    "frames_dir": "data/sew/frames/ep1",
+    "question": "You saw a colander exactly once during the walkthrough. What colour was it?",
+    "answer": "green",
+    "target_t": [
+      97
+    ],
+    "d_q": 1
+  },
+  {
+    "subset": "RET",
+    "episode": "ep1",
+    "frames_dir": "data/sew/frames/ep1",
+    "question": "You saw a trivet exactly once during the walkthrough. What single capital letter was printed on it?",
+    "answer": "B",
+    "target_t": [
+      98
+    ],
+    "d_q": 1
+  },
+  {
+    "subset": "RET",
+    "episode": "ep1",
+    "frames_dir": "data/sew/frames/ep1",
+    "question": "You saw a kettle exactly once during the walkthrough. What colour was it?",
+    "answer": "green",
+    "target_t": [
+      118
+    ],
+    "d_q": 1
+  },
+  {
+    "subset": "RET",
+    "episode": "ep1",
+    "frames_dir": "data/sew/frames/ep1",
+    "question": "You saw a teapot exactly once during the walkthrough. What single capital letter was printed on it?",
+    "answer": "D",
+    "target_t": [
+      135
+    ],
+    "d_q": 1
+  },
+  {
+    "subset": "RET",
+    "episode": "ep1",
+    "frames_dir": "data/sew/frames/ep1",
+    "question": "You saw a ladle exactly once during the walkthrough. What colour was it?",
+    "answer": "red",
+    "target_t": [
+      187
+    ],
+    "d_q": 1
+  },
+  {
+    "subset": "RET",
+    "episode": "ep1",
+    "frames_dir": "data/sew/frames/ep1",
+    "question": "You saw a thermos exactly once during the walkthrough. What single capital letter was printed on it?",
+    "answer": "E",
+    "target_t": [
+      274
+    ],
+    "d_q": 1
+  },
+  {
+    "subset": "TRK",
+    "episode": "ep1",
+    "frames_dir": "data/sew/frames/ep1",
+    "question": "How many mugs did you see in total across the whole walkthrough? Answer with a number.",
+    "answer": "7",
+    "d_q": 1
+  },
+  {
+    "subset": "TRK",
+    "episode": "ep1",
+    "frames_dir": "data/sew/frames/ep1",
+    "question": "How many books did you see in total across the whole walkthrough? Answer with a number.",
+    "answer": "4",
+    "d_q": 1
+  },
+  {
+    "subset": "TRK",
+    "episode": "ep1",
+    "frames_dir": "data/sew/frames/ep1",
+    "question": "How many lamps did you see in total across the whole walkthrough? Answer with a number.",
+    "answer": "9",
+    "d_q": 1
+  },
+  {
+    "subset": "TRK",
+    "episode": "ep1",
+    "frames_dir": "data/sew/frames/ep1",
+    "question": "How many vases did you see in total across the whole walkthrough? Answer with a number.",
+    "answer": "7",
+    "d_q": 1
+  },
+  {
+    "subset": "TRK",
+    "episode": "ep1",
+    "frames_dir": "data/sew/frames/ep1",
+    "question": "Was the door open or closed at the end of the walkthrough?",
+    "answer": "open",
+    "d_q": 1
+  },
+  {
+    "subset": "TRK",
+    "episode": "ep1",
+    "frames_dir": "data/sew/frames/ep1",
+    "question": "How many times did the door change between open and closed? Answer with a number.",
+    "answer": "7",
+    "d_q": 1
+  },
+  {
+    "subset": "CMP",
+    "episode": "ep1",
+    "frames_dir": "data/sew/frames/ep1",
+    "question": "You saw a clock exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+    "answer": "red",
+    "d_q": 2,
+    "hop_rooms": [
+      "bedroom",
+      "living room",
+      "hallway"
+    ]
+  },
+  {
+    "subset": "CMP",
+    "episode": "ep1",
+    "frames_dir": "data/sew/frames/ep1",
+    "question": "You saw a radio exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+    "answer": "yellow",
+    "d_q": 2,
+    "hop_rooms": [
+      "living room",
+      "bedroom",
+      "kitchen"
+    ]
+  },
+  {
+    "subset": "CMP",
+    "episode": "ep1",
+    "frames_dir": "data/sew/frames/ep1",
+    "question": "You saw a globe exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+    "answer": "green",
+    "d_q": 2,
+    "hop_rooms": [
+      "living room",
+      "hallway",
+      "pantry"
+    ]
+  },
+  {
+    "subset": "CMP",
+    "episode": "ep1",
+    "frames_dir": "data/sew/frames/ep1",
+    "question": "You saw a statue exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+    "answer": "red",
+    "d_q": 2,
+    "hop_rooms": [
+      "study",
+      "bedroom",
+      "living room"
+    ]
+  },
+  {
+    "subset": "CMP",
+    "episode": "ep1",
+    "frames_dir": "data/sew/frames/ep1",
+    "question": "Did you see the sieve before or after the stapler? Answer 'before' or 'after'.",
+    "answer": "before",
+    "d_q": 2
+  },
+  {
+    "subset": "CMP",
+    "episode": "ep1",
+    "frames_dir": "data/sew/frames/ep1",
+    "question": "Did you see the trivet before or after the colander? Answer 'before' or 'after'.",
+    "answer": "after",
+    "d_q": 2
+  },
+  {
+    "subset": "RET",
+    "episode": "ep2",
+    "frames_dir": "data/sew/frames/ep2",
+    "question": "You saw a thermos exactly once during the walkthrough. What colour was it?",
+    "answer": "yellow",
+    "target_t": [
+      29
+    ],
+    "d_q": 1
+  },
+  {
+    "subset": "RET",
+    "episode": "ep2",
+    "frames_dir": "data/sew/frames/ep2",
+    "question": "You saw a kettle exactly once during the walkthrough. What single capital letter was printed on it?",
+    "answer": "E",
+    "target_t": [
+      83
+    ],
+    "d_q": 1
+  },
+  {
+    "subset": "RET",
+    "episode": "ep2",
+    "frames_dir": "data/sew/frames/ep2",
+    "question": "You saw a colander exactly once during the walkthrough. What colour was it?",
+    "answer": "green",
+    "target_t": [
+      89
+    ],
+    "d_q": 1
+  },
+  {
+    "subset": "RET",
+    "episode": "ep2",
+    "frames_dir": "data/sew/frames/ep2",
+    "question": "You saw a ladle exactly once during the walkthrough. What single capital letter was printed on it?",
+    "answer": "G",
+    "target_t": [
+      141
+    ],
+    "d_q": 1
+  },
+  {
+    "subset": "RET",
+    "episode": "ep2",
+    "frames_dir": "data/sew/frames/ep2",
+    "question": "You saw a whisk exactly once during the walkthrough. What colour was it?",
+    "answer": "purple",
+    "target_t": [
+      184
+    ],
+    "d_q": 1
+  },
+  {
+    "subset": "RET",
+    "episode": "ep2",
+    "frames_dir": "data/sew/frames/ep2",
+    "question": "You saw a decanter exactly once during the walkthrough. What single capital letter was printed on it?",
+    "answer": "C",
+    "target_t": [
+      204
+    ],
+    "d_q": 1
+  },
+  {
+    "subset": "RET",
+    "episode": "ep2",
+    "frames_dir": "data/sew/frames/ep2",
+    "question": "You saw a mortar exactly once during the walkthrough. What colour was it?",
+    "answer": "blue",
+    "target_t": [
+      209
+    ],
+    "d_q": 1
+  },
+  {
+    "subset": "RET",
+    "episode": "ep2",
+    "frames_dir": "data/sew/frames/ep2",
+    "question": "You saw a tongs exactly once during the walkthrough. What single capital letter was printed on it?",
+    "answer": "E",
+    "target_t": [
+      237
+    ],
+    "d_q": 1
+  },
+  {
+    "subset": "TRK",
+    "episode": "ep2",
+    "frames_dir": "data/sew/frames/ep2",
+    "question": "How many mugs did you see in total across the whole walkthrough? Answer with a number.",
+    "answer": "8",
+    "d_q": 1
+  },
+  {
+    "subset": "TRK",
+    "episode": "ep2",
+    "frames_dir": "data/sew/frames/ep2",
+    "question": "How many books did you see in total across the whole walkthrough? Answer with a number.",
+    "answer": "7",
+    "d_q": 1
+  },
+  {
+    "subset": "TRK",
+    "episode": "ep2",
+    "frames_dir": "data/sew/frames/ep2",
+    "question": "How many lamps did you see in total across the whole walkthrough? Answer with a number.",
+    "answer": "6",
+    "d_q": 1
+  },
+  {
+    "subset": "TRK",
+    "episode": "ep2",
+    "frames_dir": "data/sew/frames/ep2",
+    "question": "How many vases did you see in total across the whole walkthrough? Answer with a number.",
+    "answer": "4",
+    "d_q": 1
+  },
+  {
+    "subset": "TRK",
+    "episode": "ep2",
+    "frames_dir": "data/sew/frames/ep2",
+    "question": "Was the door open or closed at the end of the walkthrough?",
+    "answer": "closed",
+    "d_q": 1
+  },
+  {
+    "subset": "TRK",
+    "episode": "ep2",
+    "frames_dir": "data/sew/frames/ep2",
+    "question": "How many times did the door change between open and closed? Answer with a number.",
+    "answer": "6",
+    "d_q": 1
+  },
+  {
+    "subset": "CMP",
+    "episode": "ep2",
+    "frames_dir": "data/sew/frames/ep2",
+    "question": "You saw a clock exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+    "answer": "green",
+    "d_q": 2,
+    "hop_rooms": [
+      "study",
+      "hallway",
+      "kitchen"
+    ]
+  },
+  {
+    "subset": "CMP",
+    "episode": "ep2",
+    "frames_dir": "data/sew/frames/ep2",
+    "question": "You saw a radio exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+    "answer": "yellow",
+    "d_q": 2,
+    "hop_rooms": [
+      "hallway",
+      "kitchen",
+      "bedroom"
+    ]
+  },
+  {
+    "subset": "CMP",
+    "episode": "ep2",
+    "frames_dir": "data/sew/frames/ep2",
+    "question": "You saw a globe exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+    "answer": "blue",
+    "d_q": 2,
+    "hop_rooms": [
+      "hallway",
+      "living room",
+      "bedroom"
+    ]
+  },
+  {
+    "subset": "CMP",
+    "episode": "ep2",
+    "frames_dir": "data/sew/frames/ep2",
+    "question": "You saw a statue exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+    "answer": "purple",
+    "d_q": 2,
+    "hop_rooms": [
+      "study",
+      "pantry",
+      "hallway"
+    ]
+  },
+  {
+    "subset": "CMP",
+    "episode": "ep2",
+    "frames_dir": "data/sew/frames/ep2",
+    "question": "Did you see the kettle before or after the thermos? Answer 'before' or 'after'.",
+    "answer": "after",
+    "d_q": 2
+  },
+  {
+    "subset": "CMP",
+    "episode": "ep2",
+    "frames_dir": "data/sew/frames/ep2",
+    "question": "Did you see the ladle before or after the colander? Answer 'before' or 'after'.",
+    "answer": "after",
+    "d_q": 2
+  },
+  {
+    "subset": "RET",
+    "episode": "ep3",
+    "frames_dir": "data/sew/frames/ep3",
+    "question": "You saw a trivet exactly once during the walkthrough. What colour was it?",
+    "answer": "purple",
+    "target_t": [
+      111
+    ],
+    "d_q": 1
+  },
+  {
+    "subset": "RET",
+    "episode": "ep3",
+    "frames_dir": "data/sew/frames/ep3",
+    "question": "You saw a whisk exactly once during the walkthrough. What single capital letter was printed on it?",
+    "answer": "B",
+    "target_t": [
+      136
+    ],
+    "d_q": 1
+  },
+  {
+    "subset": "RET",
+    "episode": "ep3",
+    "frames_dir": "data/sew/frames/ep3",
+    "question": "You saw a mortar exactly once during the walkthrough. What colour was it?",
+    "answer": "purple",
+    "target_t": [
+      188
+    ],
+    "d_q": 1
+  },
+  {
+    "subset": "RET",
+    "episode": "ep3",
+    "frames_dir": "data/sew/frames/ep3",
+    "question": "You saw a teapot exactly once during the walkthrough. What single capital letter was printed on it?",
+    "answer": "E",
+    "target_t": [
+      189
+    ],
+    "d_q": 1
+  },
+  {
+    "subset": "RET",
+    "episode": "ep3",
+    "frames_dir": "data/sew/frames/ep3",
+    "question": "You saw a colander exactly once during the walkthrough. What colour was it?",
+    "answer": "brown",
+    "target_t": [
+      235
+    ],
+    "d_q": 1
+  },
+  {
+    "subset": "RET",
+    "episode": "ep3",
+    "frames_dir": "data/sew/frames/ep3",
+    "question": "You saw a ladle exactly once during the walkthrough. What single capital letter was printed on it?",
+    "answer": "A",
+    "target_t": [
+      237
+    ],
+    "d_q": 1
+  },
+  {
+    "subset": "RET",
+    "episode": "ep3",
+    "frames_dir": "data/sew/frames/ep3",
+    "question": "You saw a tongs exactly once during the walkthrough. What colour was it?",
+    "answer": "purple",
+    "target_t": [
+      250
+    ],
+    "d_q": 1
+  },
+  {
+    "subset": "RET",
+    "episode": "ep3",
+    "frames_dir": "data/sew/frames/ep3",
+    "question": "You saw a stapler exactly once during the walkthrough. What single capital letter was printed on it?",
+    "answer": "A",
+    "target_t": [
+      270
+    ],
+    "d_q": 1
+  },
+  {
+    "subset": "TRK",
+    "episode": "ep3",
+    "frames_dir": "data/sew/frames/ep3",
+    "question": "How many mugs did you see in total across the whole walkthrough? Answer with a number.",
+    "answer": "6",
+    "d_q": 1
+  },
+  {
+    "subset": "TRK",
+    "episode": "ep3",
+    "frames_dir": "data/sew/frames/ep3",
+    "question": "How many books did you see in total across the whole walkthrough? Answer with a number.",
+    "answer": "7",
+    "d_q": 1
+  },
+  {
+    "subset": "TRK",
+    "episode": "ep3",
+    "frames_dir": "data/sew/frames/ep3",
+    "question": "How many lamps did you see in total across the whole walkthrough? Answer with a number.",
+    "answer": "6",
+    "d_q": 1
+  },
+  {
+    "subset": "TRK",
+    "episode": "ep3",
+    "frames_dir": "data/sew/frames/ep3",
+    "question": "How many vases did you see in total across the whole walkthrough? Answer with a number.",
+    "answer": "3",
+    "d_q": 1
+  },
+  {
+    "subset": "TRK",
+    "episode": "ep3",
+    "frames_dir": "data/sew/frames/ep3",
+    "question": "Was the door open or closed at the end of the walkthrough?",
+    "answer": "open",
+    "d_q": 1
+  },
+  {
+    "subset": "TRK",
+    "episode": "ep3",
+    "frames_dir": "data/sew/frames/ep3",
+    "question": "How many times did the door change between open and closed? Answer with a number.",
+    "answer": "9",
+    "d_q": 1
+  },
+  {
+    "subset": "CMP",
+    "episode": "ep3",
+    "frames_dir": "data/sew/frames/ep3",
+    "question": "You saw a clock exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+    "answer": "brown",
+    "d_q": 2,
+    "hop_rooms": [
+      "bedroom",
+      "kitchen",
+      "pantry"
+    ]
+  },
+  {
+    "subset": "CMP",
+    "episode": "ep3",
+    "frames_dir": "data/sew/frames/ep3",
+    "question": "You saw a radio exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+    "answer": "purple",
+    "d_q": 2,
+    "hop_rooms": [
+      "bedroom",
+      "kitchen",
+      "pantry"
+    ]
+  },
+  {
+    "subset": "CMP",
+    "episode": "ep3",
+    "frames_dir": "data/sew/frames/ep3",
+    "question": "You saw a globe exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+    "answer": "red",
+    "d_q": 2,
+    "hop_rooms": [
+      "kitchen",
+      "study",
+      "pantry"
+    ]
+  },
+  {
+    "subset": "CMP",
+    "episode": "ep3",
+    "frames_dir": "data/sew/frames/ep3",
+    "question": "You saw a statue exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+    "answer": "blue",
+    "d_q": 2,
+    "hop_rooms": [
+      "bedroom",
+      "kitchen",
+      "pantry"
+    ]
+  },
+  {
+    "subset": "CMP",
+    "episode": "ep3",
+    "frames_dir": "data/sew/frames/ep3",
+    "question": "Did you see the trivet before or after the whisk? Answer 'before' or 'after'.",
+    "answer": "before",
+    "d_q": 2
+  },
+  {
+    "subset": "CMP",
+    "episode": "ep3",
+    "frames_dir": "data/sew/frames/ep3",
+    "question": "Did you see the mortar before or after the teapot? Answer 'before' or 'after'.",
+    "answer": "before",
+    "d_q": 2
+  },
+  {
+    "subset": "RET",
+    "episode": "ep4",
+    "frames_dir": "data/sew/frames/ep4",
+    "question": "You saw a tongs exactly once during the walkthrough. What colour was it?",
+    "answer": "green",
+    "target_t": [
+      23
+    ],
+    "d_q": 1
+  },
+  {
+    "subset": "RET",
+    "episode": "ep4",
+    "frames_dir": "data/sew/frames/ep4",
+    "question": "You saw a sieve exactly once during the walkthrough. What single capital letter was printed on it?",
+    "answer": "B",
+    "target_t": [
+      31
+    ],
+    "d_q": 1
+  },
+  {
+    "subset": "RET",
+    "episode": "ep4",
+    "frames_dir": "data/sew/frames/ep4",
+    "question": "You saw a whisk exactly once during the walkthrough. What colour was it?",
+    "answer": "green",
+    "target_t": [
+      121
+    ],
+    "d_q": 1
+  },
+  {
+    "subset": "RET",
+    "episode": "ep4",
+    "frames_dir": "data/sew/frames/ep4",
+    "question": "You saw a stapler exactly once during the walkthrough. What single capital letter was printed on it?",
+    "answer": "F",
+    "target_t": [
+      129
+    ],
+    "d_q": 1
+  },
+  {
+    "subset": "RET",
+    "episode": "ep4",
+    "frames_dir": "data/sew/frames/ep4",
+    "question": "You saw a trivet exactly once during the walkthrough. What colour was it?",
+    "answer": "brown",
+    "target_t": [
+      139
+    ],
+    "d_q": 1
+  },
+  {
+    "subset": "RET",
+    "episode": "ep4",
+    "frames_dir": "data/sew/frames/ep4",
+    "question": "You saw a mortar exactly once during the walkthrough. What single capital letter was printed on it?",
+    "answer": "H",
+    "target_t": [
+      178
+    ],
+    "d_q": 1
+  },
+  {
+    "subset": "RET",
+    "episode": "ep4",
+    "frames_dir": "data/sew/frames/ep4",
+    "question": "You saw a colander exactly once during the walkthrough. What colour was it?",
+    "answer": "red",
+    "target_t": [
+      249
+    ],
+    "d_q": 1
+  },
+  {
+    "subset": "RET",
+    "episode": "ep4",
+    "frames_dir": "data/sew/frames/ep4",
+    "question": "You saw a teapot exactly once during the walkthrough. What single capital letter was printed on it?",
+    "answer": "B",
+    "target_t": [
+      263
+    ],
+    "d_q": 1
+  },
+  {
+    "subset": "TRK",
+    "episode": "ep4",
+    "frames_dir": "data/sew/frames/ep4",
+    "question": "How many mugs did you see in total across the whole walkthrough? Answer with a number.",
+    "answer": "4",
+    "d_q": 1
+  },
+  {
+    "subset": "TRK",
+    "episode": "ep4",
+    "frames_dir": "data/sew/frames/ep4",
+    "question": "How many books did you see in total across the whole walkthrough? Answer with a number.",
+    "answer": "4",
+    "d_q": 1
+  },
+  {
+    "subset": "TRK",
+    "episode": "ep4",
+    "frames_dir": "data/sew/frames/ep4",
+    "question": "How many lamps did you see in total across the whole walkthrough? Answer with a number.",
+    "answer": "5",
+    "d_q": 1
+  },
+  {
+    "subset": "TRK",
+    "episode": "ep4",
+    "frames_dir": "data/sew/frames/ep4",
+    "question": "How many vases did you see in total across the whole walkthrough? Answer with a number.",
+    "answer": "7",
+    "d_q": 1
+  },
+  {
+    "subset": "TRK",
+    "episode": "ep4",
+    "frames_dir": "data/sew/frames/ep4",
+    "question": "Was the door open or closed at the end of the walkthrough?",
+    "answer": "closed",
+    "d_q": 1
+  },
+  {
+    "subset": "TRK",
+    "episode": "ep4",
+    "frames_dir": "data/sew/frames/ep4",
+    "question": "How many times did the door change between open and closed? Answer with a number.",
+    "answer": "6",
+    "d_q": 1
+  },
+  {
+    "subset": "CMP",
+    "episode": "ep4",
+    "frames_dir": "data/sew/frames/ep4",
+    "question": "You saw a clock exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+    "answer": "purple",
+    "d_q": 2,
+    "hop_rooms": [
+      "hallway",
+      "kitchen",
+      "pantry"
+    ]
+  },
+  {
+    "subset": "CMP",
+    "episode": "ep4",
+    "frames_dir": "data/sew/frames/ep4",
+    "question": "You saw a radio exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+    "answer": "white",
+    "d_q": 2,
+    "hop_rooms": [
+      "living room",
+      "pantry",
+      "hallway"
+    ]
+  },
+  {
+    "subset": "CMP",
+    "episode": "ep4",
+    "frames_dir": "data/sew/frames/ep4",
+    "question": "You saw a globe exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+    "answer": "yellow",
+    "d_q": 2,
+    "hop_rooms": [
+      "hallway",
+      "bedroom",
+      "kitchen"
+    ]
+  },
+  {
+    "subset": "CMP",
+    "episode": "ep4",
+    "frames_dir": "data/sew/frames/ep4",
+    "question": "You saw a statue exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+    "answer": "brown",
+    "d_q": 2,
+    "hop_rooms": [
+      "kitchen",
+      "living room",
+      "study"
+    ]
+  },
+  {
+    "subset": "CMP",
+    "episode": "ep4",
+    "frames_dir": "data/sew/frames/ep4",
+    "question": "Did you see the sieve before or after the tongs? Answer 'before' or 'after'.",
+    "answer": "after",
+    "d_q": 2
+  },
+  {
+    "subset": "CMP",
+    "episode": "ep4",
+    "frames_dir": "data/sew/frames/ep4",
+    "question": "Did you see the whisk before or after the stapler? Answer 'before' or 'after'.",
+    "answer": "before",
+    "d_q": 2
+  }
+]

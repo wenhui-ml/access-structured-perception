@@ -1,0 +1,420 @@
+{
+ "model": "gemma-4-31b",
+ "method": "retr_only",
+ "bench": "sew",
+ "subset": "CMP",
+ "budget": 4096,
+ "tau_g": 0.0,
+ "judge_deferred": 21,
+ "mean": 4.17,
+ "items": [
+  {
+   "episode": "ep1",
+   "subset": "CMP",
+   "q": "You saw a clock exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "red",
+   "pred": "Based on the provided images, there is no clock visible in any of the rooms shown. Therefore, the question cannot be answered using the provided keyframes.",
+   "score": 0.0,
+   "spent": 2227,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "CMP",
+   "q": "You saw a radio exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "yellow",
+   "pred": "Based on the provided images, the radio appears only in the first image (t=180), where it is purple. Since the prompt specifies the radio was seen three times in different rooms, but only one instance is shown in these keyframes, and no other colors are provided for the radio, there is insufficient information to determine the color of the second sighting. However, based strictly on the visible evidence, the radio is purple.",
+   "score": 0.0,
+   "spent": 2293,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "CMP",
+   "q": "You saw a globe exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "green",
+   "pred": "Based on the provided images, there is no globe visible in any of the rooms.",
+   "score": 0.0,
+   "spent": 2213,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "CMP",
+   "q": "You saw a statue exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "red",
+   "pred": "Based on the provided images, the statue only appears in the first image (t=263), where it is brown. Since the other images do not show a statue, there is insufficient information to determine the color of the statue the second time it was seen.",
+   "score": 0.0,
+   "spent": 2250,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "CMP",
+   "q": "Did you see the sieve before or after the stapler? Answer 'before' or 'after'.",
+   "gold": "before",
+   "pred": "Neither the sieve nor the stapler appears in the provided keyframes.",
+   "score": 0.0,
+   "spent": 2205,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "CMP",
+   "q": "Did you see the colander before or after the trivet? Answer 'before' or 'after'.",
+   "gold": "before",
+   "pred": "Neither the colander nor the trivet appear in the provided keyframes.",
+   "score": 0.0,
+   "spent": 2207,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "CMP",
+   "q": "You saw a clock exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "green",
+   "pred": "Based on the provided images, there is no clock visible in any of the rooms.",
+   "score": 0.0,
+   "spent": 2213,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "CMP",
+   "q": "You saw a radio exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "yellow",
+   "pred": "The provided images do not contain a radio.",
+   "score": 0.0,
+   "spent": 1126,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "CMP",
+   "q": "You saw a globe exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "blue",
+   "pred": "Based on the provided images, there is no globe visible in any of the frames. All images show the \"living room\" with various items like fans, pots, and brushes, but no globe.",
+   "score": 0.0,
+   "spent": 2245,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "CMP",
+   "q": "You saw a statue exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "purple",
+   "pred": "Based on the provided images, there is no statue visible in any of the rooms shown. All images are of the \"living room\" and contain various household objects (e.g., ruler, plate, towel, hat, pen, soap, tray, glass, etc.), but no statue.",
+   "score": 0.0,
+   "spent": 2255,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "CMP",
+   "q": "Did you see the thermos before or after the kettle? Answer 'before' or 'after'.",
+   "gold": "before",
+   "pred": "before",
+   "score": 100.0,
+   "spent": 2191,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "CMP",
+   "q": "Did you see the colander before or after the ladle? Answer 'before' or 'after'.",
+   "gold": "before",
+   "pred": "Neither the colander nor the ladle is visible in the provided keyframes.",
+   "score": 0.0,
+   "spent": 2206,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "CMP",
+   "q": "You saw a clock exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "brown",
+   "pred": "Based on the provided images, there is no clock visible in any of the frames.",
+   "score": 0.0,
+   "spent": 2222,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "CMP",
+   "q": "You saw a radio exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "purple",
+   "pred": "Based on the provided images, there is no radio visible in any of the rooms shown. Therefore, the question cannot be answered using the given keyframes.",
+   "score": 0.0,
+   "spent": 2227,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "CMP",
+   "q": "You saw a globe exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "red",
+   "pred": "Based on the provided images, there is no globe visible in any of the frames. All frames are from the \"living room\" and contain various other objects (e.g., fan, soap, ruler, cup, towel, candle, hat, bowl, tray, pen, plate, fork, belt, glass, spoon, pot, comb, rug, brush, sock, whisk).",
+   "score": 0.0,
+   "spent": 2283,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "CMP",
+   "q": "You saw a statue exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "blue",
+   "pred": "Based on the provided images, there is no statue visible in any of the rooms. Therefore, the question cannot be answered using the given keyframes.",
+   "score": 0.0,
+   "spent": 2226,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "CMP",
+   "q": "Did you see the trivet before or after the whisk? Answer 'before' or 'after'.",
+   "gold": "before",
+   "pred": "Neither the trivet nor the whisk appears in the provided keyframes.",
+   "score": 0.0,
+   "spent": 2205,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "CMP",
+   "q": "Did you see the mortar before or after the teapot? Answer 'before' or 'after'.",
+   "gold": "before",
+   "pred": "Neither the mortar nor the teapot appears in the provided keyframes.",
+   "score": 0.0,
+   "spent": 2212,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "CMP",
+   "q": "You saw a clock exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "purple",
+   "pred": "Based on the provided images, there is no clock visible in any of the rooms. Therefore, the question cannot be answered using the given keyframes.",
+   "score": 0.0,
+   "spent": 2226,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "CMP",
+   "q": "You saw a radio exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "white",
+   "pred": "Based on the provided images, there is no radio visible in any of the frames. Therefore, the question cannot be answered using the given information.",
+   "score": 0.0,
+   "spent": 2225,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "CMP",
+   "q": "You saw a globe exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "yellow",
+   "pred": "Based on the provided images, there is no globe visible in any of the rooms shown. Therefore, the question cannot be answered using the provided keyframes.",
+   "score": 0.0,
+   "spent": 2227,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "CMP",
+   "q": "You saw a statue exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "brown",
+   "pred": "Based on the provided images, there is no statue visible in any of the rooms shown. All images are of the \"living room\" and contain various household objects (e.g., fork, pot, spoon, plate, hat, glass, belt, tray, comb, cup, sock, pen, candle, bowl, soap, ruler).",
+   "score": 0.0,
+   "spent": 2274,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "CMP",
+   "q": "Did you see the tongs before or after the sieve? Answer 'before' or 'after'.",
+   "gold": "before",
+   "pred": "Neither the tongs nor the sieve appear in the provided keyframes.",
+   "score": 0.0,
+   "spent": 2203,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "CMP",
+   "q": "Did you see the whisk before or after the stapler? Answer 'before' or 'after'.",
+   "gold": "before",
+   "pred": "I did not see a whisk or a stapler in any of the provided keyframes.",
+   "score": 0.0,
+   "spent": 2209,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  }
+ ]
+}

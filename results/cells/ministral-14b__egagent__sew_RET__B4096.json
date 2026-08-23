@@ -1,0 +1,588 @@
+{
+ "model": "ministral-14b",
+ "method": "egagent",
+ "bench": "sew",
+ "subset": "RET",
+ "budget": 4096,
+ "tau_g": 0.0,
+ "judge_deferred": 27,
+ "mean": 3.12,
+ "items": [
+  {
+   "episode": "ep1",
+   "subset": "RET",
+   "q": "You saw a sieve exactly once during the walkthrough. What colour was it?",
+   "gold": "green",
+   "pred": "To answer the question about the color of the sieve seen exactly once during the walkthrough, we can decompose the problem into the following subtasks:\n\n### Subtasks:\n1. **Identify the presence of a \"sieve\" in the scene graph**:\n   - The provided scene graph does not include a node labeled \"sieve\" in either the `nodes` or `edges` sections. This suggests that the sieve is not explicitly represented in the given data.\n\n2. **Check for implicit references or related objects**:\n   - The sieve is not mentioned in the `nodes` (objects/places/people) or `edges` (interactions/temporal relationships). This implies the sieve is either:\n     - Not part of the provided scene graph data, or\n     - Referenced indirectly (e.g., as part of a larger object or category like \"objects\" or \"visible\").\n\n3. **Check for temporal or contextual clues**:\n   - The `edges` section includes interactions between objects and places over time, but none involve a \"sieve.\" The only relevant node is `\"objects\"` (appearing between timestamps 76 and 163), but this is too broad to infer the color of a specific sieve.\n\n4. **Determine if",
+   "score": 0.0,
+   "spent": 3791,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "RET",
+   "q": "You saw a stapler exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "C",
+   "pred": "To answer the question about the single capital letter printed on the stapler seen exactly once during the walkthrough, we can decompose the problem as follows:\n\n### Subtasks:\n1. **Identify the stapler in the scene graph**:\n   - The stapler is not explicitly listed in the provided nodes. This suggests it is either not present in the given data or its presence is implied but not recorded. Since the question states it was seen exactly once, we must infer its existence from the edges or other contextual clues.\n\n2. **Check for indirect references to the stapler**:\n   - The edges describe interactions between objects over time intervals. However, none of the edges or nodes explicitly mention a \"stapler.\" This implies the stapler is not part of the provided scene graph data.\n\n3. **Determine if the stapler is part of the \"objects\" or \"visible\" nodes**:\n   - The nodes \"objects\" and \"visible\" have very short time intervals (`first`: 76, `last`: 163, `n`: 2), which might imply a generic or aggregated category. However, this is too vague to infer the presence of a stapler.\n\n4. **Check for any other clues in the edges**:\n  ",
+   "score": 0.0,
+   "spent": 3796,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "RET",
+   "q": "You saw a colander exactly once during the walkthrough. What colour was it?",
+   "gold": "green",
+   "pred": "To answer the question about the color of the colander seen exactly once during the walkthrough, we can decompose the problem into the following subtasks:\n\n### Subtasks:\n1. **Check if \"colander\" exists in the provided entity scene graph**:\n   - The given graph does not include a node for \"colander.\" This means the colander is not explicitly tracked in the provided data.\n\n2. **Check if \"colander\" is implicitly referenced or related to another node**:\n   - The graph does not contain any edges or nodes that mention \"colander.\" The nodes are limited to objects like \"cup,\" \"pen,\" \"candle,\" etc., and places like \"room,\" \"kitchen,\" etc. There is no mention of a colander in the edges or nodes.\n\n3. **Determine if the colander's appearance is tied to a specific time interval or object**:\n   - Since \"colander\" is not present in the graph, we cannot infer its color or appearance from the given data.\n\n4. **Conclusion**:\n   - The provided scene graph does not contain any information about a \"colander.\" Therefore, we cannot determine its color based on this data.\n\n### Final Output:\nSince the colander is not present in the scene",
+   "score": 0.0,
+   "spent": 3792,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "RET",
+   "q": "You saw a trivet exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "B",
+   "pred": "To answer the question about the single capital letter printed on the trivet seen exactly once, we can decompose the problem as follows:\n\n### Subtasks:\n1. **Identify the trivet in the scene graph**:\n   - The trivet is not explicitly listed in the `nodes` section of the provided scene graph. This suggests it is either not present in the graph or its presence is not explicitly recorded in the given data.\n\n2. **Check for edges involving the trivet**:\n   - The `edges` section does not contain any references to a \"trivet\" node. This further confirms that the trivet is not explicitly represented in the provided data.\n\n3. **Check for temporal or contextual clues**:\n   - The question states that the trivet was seen \"exactly once during the walkthrough.\" Since the trivet is not in the nodes or edges, it is likely an object that was visually observed but not logged in the scene graph data.\n\n4. **Determine the letter on the trivet**:\n   - Since the trivet is not in the graph, we cannot derive the letter from the given data. This implies that the answer must come from visual verification of the walkthrough footage or additional context not provided in the scene graph.\n\n### Conclusion:\n",
+   "score": 0.0,
+   "spent": 3796,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "RET",
+   "q": "You saw a kettle exactly once during the walkthrough. What colour was it?",
+   "gold": "green",
+   "pred": "To answer the question about the color of the kettle seen exactly once during the walkthrough, we can decompose the problem into the following subtasks:\n\n### Subtasks:\n1. **Identify the kettle in the scene graph**:\n   - The scene graph provided does not include a node labeled \"kettle.\" This suggests that either:\n     - The kettle is not explicitly labeled in the graph (e.g., it might be referred to by another name or not detected at all).\n     - The kettle is not part of the nodes listed, meaning it was not detected or labeled in the scene graph data.\n\n2. **Check for alternative names or related objects**:\n   - The scene graph includes objects like \"pot,\" \"cup,\" \"bowl,\" \"glass,\" \"mug,\" etc., but none of these are synonyms for \"kettle.\"\n   - The kettle might have been mislabeled or omitted in the scene graph data.\n\n3. **Check temporal presence**:\n   - Since the kettle was seen \"exactly once,\" we would expect a node with `n: 1` (appearing in only 1 frame) and a time interval of length 1 (e.g., `t: [x, x",
+   "score": 0.0,
+   "spent": 3792,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "RET",
+   "q": "You saw a teapot exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "D",
+   "pred": "To answer the question about the single capital letter printed on the teapot seen exactly once during the walkthrough, we can decompose the problem as follows:\n\n### Subtasks:\n1. **Identify the teapot in the scene graph**:\n   - The teapot is not explicitly listed in the `nodes` section of the provided scene graph. This suggests that either:\n     - The teapot is not part of the given data (unlikely, since the question implies it exists).\n     - The teapot is represented by another node name (e.g., \"pot\" or \"cup\" could be mislabeled, but this is speculative).\n     - The teapot is not in the `nodes` list, meaning it is not a persistent object in the graph (i.e., it appears only once and is not tracked across time intervals).\n\n2. **Check for edges involving the teapot**:\n   - The edges list does not contain any references to a \"teapot\" or a node that could plausibly represent it (e.g., \"pot\" is present but is likely a cooking pot, not a teapot).\n   - The question states the teapot was seen \"exactly once,\" implying it is not a persistent node in the graph (since all nodes",
+   "score": 0.0,
+   "spent": 3796,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "RET",
+   "q": "You saw a ladle exactly once during the walkthrough. What colour was it?",
+   "gold": "red",
+   "pred": "To answer the question about the color of the ladle seen exactly once during the walkthrough, we can decompose the problem into the following subtasks:\n\n### Subtasks:\n1. **Check if \"ladle\" exists in the provided scene graph**:\n   - The given scene graph does not include a node for \"ladle.\" This means the ladle is not explicitly represented in the provided data.\n\n2. **Check for any implicit references or related objects**:\n   - The scene graph includes objects like \"spoon,\" \"fork,\" \"bowl,\" \"cup,\" and \"plate,\" which are kitchen-related but do not mention a \"ladle.\"\n   - The edges also do not reference a \"ladle\" or any object that could imply its presence.\n\n3. **Determine if the ladle is part of the \"objects\" or \"visible\" nodes**:\n   - The \"objects\" and \"visible\" nodes are present but only for a very short time interval (76-163) and with a low count (n=2). This does not provide any information about a ladle.\n\n4. **Check for any temporal or contextual clues**:\n   - The ladle is mentioned as being seen \"exactly once,\" but there is no",
+   "score": 0.0,
+   "spent": 3792,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "RET",
+   "q": "You saw a thermos exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "E",
+   "pred": "To answer the question about the thermos, let's break down the problem into subtasks:\n\n### Subtasks:\n1. **Identify the thermos in the scene graph**:\n   - The thermos is not explicitly listed in the `nodes` section of the provided scene graph. This suggests that either:\n     - The thermos is not part of the given data (i.e., it was not detected or labeled in the scene graph).\n     - The thermos is represented by another node (e.g., \"mug\", \"cup\", or \"glass\"), but this is unlikely since these are distinct objects.\n     - The thermos is a temporary or less frequent object not captured in the `nodes` section.\n\n2. **Check for edges involving the thermos**:\n   - The `edges` section does not mention a \"thermos\" node or any edges involving a thermos. This further suggests the thermos is not part of the provided data.\n\n3. **Check for visual verification**:\n   - Since the thermos is not in the scene graph, we cannot infer its appearance or any text on it from the given data. The question implies that the thermos was seen exactly once during the walkthrough, but the scene graph does not capture this observation.\n\n",
+   "score": 0.0,
+   "spent": 3796,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "RET",
+   "q": "You saw a thermos exactly once during the walkthrough. What colour was it?",
+   "gold": "yellow",
+   "pred": "To answer the question about the color of the thermos seen exactly once during the walkthrough, we can decompose the problem into the following subtasks:\n\n### Subtasks:\n1. **Identify the presence of a thermos in the scene graph**:\n   - The provided scene graph does not include a node labeled \"thermos\" in the `nodes` section. This suggests that the thermos is not explicitly represented in the given data.\n\n2. **Check for implicit or related references**:\n   - The `nodes` section lists objects like \"cup,\" \"mug,\" \"glass,\" \"bowl,\" \"pot,\" and \"plate,\" but none of these are labeled as a \"thermos.\"\n   - The `edges` section does not contain any references to a \"thermos\" either.\n\n3. **Determine if the thermos is visually identifiable**:\n   - Since the thermos is not present in the scene graph, we cannot infer its color or other attributes from the given data.\n   - The question implies that the thermos was seen exactly once, but without visual or additional contextual data, we cannot determine its color.\n\n4. **Conclusion**:\n   - The scene graph does not provide any information about the thermos, so we cannot answer the question",
+   "score": 0.0,
+   "spent": 3772,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "RET",
+   "q": "You saw a kettle exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "E",
+   "pred": "To answer the question about the kettle, let's decompose the problem into subtasks:\n\n### Subtasks:\n1. **Identify the kettle in the scene graph**:\n   - The given scene graph does not explicitly list a \"kettle\" as a node. This suggests the kettle is either:\n     - Not present in the provided data (unlikely, since the question implies it exists).\n     - Represented by another node (e.g., \"pot\", \"cup\", \"bowl\", or \"glass\" could be mislabeled or ambiguous).\n     - A missing node in the provided data (likely, since the question is hypothetical).\n\n2. **Check for implicit references to a kettle**:\n   - The nodes include \"cup\", \"pot\", \"bowl\", \"glass\", etc., but none are labeled as \"kettle\".\n   - The edges do not mention a kettle either.\n\n3. **Determine if the kettle is represented by another node**:\n   - If the kettle is not explicitly listed, we cannot infer its properties (like a printed letter) from the given data.\n   - The question implies the kettle was seen exactly once, but the scene graph does not track this.\n\n4. **Visual",
+   "score": 0.0,
+   "spent": 3776,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "RET",
+   "q": "You saw a colander exactly once during the walkthrough. What colour was it?",
+   "gold": "green",
+   "pred": "To answer the question about the color of the colander seen exactly once during the walkthrough, we can decompose the problem into the following subtasks:\n\n### Subtasks:\n1. **Check if \"colander\" exists in the provided entity scene graph**:\n   - The given graph does not include a node for \"colander.\" This means the colander is not explicitly represented in the provided data.\n\n2. **Check if \"colander\" is implicitly referenced in edges or other nodes**:\n   - The edges and nodes in the graph do not mention \"colander\" at all. The nodes are limited to objects like \"fork,\" \"glass,\" \"brush,\" etc., and places like \"room,\" \"living,\" \"bedroom,\" etc.\n\n3. **Determine if the colander's appearance is tied to a specific time interval or node**:\n   - Since \"colander\" is not present in the graph, we cannot infer its color or appearance from the given data.\n\n4. **Visual verification needed**:\n   - Since the colander is not mentioned in the provided scene graph, we cannot answer the question without additional information. Visual verification is required to determine the color of the colander.\n\n### Output:\nSince the colander is not present in the provided",
+   "score": 0.0,
+   "spent": 3772,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "RET",
+   "q": "You saw a ladle exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "G",
+   "pred": "To answer the question about the single capital letter printed on the ladle seen exactly once, we can decompose the problem as follows:\n\n### Subtasks:\n1. **Identify the ladle in the scene graph**:\n   - The ladle is not explicitly listed in the `nodes` section of the provided scene graph. This suggests it is either not present in the graph or its presence is implied through edges or other nodes.\n   - The `nodes` section lists objects like `fork`, `spoon`, `cup`, `bowl`, `plate`, etc., but no `ladle`. This implies the ladle is not a primary node in this graph.\n\n2. **Check for edges involving the ladle**:\n   - The `edges` section does not contain any entries with `ladle` as either `a` or `b`. This further confirms the ladle is not explicitly represented in this graph.\n\n3. **Check for temporal or contextual clues**:\n   - The ladle is mentioned in the question as being seen \"exactly once during the walkthrough.\" This suggests the ladle might be associated with a specific time interval or edge not explicitly listed in the graph.\n   - The `edges` section includes time intervals for interactions between objects, but",
+   "score": 0.0,
+   "spent": 3776,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "RET",
+   "q": "You saw a whisk exactly once during the walkthrough. What colour was it?",
+   "gold": "purple",
+   "pred": "To answer the question about the color of the whisk seen exactly once during the walkthrough, we need to analyze the given entity scene graph and decompose the problem into subtasks:\n\n### Subtasks:\n1. **Identify the whisk in the scene graph**:\n   - The whisk is not explicitly listed in the `nodes` section of the provided scene graph. This suggests that either:\n     - The whisk is not part of the nodes in this graph (i.e., it was not detected or labeled in the scene graph).\n     - The whisk is implicitly represented by another node (e.g., \"fork\" or \"spoon\" could be related, but this is unlikely).\n   - Since the whisk is not in the `nodes`, we cannot directly infer its properties (like color) from this graph.\n\n2. **Check for edges involving the whisk**:\n   - The `edges` section does not mention a whisk at all. This further confirms that the whisk is not represented in this graph.\n\n3. **Check for temporal or contextual clues**:\n   - The question states that the whisk was seen \"exactly once\" during the walkthrough. This implies that the whisk was present in the scene at some point, but the scene graph does not capture it.\n   - The",
+   "score": 0.0,
+   "spent": 3771,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "RET",
+   "q": "You saw a decanter exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "C",
+   "pred": "To answer the question about the decanter, let's decompose the problem into subtasks:\n\n### Subtasks:\n1. **Identify the decanter in the scene graph**:\n   - The provided scene graph does not explicitly list a \"decanter\" as a node. This suggests the decanter is either:\n     - Not present in the graph (unlikely, since the question implies it exists).\n     - Represented by another node (e.g., \"glass\", \"bowl\", \"vase\", or \"cup\" could be candidates, but none are labeled as a decanter).\n     - A missing or implicit node (e.g., the decanter might be a \"glass\" or \"vase\" with a unique property like a single capital letter).\n\n2. **Check for edges involving the decanter**:\n   - The edges list interactions between nodes, but no edges mention a \"decanter\". This implies the decanter is not explicitly modeled in the graph.\n\n3. **Check for temporal or contextual clues**:\n   - The decanter is seen \"exactly once\" during the walkthrough. This suggests:\n     - The decanter appears in a single time interval (e.g., a node with `n=1` or a very short",
+   "score": 0.0,
+   "spent": 3776,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "RET",
+   "q": "You saw a mortar exactly once during the walkthrough. What colour was it?",
+   "gold": "blue",
+   "pred": "To answer the question about the color of the mortar seen exactly once during the walkthrough, we need to analyze the given entity scene graph and decompose the problem into subtasks:\n\n### Subtasks:\n1. **Identify the \"mortar\" node**:\n   - The provided scene graph does not include a node labeled \"mortar.\" This suggests that either:\n     - The term \"mortar\" is not explicitly listed in the nodes (e.g., it might be referred to by another name like \"pot\" or \"bowl\").\n     - The term \"mortar\" is a mislabel or typo (e.g., \"mortar\" might be confused with \"mug,\" \"pot,\" or another object).\n     - The scene graph is incomplete or missing the \"mortar\" node.\n\n2. **Check for possible synonyms or related objects**:\n   - The closest objects to \"mortar\" in the scene graph are:\n     - \"pot\" (first: 0, last: 299, n: 230)\n     - \"bowl\" (first: 0, last: 299, n: 240)\n     - \"cup\" (first: 1, last: 2",
+   "score": 0.0,
+   "spent": 3771,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "RET",
+   "q": "You saw a tongs exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "E",
+   "pred": "To answer the question about the single capital letter printed on the tongs seen exactly once during the walkthrough, we can decompose the problem as follows:\n\n### Subtasks:\n1. **Identify the tongs in the scene graph**:\n   - The tongs are not explicitly listed in the provided nodes. This suggests either:\n     - The tongs are not part of the given scene graph (unlikely, as the question implies they exist).\n     - The tongs are represented by another node (e.g., \"fork\" or \"spoon\" could be mislabeled or misinterpreted as tongs, but this is speculative).\n     - The tongs are not in the nodes list, meaning the scene graph is incomplete or the tongs are not tracked as a separate entity.\n\n2. **Check for edges involving tongs or related objects**:\n   - The edges list does not mention \"tongs\" or any node that could plausibly represent tongs (e.g., \"fork\" or \"spoon\" are close but not exact).\n   - The question states the tongs were seen \"exactly once,\" implying a single time interval or frame where tongs appeared. This is not reflected in the edges or nodes.\n\n3. **Check for visual",
+   "score": 0.0,
+   "spent": 3776,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "RET",
+   "q": "You saw a trivet exactly once during the walkthrough. What colour was it?",
+   "gold": "purple",
+   "pred": "To answer the question about the color of the trivet seen exactly once during the walkthrough, we can decompose the problem into the following subtasks:\n\n### Subtasks:\n1. **Check if \"trivet\" exists in the provided entity scene graph**:\n   - The given graph does not include a node or edge for \"trivet.\" This means the trivet is not explicitly represented in the provided data.\n\n2. **Determine if \"trivet\" is implied or associated with any other nodes**:\n   - The graph does not contain any references to \"trivet\" in the nodes or edges. This suggests that the trivet is either:\n     - Not part of the provided scene graph data, or\n     - A visual detail not captured in the textual or temporal data.\n\n3. **Check for visual verification needs**:\n   - Since the trivet is not mentioned in the graph, and the question implies it was seen exactly once, the color cannot be inferred from the given data.\n   - Visual verification is required to determine the color of the trivet.\n\n### Output:\nSince the trivet is not described in the provided scene graph, we need to visually inspect the scene where it appeared.\n\n**VSEARCH: trivet color**",
+   "score": 0.0,
+   "spent": 3825,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "RET",
+   "q": "You saw a whisk exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "B",
+   "pred": "To answer the question about the single capital letter printed on the whisk seen exactly once during the walkthrough, let's decompose the problem and analyze the given entity scene graph:\n\n### Subtasks:\n1. **Identify the whisk in the scene graph**:\n   - The whisk is not explicitly listed in the `nodes` section of the provided scene graph. This suggests that either:\n     - The whisk is not present in the given data (unlikely, since the question states it was seen once).\n     - The whisk is represented by another node name (e.g., \"spoon\" or \"fork\" could be related, but these are distinct objects).\n     - The whisk is a temporary or less frequently appearing object not captured in the `nodes` section (since it was seen only once).\n\n2. **Check for edges involving the whisk**:\n   - The edges in the `edges` section do not mention a \"whisk\" or any node that could plausibly represent it (e.g., no node like \"whisk\" or \"whisker\" exists).\n   - The whisk is likely an object not explicitly modeled in the graph, implying it was seen but not recorded in the `nodes` or `edges` sections.\n\n3. **Infer the context",
+   "score": 0.0,
+   "spent": 3832,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "RET",
+   "q": "You saw a mortar exactly once during the walkthrough. What colour was it?",
+   "gold": "purple",
+   "pred": "To answer the question about the color of the mortar seen exactly once during the walkthrough, we can decompose the problem into the following subtasks:\n\n### Subtasks:\n1. **Identify the presence of \"mortar\" in the scene graph**:\n   - The provided scene graph does not include \"mortar\" as a node. This suggests that \"mortar\" is either:\n     - A mislabel or typo (e.g., \"pot\" or \"bowl\" might be confused with \"mortar\").\n     - An object not explicitly listed in the graph but inferred from context (e.g., part of a \"kitchen\" or \"pantry\" scene).\n     - A visual attribute not captured in the graph (e.g., color is not part of the node/edge data).\n\n2. **Check for related objects or places where \"mortar\" might appear**:\n   - The graph includes \"kitchen\" (first: 20, last: 299, n: 64) and \"pantry\" (first: 186, last: 284, n: 80), which are plausible locations for a mortar (a kitchen tool).\n   - The edges involving \"kitchen",
+   "score": 0.0,
+   "spent": 3828,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "RET",
+   "q": "You saw a teapot exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "E",
+   "pred": "To answer the question about the single capital letter printed on the teapot seen exactly once, we can decompose the problem as follows:\n\n### Subtasks:\n1. **Identify the teapot in the scene graph**:\n   - The teapot is not explicitly listed in the `nodes` section of the provided scene graph. This suggests that either:\n     - The teapot is not present in the given data (unlikely, since the question implies it exists).\n     - The teapot is represented by another node name (e.g., \"pot\" or \"cup\" could be mislabeled, but this is speculative).\n     - The teapot is a node not included in the provided data (e.g., it might be part of a larger dataset or a different segment).\n   - Since the teapot is not in the `nodes` or `edges`, we must infer that the teapot is either:\n     - A node with a name not listed here (e.g., \"teapot\" itself is missing).\n     - A node that was only visible at a single time step (e.g., `n: 1` in the `nodes` section, but no such node exists here).\n\n2. **Check for nodes with `n: 1`",
+   "score": 0.0,
+   "spent": 3833,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "RET",
+   "q": "You saw a colander exactly once during the walkthrough. What colour was it?",
+   "gold": "brown",
+   "pred": "To answer the question about the color of the colander seen exactly once during the walkthrough, we can decompose the problem into the following subtasks:\n\n### Subtasks:\n1. **Check if \"colander\" exists in the provided entity scene graph**:\n   - The given graph does not include a node or edge for \"colander.\" This means the colander is not explicitly represented in the provided data.\n\n2. **Determine if the colander's appearance is implied or referenced indirectly**:\n   - The graph includes objects like \"cup,\" \"bowl,\" \"tray,\" \"pot,\" and \"glass,\" which are kitchen-related items. However, none of these are explicitly linked to a \"colander.\"\n   - The edges and nodes do not mention \"colander\" or any color information for any object.\n\n3. **Check for temporal or contextual clues about the colander**:\n   - The colander is mentioned as appearing exactly once, but there is no timestamp or edge in the graph that references it.\n   - The graph's time intervals are limited to the provided nodes and edges, and none of them include \"colander.\"\n\n4. **Visual verification needed**:\n   - Since the colander is not present in the graph and no color information is provided",
+   "score": 0.0,
+   "spent": 3829,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "RET",
+   "q": "You saw a ladle exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "A",
+   "pred": "To answer the question about the single capital letter printed on the ladle seen exactly once, we can decompose the problem as follows:\n\n### Subtasks:\n1. **Identify the ladle in the scene graph**:\n   - The ladle is not explicitly listed in the provided nodes. This suggests it may be an object not present in the given data or may be represented by another node (e.g., \"spoon\" or \"fork\" could be confused with a ladle, but these are distinct).\n   - Since the ladle is not in the nodes, we must infer that it is either:\n     - A temporary or unrecorded object (not in the nodes list).\n     - Represented by another node (e.g., \"spoon\" or \"pot\" could be mislabeled as a ladle in some contexts, but this is unlikely).\n   - Given the question's phrasing, the ladle is likely an object not explicitly listed in the nodes, implying it was seen only once and not recorded in the graph.\n\n2. **Determine the time interval of the ladle's appearance**:\n   - Since the ladle is not in the nodes, we cannot directly infer its time interval from the graph. However, the question states it",
+   "score": 100.0,
+   "spent": 3833,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "RET",
+   "q": "You saw a tongs exactly once during the walkthrough. What colour was it?",
+   "gold": "purple",
+   "pred": "To answer the question about the color of the tongs seen exactly once during the walkthrough, we can decompose the problem into the following subtasks:\n\n### Subtasks:\n1. **Check if \"tongs\" is present in the provided entity scene graph**:\n   - The given graph does not include \"tongs\" as a node. This means the tongs is not explicitly represented in the provided data.\n\n2. **Check for related objects or attributes that might imply the presence of tongs**:\n   - The graph includes objects like \"fork,\" \"spoon,\" \"ruler,\" \"brush,\" \"comb,\" etc., but none of these are directly related to tongs.\n   - The graph also includes time intervals for objects, but no mention of tongs or its color.\n\n3. **Check for visual verification needs**:\n   - Since \"tongs\" is not present in the graph, and no additional context or visual data is provided, we cannot infer its color from the given information.\n   - The question implies that the tongs was seen exactly once, but without visual data or further context, we cannot determine its color.\n\n### Conclusion:\nSince the provided entity scene graph does not include \"tongs\" as a node or any related information, and no",
+   "score": 0.0,
+   "spent": 3829,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "RET",
+   "q": "You saw a stapler exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "A",
+   "pred": "To answer the question about the single capital letter printed on the stapler seen exactly once, we can decompose the problem as follows:\n\n### Subtasks:\n1. **Identify the stapler in the scene graph**:\n   - The stapler is not explicitly listed in the provided nodes or edges. This suggests it is either not present in the given data or its presence is implied but not directly recorded.\n\n2. **Check for indirect references or related objects**:\n   - The scene graph includes objects like \"ruler,\" \"pen,\" \"book,\" and \"globe,\" which are often found in office or study settings where a stapler might be located.\n   - The \"study\" node appears in the graph with a time interval `[99, 185]` and `n: 27`, indicating it is a place where the stapler might logically reside. However, the stapler itself is not listed as a node.\n\n3. **Check for temporal or spatial overlap with the stapler**:\n   - The stapler is seen exactly once, implying it appears in a very short time window (likely a single timestamp or a very narrow interval).\n   - The edges involving \"study\" or other office-related objects (e.g., \"book,\"",
+   "score": 0.0,
+   "spent": 3833,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "RET",
+   "q": "You saw a tongs exactly once during the walkthrough. What colour was it?",
+   "gold": "green",
+   "pred": "To answer the question about the color of the tongs seen exactly once during the walkthrough, we can decompose the problem into the following subtasks:\n\n### Subtasks:\n1. **Identify the presence of \"tongs\" in the scene graph**:\n   - The provided scene graph does not include \"tongs\" as a node. This means \"tongs\" is not explicitly represented in the given data.\n\n2. **Check for related objects or possible mislabeling**:\n   - The scene graph includes objects like \"fork,\" \"spoon,\" \"brush,\" \"ruler,\" etc., but none of these are \"tongs.\"\n   - The edges also do not mention \"tongs\" as a connected node.\n\n3. **Determine if \"tongs\" could be inferred or mislabeled as another object**:\n   - Since \"tongs\" is not present, it is likely an object not captured in this scene graph or a mislabeling in the question.\n   - If \"tongs\" is not in the graph, we cannot infer its color or properties from the given data.\n\n4. **Visual verification (if needed)**:\n   - Since \"tongs\" is not in the scene graph, visual verification is not possible with the provided",
+   "score": 0.0,
+   "spent": 3856,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "RET",
+   "q": "You saw a sieve exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "B",
+   "pred": "To answer the question about the single capital letter printed on the sieve seen exactly once during the walkthrough, let's decompose the problem and analyze the given entity scene graph:\n\n### Subtasks:\n1. **Identify the sieve in the graph**:\n   - The sieve is not explicitly listed in the `nodes` section of the graph. This suggests it may not be a primary entity in the scene graph, or it might be represented indirectly (e.g., as part of another object or through edges).\n\n2. **Check for indirect references to the sieve**:\n   - The `nodes` section includes objects like `tray`, `pot`, `cup`, `bowl`, `plate`, etc., which are kitchen-related. A sieve is typically a kitchen utensil, so it might be grouped with these or represented as part of a broader category (e.g., \"objects\").\n   - The `edges` section does not mention a \"sieve\" node, but it does include edges involving \"objects\" (e.g., `{\"a\": \"sock\", \"b\": \"objects\", \"t\": [246, 277]}` and `{\"a\": \"spoon\", \"b\": \"objects\", \"t\": [2",
+   "score": 0.0,
+   "spent": 3859,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "RET",
+   "q": "You saw a whisk exactly once during the walkthrough. What colour was it?",
+   "gold": "green",
+   "pred": "To answer the question about the color of the whisk seen exactly once during the walkthrough, we can decompose the problem into the following subtasks:\n\n### Subtasks:\n1. **Identify the whisk in the scene graph**:\n   - The whisk is not explicitly listed in the provided nodes or edges. This suggests that either:\n     - The whisk is not part of the given scene graph (i.e., it was not detected or labeled in the data).\n     - The whisk is implicitly represented by another node (e.g., \"spoon\" or \"pot\" could be related, but this is unlikely).\n     - The whisk is a temporary or transient object not captured in the static scene graph.\n\n2. **Check for temporal or contextual clues**:\n   - The edges represent interactions or co-occurrences between objects over time intervals. Since the whisk is not listed, it cannot be directly linked to other objects in the graph.\n   - The question implies the whisk was seen exactly once, which suggests it might be a transient object (e.g., a prop that appears briefly in a specific frame or scene).\n\n3. **Determine if visual verification is needed**:\n   - Since the whisk is not in the scene graph, we cannot infer its color or properties from the given",
+   "score": 0.0,
+   "spent": 3855,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "RET",
+   "q": "You saw a stapler exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "F",
+   "pred": "To answer the question about the single capital letter printed on the stapler seen exactly once during the walkthrough, we can decompose the problem as follows:\n\n### Subtasks:\n1. **Identify the stapler in the scene graph**:\n   - The stapler is not explicitly listed in the `nodes` section of the provided scene graph. This suggests it is either not present in the given data or its presence is implied through interactions or edges (e.g., as a node with a very short or specific time interval).\n\n2. **Check for nodes with short or unique time intervals**:\n   - The nodes with the shortest or most unique time intervals are:\n     - `globe`: `{\"first\": 20, \"last\": 108, \"n\": 3}`\n     - `clock`: `{\"first\": 25, \"last\": 280, \"n\": 3}`\n     - `statue`: `{\"first\": 104, \"last\": 257, \"n\": 3}`\n     - `mug`: `{\"first\": 46, \"last\": 199, \"n\": 4}`\n     - `book`: `{\"first\": 15",
+   "score": 0.0,
+   "spent": 3860,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "RET",
+   "q": "You saw a trivet exactly once during the walkthrough. What colour was it?",
+   "gold": "brown",
+   "pred": "To answer the question about the color of the trivet seen exactly once during the walkthrough, we can decompose the problem into the following subtasks:\n\n### Subtasks:\n1. **Check if \"trivet\" is present in the nodes or edges**:\n   - The provided entity scene graph does not include \"trivet\" as a node or in any edges. This suggests that the trivet is not explicitly represented in the given data.\n\n2. **Check for implicit or related objects**:\n   - The trivet is typically an object placed under a pot or pan (often in a kitchen or related setting). The nodes include \"pot\" and \"kitchen,\" but no direct mention of a trivet.\n   - The edges involving \"pot\" do not reference a trivet either.\n\n3. **Check for temporal or contextual clues**:\n   - The question states that the trivet was seen \"exactly once.\" This implies it was present in the scene at some point but not repeatedly like other objects.\n   - The nodes \"kitchen\" and \"pot\" are present throughout most of the timeline, but no trivet is mentioned.\n\n4. **Check for visual verification**:\n   - Since the trivet is not mentioned in the provided data, we cannot infer its",
+   "score": 0.0,
+   "spent": 3856,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "RET",
+   "q": "You saw a mortar exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "H",
+   "pred": "To answer the question about the single capital letter printed on the mortar seen exactly once during the walkthrough, we can decompose the problem as follows:\n\n### Subtasks:\n1. **Identify the mortar in the scene graph**:\n   - The mortar is not explicitly listed in the `nodes` section of the provided scene graph. This suggests either:\n     - The mortar is not a primary node (e.g., it might be a sub-object or part of another node like \"pot\" or \"kitchen\").\n     - The mortar is represented indirectly (e.g., as \"pot\" or another object).\n   - The closest candidate is the `pot` node, which appears frequently and might include a mortar as a sub-object or part of its description.\n\n2. **Check edges involving the mortar (or \"pot\")**:\n   - The `pot` node has edges with other objects, but none explicitly mention a letter or text. This implies the letter might be tied to a specific interaction or time interval where the mortar is visible.\n   - The edges involving `pot` are:\n     - `sock` \u2194 `pot`: [0, 1, 3, 4]\n     - `spoon` \u2194 `pot`: [4, 9,",
+   "score": 0.0,
+   "spent": 3859,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "RET",
+   "q": "You saw a colander exactly once during the walkthrough. What colour was it?",
+   "gold": "red",
+   "pred": "To answer the question about the color of the colander seen exactly once during the walkthrough, we can decompose the problem into the following subtasks:\n\n### Subtasks:\n1. **Check if \"colander\" exists in the provided entity scene graph**:\n   - The given graph does not include a node for \"colander.\" This means the colander is not explicitly represented in the provided data.\n\n2. **Determine if the colander's appearance is implied or referenced indirectly**:\n   - The graph includes edges and nodes for objects like \"sock,\" \"spoon,\" \"pot,\" \"tray,\" \"bowl,\" etc., but none of these are \"colander.\"\n   - The \"objects\" node appears only between timestamps 246 and 277, but it is not specific enough to infer the presence of a colander.\n\n3. **Check for temporal or contextual clues about the colander**:\n   - The edges involving \"objects\" (e.g., `{\"a\": \"sock\", \"b\": \"objects\", \"t\": [246, 277]}`) suggest a grouping of objects, but this is too vague to confirm the presence of a colander.\n   - The \"visible\"",
+   "score": 0.0,
+   "spent": 3856,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "RET",
+   "q": "You saw a teapot exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "B",
+   "pred": "To determine the single capital letter printed on the teapot seen exactly once during the walkthrough, we can decompose the problem as follows:\n\n### Subtasks:\n1. **Identify the teapot in the scene graph**:\n   - The teapot is not explicitly listed in the `nodes` section of the provided scene graph. This suggests that either:\n     - The teapot is not represented as a distinct node in this graph (e.g., it might be part of another object like \"pot\" or \"cup\"), or\n     - The teapot is an object that appears only once and is not explicitly named in the nodes (e.g., it could be a temporary or transient object).\n\n2. **Check for edges involving the teapot**:\n   - The edges in the `edges` section do not mention a \"teapot\" node. This reinforces the idea that the teapot is not explicitly represented in this graph.\n\n3. **Check for objects that might represent the teapot**:\n   - The closest candidates in the `nodes` section are \"pot\" or \"cup\". However, neither of these is likely to be a teapot.\n   - The `edges` section includes interactions with \"pot\" and \"cup\", but none of these are likely",
+   "score": 0.0,
+   "spent": 3860,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  }
+ ]
+}

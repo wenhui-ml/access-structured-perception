@@ -1,0 +1,420 @@
+{
+ "model": "gemma-4-31b",
+ "method": "asp",
+ "bench": "sew",
+ "subset": "CMP",
+ "budget": 4096,
+ "tau_g": 0.0,
+ "judge_deferred": 20,
+ "mean": 12.5,
+ "items": [
+  {
+   "episode": "ep1",
+   "subset": "CMP",
+   "q": "You saw a clock exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "red",
+   "pred": "Wait, if I must answer now: the retrieval only gave me one color. If I cannot find the others, I cannot answer. But if I must provide the answer based on the \"hidden\" state or a pattern, I can't. Let me re-read. \"You saw a clock exactly three",
+   "score": 0.0,
+   "spent": 4033,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.086,
+    "Br": 0.503,
+    "Bc": 0.342,
+    "rho": 0.069
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "CMP",
+   "q": "You saw a radio exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "yellow",
+   "pred": "I cannot determine the color because the retrieval only found one instance of the radio.",
+   "score": 0.0,
+   "spent": 3348,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.678,
+    "Bc": 0.231,
+    "rho": 0.091
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "CMP",
+   "q": "You saw a globe exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "green",
+   "pred": "I cannot determine the color of the globe from the provided information.",
+   "score": 0.0,
+   "spent": 3857,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.089,
+    "Br": 0.523,
+    "Bc": 0.316,
+    "rho": 0.072
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "CMP",
+   "q": "You saw a statue exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "red",
+   "pred": "I cannot determine the color of the statue the second time it was seen because the retrieval only identified one instance of the statue.",
+   "score": 0.0,
+   "spent": 3772,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.635,
+    "Bc": 0.284,
+    "rho": 0.081
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "CMP",
+   "q": "Did you see the sieve before or after the stapler? Answer 'before' or 'after'.",
+   "gold": "before",
+   "pred": "before",
+   "score": 100.0,
+   "spent": 2301,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.499,
+    "Bc": 0.371,
+    "rho": 0.13
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "CMP",
+   "q": "Did you see the colander before or after the trivet? Answer 'before' or 'after'.",
+   "gold": "before",
+   "pred": "before",
+   "score": 100.0,
+   "spent": 2018,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.563,
+    "Bc": 0.288,
+    "rho": 0.149
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "CMP",
+   "q": "You saw a clock exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "green",
+   "pred": "{\"counts\": {\"pot\": 171, \"fan\": 167, \"soap\": 171, \"bowl\": 175, \"glass\": 181, \"fork\": 182, \"plate\": 174, \"candle\": 177, \"ruler\": 163, \"tray\": 176, \"pen\": 174, \"spoon\": 165, \"belt\": 180, \"comb\": 178, \"sock\": 178, \"towel\": 181, \"brush\": 180, \"cup\": 175, \"hat\": 174, \"rug\": 177, \"lamp\": 4, \"vase\": 3, \"thermos\": 1, \"mug\": 8, \"statue\": 2, \"book\": 6, \"kettle\": 1, \"clock\": 3, \"colander\": 1, \"radio\": 2, \"globe\": 3, \"ladle\": 1, \"decanter\": 1, \"mortar\": 1}, \"env\": {\"door\": \"closed\", \"door_changes\": 4}, \"rooms_visited\": [\"living room\", \"study\", \"pantry\", \"living room\", \"study\", \"hallway\", \"living room\", \"bedroom\", \"hallway\", \"bedroom\", \"kitchen\"], \"objects\": {\"ruler\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"comb\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"glass\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"tray\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"towel\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"cup\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"candle\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"spoon\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"brush\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"pen\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"rug\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"fork\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"hat\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"plate\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"bowl\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"fan\": {\"room\": \"kitchen\", \"last_seen\": 223}}, \"event_log\": [\"Objects observed in kitchen\"]}",
+   "score": 0.0,
+   "spent": 3853,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.09,
+    "Br": 0.528,
+    "Bc": 0.311,
+    "rho": 0.072
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "CMP",
+   "q": "You saw a radio exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "yellow",
+   "pred": "{\"counts\": {\"pot\": 171, \"fan\": 167, \"soap\": 171, \"bowl\": 175, \"glass\": 181, \"fork\": 182, \"plate\": 174, \"candle\": 177, \"ruler\": 163, \"tray\": 176, \"pen\": 174, \"spoon\": 165, \"belt\": 180, \"comb\": 178, \"sock\": 178, \"towel\": 181, \"brush\": 180, \"cup\": 175, \"hat\": 174, \"rug\": 177, \"lamp\": 4, \"vase\": 3, \"thermos\": 1, \"mug\": 8, \"statue\": 2, \"book\": 6, \"kettle\": 1, \"clock\": 3, \"colander\": 1, \"radio\": 2, \"globe\": 3, \"ladle\": 1, \"decanter\": 1, \"mortar\": 1}, \"env\": {\"door\": \"closed\", \"door_changes\": 4}, \"rooms_visited\": [\"living room\", \"study\", \"pantry\", \"living room\", \"study\", \"hallway\", \"living room\", \"bedroom\", \"hallway\", \"bedroom\", \"kitchen\"], \"objects\": {\"ruler\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"comb\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"glass\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"tray\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"towel\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"cup\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"candle\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"spoon\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"brush\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"pen\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"rug\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"fork\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"hat\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"plate\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"bowl\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"fan\": {\"room\": \"kitchen\", \"last_seen\": 223}}, \"event_log\": [\"Objects observed in kitchen\"]}",
+   "score": 0.0,
+   "spent": 3853,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.09,
+    "Br": 0.528,
+    "Bc": 0.311,
+    "rho": 0.072
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "CMP",
+   "q": "You saw a globe exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "blue",
+   "pred": "{\"counts\": {\"pot\": 171, \"fan\": 167, \"soap\": 171, \"bowl\": 175, \"glass\": 181, \"fork\": 182, \"plate\": 174, \"candle\": 177, \"ruler\": 163, \"tray\": 176, \"pen\": 174, \"spoon\": 165, \"belt\": 180, \"comb\": 178, \"sock\": 178, \"towel\": 181, \"brush\": 180, \"cup\": 175, \"hat\": 174, \"rug\": 177, \"lamp\": 4, \"vase\": 3, \"thermos\": 1, \"mug\": 8, \"statue\": 2, \"book\": 6, \"kettle\": 1, \"clock\": 3, \"colander\": 1, \"radio\": 2, \"globe\": 3, \"ladle\": 1, \"decanter\": 1, \"mortar\": 1}, \"env\": {\"door\": \"closed\", \"door_changes\": 4}, \"rooms_visited\": [\"living room\", \"study\", \"pantry\", \"living room\", \"study\", \"hallway\", \"living room\", \"bedroom\", \"hallway\", \"bedroom\", \"kitchen\"], \"objects\": {\"ruler\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"comb\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"glass\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"tray\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"towel\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"cup\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"candle\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"spoon\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"brush\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"pen\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"rug\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"fork\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"hat\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"plate\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"bowl\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"fan\": {\"room\": \"kitchen\", \"last_seen\": 223}}, \"event_log\": [\"Objects observed in kitchen\"]}",
+   "score": 0.0,
+   "spent": 3806,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.091,
+    "Br": 0.529,
+    "Bc": 0.308,
+    "rho": 0.073
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "CMP",
+   "q": "You saw a statue exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "purple",
+   "pred": "{\"counts\": {\"pot\": 171, \"fan\": 167, \"soap\": 171, \"bowl\": 175, \"glass\": 181, \"fork\": 182, \"plate\": 174, \"candle\": 177, \"ruler\": 163, \"tray\": 176, \"pen\": 174, \"spoon\": 165, \"belt\": 180, \"comb\": 178, \"sock\": 178, \"towel\": 181, \"brush\": 180, \"cup\": 175, \"hat\": 174, \"rug\": 177, \"lamp\": 4, \"vase\": 3, \"thermos\": 1, \"mug\": 8, \"statue\": 2, \"book\": 6, \"kettle\": 1, \"clock\": 3, \"colander\": 1, \"radio\": 2, \"globe\": 3, \"ladle\": 1, \"decanter\": 1, \"mortar\": 1}, \"env\": {\"door\": \"closed\", \"door_changes\": 4}, \"rooms_visited\": [\"living room\", \"study\", \"pantry\", \"living room\", \"study\", \"hallway\", \"living room\", \"bedroom\", \"hallway\", \"bedroom\", \"kitchen\"], \"objects\": {\"ruler\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"comb\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"glass\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"tray\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"towel\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"cup\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"candle\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"spoon\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"brush\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"pen\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"rug\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"fork\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"hat\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"plate\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"bowl\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"fan\": {\"room\": \"kitchen\", \"last_seen\": 223}}, \"event_log\": [\"Objects observed in kitchen\"]}",
+   "score": 0.0,
+   "spent": 3774,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.091,
+    "Br": 0.532,
+    "Bc": 0.304,
+    "rho": 0.073
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "CMP",
+   "q": "Did you see the thermos before or after the kettle? Answer 'before' or 'after'.",
+   "gold": "before",
+   "pred": "I did not see either object.",
+   "score": 0.0,
+   "spent": 2046,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.556,
+    "Bc": 0.298,
+    "rho": 0.146
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "CMP",
+   "q": "Did you see the colander before or after the ladle? Answer 'before' or 'after'.",
+   "gold": "before",
+   "pred": "before",
+   "score": 100.0,
+   "spent": 2731,
+   "n_calls": 6,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.258,
+    "Br": 0.308,
+    "Bc": 0.353,
+    "rho": 0.082
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "CMP",
+   "q": "You saw a clock exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "brown",
+   "pred": "{\"counts\": {\"sock\": 195, \"pot\": 196, \"ruler\": 199, \"towel\": 186, \"tray\": 194, \"glass\": 180, \"soap\": 203, \"rug\": 208, \"spoon\": 190, \"comb\": 205, \"plate\": 189, \"belt\": 193, \"bowl\": 186, \"fork\": 194, \"candle\": 200, \"cup\": 185, \"brush\": 189, \"pen\": 193, \"hat\": 187, \"fan\": 183, \"book\": 5, \"mug\": 4, \"lamp\": 6, \"globe\": 2, \"clock\": 3, \"radio\": 2, \"statue\": 3, \"trivet\": 1, \"whisk\": 1, \"vase\": 2, \"mortar\": 1, \"teapot\": 1, \"colander\": 1, \"ladle\": 1}, \"env\": {\"door\": \"open\", \"door_changes\": 8}, \"rooms_visited\": [\"bedroom\", \"kitchen\", \"bedroom\", \"kitchen\", \"bedroom\", \"study\", \"living room\", \"kitchen\", \"bedroom\", \"study\", \"pantry\", \"kitchen\"], \"objects\": {\"sock\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"fan\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"belt\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"tray\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"candle\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"plate\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"cup\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"soap\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"towel\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"spoon\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"pot\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"comb\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"rug\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"brush\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"glass\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"hat\": {\"room\": \"kitchen\", \"last_seen\": 299}}, \"event_log\": [\"Door opened\"]}",
+   "score": 0.0,
+   "spent": 3922,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.088,
+    "Br": 0.513,
+    "Bc": 0.328,
+    "rho": 0.071
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "CMP",
+   "q": "You saw a radio exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "purple",
+   "pred": "{\"counts\": {\"sock\": 195, \"pot\": 196, \"ruler\": 199, \"towel\": 186, \"tray\": 194, \"glass\": 180, \"soap\": 203, \"rug\": 208, \"spoon\": 190, \"comb\": 205, \"plate\": 189, \"belt\": 193, \"bowl\": 186, \"fork\": 194, \"candle\": 200, \"cup\": 185, \"brush\": 189, \"pen\": 193, \"hat\": 187, \"fan\": 183, \"book\": 5, \"mug\": 4, \"lamp\": 6, \"globe\": 2, \"clock\": 3, \"radio\": 2, \"statue\": 3, \"trivet\": 1, \"whisk\": 1, \"vase\": 2, \"mortar\": 1, \"teapot\": 1, \"colander\": 1, \"ladle\": 1}, \"env\": {\"door\": \"open\", \"door_changes\": 8}, \"rooms_visited\": [\"bedroom\", \"kitchen\", \"bedroom\", \"kitchen\", \"bedroom\", \"study\", \"living room\", \"kitchen\", \"bedroom\", \"study\", \"pantry\", \"kitchen\"], \"objects\": {\"sock\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"fan\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"belt\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"tray\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"candle\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"plate\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"cup\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"soap\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"towel\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"spoon\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"pot\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"comb\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"rug\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"brush\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"glass\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"hat\": {\"room\": \"kitchen\", \"last_seen\": 299}}, \"event_log\": [\"Door opened\"]}",
+   "score": 0.0,
+   "spent": 3758,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.092,
+    "Br": 0.533,
+    "Bc": 0.302,
+    "rho": 0.074
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "CMP",
+   "q": "You saw a globe exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "red",
+   "pred": "{\"counts\": {\"sock\": 195, \"pot\": 196, \"ruler\": 199, \"towel\": 186, \"tray\": 194, \"glass\": 180, \"soap\": 203, \"rug\": 208, \"spoon\": 190, \"comb\": 205, \"plate\": 189, \"belt\": 193, \"bowl\": 186, \"fork\": 194, \"candle\": 200, \"cup\": 185, \"brush\": 189, \"pen\": 193, \"hat\": 187, \"fan\": 183, \"book\": 5, \"mug\": 4, \"lamp\": 6, \"globe\": 2, \"clock\": 3, \"radio\": 2, \"statue\": 3, \"trivet\": 1, \"whisk\": 1, \"vase\": 2, \"mortar\": 1, \"teapot\": 1, \"colander\": 1, \"ladle\": 1}, \"env\": {\"door\": \"open\", \"door_changes\": 8}, \"rooms_visited\": [\"bedroom\", \"kitchen\", \"bedroom\", \"kitchen\", \"bedroom\", \"study\", \"living room\", \"kitchen\", \"bedroom\", \"study\", \"pantry\", \"kitchen\"], \"objects\": {\"sock\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"fan\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"belt\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"tray\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"candle\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"plate\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"cup\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"soap\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"towel\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"spoon\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"pot\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"comb\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"rug\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"brush\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"glass\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"hat\": {\"room\": \"kitchen\", \"last_seen\": 299}}, \"event_log\": [\"Door opened\"]}",
+   "score": 0.0,
+   "spent": 3787,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.091,
+    "Br": 0.531,
+    "Bc": 0.305,
+    "rho": 0.073
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "CMP",
+   "q": "You saw a statue exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "blue",
+   "pred": "{\"counts\": {\"sock\": 195, \"pot\": 196, \"ruler\": 199, \"towel\": 186, \"tray\": 194, \"glass\": 180, \"soap\": 203, \"rug\": 208, \"spoon\": 190, \"comb\": 205, \"plate\": 189, \"belt\": 193, \"bowl\": 186, \"fork\": 194, \"candle\": 200, \"cup\": 185, \"brush\": 189, \"pen\": 193, \"hat\": 187, \"fan\": 183, \"book\": 5, \"mug\": 4, \"lamp\": 6, \"globe\": 2, \"clock\": 3, \"radio\": 2, \"statue\": 3, \"trivet\": 1, \"whisk\": 1, \"vase\": 2, \"mortar\": 1, \"teapot\": 1, \"colander\": 1, \"ladle\": 1}, \"env\": {\"door\": \"open\", \"door_changes\": 8}, \"rooms_visited\": [\"bedroom\", \"kitchen\", \"bedroom\", \"kitchen\", \"bedroom\", \"study\", \"living room\", \"kitchen\", \"bedroom\", \"study\", \"pantry\", \"kitchen\"], \"objects\": {\"sock\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"fan\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"belt\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"tray\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"candle\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"plate\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"cup\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"soap\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"towel\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"spoon\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"pot\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"comb\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"rug\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"brush\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"glass\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"hat\": {\"room\": \"kitchen\", \"last_seen\": 299}}, \"event_log\": [\"Door opened\"]}",
+   "score": 0.0,
+   "spent": 3824,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.09,
+    "Br": 0.529,
+    "Bc": 0.308,
+    "rho": 0.073
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "CMP",
+   "q": "Did you see the trivet before or after the whisk? Answer 'before' or 'after'.",
+   "gold": "before",
+   "pred": "I cannot determine the order as neither item was found in the retrieved frames or the state.",
+   "score": 0.0,
+   "spent": 2028,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.559,
+    "Bc": 0.293,
+    "rho": 0.148
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "CMP",
+   "q": "Did you see the mortar before or after the teapot? Answer 'before' or 'after'.",
+   "gold": "before",
+   "pred": "Not applicable (teapot not seen)",
+   "score": 0.0,
+   "spent": 2121,
+   "n_calls": 6,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.563,
+    "Bc": 0.296,
+    "rho": 0.141
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "CMP",
+   "q": "You saw a clock exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "purple",
+   "pred": "{\"counts\": {\"glass\": 186, \"pot\": 194, \"fan\": 184, \"towel\": 187, \"tray\": 175, \"ruler\": 172, \"belt\": 171, \"comb\": 185, \"brush\": 185, \"plate\": 179, \"rug\": 197, \"pen\": 188, \"candle\": 180, \"hat\": 191, \"sock\": 199, \"soap\": 179, \"fork\": 179, \"cup\": 171, \"bowl\": 179, \"spoon\": 195, \"book\": 4, \"globe\": 3, \"tongs\": 1, \"clock\": 2, \"lamp\": 5, \"mug\": 4, \"vase\": 6, \"statue\": 2, \"whisk\": 1, \"stapler\": 1, \"trivet\": 1, \"radio\": 2, \"mortar\": 1, \"teapot\": 1}, \"env\": {\"door\": \"open\", \"door_changes\": 6}, \"rooms_visited\": [\"kitchen\", \"hallway\", \"study\", \"bedroom\", \"kitchen\", \"living room\", \"pantry\", \"study\", \"hallway\", \"study\", \"kitchen\"], \"objects\": {\"cup\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"sock\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"tray\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"candle\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"rug\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"ruler\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"plate\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"glass\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"towel\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"bowl\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"brush\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"hat\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"comb\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"pen\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"fan\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"pot\": {\"room\": \"kitchen\", \"last_seen\": 278}}, \"event_log\": [\"Observed objects in kitchen\"]}",
+   "score": 0.0,
+   "spent": 3823,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.09,
+    "Br": 0.531,
+    "Bc": 0.306,
+    "rho": 0.073
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "CMP",
+   "q": "You saw a radio exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "white",
+   "pred": "I cannot determine the color as the retrieval returned no frames and the scene state only lists 2 radios.",
+   "score": 0.0,
+   "spent": 3893,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.089,
+    "Br": 0.518,
+    "Bc": 0.322,
+    "rho": 0.071
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "CMP",
+   "q": "You saw a globe exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "yellow",
+   "pred": "{\"counts\": {\"glass\": 186, \"pot\": 194, \"fan\": 184, \"towel\": 187, \"tray\": 175, \"ruler\": 172, \"belt\": 171, \"comb\": 185, \"brush\": 185, \"plate\": 179, \"rug\": 197, \"pen\": 188, \"candle\": 180, \"hat\": 191, \"sock\": 199, \"soap\": 179, \"fork\": 179, \"cup\": 171, \"bowl\": 179, \"spoon\": 195, \"book\": 4, \"globe\": 3, \"tongs\": 1, \"clock\": 2, \"lamp\": 5, \"mug\": 4, \"vase\": 6, \"statue\": 2, \"whisk\": 1, \"stapler\": 1, \"trivet\": 1, \"radio\": 2, \"mortar\": 1, \"teapot\": 1}, \"env\": {\"door\": \"open\", \"door_changes\": 6}, \"rooms_visited\": [\"kitchen\", \"hallway\", \"study\", \"bedroom\", \"kitchen\", \"living room\", \"pantry\", \"study\", \"hallway\", \"study\", \"kitchen\"], \"objects\": {\"cup\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"sock\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"tray\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"candle\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"rug\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"ruler\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"plate\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"glass\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"towel\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"bowl\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"brush\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"hat\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"comb\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"pen\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"fan\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"pot\": {\"room\": \"kitchen\", \"last_seen\": 278}}, \"event_log\": [\"Observed objects in kitchen\"]}",
+   "score": 0.0,
+   "spent": 3850,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.09,
+    "Br": 0.523,
+    "Bc": 0.315,
+    "rho": 0.072
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "CMP",
+   "q": "You saw a statue exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "brown",
+   "pred": "blue",
+   "score": 0.0,
+   "spent": 2889,
+   "n_calls": 4,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.771,
+    "Bc": 0.124,
+    "rho": 0.106
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "CMP",
+   "q": "Did you see the tongs before or after the sieve? Answer 'before' or 'after'.",
+   "gold": "before",
+   "pred": "I cannot determine this as neither object was found.",
+   "score": 0.0,
+   "spent": 2023,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.562,
+    "Bc": 0.29,
+    "rho": 0.148
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "CMP",
+   "q": "Did you see the whisk before or after the stapler? Answer 'before' or 'after'.",
+   "gold": "before",
+   "pred": "cannot be determined",
+   "score": 0.0,
+   "spent": 2106,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.553,
+    "Bc": 0.305,
+    "rho": 0.142
+   }
+  }
+ ]
+}

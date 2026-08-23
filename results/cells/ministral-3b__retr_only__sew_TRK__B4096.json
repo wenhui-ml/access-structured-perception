@@ -1,0 +1,444 @@
+{
+ "model": "ministral-3b",
+ "method": "retr_only",
+ "bench": "sew",
+ "subset": "TRK",
+ "budget": 4096,
+ "tau_g": 0.0,
+ "judge_deferred": 17,
+ "mean": 27.08,
+ "items": [
+  {
+   "episode": "ep1",
+   "subset": "TRK",
+   "q": "How many mugs did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "7",
+   "pred": "From the images provided, mugs are labeled with the letter **B**.\n\nCounting the occurrences of **B**:\n- hallway (t=51): 2 mugs (hat, sock)\n- bedroom (t=191): 1 mug (ruler)\n- bedroom (t=23): 1 mug (towel)\n- bedroom (t=35): 2 mugs (bowl, pen)\n- bedroom (t=28): 3 mugs (brush, fan, belt)\n- living room (t=270): 2 mugs (towel, glass)\n",
+   "score": 0.0,
+   "spent": 3622,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "TRK",
+   "q": "How many books did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "4",
+   "pred": "From the images provided, the only instance of a \"book\" is at **t=51** in the hallway.\n\n**Total books seen: 1**",
+   "score": 25.0,
+   "spent": 3527,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "TRK",
+   "q": "How many lamps did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "9",
+   "pred": "From the keyframes, lamps are indicated by the letter **H**.\n\nCounting the occurrences of **H**:\n- Bedroom (t=191): 2\n- Hallway (t=51): 2\n- Bedroom (t=15): 0\n- Bedroom (t=23): 2\n- Bedroom (t=35): 1\n- Bedroom (t=28): 1\n- Living room (t=270): 2\n- Bedroom (t=193): 1\n\nTotal = 11 lamps.",
+   "score": 50.0,
+   "spent": 3621,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "TRK",
+   "q": "How many vases did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "7",
+   "pred": "From the images provided, the vases are labeled with the letter **F**.\n\nCounting the occurrences of **F** as vases:\n- Bedroom (t=191): 1 vase (F)\n- Bedroom (t=23): 1 tray (not vase)\n- Bedroom (t=35): 1 cup (not vase)\n- Bedroom (t=28): 1 spoon (not vase)\n- Bedroom (t=193): 1 cup (not vase), 1 tray (not vase), 1 spoon (not vase)\n- Living room (t",
+   "score": 25.0,
+   "spent": 3622,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "TRK",
+   "q": "Was the door open or closed at the end of the walkthrough?",
+   "gold": "open",
+   "pred": "The last keyframe shown in the sequence (t=23) indicates the door is **closed**.",
+   "score": 0.0,
+   "spent": 3510,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "TRK",
+   "q": "How many times did the door change between open and closed? Answer with a number.",
+   "gold": "7",
+   "pred": "The door changes between open and closed **2 times**.\n\n(From closed at t=28 to open at t=294)",
+   "score": 0.0,
+   "spent": 3520,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "TRK",
+   "q": "How many mugs did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "8",
+   "pred": "From the keyframes, mugs are represented by the letter **C**.\n\nCounting all occurrences of **C**:\n- Study (t=34): 1\n- Study (t=38): 1\n- Bedroom (t=134): 3\n- Bedroom (t=226): 4\n- Bedroom (t=228): 2\n- Bedroom (t=140): 2\n- Living Room (t=127): 2\n- Study (t=25): 1\n\nTotal = 1 + 1",
+   "score": 25.0,
+   "spent": 3622,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "TRK",
+   "q": "How many books did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "7",
+   "pred": "From the images provided, the letters correspond to objects, and the letter **\"E\"** appears repeatedly in the context of books (e.g., \"pen,\" \"glass,\" \"comb,\" \"cup,\" \"tray,\" \"belt,\" \"brush,\" \"fork,\" \"candle,\" \"rug,\" \"sock,\" \"bowl\").\n\nCounting the occurrences of \"E\" in the context of books (assuming \"pen,\" \"comb,\" \"belt,\" \"candle,\" \"tray,\" \"brush,\" \"fork,\" \"cup,\" \"belt\" in the broader sense of book-related items or objects that could be",
+   "score": 0.0,
+   "spent": 3621,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "TRK",
+   "q": "How many lamps did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "6",
+   "pred": "From the images, lamps are represented by the letter **G**.\n\nCounting all occurrences of **G**:\n- Study (t=34): 1\n- Study (t=38): 2\n- Bedroom (t=134): 3\n- Bedroom (t=226): 2\n- Bedroom (t=228): 2\n- Bedroom (t=140): 1\n- Living Room (t=127): 1\n- Hallway (t=299): 3\n\nTotal = 14 lamps.",
+   "score": 0.0,
+   "spent": 3621,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "TRK",
+   "q": "How many vases did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "4",
+   "pred": "From the images provided, the vases are represented by the letter **C**.\n\nCounting the occurrences of **C** as vases:\n- Study (t=34): 1 vase\n- Bedroom (t=134): 2 vases\n- Study (t=38): 1 vase\n- Bedroom (t=226): 2 vases\n- Bedroom (t=228): 1 vase\n- Bedroom (t=140): 2 vases\n- Living room (t=127): 2 vases\n- Bed",
+   "score": 25.0,
+   "spent": 3622,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "TRK",
+   "q": "Was the door open or closed at the end of the walkthrough?",
+   "gold": "closed",
+   "pred": "At the end of the walkthrough (t=281 in the living room), the door is **open**.",
+   "score": 0.0,
+   "spent": 3513,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "TRK",
+   "q": "How many times did the door change between open and closed? Answer with a number.",
+   "gold": "6",
+   "pred": "3 times\n\n(Door changes from closed to open at t=195, and back to closed at t=281 and t=340 in the sequence of keyframes).",
+   "score": 25.0,
+   "spent": 3532,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "TRK",
+   "q": "How many mugs did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "6",
+   "pred": "Across the entire walkthrough, there are **3 mugs** (marked as **E**).",
+   "score": 0.0,
+   "spent": 3515,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "TRK",
+   "q": "How many books did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "7",
+   "pred": "The total number of unique books (marked by letter **A**) across all keyframes is **10**.",
+   "score": 0.0,
+   "spent": 3516,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "TRK",
+   "q": "How many lamps did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "6",
+   "pred": "From the images, the lamps (marked with the letter **H**) are counted as follows:\n\n- Bedroom (t=36): 1 lamp (glass)\n- Bedroom (t=82): 1 lamp (fork)\n- Kitchen (t=226): 1 lamp (cup)\n- Kitchen (t=25): 1 lamp (belt)\n- Kitchen (t=151): 1 lamp (hat)\n\nTotal = **5 lamps**",
+   "score": 50.0,
+   "spent": 3594,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "TRK",
+   "q": "How many vases did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "3",
+   "pred": "Across the entire walkthrough, there are **3 vases** (marked as **C**).",
+   "score": 100.0,
+   "spent": 3515,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "TRK",
+   "q": "Was the door open or closed at the end of the walkthrough?",
+   "gold": "open",
+   "pred": "At the last keyframe shown (t=177 in the study room), the door is **open**.",
+   "score": 100.0,
+   "spent": 3512,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "TRK",
+   "q": "How many times did the door change between open and closed? Answer with a number.",
+   "gold": "9",
+   "pred": "From the provided keyframes, the door changes between open and closed **3 times** (at t=36, t=66, and t=93).",
+   "score": 0.0,
+   "spent": 3527,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "TRK",
+   "q": "How many mugs did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "4",
+   "pred": "From the keyframes, mugs are represented by the letter **H**.\n\nCounting all occurrences of **H**:\n- Bedroom (t=68): 1\n- Living room (t=138): 2\n- Bedroom (t=63): 1\n- Bedroom (t=58): 0\n- Bedroom (t=72): 1\n- Bedroom (t=57): 1\n- Hallway (t=214): 2\n- Hallway (t=222): 1\n\nTotal = **9 mugs",
+   "score": 0.0,
+   "spent": 3622,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "TRK",
+   "q": "How many books did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "4",
+   "pred": "From the provided keyframes, the letter **\"E\"** appears in the following images:\n\n- Bedroom (t=68): No\n- Bedroom (t=63): No\n- Bedroom (t=58): Yes (tray)\n- Bedroom (t=72): Yes (candle, soap, towel)\n- Bedroom (t=57): Yes (ruler, comb, belt, sock)\n- Living Room (t=138): No\n- Study (t=199): Yes (soap, mug, sock)\n- Hallway (t=2",
+   "score": 0.0,
+   "spent": 3621,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "TRK",
+   "q": "How many lamps did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "5",
+   "pred": "The lamps (marked with letter H) in the images are counted as follows:\n\n- Bedroom (t=68): 1 lamp (H)\n- Bedroom (t=63): 2 lamps (H, H)\n- Living room (t=138): 3 lamps (H, H, H)\n- Bedroom (t=58): 1 lamp (H)\n- Bedroom (t=72): 2 lamps (H, H)\n- Bedroom (t=57): 1 lamp (H)\n- Study (t=256): 1 lamp (",
+   "score": 25.0,
+   "spent": 3621,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "TRK",
+   "q": "How many vases did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "7",
+   "pred": "Across all keyframes, there are **6 instances** of a vase (pot).\n\nHere's the breakdown:\n- Bedroom t=68: 1 pot (A)\n- Bedroom t=63: 1 pot (C)\n- Living room t=138: 1 pot (F)\n- Bedroom t=72: 1 pot (C)\n- Bedroom t=59: 1 pot (F)\n- Bedroom t=81: 1 pot (G)",
+   "score": 75.0,
+   "spent": 3603,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "TRK",
+   "q": "Was the door open or closed at the end of the walkthrough?",
+   "gold": "closed",
+   "pred": "The last keyframe in the sequence (bedroom at t=58) shows the door as **closed**.",
+   "score": 100.0,
+   "spent": 3512,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "TRK",
+   "q": "How many times did the door change between open and closed? Answer with a number.",
+   "gold": "6",
+   "pred": "The door changes between open and closed **2 times**.\n\n(From closed at t=57 to open at t=138, then back to closed at t=256).",
+   "score": 25.0,
+   "spent": 3531,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  }
+ ]
+}

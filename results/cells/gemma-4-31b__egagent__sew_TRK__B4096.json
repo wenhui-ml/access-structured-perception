@@ -1,0 +1,444 @@
+{
+ "model": "gemma-4-31b",
+ "method": "egagent",
+ "bench": "sew",
+ "subset": "TRK",
+ "budget": 4096,
+ "tau_g": 0.0,
+ "judge_deferred": 5,
+ "mean": 62.5,
+ "items": [
+  {
+   "episode": "ep1",
+   "subset": "TRK",
+   "q": "How many mugs did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "7",
+   "pred": "7",
+   "score": 100.0,
+   "spent": 3679,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "TRK",
+   "q": "How many books did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "4",
+   "pred": "3",
+   "score": 0.0,
+   "spent": 3665,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "TRK",
+   "q": "How many lamps did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "9",
+   "pred": "8",
+   "score": 0.0,
+   "spent": 3677,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "TRK",
+   "q": "How many vases did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "7",
+   "pred": "7",
+   "score": 100.0,
+   "spent": 3678,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "TRK",
+   "q": "Was the door open or closed at the end of the walkthrough?",
+   "gold": "open",
+   "pred": "open",
+   "score": 100.0,
+   "spent": 3714,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "TRK",
+   "q": "How many times did the door change between open and closed? Answer with a number.",
+   "gold": "7",
+   "pred": "To determine how many times the door changed between \"open\" and \"closed,\" I need to analyze the temporal occurrences of these two states.\n\n1.  **Identify the \"closed\" state:** The node `closed` is present from frame 0 to 282.\n2.  **Identify the \"open\" state:** The node `open` is present from frame 36 to 299.\n3.  **Analyze the transition:**\n    *   From frame 0 to 35, only the `closed` state is active.\n    *   At frame 36, the `open` state begins. Since the `closed` state is also active until frame 282, this indicates a transition period or a change in state.\n    *   Looking at the edges for `belt` (which seems to be the primary actor/entity interacting with the environment):\n        *   `belt` is associated with `closed` from frames [0, 1, 2, 3].\n        *   `belt` is associated with `open` from frames [36, 37, 41, 42].\n    *   The state was \"closed",
+   "score": 0.0,
+   "spent": 3768,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "TRK",
+   "q": "How many mugs did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "8",
+   "pred": "6",
+   "score": 0.0,
+   "spent": 3633,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "TRK",
+   "q": "How many books did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "7",
+   "pred": "7",
+   "score": 100.0,
+   "spent": 3687,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "TRK",
+   "q": "How many lamps did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "6",
+   "pred": "6",
+   "score": 100.0,
+   "spent": 3632,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "TRK",
+   "q": "How many vases did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "4",
+   "pred": "4",
+   "score": 100.0,
+   "spent": 3617,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "TRK",
+   "q": "Was the door open or closed at the end of the walkthrough?",
+   "gold": "closed",
+   "pred": "To determine if the door was open or closed at the end of the walkthrough, I need to analyze the state of the \"open\" and \"closed\" nodes relative to the timeline of the scene graph.\n\n1.  **Identify the end of the walkthrough:** The maximum time index across all nodes is 299 (seen in nodes like `ruler`, `closed`, `belt`, `soap`, `towel`, `glass`, `bowl`, `candle`, `sock`, `fan`, `pot`, `tray`, `pen`, `comb`, `plate`, `cup`, `hat`, and `hallway`).\n2.  **Check the status of the \"open\" node:** The \"open\" node exists from `first: 71` to `last: 287`.\n3.  **Check the status of the \"closed\" node:** The \"closed\" node exists from `first: 0` to `last: 299`.\n4.  **Compare the time intervals:** At the end of the walkthrough (time 299), the \"open\" state had already ended (at 287), while the \"closed\" state persisted until the very end (299",
+   "score": 100.0,
+   "spent": 3729,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "TRK",
+   "q": "How many times did the door change between open and closed? Answer with a number.",
+   "gold": "6",
+   "pred": "To determine how many times the door changed between \"open\" and \"closed,\" I need to analyze the state transitions of the door (represented by the nodes \"open\" and \"closed\") relative to the entities or locations in the scene.\n\n1.  **Identify the \"closed\" state intervals:** The node \"closed\" is present from frame 0 to 299. Looking at the edges, \"closed\" is associated with almost every object and room throughout the sequence, indicating a general state of being closed for a significant portion of the timeline.\n2.  **Identify the \"open\" state intervals:** The node \"open\" appears from frame 71 to 287.\n3.  **Analyze the transition:**\n    *   From frame 0 to 70, the state is \"closed\" (as \"open\" does not exist yet).\n    *   At frame 71, the \"open\" node appears, indicating a transition from **closed to open**.\n    *   The \"open\" node persists until frame 287.\n    *   After frame 287, the \"open\" node disappears, while the \"closed\" node continues until frame 299,",
+   "score": 0.0,
+   "spent": 3733,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "TRK",
+   "q": "How many mugs did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "6",
+   "pred": "6",
+   "score": 100.0,
+   "spent": 3700,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "TRK",
+   "q": "How many books did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "7",
+   "pred": "7",
+   "score": 100.0,
+   "spent": 3698,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "TRK",
+   "q": "How many lamps did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "6",
+   "pred": "6",
+   "score": 100.0,
+   "spent": 3739,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "TRK",
+   "q": "How many vases did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "3",
+   "pred": "3",
+   "score": 100.0,
+   "spent": 3726,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "TRK",
+   "q": "Was the door open or closed at the end of the walkthrough?",
+   "gold": "open",
+   "pred": "open",
+   "score": 100.0,
+   "spent": 3764,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "TRK",
+   "q": "How many times did the door change between open and closed? Answer with a number.",
+   "gold": "9",
+   "pred": "To determine how many times the door changed between \"open\" and \"closed,\" we need to analyze the time intervals associated with the \"open\" and \"closed\" nodes in the entity scene graph.\n\n1.  **Analyze the \"closed\" node:**\n    *   The \"closed\" node exists from time 0 to 293.\n    *   Looking at the edges, \"closed\" is associated with various objects (comb, rug, soap, etc.) during the early frames (e.g., $t = [0, 1, 2, 3, 4]$).\n\n2.  **Analyze the \"open\" node:**\n    *   The \"open\" node exists from time 5 to 299.\n    *   Looking at the edges, \"open\" starts appearing at $t = 5$ (e.g., comb at $t=5$, rug at $t=6$, soap at $t=5$).\n\n3.  **Identify the transition:**\n    *   The state was \"closed\" from $t=0$ to $t=4$.\n    *   The state transitioned to \"open\" starting at $t=5$.\n    ",
+   "score": 0.0,
+   "spent": 3795,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "TRK",
+   "q": "How many mugs did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "4",
+   "pred": "4",
+   "score": 100.0,
+   "spent": 3663,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "TRK",
+   "q": "How many books did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "4",
+   "pred": "3",
+   "score": 0.0,
+   "spent": 3671,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "TRK",
+   "q": "How many lamps did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "5",
+   "pred": "4",
+   "score": 0.0,
+   "spent": 3670,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "TRK",
+   "q": "How many vases did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "7",
+   "pred": "To determine the total number of vases seen during the walkthrough, I need to analyze the entity scene graph.\n\n1.  **Identify the \"vase\" node**: I look for the node labeled \"vase\" in the provided scene graph.\n2.  **Analyze the node data**: The node `{\"vase\": {\"first\": 99, \"last\": 241, \"n\": 7}}` indicates that the entity \"vase\" was detected.\n3.  **Interpret the \"n\" value**: In this scene graph format, the \"n\" value typically represents the number of frames or instances the object was present. However, the question asks for the total number of vases seen. Looking at the structure, \"n\" represents the count of detections/frames. Since there is only one node for \"vase\", it refers to a single unique entity type.\n4.  **Verify if multiple vases exist**: The scene graph lists entities as unique nodes. If there were multiple distinct vases, they would typically be listed as `vase_1`, `vase_2`, etc., or the \"n\" would be interpreted as the count of frames for a single object. Since there is only one \"vase\" node, it represents one",
+   "score": 100.0,
+   "spent": 3758,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "TRK",
+   "q": "Was the door open or closed at the end of the walkthrough?",
+   "gold": "closed",
+   "pred": "closed",
+   "score": 100.0,
+   "spent": 3748,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "TRK",
+   "q": "How many times did the door change between open and closed? Answer with a number.",
+   "gold": "6",
+   "pred": "",
+   "score": 0.0,
+   "spent": 3757,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  }
+ ]
+}

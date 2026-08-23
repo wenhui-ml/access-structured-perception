@@ -1,0 +1,444 @@
+{
+ "model": "qwen3.8-27b",
+ "method": "uniform16",
+ "bench": "sew",
+ "subset": "TRK",
+ "budget": 1024,
+ "tau_g": 0.0,
+ "judge_deferred": 2,
+ "mean": 18.75,
+ "items": [
+  {
+   "episode": "ep1",
+   "subset": "TRK",
+   "q": "How many mugs did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "7",
+   "pred": "0",
+   "score": 0.0,
+   "spent": 657,
+   "n_calls": 2,
+   "w_realised": 2,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "TRK",
+   "q": "How many books did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "4",
+   "pred": "Based on the labels provided in the frames, there are no objects identified as \"books\". The objects listed include items like a belt, ruler, soap, bowl, plate, fork, comb, cup, pen, glass, towel, hat, candle, sock, fan, spoon, pot, rug, brush, and tray.\n\nTherefore, the total number of books seen is 0.\n\n0",
+   "score": 0.0,
+   "spent": 736,
+   "n_calls": 2,
+   "w_realised": 2,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "TRK",
+   "q": "How many lamps did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "9",
+   "pred": "Based on the labels provided in the frames, there is one object labeled \"fan\" in the second frame (living room). There are no objects explicitly labeled \"lamp\" in either frame.\n\nTherefore, the number of lamps seen is 0.\n\n0",
+   "score": 0.0,
+   "spent": 707,
+   "n_calls": 2,
+   "w_realised": 2,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "TRK",
+   "q": "How many vases did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "7",
+   "pred": "0",
+   "score": 0.0,
+   "spent": 657,
+   "n_calls": 2,
+   "w_realised": 2,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "TRK",
+   "q": "Was the door open or closed at the end of the walkthrough?",
+   "gold": "open",
+   "pred": "open",
+   "score": 100.0,
+   "spent": 651,
+   "n_calls": 2,
+   "w_realised": 2,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "TRK",
+   "q": "How many times did the door change between open and closed? Answer with a number.",
+   "gold": "7",
+   "pred": "1",
+   "score": 0.0,
+   "spent": 655,
+   "n_calls": 2,
+   "w_realised": 2,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "TRK",
+   "q": "How many mugs did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "8",
+   "pred": "0",
+   "score": 0.0,
+   "spent": 657,
+   "n_calls": 2,
+   "w_realised": 2,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "TRK",
+   "q": "How many books did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "7",
+   "pred": "0",
+   "score": 0.0,
+   "spent": 656,
+   "n_calls": 2,
+   "w_realised": 2,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "TRK",
+   "q": "How many lamps did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "6",
+   "pred": "Based on the labels provided in the frames:\n\n*   **Frame 1 (Living Room):** There is one object labeled \"candle\" (which functions as a lamp/light source in this context).\n*   **Frame 2 (Hallway):** There is one object labeled \"candle\".\n\nTotal count of lamps/candles seen: 1 + 1 = 2.\n\n2",
+   "score": 25.0,
+   "spent": 736,
+   "n_calls": 2,
+   "w_realised": 2,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "TRK",
+   "q": "How many vases did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "4",
+   "pred": "Based on the labels provided in the frames:\n\n*   **Frame 1 (Living Room):** There is one object labeled \"pot\" (top-left).\n*   **Frame 2 (Hallway):** There is one object labeled \"pot\" (middle-left, second row).\n\nThe question asks for the number of **vases**. In these types of visual datasets, \"pot\" is often used as a synonym or category for vases/pots. Assuming \"pot\" refers to the vase-like objects in question:\n\n1.  One pot in the living room.\n2.  One pot in the hallway.",
+   "score": 25.0,
+   "spent": 783,
+   "n_calls": 2,
+   "w_realised": 2,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "TRK",
+   "q": "Was the door open or closed at the end of the walkthrough?",
+   "gold": "closed",
+   "pred": "closed",
+   "score": 100.0,
+   "spent": 651,
+   "n_calls": 2,
+   "w_realised": 2,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "TRK",
+   "q": "How many times did the door change between open and closed? Answer with a number.",
+   "gold": "6",
+   "pred": "0",
+   "score": 0.0,
+   "spent": 655,
+   "n_calls": 2,
+   "w_realised": 2,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "TRK",
+   "q": "How many mugs did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "6",
+   "pred": "0",
+   "score": 0.0,
+   "spent": 657,
+   "n_calls": 2,
+   "w_realised": 2,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "TRK",
+   "q": "How many books did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "7",
+   "pred": "0",
+   "score": 0.0,
+   "spent": 656,
+   "n_calls": 2,
+   "w_realised": 2,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "TRK",
+   "q": "How many lamps did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "6",
+   "pred": "Based on the labels provided in the frames, there are no objects labeled as \"lamp\". The objects identified are: sock, pot, ruler, towel, tray, glass, soap, rug, spoon, comb, plate, belt, bowl, fork, candle, cup, fan, brush, and hat.\n\nTherefore, the number of lamps seen is 0.\n\n0",
+   "score": 0.0,
+   "spent": 731,
+   "n_calls": 2,
+   "w_realised": 2,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "TRK",
+   "q": "How many vases did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "3",
+   "pred": "0",
+   "score": 0.0,
+   "spent": 657,
+   "n_calls": 2,
+   "w_realised": 2,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "TRK",
+   "q": "Was the door open or closed at the end of the walkthrough?",
+   "gold": "open",
+   "pred": "open",
+   "score": 100.0,
+   "spent": 651,
+   "n_calls": 2,
+   "w_realised": 2,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "TRK",
+   "q": "How many times did the door change between open and closed? Answer with a number.",
+   "gold": "9",
+   "pred": "1",
+   "score": 0.0,
+   "spent": 655,
+   "n_calls": 2,
+   "w_realised": 2,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "TRK",
+   "q": "How many mugs did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "4",
+   "pred": "0",
+   "score": 0.0,
+   "spent": 657,
+   "n_calls": 2,
+   "w_realised": 2,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "TRK",
+   "q": "How many books did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "4",
+   "pred": "Based on the labels provided in the images, there are no objects identified as \"books\". The objects listed are: glass, pot, fan, towel, tray, ruler, belt, comb, brush, plate, rug, pen, candle, hat, sock, soap, bowl, cup, and fork.\n\nTherefore, the total number of books seen is 0.\n\n0",
+   "score": 0.0,
+   "spent": 732,
+   "n_calls": 2,
+   "w_realised": 2,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "TRK",
+   "q": "How many lamps did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "5",
+   "pred": "0",
+   "score": 0.0,
+   "spent": 656,
+   "n_calls": 2,
+   "w_realised": 2,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "TRK",
+   "q": "How many vases did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "7",
+   "pred": "0",
+   "score": 0.0,
+   "spent": 657,
+   "n_calls": 2,
+   "w_realised": 2,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "TRK",
+   "q": "Was the door open or closed at the end of the walkthrough?",
+   "gold": "closed",
+   "pred": "closed",
+   "score": 100.0,
+   "spent": 651,
+   "n_calls": 2,
+   "w_realised": 2,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "TRK",
+   "q": "How many times did the door change between open and closed? Answer with a number.",
+   "gold": "6",
+   "pred": "0",
+   "score": 0.0,
+   "spent": 655,
+   "n_calls": 2,
+   "w_realised": 2,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  }
+ ]
+}

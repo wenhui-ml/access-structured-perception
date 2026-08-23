@@ -1,0 +1,373 @@
+{
+  "_meta": {
+    "status": "REGISTERED. All values are pre-registered predictions frozen before measurement.",
+    "budget_tokens": 4096,
+    "interval_note": "pm = registered 90% prediction interval",
+    "how_to_backfill": "Run scripts/run_eval.py -> results/measured.json, then analysis/make_tables.py regenerates paper/asp/tables/*.tex using measured values (no dagger) wherever present.",
+    "serving": "PRIMARY: local vLLM on B300, BF16, pinned revision, prefix-cache off, bs=1, temp=0. SECONDARY: OpenRouter replication arm. Registered local-vs-API delta <= 1.5 pts MAD/cell.",
+    "statistics": "Paired per-question deltas, one-sided Wilcoxon alpha=0.01; registered min effects: ASP-Uniform >= +6 OpenEQA, >= +35 EW-RET."
+  },
+  "benchmarks": [
+    "OpenEQA",
+    "VSI-Bench",
+    "EgoSchema",
+    "EW-RET",
+    "EW-TRK",
+    "EW-CMP"
+  ],
+  "main": {
+    "qwen3.8-27b": {
+      "blind": {
+        "pred": [
+          34.1,
+          24.0,
+          29.5,
+          20.3,
+          31.0,
+          24.8
+        ],
+        "pm": [
+          2,
+          2,
+          3,
+          2,
+          3,
+          3
+        ]
+      },
+      "uniform16": {
+        "pred": [
+          52.6,
+          38.5,
+          62.0,
+          34.6,
+          47.2,
+          38.9
+        ],
+        "pm": [
+          3,
+          3,
+          3,
+          4,
+          4,
+          4
+        ]
+      },
+      "retr_only": {
+        "pred": [
+          57.1,
+          39.8,
+          63.4,
+          74.5,
+          49.6,
+          46.0
+        ],
+        "pm": [
+          3,
+          3,
+          3,
+          4,
+          4,
+          4
+        ]
+      },
+      "state_only": {
+        "pred": [
+          55.4,
+          41.2,
+          61.1,
+          27.9,
+          71.8,
+          44.1
+        ],
+        "pm": [
+          3,
+          3,
+          3,
+          4,
+          4,
+          4
+        ]
+      },
+      "egagent_reimpl": {
+        "pred": [
+          58.9,
+          42.1,
+          64.0,
+          76.1,
+          58.3,
+          55.6
+        ],
+        "pm": [
+          3,
+          3,
+          3,
+          4,
+          4,
+          4
+        ],
+        "note": "text-only entity graph + search tools under our budget accounting; registered to trail ASP on EW-TRK (compressive text graph discards verbatim appearance -> Thm 1) and EW-CMP (implicit budget)"
+      },
+      "asp": {
+        "pred": [
+          62.3,
+          46.0,
+          66.8,
+          80.2,
+          74.5,
+          63.7
+        ],
+        "pm": [
+          3,
+          3,
+          3,
+          4,
+          4,
+          4
+        ]
+      }
+    },
+    "gemma-4-31b": {
+      "uniform16": {
+        "pred": [
+          53.4,
+          39.0,
+          63.1,
+          35.2,
+          48.0,
+          39.5
+        ],
+        "pm": [
+          3,
+          3,
+          3,
+          4,
+          4,
+          4
+        ]
+      },
+      "asp": {
+        "pred": [
+          62.9,
+          46.6,
+          67.5,
+          80.8,
+          75.0,
+          64.2
+        ],
+        "pm": [
+          3,
+          3,
+          3,
+          4,
+          4,
+          4
+        ]
+      }
+    },
+    "qwen3-omni-30b-a3b": {
+      "uniform16": {
+        "pred": [
+          50.8,
+          36.9,
+          60.7,
+          33.5,
+          45.9,
+          37.4
+        ],
+        "pm": [
+          3,
+          3,
+          3,
+          4,
+          4,
+          4
+        ]
+      },
+      "asp": {
+        "pred": [
+          60.5,
+          44.3,
+          65.0,
+          78.6,
+          72.9,
+          61.8
+        ],
+        "pm": [
+          3,
+          3,
+          3,
+          4,
+          4,
+          4
+        ]
+      }
+    },
+    "qwen3-vl-8b": {
+      "uniform16": {
+        "pred": [
+          46.2,
+          33.1,
+          55.8,
+          30.7,
+          42.3,
+          33.6
+        ],
+        "pm": [
+          3,
+          3,
+          3,
+          4,
+          4,
+          4
+        ]
+      },
+      "asp": {
+        "pred": [
+          59.4,
+          42.7,
+          62.9,
+          76.9,
+          70.6,
+          58.4
+        ],
+        "pm": [
+          3,
+          3,
+          3,
+          4,
+          4,
+          4
+        ]
+      }
+    },
+    "qwen2.5-vl-7b": {
+      "uniform16": {
+        "pred": [
+          44.5,
+          31.8,
+          53.6,
+          29.4,
+          40.8,
+          32.1
+        ],
+        "pm": [
+          3,
+          3,
+          3,
+          4,
+          4,
+          4
+        ]
+      },
+      "asp": {
+        "pred": [
+          57.8,
+          41.2,
+          60.7,
+          75.3,
+          68.9,
+          56.2
+        ],
+        "pm": [
+          3,
+          3,
+          3,
+          4,
+          4,
+          4
+        ]
+      }
+    }
+  },
+  "ablation_backbone": "qwen3.8-27b",
+  "ablation_benchmarks": [
+    "OpenEQA",
+    "EW-RET",
+    "EW-TRK",
+    "EW-CMP"
+  ],
+  "ablation": {
+    "full": {
+      "pred": [
+        62.3,
+        80.2,
+        74.5,
+        63.7
+      ]
+    },
+    "no_cv": {
+      "pred": [
+        56.0,
+        28.4,
+        73.6,
+        49.5
+      ],
+      "collapse": "EW-RET"
+    },
+    "no_cs": {
+      "pred": [
+        57.6,
+        79.5,
+        50.1,
+        52.8
+      ],
+      "collapse": "EW-TRK"
+    },
+    "no_router": {
+      "pred": [
+        59.1,
+        74.8,
+        69.7,
+        58.6
+      ]
+    },
+    "r1": {
+      "pred": [
+        59.8,
+        78.9,
+        72.4,
+        45.3
+      ],
+      "collapse": "EW-CMP"
+    },
+    "r5": {
+      "pred": [
+        62.6,
+        80.4,
+        74.8,
+        66.1
+      ]
+    },
+    "random_retr": {
+      "pred": [
+        55.2,
+        41.7,
+        72.9,
+        51.4
+      ]
+    }
+  },
+  "probes": {
+    "qwen3.8-27b": {
+      "attr": 0.96,
+      "step": 0.93
+    },
+    "gemma-4-31b": {
+      "attr": 0.96,
+      "step": 0.93
+    },
+    "qwen3-omni-30b-a3b": {
+      "attr": 0.94,
+      "step": 0.91
+    },
+    "qwen3-vl-8b": {
+      "attr": 0.93,
+      "step": 0.9
+    },
+    "qwen2.5-vl-7b": {
+      "attr": 0.92,
+      "step": 0.88
+    }
+  }
+}

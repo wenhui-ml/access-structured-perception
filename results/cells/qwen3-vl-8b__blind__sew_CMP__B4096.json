@@ -1,0 +1,444 @@
+{
+ "model": "qwen3-vl-8b",
+ "method": "blind",
+ "bench": "sew",
+ "subset": "CMP",
+ "budget": 4096,
+ "tau_g": 0.0,
+ "judge_deferred": 12,
+ "mean": 16.67,
+ "items": [
+  {
+   "episode": "ep1",
+   "subset": "CMP",
+   "q": "You saw a clock exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "red",
+   "pred": "The clock was **black** \u2014 because it\u2019s a *clock*, not a *colourful* object, and the question implies you\u2019re referring to a literal clock (not a metaphor). But wait \u2014 that\u2019s not quite right.\n\nActually, the trick is: **You saw a clock exactly three times**, each in",
+   "score": 0.0,
+   "spent": 102,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "CMP",
+   "q": "You saw a radio exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "yellow",
+   "pred": "The radio was **not** a color \u2014 it was a **radio**, so it doesn\u2019t have a color in the context of the question. But if you\u2019re asking for the *color* of the radio the second time, and assuming it\u2019s a standard radio (black, silver, etc.), then:\n\n> **",
+   "score": 0.0,
+   "spent": 102,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "CMP",
+   "q": "You saw a globe exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "green",
+   "pred": "The globe was **blue** \u2014 because it\u2019s a globe, and globes are typically blue (representing oceans). The color doesn\u2019t change based on the room or how many times you\u2019ve seen it. \ud83d\ude0a\n\n*(Assuming \u201cglobe\u201d refers to Earth\u2019s globe \u2014 not a literal colored object.",
+   "score": 0.0,
+   "spent": 102,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "CMP",
+   "q": "You saw a statue exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "red",
+   "pred": "The statue was **silver** \u2014 because it\u2019s a *statue*, and statues are typically made of materials like silver, bronze, or stone. But the key is: **you saw it three times in different rooms**, and the question asks for the colour the *second time*. Since no specific colour was given,",
+   "score": 0.0,
+   "spent": 102,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "CMP",
+   "q": "Did you see the sieve before or after the stapler? Answer 'before' or 'after'.",
+   "gold": "before",
+   "pred": "before",
+   "score": 100.0,
+   "spent": 35,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "CMP",
+   "q": "Did you see the trivet before or after the colander? Answer 'before' or 'after'.",
+   "gold": "after",
+   "pred": "before",
+   "score": 0.0,
+   "spent": 36,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "CMP",
+   "q": "You saw a clock exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "green",
+   "pred": "The clock was **black** \u2014 because it\u2019s a *clock*, not a *colourful* object, and the question implies you\u2019re referring to a literal clock (not a metaphor). But wait \u2014 that\u2019s not quite right.\n\nActually, the trick is: **You saw a clock exactly three times**, each in",
+   "score": 0.0,
+   "spent": 102,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "CMP",
+   "q": "You saw a radio exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "yellow",
+   "pred": "The radio was **not** a color \u2014 it was a **radio**, so it doesn\u2019t have a color in the context of the question. But if you\u2019re asking for the *color* of the radio the second time, and assuming it\u2019s a standard radio (black, silver, etc.), then:\n\n> **",
+   "score": 0.0,
+   "spent": 102,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "CMP",
+   "q": "You saw a globe exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "blue",
+   "pred": "The globe was **blue** \u2014 because it\u2019s a globe, and globes are typically blue (representing oceans). The color doesn\u2019t change based on the room or how many times you\u2019ve seen it. \ud83d\ude0a\n\n*(Assuming \u201cglobe\u201d refers to Earth\u2019s globe \u2014 not a literal colored object.",
+   "score": 100.0,
+   "spent": 102,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "CMP",
+   "q": "You saw a statue exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "purple",
+   "pred": "The statue was **silver** \u2014 because it\u2019s a *statue*, and statues are typically made of materials like silver, bronze, or stone. But the key is: **you saw it three times in different rooms**, and the question asks for the colour the *second time*. Since no specific colour was given,",
+   "score": 0.0,
+   "spent": 102,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "CMP",
+   "q": "Did you see the kettle before or after the thermos? Answer 'before' or 'after'.",
+   "gold": "after",
+   "pred": "before",
+   "score": 0.0,
+   "spent": 35,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "CMP",
+   "q": "Did you see the ladle before or after the colander? Answer 'before' or 'after'.",
+   "gold": "after",
+   "pred": "before",
+   "score": 0.0,
+   "spent": 36,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "CMP",
+   "q": "You saw a clock exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "brown",
+   "pred": "The clock was **black** \u2014 because it\u2019s a *clock*, not a *colourful* object, and the question implies you\u2019re referring to a literal clock (not a metaphor). But wait \u2014 that\u2019s not quite right.\n\nActually, the trick is: **You saw a clock exactly three times**, each in",
+   "score": 0.0,
+   "spent": 102,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "CMP",
+   "q": "You saw a radio exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "purple",
+   "pred": "The radio was **not** a color \u2014 it was a **radio**, so it doesn\u2019t have a color in the context of the question. But if you\u2019re asking for the *color* of the radio the second time, and assuming it\u2019s a standard radio (black, silver, etc.), then:\n\n> **",
+   "score": 0.0,
+   "spent": 102,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "CMP",
+   "q": "You saw a globe exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "red",
+   "pred": "The globe was **blue** \u2014 because it\u2019s a globe, and globes are typically blue (representing oceans). The color doesn\u2019t change based on the room or how many times you\u2019ve seen it. \ud83d\ude0a\n\n*(Assuming \u201cglobe\u201d refers to Earth\u2019s globe \u2014 not a literal colored object.",
+   "score": 0.0,
+   "spent": 102,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "CMP",
+   "q": "You saw a statue exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "blue",
+   "pred": "The statue was **silver** \u2014 because it\u2019s a *statue*, and statues are typically made of materials like silver, bronze, or stone. But the key is: **you saw it three times in different rooms**, and the question asks for the colour the *second time*. Since no specific colour was given,",
+   "score": 0.0,
+   "spent": 102,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "CMP",
+   "q": "Did you see the trivet before or after the whisk? Answer 'before' or 'after'.",
+   "gold": "before",
+   "pred": "after",
+   "score": 0.0,
+   "spent": 35,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "CMP",
+   "q": "Did you see the mortar before or after the teapot? Answer 'before' or 'after'.",
+   "gold": "before",
+   "pred": "before",
+   "score": 100.0,
+   "spent": 35,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "CMP",
+   "q": "You saw a clock exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "purple",
+   "pred": "The clock was **black** \u2014 because it was **black** the **second** time you saw it.\n\n*(This is a trick question \u2014 the color is implied to be black because clocks are typically black, and the question is designed to make you overthink. But the answer is simply: black.)*\n\n\u2705",
+   "score": 0.0,
+   "spent": 102,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "CMP",
+   "q": "You saw a radio exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "white",
+   "pred": "The radio was **not** a color \u2014 it was a **radio**, so it doesn\u2019t have a color in the context of the question. But if you\u2019re asking for the *color* of the radio the second time, and assuming it\u2019s a standard radio (black, silver, etc.), then:\n\n> **",
+   "score": 0.0,
+   "spent": 102,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "CMP",
+   "q": "You saw a globe exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "yellow",
+   "pred": "The globe was **blue** \u2014 because it\u2019s a globe, and globes are typically blue (representing oceans). The color doesn\u2019t change based on the room or how many times you\u2019ve seen it. \ud83d\ude0a\n\n*(Assuming \u201cglobe\u201d refers to Earth\u2019s globe \u2014 not a literal colored object.",
+   "score": 0.0,
+   "spent": 102,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "CMP",
+   "q": "You saw a statue exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "brown",
+   "pred": "The statue was **silver** \u2014 because it\u2019s a *statue*, and statues are typically made of materials like silver, bronze, or stone. But the key is: **you saw it three times in different rooms**, and the question asks for the colour the *second time*. Since no specific colour was given,",
+   "score": 0.0,
+   "spent": 102,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "CMP",
+   "q": "Did you see the sieve before or after the tongs? Answer 'before' or 'after'.",
+   "gold": "after",
+   "pred": "before",
+   "score": 0.0,
+   "spent": 35,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "CMP",
+   "q": "Did you see the whisk before or after the stapler? Answer 'before' or 'after'.",
+   "gold": "before",
+   "pred": "before",
+   "score": 100.0,
+   "spent": 35,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  }
+ ]
+}

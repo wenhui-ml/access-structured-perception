@@ -1,0 +1,26 @@
+{
+  "main": {
+    "qwen3.8-27b": {
+      "uniform16": {
+        "measured": [
+          null,
+          null,
+          null,
+          0.0,
+          16.7,
+          21.9
+        ]
+      },
+      "asp": {
+        "measured": [
+          null,
+          null,
+          null,
+          53.1,
+          4.2,
+          29.2
+        ]
+      }
+    }
+  }
+}

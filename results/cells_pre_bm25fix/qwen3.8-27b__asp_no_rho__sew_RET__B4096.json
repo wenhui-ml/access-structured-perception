@@ -1,0 +1,556 @@
+{
+ "model": "qwen3.8-27b",
+ "method": "asp_no_rho",
+ "bench": "sew",
+ "subset": "RET",
+ "budget": 4096,
+ "tau_g": 0.0,
+ "judge_deferred": 15,
+ "mean": 3.12,
+ "items": [
+  {
+   "episode": "ep1",
+   "subset": "RET",
+   "q": "You saw a sieve exactly once during the walkthrough. What colour was it?",
+   "gold": "green",
+   "pred": "Silver",
+   "score": 0.0,
+   "spent": 4046,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.252,
+    "Br": 0.247,
+    "Bc": 0.501,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "RET",
+   "q": "You saw a stapler exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "C",
+   "pred": "ANSWER: Unknown",
+   "score": 0.0,
+   "spent": 4122,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.249,
+    "Br": 0.246,
+    "Bc": 0.505,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "RET",
+   "q": "You saw a colander exactly once during the walkthrough. What colour was it?",
+   "gold": "green",
+   "pred": "red",
+   "score": 0.0,
+   "spent": 2927,
+   "n_calls": 4,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.318,
+    "Br": 0.311,
+    "Bc": 0.371,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "RET",
+   "q": "You saw a trivet exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "B",
+   "pred": "A",
+   "score": 0.0,
+   "spent": 4162,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.247,
+    "Br": 0.263,
+    "Bc": 0.49,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "RET",
+   "q": "You saw a kettle exactly once during the walkthrough. What colour was it?",
+   "gold": "green",
+   "pred": "red",
+   "score": 0.0,
+   "spent": 3308,
+   "n_calls": 4,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.292,
+    "Br": 0.287,
+    "Bc": 0.421,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "RET",
+   "q": "You saw a teapot exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "D",
+   "pred": "G",
+   "score": 0.0,
+   "spent": 3879,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.26,
+    "Br": 0.277,
+    "Bc": 0.463,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "RET",
+   "q": "You saw a ladle exactly once during the walkthrough. What colour was it?",
+   "gold": "red",
+   "pred": "Cannot be determined",
+   "score": 0.0,
+   "spent": 2518,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.352,
+    "Br": 0.332,
+    "Bc": 0.317,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "RET",
+   "q": "You saw a thermos exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "E",
+   "pred": "Cannot be determined",
+   "score": 0.0,
+   "spent": 2892,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.465,
+    "Bc": 0.535,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "RET",
+   "q": "You saw a thermos exactly once during the walkthrough. What colour was it?",
+   "gold": "yellow",
+   "pred": "red",
+   "score": 0.0,
+   "spent": 3088,
+   "n_calls": 4,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.307,
+    "Br": 0.302,
+    "Bc": 0.392,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "RET",
+   "q": "You saw a kettle exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "E",
+   "pred": "A",
+   "score": 0.0,
+   "spent": 2405,
+   "n_calls": 4,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.564,
+    "Bc": 0.436,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "RET",
+   "q": "You saw a colander exactly once during the walkthrough. What colour was it?",
+   "gold": "green",
+   "pred": "red",
+   "score": 0.0,
+   "spent": 3069,
+   "n_calls": 4,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.308,
+    "Br": 0.304,
+    "Bc": 0.388,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "RET",
+   "q": "You saw a ladle exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "G",
+   "pred": "B",
+   "score": 0.0,
+   "spent": 3044,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.31,
+    "Br": 0.306,
+    "Bc": 0.385,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "RET",
+   "q": "You saw a whisk exactly once during the walkthrough. What colour was it?",
+   "gold": "purple",
+   "pred": "silver",
+   "score": 0.0,
+   "spent": 2849,
+   "n_calls": 4,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.324,
+    "Br": 0.318,
+    "Bc": 0.358,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "RET",
+   "q": "You saw a decanter exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "C",
+   "pred": "W",
+   "score": 0.0,
+   "spent": 2874,
+   "n_calls": 4,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.322,
+    "Br": 0.319,
+    "Bc": 0.359,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "RET",
+   "q": "You saw a mortar exactly once during the walkthrough. What colour was it?",
+   "gold": "blue",
+   "pred": "White",
+   "score": 0.0,
+   "spent": 3851,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.262,
+    "Br": 0.257,
+    "Bc": 0.482,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "RET",
+   "q": "You saw a tongs exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "E",
+   "pred": "T",
+   "score": 0.0,
+   "spent": 3752,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.267,
+    "Br": 0.253,
+    "Bc": 0.481,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "RET",
+   "q": "You saw a trivet exactly once during the walkthrough. What colour was it?",
+   "gold": "purple",
+   "pred": "green",
+   "score": 0.0,
+   "spent": 2803,
+   "n_calls": 4,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.327,
+    "Br": 0.324,
+    "Bc": 0.348,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "RET",
+   "q": "You saw a whisk exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "B",
+   "pred": "B",
+   "score": 100.0,
+   "spent": 3445,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.284,
+    "Br": 0.27,
+    "Bc": 0.447,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "RET",
+   "q": "You saw a mortar exactly once during the walkthrough. What colour was it?",
+   "gold": "purple",
+   "pred": "Not visible",
+   "score": 0.0,
+   "spent": 3889,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.26,
+    "Br": 0.255,
+    "Bc": 0.485,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "RET",
+   "q": "You saw a teapot exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "E",
+   "pred": "A",
+   "score": 0.0,
+   "spent": 4148,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.248,
+    "Br": 0.263,
+    "Bc": 0.489,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "RET",
+   "q": "You saw a colander exactly once during the walkthrough. What colour was it?",
+   "gold": "brown",
+   "pred": "red",
+   "score": 0.0,
+   "spent": 2987,
+   "n_calls": 4,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.314,
+    "Br": 0.307,
+    "Bc": 0.379,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "RET",
+   "q": "You saw a ladle exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "A",
+   "pred": "B",
+   "score": 0.0,
+   "spent": 4015,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.254,
+    "Br": 0.27,
+    "Bc": 0.476,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "RET",
+   "q": "You saw a tongs exactly once during the walkthrough. What colour was it?",
+   "gold": "purple",
+   "pred": "silver",
+   "score": 0.0,
+   "spent": 2726,
+   "n_calls": 4,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.334,
+    "Br": 0.32,
+    "Bc": 0.346,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "RET",
+   "q": "You saw a stapler exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "A",
+   "pred": "F",
+   "score": 0.0,
+   "spent": 3019,
+   "n_calls": 4,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.311,
+    "Br": 0.325,
+    "Bc": 0.364,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "RET",
+   "q": "You saw a tongs exactly once during the walkthrough. What colour was it?",
+   "gold": "green",
+   "pred": "Unknown",
+   "score": 0.0,
+   "spent": 3726,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.268,
+    "Br": 0.263,
+    "Bc": 0.469,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "RET",
+   "q": "You saw a sieve exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "B",
+   "pred": "S",
+   "score": 0.0,
+   "spent": 2822,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.326,
+    "Br": 0.321,
+    "Bc": 0.353,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "RET",
+   "q": "You saw a whisk exactly once during the walkthrough. What colour was it?",
+   "gold": "green",
+   "pred": "red",
+   "score": 0.0,
+   "spent": 3905,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.259,
+    "Br": 0.248,
+    "Bc": 0.493,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "RET",
+   "q": "You saw a stapler exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "F",
+   "pred": "S",
+   "score": 0.0,
+   "spent": 3349,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.29,
+    "Br": 0.286,
+    "Bc": 0.424,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "RET",
+   "q": "You saw a trivet exactly once during the walkthrough. What colour was it?",
+   "gold": "brown",
+   "pred": "Not found",
+   "score": 0.0,
+   "spent": 4028,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.253,
+    "Br": 0.249,
+    "Bc": 0.498,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "RET",
+   "q": "You saw a mortar exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "H",
+   "pred": "M",
+   "score": 0.0,
+   "spent": 4179,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.246,
+    "Br": 0.251,
+    "Bc": 0.502,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "RET",
+   "q": "You saw a colander exactly once during the walkthrough. What colour was it?",
+   "gold": "red",
+   "pred": "Cannot be determined",
+   "score": 0.0,
+   "spent": 3393,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.287,
+    "Br": 0.281,
+    "Bc": 0.432,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "RET",
+   "q": "You saw a teapot exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "B",
+   "pred": "A",
+   "score": 0.0,
+   "spent": 4188,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.246,
+    "Br": 0.262,
+    "Bc": 0.493,
+    "rho": 0.0
+   }
+  }
+ ]
+}

@@ -1,0 +1,420 @@
+{
+ "model": "ministral-3b",
+ "method": "egagent",
+ "bench": "sew",
+ "subset": "TRK",
+ "budget": 4096,
+ "tau_g": 0.0,
+ "judge_deferred": 22,
+ "mean": 36.46,
+ "items": [
+  {
+   "episode": "ep1",
+   "subset": "TRK",
+   "q": "How many mugs did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "7",
+   "pred": "204",
+   "score": 0.0,
+   "spent": 3668,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "TRK",
+   "q": "How many books did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "4",
+   "pred": "Let's decompose this into subtasks to answer the question:\n\n1. **Identify the node \"book\" in the nodes list**:\n   - The node \"book\" has `first: 123`, `last: 190`, and `n: 2`.\n   - This means \"book\" appears in the scene graph between time 123 and 190, and it is observed 2 times (`n: 2`).\n\n2. **Check if there are any edges involving \"book\"**:\n   - The edges list does not contain any edges where \"book\" is either `a` or `b`, so no additional observations are provided about interactions involving \"book\".\n\n3. **Summarize observations**:\n   - The total count of \"book\" nodes observed is given directly by `n: 2`.\n\nSince the question is about the total number of books seen, and the graph explicitly states `n: 2` for the \"book\" node, no further visual verification is needed.\n\n**ANSWER: 2**",
+   "score": 25.0,
+   "spent": 3721,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "TRK",
+   "q": "How many lamps did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "9",
+   "pred": "Let's decompose this into subtasks to answer the question:\n\n1. **Identify all nodes related to \"lamp\"**:\n   - From the nodes list, we see `lamp` with `first: 42, last: 276, n: 9`.\n   - This means the lamp was present in the scene from time 42 to 276, and it was observed 9 times.\n\n2. **Check for any other lamp-related nodes**:\n   - No other nodes are named \"lamp\" or similar (e.g., \"lamps\", \"light\").\n   - The `n` value for `lamp` is 9, which is the count of observations.\n\n3. **No visual verification needed** (since the data is explicit).\n\n**Answer**: The total number of lamps observed is **9**. The `n` value for the `lamp` node directly gives this count.\n\n**Final Answer**: ANSWER: 9",
+   "score": 100.0,
+   "spent": 3705,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "TRK",
+   "q": "How many vases did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "7",
+   "pred": "Let's decompose this step-by-step:\n\n1. **Identify the vase node**:\n   - The vase node is present in the graph with the following details:\n     - `{\"vase\": {\"first\": 43, \"last\": 253, \"n\": 6}}`\n     - This means the vase was seen from time 43 to 253, and the total count of vase observations is 6.\n\n2. **Interpretation**:\n   - The `n` value (6) represents the total number of times the vase was observed during the entire walkthrough.\n\nNo further decomposition or visual verification is needed.\n\n**Answer**: 6",
+   "score": 75.0,
+   "spent": 3642,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "TRK",
+   "q": "Was the door open or closed at the end of the walkthrough?",
+   "gold": "open",
+   "pred": "Let's decompose this into subtasks to determine the state of the door at the end of the walkthrough:\n\n---\n\n### **Subtask 1: Identify relevant nodes and edges**\n- The question concerns the **door** node.\n- We need to find edges involving the **door** node and their time intervals (`t`).\n- From the edges list, the following edges mention \"door\":\n  - `{\"a\": \"fork\", \"b\": \"door\", \"t\": [7, 12, 13, 15]}`\n  - `{\"a\": \"brush\", \"b\": \"door\", \"t\": [3, 6, 7, 12]}`\n\n---\n\n### **Subtask 2: Extract time intervals for \"door\" edges**\n- The fork-door edge is active at times `[7, 12, 13, 15]`.\n- The brush-door edge is active at times `[3, 6, 7, 12]`.\n- Both edges use the node \"door\" as the `b` node (second node in the edge), so we focus on the `t` values.\n\n---\n\n### **Subtask 3: Determine the last time",
+   "score": 0.0,
+   "spent": 3752,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "TRK",
+   "q": "How many times did the door change between open and closed? Answer with a number.",
+   "gold": "7",
+   "pred": "Let's decompose this into subtasks to determine how many times the door changed between open and closed:\n\n1. **Identify relevant nodes and edges**:\n   - The node of interest is **\"door\"**.\n   - The edges involving \"door\" are:\n     - `{\"a\": \"fork\", \"b\": \"door\", \"t\": [7, 12, 13, 15]}`\n     - `{\"a\": \"brush\", \"b\": \"door\", \"t\": [3, 6, 7, 12]}`\n     - `{\"a\": \"closed\", \"b\": \"door\", \"t\": [0, 1, 2, 4]}` (This is not directly about the door changing, but the state \"closed\" overlaps with the door)\n     - `{\"a\": \"open\", \"b\": \"door\", \"t\": [36, 37, 38, 39]}` (This is the state \"open\" overlapping with the door)\n\n2. **Focus on the \"open\" and \"closed\" states for the door**:\n   - The \"closed\" node has `first: 0, last: 282",
+   "score": 0.0,
+   "spent": 3755,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "TRK",
+   "q": "How many mugs did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "8",
+   "pred": "Let's decompose this into subtasks to determine the total number of mugs seen:\n\n1. **Node Information**: The node \"mug\" has the following details:\n   - `first`: 31\n   - `last`: 201\n   - `n`: 201\n\n   This means mugs were observed from time 31 to 201, and the total count of observations is 201.\n\n2. **Interpretation**: The `n` value represents the total number of observations of the mug across the entire walkthrough.\n\nSince the question asks for the total number of mugs seen, we use the `n` value directly.\n\n**Answer**: 201",
+   "score": 0.0,
+   "spent": 3648,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "TRK",
+   "q": "How many books did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "7",
+   "pred": "Let's decompose this into subtasks to determine the total number of books seen across the walkthrough:\n\n1. **Identify the node \"book\" in the graph**:\n   - The node \"book\" has the following properties:\n     - `first`: 40\n     - `last`: 281\n     - `n`: 7\n\n2. **Interpretation of `n`**:\n   - The value `n` represents the count of observations or instances of the \"book\" node during the walkthrough.\n   - Since this is a scene graph, `n` likely indicates the number of times the \"book\" was present in the scene during the time interval `[40, 281]`.\n\n3. **Conclusion**:\n   - The total number of books seen is given directly by `n` for the \"book\" node, which is **7**.\n\nNo visual verification is needed.\n\n**ANSWER: 7**",
+   "score": 100.0,
+   "spent": 3694,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "TRK",
+   "q": "How many lamps did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "6",
+   "pred": "Let's decompose this into subtasks:\n\n1. **Identify relevant nodes**: The question asks about the number of \"lamp\" nodes in the scene graph.\n2. **Check node properties**: From the nodes section, the \"lamp\" node has:\n   - `first`: 17\n   - `last`: 278\n   - `n`: 5\n3. **Interpret `n`**: The `n` value represents the count of occurrences of the \"lamp\" node during the entire walkthrough.\n\nSince the `n` value for \"lamp\" is 5, this directly answers the question.\n\nNo visual verification is needed.\n\n**ANSWER: 5**",
+   "score": 75.0,
+   "spent": 3645,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "TRK",
+   "q": "How many vases did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "4",
+   "pred": "Let's decompose this into subtasks to answer the question:\n\n1. **Identify the node \"vase\" in the graph**:\n   - From the nodes section, \"vase\" has `first: 27`, `last: 263`, and `n: 4`.\n   - This means the vase was present in the scene from time 27 to 263, and it was observed 4 times (`n: 4`).\n\n2. **Confirm the total count**:\n   - The `n` value for \"vase\" directly represents the total number of observations across the entire walkthrough.\n\n3. **No need for visual verification** (since the data is explicit).\n\n**Answer**: 4",
+   "score": 100.0,
+   "spent": 3649,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "TRK",
+   "q": "Was the door open or closed at the end of the walkthrough?",
+   "gold": "closed",
+   "pred": "Let's decompose this into subtasks to determine the door's state at the end of the walkthrough:\n\n1. **Identify relevant edges involving \"door\"**:\n   - From the `edges` list, we see two edges involving \"door\":\n     - `{\"a\": \"closed\", \"b\": \"door\", \"t\": [7, 11, 12, 15]}`\n     - `{\"a\": \"pen\", \"b\": \"door\", \"t\": [11, 15, 20, 25]}`\n\n2. **Interpret the time intervals**:\n   - The \"closed\" edge indicates the door is closed during the time interval `[7, 11, 12, 15]`.\n   - The \"pen\" edge indicates the door is open during the time interval `[11, 15, 20, 25]`.\n\n3. **Determine the last time interval**:\n   - The walkthrough ends at time `299`.\n   - The last time interval in the \"pen\" edge is `[25]`, which is well before the end.\n   - The last time interval in the \"closed\" edge is `[",
+   "score": 0.0,
+   "spent": 3747,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "TRK",
+   "q": "How many times did the door change between open and closed? Answer with a number.",
+   "gold": "6",
+   "pred": "Let's decompose this into subtasks to determine how many times the door changed between open and closed:\n\n1. **Identify all edges involving \"door\"**:\n   - From the edges list, we see two edges involving \"door\":\n     - `{\"a\": \"closed\", \"b\": \"door\", \"t\": [7, 11, 12, 15]}`\n     - `{\"a\": \"pen\", \"b\": \"door\", \"t\": [11, 15, 20, 25]}`\n\n2. **Interpret these edges**:\n   - The first edge indicates that the door is closed at times [7, 11, 12, 15].\n   - The second edge indicates that the pen is associated with the door being open at times [11, 15, 20, 25].\n\n   However, the question is about the door's state changing between open and closed, not about the pen's association. The edges involving \"door\" are:\n   - `closed` is associated with `door` at times [7, 11, 12, 15] (door is closed).\n   - There is",
+   "score": 25.0,
+   "spent": 3750,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "TRK",
+   "q": "How many mugs did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "6",
+   "pred": "5",
+   "score": 0.0,
+   "spent": 3747,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "TRK",
+   "q": "How many books did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "7",
+   "pred": "Let's decompose this into subtasks to answer the question:\n\n1. **Identify all edges involving \"book\" as node b**:\n   - From the edges list, we see:\n     - `{\"a\": \"comb\", \"b\": \"book\", \"t\": [24, 60]}`\n     - `{\"a\": \"candle\", \"b\": \"book\", \"t\": [24, 60, 283]}`\n\n2. **Extract the \"n\" (frequency) value for \"book\" from the nodes**:\n   - From the nodes, `\"book\": {\"first\": 24, \"last\": 283, \"n\": 5}`\n\n3. **Interpretation**:\n   - The \"n\" value of 5 represents the total number of observations of the \"book\" node across the entire walkthrough.\n\n4. **Summarize**:\n   - The total count of \"book\" observations is **5**.\n\n**ANSWER: 5**",
+   "score": 50.0,
+   "spent": 3768,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "TRK",
+   "q": "How many lamps did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "6",
+   "pred": "Let's decompose this into subtasks to answer the question:\n\n1. **Identify relevant nodes**: The question asks about the total number of \"lamp\" observations across the walkthrough.\n   - From the nodes section, the \"lamp\" node has:\n     - `first`: 33\n     - `last`: 211\n     - `n`: 4\n\n2. **Interpret the `n` value**: The `n` value represents the total count of observations for the \"lamp\" node during the entire walkthrough.\n\n3. **No need for visual verification**: The data is explicitly provided in the nodes section.\n\n**Answer**: 4",
+   "score": 50.0,
+   "spent": 3695,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "TRK",
+   "q": "How many vases did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "3",
+   "pred": "Let's decompose this into subtasks to answer the question:\n\n1. **Identify the node \"vase\" in the nodes list**:\n   - The node \"vase\" exists with the following details:\n     - `first`: 155\n     - `last`: 284\n     - `n`: 13\n\n2. **Interpret the `n` value**:\n   - The `n` value represents the total number of observations or sightings of the \"vase\" during the entire walkthrough.\n\n3. **Conclusion**:\n   - The total number of times the vase was seen is **13**.\n\nNo visual verification is needed.\n\n**ANSWER: 13**",
+   "score": 0.0,
+   "spent": 3703,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "TRK",
+   "q": "Was the door open or closed at the end of the walkthrough?",
+   "gold": "open",
+   "pred": "To determine whether the door was open or closed at the end of the walkthrough, we can decompose the problem into the following subtasks:\n\n1. **Identify the relevant node and time interval for the door**:\n   - The node \"door\" has a time interval from `first: 6` to `last: 297`.\n   - The end of the walkthrough corresponds to time `299` (the last timestamp in the dataset).\n\n2. **Check the edges involving the \"door\" node**:\n   - The edges involving \"door\" are:\n     - `{\"a\": \"comb\", \"b\": \"door\", \"t\": [6, 11, 16, 20]}`\n     - `{\"a\": \"candle\", \"b\": \"door\", \"t\": [11, 16, 20, 25]}`\n   - These edges only cover the time intervals up to 25, but we need to check if there is any information about the door's state at the very end (time 299).\n\n3. **Check the node's own interval and the \"open\" node**:\n   - The \"open\" node has a time interval",
+   "score": 25.0,
+   "spent": 3805,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "TRK",
+   "q": "How many times did the door change between open and closed? Answer with a number.",
+   "gold": "9",
+   "pred": "Let's decompose this into subtasks to determine how many times the door changed between open and closed:\n\n1. **Identify relevant nodes and edges**:\n   - The node of interest is \"door\".\n   - The edges involving \"door\" are:\n     - `{\"a\": \"comb\", \"b\": \"door\", \"t\": [6, 11, 16, 20]}`\n     - `{\"a\": \"candle\", \"b\": \"door\", \"t\": [11, 16, 20, 25]}`\n\n2. **Check the node's own time interval**:\n   - The node \"door\" has `first: 6, last: 297, n: 110`, meaning it is present from time 6 to 297.\n\n3. **Check the \"open\" node**:\n   - The \"open\" node has `first: 5, last: 299, n: 122`.\n   - The edges involving \"open\" and \"door\" are:\n     - `{\"a\": \"comb\", \"b\": \"open\", \"t\": [5, 6, 7, 8]}",
+   "score": 0.0,
+   "spent": 3808,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "TRK",
+   "q": "How many mugs did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "4",
+   "pred": "Let's decompose this into subtasks:\n\n1. **Identify the node \"mug\" in the nodes list**:\n   - The node \"mug\" has `first: 188`, `last: 199`, and `n: 2`.\n   - This means the mug was present in the scene from time 188 to 199, and the count `n: 2` indicates the total number of mugs observed during the entire walkthrough.\n\n2. **Interpret the count `n`**:\n   - The `n` value for \"mug\" is 2, which likely represents the total number of mugs seen across the entire walkthrough.\n\nNo further visual verification is needed.\n\n**Answer**: 2",
+   "score": 50.0,
+   "spent": 3643,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "TRK",
+   "q": "How many books did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "4",
+   "pred": "Let's decompose this into subtasks to answer the question:\n\n1. **Identify all nodes related to \"book\"**:\n   - From the nodes list, there is a single node: `\"book\"` with `first: 15`, `last: 203`, and `n: 4`.\n\n2. **Check the frequency count (`n`)**:\n   - The `n` value for `\"book\"` is 4, which likely represents the total number of observations or instances of the book in the scene graph.\n\n3. **Cross-check with edges**:\n   - The edges involving `\"book\"` are:\n     - `{\"a\": \"closed\", \"b\": \"book\", \"t\": [125, 203]}` (closed state)\n     - `{\"a\": \"spoon\", \"b\": \"book\", \"t\": [15, 163, 203]}` (spoon interacting with book)\n   - These edges confirm the book's presence but do not change the `n` count.\n\nSince the `n` value for `\"book\"` is 4, this is the total count of books observed during the walkthrough.\n\n**Answer**: 4",
+   "score": 100.0,
+   "spent": 3737,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "TRK",
+   "q": "How many lamps did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "5",
+   "pred": "Let's decompose this into subtasks:\n\n1. **Identify all nodes related to \"lamp\"**:\n   From the nodes list, we see:\n   - `lamp`: `first = 33`, `last = 111`, `n = 3`\n\n2. **Interpretation**:\n   The `n = 3` value indicates the total count of occurrences of the \"lamp\" node across the entire walkthrough.\n\n3. **No visual verification needed**:\n   The count is explicitly given in the node metadata.\n\n**Answer**: 3",
+   "score": 25.0,
+   "spent": 3602,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "TRK",
+   "q": "How many vases did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "7",
+   "pred": "Let's decompose this into subtasks to answer the question:\n\n1. **Identify the node \"vase\" in the nodes list**:\n   - The node \"vase\" has `first: 99`, `last: 241`, and `n: 6`.\n   - The value `n` represents the total count of occurrences of the \"vase\" across the entire walkthrough.\n\n2. **Interpret the meaning of `n`**:\n   - Since `n` is explicitly given as `6` for the \"vase\" node, this means the total number of vase observations in the scene graph is `6`.\n\nNo further visual verification is needed.\n\n**Answer**: 6",
+   "score": 75.0,
+   "spent": 3631,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "TRK",
+   "q": "Was the door open or closed at the end of the walkthrough?",
+   "gold": "closed",
+   "pred": "Let's decompose this into subtasks to determine the state of the door at the end of the walkthrough:\n\n### Subtasks:\n1. **Identify the relevant node for the door's state at the end of the timeline**:\n   - The node \"door\" has a `last` value of 298, indicating it exists until time 298.\n   - The edge involving \"door\" is:\n     - `{\"a\": \"closed\", \"b\": \"door\", \"t\": [10, 14, 32, 33]}`\n\n2. **Determine the last time the door was explicitly marked as \"closed\"**:\n   - The edge shows that the door was closed at times 10, 14, 32, and 33.\n   - The last time in this list is 33.\n\n3. **Check if there is any edge indicating the door was open after time 33**:\n   - The only other edge involving \"door\" is:\n     - `{\"a\": \"spoon\", \"b\": \"door\", \"t\": [10, 14, 15, 32]}`\n     - This edge does not indicate",
+   "score": 0.0,
+   "spent": 3734,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "TRK",
+   "q": "How many times did the door change between open and closed? Answer with a number.",
+   "gold": "6",
+   "pred": "Let's decompose this into subtasks to determine how many times the door changed between open and closed:\n\n1. **Identify the relevant nodes and edges**:\n   - The door node is present in the graph with `first: 10`, `last: 298`, and `n: 111`.\n   - The edges involving the door are:\n     - `{\"a\": \"closed\", \"b\": \"door\", \"t\": [10, 14, 32, 33]}`\n     - `{\"a\": \"spoon\", \"b\": \"door\", \"t\": [10, 14, 15, 32]}`\n     - `{\"a\": \"spoon\", \"b\": \"open\", \"t\": [15, 16, 138, 139]}`\n\n2. **Interpret the edges**:\n   - The edge `{\"a\": \"closed\", \"b\": \"door\", \"t\": [10, 14, 32, 33]}` indicates that the door is closed during these time intervals.\n   - The edge `{\"a\": \"spoon\", \"b\":",
+   "score": 0.0,
+   "spent": 3737,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  }
+ ]
+}

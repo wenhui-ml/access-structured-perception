@@ -1,0 +1,33 @@
+\begin{table}[t]
+\centering\small
+\caption{\textbf{Main results at fixed per-decision budget $B{=}4{,}096$.} OpenEQA = LLM-Match; others = accuracy (\%). All numbers marked \pred{} are pre-registered predictions with $\pm$ denoting registered 90\% prediction intervals; measured values will replace them verbatim. Reference points: human OpenEQA 86.8, GPT-4V 49.6 \citep{openeqa}.}
+\label{tab:main}
+\begin{tabular}{llcccccc}
+\toprule
+Backbone & Method & OpenEQA & VSI-Bench & EgoSchema & EW-RET & EW-TRK & EW-CMP \\
+\midrule
+\multirow{5}{*}{Qwen3.8-27B}
+ & \textsc{Blind}      & 34.1\pred{\scriptsize$\pm$2} & 24.0\pred{\scriptsize$\pm$2} & 29.5\pred{\scriptsize$\pm$3} & 20.3\pred{\scriptsize$\pm$2} & 31.0\pred{\scriptsize$\pm$3} & 24.8\pred{\scriptsize$\pm$3} \\
+ & \textsc{Uniform-16} & 52.6\pred{\scriptsize$\pm$3} & 38.5\pred{\scriptsize$\pm$3} & 62.0\pred{\scriptsize$\pm$3} & 34.6\pred{\scriptsize$\pm$4} & 47.2\pred{\scriptsize$\pm$4} & 38.9\pred{\scriptsize$\pm$4} \\
+ & \textsc{Retr-only}  & 57.1\pred{\scriptsize$\pm$3} & 39.8\pred{\scriptsize$\pm$3} & 63.4\pred{\scriptsize$\pm$3} & 74.5\pred{\scriptsize$\pm$4} & 49.6\pred{\scriptsize$\pm$4} & 46.0\pred{\scriptsize$\pm$4} \\
+ & \textsc{State-only} & 55.4\pred{\scriptsize$\pm$3} & 41.2\pred{\scriptsize$\pm$3} & 61.1\pred{\scriptsize$\pm$3} & 27.9\pred{\scriptsize$\pm$4} & 71.8\pred{\scriptsize$\pm$4} & 44.1\pred{\scriptsize$\pm$4} \\
+ & \ASP{} (ours)       & \textbf{62.3}\pred{\scriptsize$\pm$3} & \textbf{46.0}\pred{\scriptsize$\pm$3} & \textbf{66.8}\pred{\scriptsize$\pm$3} & \textbf{80.2}\pred{\scriptsize$\pm$4} & \textbf{74.5}\pred{\scriptsize$\pm$4} & \textbf{63.7}\pred{\scriptsize$\pm$4} \\
+\midrule
+\multirow{2}{*}{Gemma~4~31B}
+ & \textsc{Uniform-16} & 53.4\pred{\scriptsize$\pm$3} & 39.0\pred{\scriptsize$\pm$3} & 63.1\pred{\scriptsize$\pm$3} & 35.2\pred{\scriptsize$\pm$4} & 48.0\pred{\scriptsize$\pm$4} & 39.5\pred{\scriptsize$\pm$4} \\
+ & \ASP{} (ours)       & \textbf{62.9}\pred{\scriptsize$\pm$3} & \textbf{46.6}\pred{\scriptsize$\pm$3} & \textbf{67.5}\pred{\scriptsize$\pm$3} & \textbf{80.8}\pred{\scriptsize$\pm$4} & \textbf{75.0}\pred{\scriptsize$\pm$4} & \textbf{64.2}\pred{\scriptsize$\pm$4} \\
+\midrule
+\multirow{2}{*}{Qwen3-Omni-30B-A3B}
+ & \textsc{Uniform-16} & 50.8\pred{\scriptsize$\pm$3} & 36.9\pred{\scriptsize$\pm$3} & 60.7\pred{\scriptsize$\pm$3} & 33.5\pred{\scriptsize$\pm$4} & 45.9\pred{\scriptsize$\pm$4} & 37.4\pred{\scriptsize$\pm$4} \\
+ & \ASP{} (ours)       & \textbf{60.5}\pred{\scriptsize$\pm$3} & \textbf{44.3}\pred{\scriptsize$\pm$3} & \textbf{65.0}\pred{\scriptsize$\pm$3} & \textbf{78.6}\pred{\scriptsize$\pm$4} & \textbf{72.9}\pred{\scriptsize$\pm$4} & \textbf{61.8}\pred{\scriptsize$\pm$4} \\
+\midrule
+\multirow{2}{*}{Qwen3-VL-8B}
+ & \textsc{Uniform-16} & 46.2\pred{\scriptsize$\pm$3} & 33.1\pred{\scriptsize$\pm$3} & 55.8\pred{\scriptsize$\pm$3} & 30.7\pred{\scriptsize$\pm$4} & 42.3\pred{\scriptsize$\pm$4} & 33.6\pred{\scriptsize$\pm$4} \\
+ & \ASP{} (ours)       & \textbf{59.4}\pred{\scriptsize$\pm$3} & \textbf{42.7}\pred{\scriptsize$\pm$3} & \textbf{62.9}\pred{\scriptsize$\pm$3} & \textbf{76.9}\pred{\scriptsize$\pm$4} & \textbf{70.6}\pred{\scriptsize$\pm$4} & \textbf{58.4}\pred{\scriptsize$\pm$4} \\
+\midrule
+\multirow{2}{*}{Qwen2.5-VL-7B}
+ & \textsc{Uniform-16} & 44.5\pred{\scriptsize$\pm$3} & 31.8\pred{\scriptsize$\pm$3} & 53.6\pred{\scriptsize$\pm$3} & 29.4\pred{\scriptsize$\pm$4} & 40.8\pred{\scriptsize$\pm$4} & 32.1\pred{\scriptsize$\pm$4} \\
+ & \ASP{} (ours)       & \textbf{57.8}\pred{\scriptsize$\pm$3} & \textbf{41.2}\pred{\scriptsize$\pm$3} & \textbf{60.7}\pred{\scriptsize$\pm$3} & \textbf{75.3}\pred{\scriptsize$\pm$4} & \textbf{68.9}\pred{\scriptsize$\pm$4} & \textbf{56.2}\pred{\scriptsize$\pm$4} \\
+\bottomrule
+\end{tabular}
+\end{table}

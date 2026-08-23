@@ -1,0 +1,66 @@
+{
+  "main": {
+    "qwen3.8-27b": {
+      "asp_r1": {
+        "measured": [
+          null,
+          null,
+          null,
+          50.0,
+          4.2,
+          20.8
+        ]
+      },
+      "asp_no_rho": {
+        "measured": [
+          null,
+          null,
+          null,
+          90.6,
+          8.3,
+          62.5
+        ]
+      },
+      "asp_no_cv": {
+        "measured": [
+          null,
+          null,
+          null,
+          9.4,
+          4.2,
+          25.0
+        ]
+      },
+      "asp_rand_retr": {
+        "measured": [
+          null,
+          null,
+          null,
+          0.0,
+          4.2,
+          8.3
+        ]
+      },
+      "asp_r5": {
+        "measured": [
+          null,
+          null,
+          null,
+          93.8,
+          4.2,
+          20.8
+        ]
+      },
+      "asp_no_cs": {
+        "measured": [
+          null,
+          null,
+          null,
+          90.6,
+          12.5,
+          83.3
+        ]
+      }
+    }
+  }
+}

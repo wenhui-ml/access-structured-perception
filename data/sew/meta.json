@@ -1,0 +1,542 @@
+[
+  {
+    "episode": "ep1",
+    "n_frames": 300,
+    "obj_per_frame": 16,
+    "d_attributes": 32,
+    "K": 8,
+    "Nd": 9600,
+    "toggles": 7,
+    "singletons": [
+      {
+        "cls": "sieve",
+        "t": 19,
+        "colour": "green",
+        "tag": "H"
+      },
+      {
+        "cls": "stapler",
+        "t": 62,
+        "colour": "orange",
+        "tag": "C"
+      },
+      {
+        "cls": "colander",
+        "t": 97,
+        "colour": "green",
+        "tag": "A"
+      },
+      {
+        "cls": "trivet",
+        "t": 98,
+        "colour": "red",
+        "tag": "B"
+      },
+      {
+        "cls": "kettle",
+        "t": 118,
+        "colour": "green",
+        "tag": "G"
+      },
+      {
+        "cls": "teapot",
+        "t": 135,
+        "colour": "yellow",
+        "tag": "D"
+      },
+      {
+        "cls": "ladle",
+        "t": 187,
+        "colour": "red",
+        "tag": "E"
+      },
+      {
+        "cls": "thermos",
+        "t": 274,
+        "colour": "yellow",
+        "tag": "E"
+      }
+    ],
+    "tracked": {
+      "mug": 7,
+      "book": 4,
+      "lamp": 9,
+      "vase": 7
+    },
+    "chains": {
+      "clock": {
+        "ts": [
+          33,
+          160,
+          202
+        ],
+        "rooms": [
+          "bedroom",
+          "living room",
+          "hallway"
+        ],
+        "colours": [
+          "purple",
+          "red",
+          "yellow"
+        ]
+      },
+      "radio": {
+        "ts": [
+          180,
+          193,
+          232
+        ],
+        "rooms": [
+          "living room",
+          "bedroom",
+          "kitchen"
+        ],
+        "colours": [
+          "purple",
+          "yellow",
+          "red"
+        ]
+      },
+      "globe": {
+        "ts": [
+          45,
+          207,
+          237
+        ],
+        "rooms": [
+          "living room",
+          "hallway",
+          "pantry"
+        ],
+        "colours": [
+          "brown",
+          "green",
+          "white"
+        ]
+      },
+      "statue": {
+        "ts": [
+          78,
+          201,
+          263
+        ],
+        "rooms": [
+          "study",
+          "bedroom",
+          "living room"
+        ],
+        "colours": [
+          "green",
+          "red",
+          "brown"
+        ]
+      }
+    }
+  },
+  {
+    "episode": "ep2",
+    "n_frames": 300,
+    "obj_per_frame": 16,
+    "d_attributes": 32,
+    "K": 8,
+    "Nd": 9600,
+    "toggles": 6,
+    "singletons": [
+      {
+        "cls": "thermos",
+        "t": 29,
+        "colour": "yellow",
+        "tag": "E"
+      },
+      {
+        "cls": "kettle",
+        "t": 83,
+        "colour": "orange",
+        "tag": "E"
+      },
+      {
+        "cls": "colander",
+        "t": 89,
+        "colour": "green",
+        "tag": "B"
+      },
+      {
+        "cls": "ladle",
+        "t": 141,
+        "colour": "purple",
+        "tag": "G"
+      },
+      {
+        "cls": "whisk",
+        "t": 184,
+        "colour": "purple",
+        "tag": "H"
+      },
+      {
+        "cls": "decanter",
+        "t": 204,
+        "colour": "white",
+        "tag": "C"
+      },
+      {
+        "cls": "mortar",
+        "t": 209,
+        "colour": "blue",
+        "tag": "F"
+      },
+      {
+        "cls": "tongs",
+        "t": 237,
+        "colour": "green",
+        "tag": "E"
+      }
+    ],
+    "tracked": {
+      "mug": 8,
+      "book": 7,
+      "lamp": 6,
+      "vase": 4
+    },
+    "chains": {
+      "clock": {
+        "ts": [
+          87,
+          98,
+          220
+        ],
+        "rooms": [
+          "study",
+          "hallway",
+          "kitchen"
+        ],
+        "colours": [
+          "blue",
+          "green",
+          "white"
+        ]
+      },
+      "radio": {
+        "ts": [
+          100,
+          217,
+          226
+        ],
+        "rooms": [
+          "hallway",
+          "kitchen",
+          "bedroom"
+        ],
+        "colours": [
+          "green",
+          "yellow",
+          "orange"
+        ]
+      },
+      "globe": {
+        "ts": [
+          107,
+          131,
+          208
+        ],
+        "rooms": [
+          "hallway",
+          "living room",
+          "bedroom"
+        ],
+        "colours": [
+          "orange",
+          "blue",
+          "yellow"
+        ]
+      },
+      "statue": {
+        "ts": [
+          34,
+          62,
+          259
+        ],
+        "rooms": [
+          "study",
+          "pantry",
+          "hallway"
+        ],
+        "colours": [
+          "orange",
+          "purple",
+          "green"
+        ]
+      }
+    }
+  },
+  {
+    "episode": "ep3",
+    "n_frames": 300,
+    "obj_per_frame": 16,
+    "d_attributes": 32,
+    "K": 8,
+    "Nd": 9600,
+    "toggles": 9,
+    "singletons": [
+      {
+        "cls": "trivet",
+        "t": 111,
+        "colour": "purple",
+        "tag": "A"
+      },
+      {
+        "cls": "whisk",
+        "t": 136,
+        "colour": "orange",
+        "tag": "B"
+      },
+      {
+        "cls": "mortar",
+        "t": 188,
+        "colour": "purple",
+        "tag": "G"
+      },
+      {
+        "cls": "teapot",
+        "t": 189,
+        "colour": "blue",
+        "tag": "E"
+      },
+      {
+        "cls": "colander",
+        "t": 235,
+        "colour": "brown",
+        "tag": "H"
+      },
+      {
+        "cls": "ladle",
+        "t": 237,
+        "colour": "red",
+        "tag": "A"
+      },
+      {
+        "cls": "tongs",
+        "t": 250,
+        "colour": "purple",
+        "tag": "H"
+      },
+      {
+        "cls": "stapler",
+        "t": 270,
+        "colour": "white",
+        "tag": "A"
+      }
+    ],
+    "tracked": {
+      "mug": 6,
+      "book": 7,
+      "lamp": 6,
+      "vase": 3
+    },
+    "chains": {
+      "clock": {
+        "ts": [
+          77,
+          154,
+          191
+        ],
+        "rooms": [
+          "bedroom",
+          "kitchen",
+          "pantry"
+        ],
+        "colours": [
+          "orange",
+          "brown",
+          "white"
+        ]
+      },
+      "radio": {
+        "ts": [
+          81,
+          147,
+          263
+        ],
+        "rooms": [
+          "bedroom",
+          "kitchen",
+          "pantry"
+        ],
+        "colours": [
+          "blue",
+          "purple",
+          "white"
+        ]
+      },
+      "globe": {
+        "ts": [
+          61,
+          184,
+          282
+        ],
+        "rooms": [
+          "kitchen",
+          "study",
+          "pantry"
+        ],
+        "colours": [
+          "purple",
+          "red",
+          "brown"
+        ]
+      },
+      "statue": {
+        "ts": [
+          91,
+          141,
+          212
+        ],
+        "rooms": [
+          "bedroom",
+          "kitchen",
+          "pantry"
+        ],
+        "colours": [
+          "white",
+          "blue",
+          "green"
+        ]
+      }
+    }
+  },
+  {
+    "episode": "ep4",
+    "n_frames": 300,
+    "obj_per_frame": 16,
+    "d_attributes": 32,
+    "K": 8,
+    "Nd": 9600,
+    "toggles": 6,
+    "singletons": [
+      {
+        "cls": "tongs",
+        "t": 23,
+        "colour": "green",
+        "tag": "B"
+      },
+      {
+        "cls": "sieve",
+        "t": 31,
+        "colour": "yellow",
+        "tag": "B"
+      },
+      {
+        "cls": "whisk",
+        "t": 121,
+        "colour": "green",
+        "tag": "A"
+      },
+      {
+        "cls": "stapler",
+        "t": 129,
+        "colour": "yellow",
+        "tag": "F"
+      },
+      {
+        "cls": "trivet",
+        "t": 139,
+        "colour": "brown",
+        "tag": "C"
+      },
+      {
+        "cls": "mortar",
+        "t": 178,
+        "colour": "purple",
+        "tag": "H"
+      },
+      {
+        "cls": "colander",
+        "t": 249,
+        "colour": "red",
+        "tag": "C"
+      },
+      {
+        "cls": "teapot",
+        "t": 263,
+        "colour": "brown",
+        "tag": "B"
+      }
+    ],
+    "tracked": {
+      "mug": 4,
+      "book": 4,
+      "lamp": 5,
+      "vase": 7
+    },
+    "chains": {
+      "clock": {
+        "ts": [
+          25,
+          277,
+          280
+        ],
+        "rooms": [
+          "hallway",
+          "kitchen",
+          "pantry"
+        ],
+        "colours": [
+          "green",
+          "purple",
+          "brown"
+        ]
+      },
+      "radio": {
+        "ts": [
+          158,
+          172,
+          226
+        ],
+        "rooms": [
+          "living room",
+          "pantry",
+          "hallway"
+        ],
+        "colours": [
+          "green",
+          "white",
+          "blue"
+        ]
+      },
+      "globe": {
+        "ts": [
+          20,
+          85,
+          108
+        ],
+        "rooms": [
+          "hallway",
+          "bedroom",
+          "kitchen"
+        ],
+        "colours": [
+          "white",
+          "yellow",
+          "red"
+        ]
+      },
+      "statue": {
+        "ts": [
+          104,
+          238,
+          257
+        ],
+        "rooms": [
+          "kitchen",
+          "living room",
+          "study"
+        ],
+        "colours": [
+          "purple",
+          "brown",
+          "blue"
+        ]
+      }
+    }
+  }
+]

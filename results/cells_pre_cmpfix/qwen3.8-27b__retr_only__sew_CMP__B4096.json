@@ -1,0 +1,444 @@
+{
+ "model": "qwen3.8-27b",
+ "method": "retr_only",
+ "bench": "sew",
+ "subset": "CMP",
+ "budget": 4096,
+ "tau_g": 0.0,
+ "judge_deferred": 8,
+ "mean": 37.5,
+ "items": [
+  {
+   "episode": "ep1",
+   "subset": "CMP",
+   "q": "You saw a clock exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "red",
+   "pred": "Looking at the keyframes, we need to find the three instances where a \"clock\" is visible and determine the color of the clock in the *second* instance.\n\nLet's scan the images for the object labeled \"clock\":\n\n1.  **Image 1 (living room, t=160):**\n    *   Bottom row, second item from left: `clock`\n    *   Color: **Red**\n\n2.  **Image 2 (bedroom, t=33):**\n    *   Third row, fourth item from left: `clock`\n    *   Color: **",
+   "score": 100.0,
+   "spent": 2596,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "CMP",
+   "q": "You saw a radio exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "yellow",
+   "pred": "Looking at the keyframes, we need to find the three instances where a \"radio\" is visible and determine the color of the radio in the *second* instance.\n\nLet's scan the images for the object labeled \"radio\":\n\n1.  **Image 1 (t=180, living room):**\n    *   Bottom right corner: The label is \"radio\".\n    *   The color of the box containing \"radio\" is **purple**.\n    *   This is the first time we see a radio.\n\n2.  **Image 2 (t=193, bedroom):**\n",
+   "score": 0.0,
+   "spent": 2596,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "CMP",
+   "q": "You saw a globe exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "green",
+   "pred": "Based on the timestamps provided in the keyframes, here is the chronological order of the sightings of the globe:\n\n1.  **First sighting:** In the **living room** at **t=45**. The globe is brown (labeled 'G').\n2.  **Second sighting:** In the **hallway** at **t=207**. The globe is green (labeled 'A').\n3.  **Third sighting:** In the **pantry** at **t=237**. The globe is white (labeled 'H').\n\nThe question asks for the colour of the globe the",
+   "score": 100.0,
+   "spent": 2596,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "CMP",
+   "q": "You saw a statue exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "red",
+   "pred": "Based on the timestamps provided in the keyframes, we can determine the order in which the statue was seen:\n\n1.  **First sighting:** In the **study** at **t=78**. The statue is **green**.\n2.  **Second sighting:** In the **living room** at **t=263**. The statue is **brown**.\n3.  **Third sighting:** In the **bedroom** at **t=201**. Wait, let's re-order by time.\n\nLet's list all sightings of the \"statue\" with their timestamps:\n*   **t",
+   "score": 0.0,
+   "spent": 2596,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "CMP",
+   "q": "Did you see the sieve before or after the stapler? Answer 'before' or 'after'.",
+   "gold": "before",
+   "pred": "before",
+   "score": 100.0,
+   "spent": 2465,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "CMP",
+   "q": "Did you see the colander before or after the trivet? Answer 'before' or 'after'.",
+   "gold": "before",
+   "pred": "after",
+   "score": 0.0,
+   "spent": 2466,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "CMP",
+   "q": "You saw a clock exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "green",
+   "pred": "Based on the timestamps provided in the keyframes, we can determine the chronological order in which the clock was seen:\n\n1.  **First sighting:** In the **study** at **t=87**. The clock is blue.\n2.  **Second sighting:** In the **hallway** at **t=98**. The clock is green.\n3.  **Third sighting:** In the **kitchen** at **t=220**. The clock is white.\n\nThe question asks for the colour of the clock the **second** time it was seen.\n\nThe colour of the clock the second",
+   "score": 100.0,
+   "spent": 2596,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "CMP",
+   "q": "You saw a radio exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "yellow",
+   "pred": "Looking at the keyframes, we need to find the three instances where a radio is visible and determine the color of the radio in the second instance.\n\nLet's scan the images for the object labeled \"radio\":\n\n1.  **Image 1 (room: bedroom, t=226):**\n    *   There is a tile labeled \"radio\".\n    *   The letter on the tile is **H**.\n    *   The color of the tile is **orange**.\n\n2.  **Image 2 (room: kitchen, t=217):**\n    *   There is a tile labeled",
+   "score": 0.0,
+   "spent": 2596,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "CMP",
+   "q": "You saw a globe exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "blue",
+   "pred": "Based on the timestamps provided in the keyframes, we can determine the chronological order of when the globe was seen:\n\n1.  **First sighting:** In the **hallway** at **t=107**. The globe is orange.\n2.  **Second sighting:** In the **living room** at **t=131**. The globe is blue.\n3.  **Third sighting:** In the **bedroom** at **t=208**. The globe is yellow.\n\nThe question asks for the colour of the globe the **second** time it was seen.\n\nThe second time you",
+   "score": 100.0,
+   "spent": 2596,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "CMP",
+   "q": "You saw a statue exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "purple",
+   "pred": "Based on the timestamps provided in the keyframes, we can determine the order in which the statue was seen:\n\n1.  **First sighting:** In the **study** at **t=34**. The statue is orange (labeled 'C').\n2.  **Second sighting:** In the **pantry** at **t=62**. The statue is purple (labeled 'A').\n3.  **Third sighting:** In the **hallway** at **t=259**. The statue is green (labeled 'B').\n\nThe question asks for the colour of the statue the **second",
+   "score": 100.0,
+   "spent": 2596,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "CMP",
+   "q": "Did you see the thermos before or after the kettle? Answer 'before' or 'after'.",
+   "gold": "before",
+   "pred": "after",
+   "score": 0.0,
+   "spent": 2465,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "CMP",
+   "q": "Did you see the colander before or after the ladle? Answer 'before' or 'after'.",
+   "gold": "before",
+   "pred": "after",
+   "score": 0.0,
+   "spent": 2466,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "CMP",
+   "q": "You saw a clock exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "brown",
+   "pred": "Based on the provided keyframes, let's track the appearances of the clock in chronological order:\n\n1.  **First Appearance:**\n    *   **Frame:** `room: bedroom`, `t=77`\n    *   **Object:** clock\n    *   **Colour:** Orange (with letter 'A')\n\n2.  **Second Appearance:**\n    *   **Frame:** `room: kitchen`, `t=154`\n    *   **Object:** clock\n    *   **Colour:** Brown (with letter 'D')\n\n3.  **Third Appearance:**\n    *  ",
+   "score": 100.0,
+   "spent": 2596,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "CMP",
+   "q": "You saw a radio exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "purple",
+   "pred": "Based on the provided keyframes, let's track the appearances of the radio in chronological order:\n\n1.  **First appearance:**\n    *   **Frame:** `room: bedroom`, `t=81`\n    *   **Object:** radio (top-left)\n    *   **Colour:** Blue\n\n2.  **Second appearance:**\n    *   **Frame:** `room: kitchen`, `t=147`\n    *   **Object:** radio (third row, fourth column)\n    *   **Colour:** Purple\n\n3.  **Third appearance:**\n    *   **",
+   "score": 100.0,
+   "spent": 2596,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "CMP",
+   "q": "You saw a globe exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "red",
+   "pred": "Looking at the keyframes, we need to find the three instances where a \"globe\" is visible and determine the color of the globe in the *second* instance.\n\nLet's scan the images for the object labeled \"globe\":\n\n1.  **Image 2 (kitchen, t=61):**\n    *   We see an object labeled \"globe\".\n    *   Its color is **purple** (with the letter 'B' on it).\n    *   This is the **first** time we see a globe.\n\n2.  **Image 3 (pantry, t",
+   "score": 0.0,
+   "spent": 2596,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "CMP",
+   "q": "You saw a statue exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "blue",
+   "pred": "Looking at the keyframes, we need to find the three instances where a \"statue\" is visible and identify the color of the tile it's on for the *second* occurrence.\n\nLet's scan the images in chronological order (by time `t`):\n\n1.  **t=91 (bedroom):**\n    *   We see a tile labeled \"statue\".\n    *   The letter on the tile is **B**.\n    *   The color of the tile is **white**.\n    *   This is the **first** time we see the statue.\n\n2.  **t",
+   "score": 0.0,
+   "spent": 2596,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "CMP",
+   "q": "Did you see the trivet before or after the whisk? Answer 'before' or 'after'.",
+   "gold": "before",
+   "pred": "after",
+   "score": 0.0,
+   "spent": 2465,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "CMP",
+   "q": "Did you see the mortar before or after the teapot? Answer 'before' or 'after'.",
+   "gold": "before",
+   "pred": "before",
+   "score": 100.0,
+   "spent": 2465,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "CMP",
+   "q": "You saw a clock exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "purple",
+   "pred": "Based on the provided keyframes, let's track the appearances of the clock in chronological order based on the timestamp `t`:\n\n1.  **First sighting:**\n    *   **Frame:** `room: hallway`, `t=25`\n    *   **Object:** clock (bottom row, third from left)\n    *   **Color:** Green (labeled 'A')\n\n2.  **Second sighting:**\n    *   **Frame:** `room: kitchen`, `t=277`\n    *   **Object:** clock (top row, first from left)\n    *  ",
+   "score": 0.0,
+   "spent": 2596,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "CMP",
+   "q": "You saw a radio exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "white",
+   "pred": "Looking at the keyframes in chronological order (by time `t`):\n\n1.  **t=127 (living room):** No radio visible.\n2.  **t=130 (living room):** No radio visible.\n3.  **t=132 (living room):** No radio visible.\n4.  **t=155 (living room):** No radio visible.\n5.  **t=158 (living room):** Radio is visible. It is **green** (labeled 'C'). This is the **first** time.\n6. ",
+   "score": 0.0,
+   "spent": 2596,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "CMP",
+   "q": "You saw a globe exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "yellow",
+   "pred": "Looking at the keyframes, we need to find the three instances where a \"globe\" is visible and determine the color of the globe in the *second* instance.\n\nLet's scan the images for the object labeled \"globe\":\n\n1.  **Image 1 (room: kitchen, t=108):**\n    *   There is an object labeled \"globe\".\n    *   Its color is **red**.\n    *   This is the first time we see a globe.\n\n2.  **Image 2 (room: bedroom, t=85):**\n    *   There",
+   "score": 0.0,
+   "spent": 2596,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "CMP",
+   "q": "You saw a statue exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "brown",
+   "pred": "Based on the timestamps provided in the keyframes, we can determine the chronological order of when the statue was seen:\n\n1.  **First sighting:** In the **kitchen** at **t=104**. The statue is purple.\n2.  **Second sighting:** In the **living room** at **t=238**. The statue is brown.\n3.  **Third sighting:** In the **study** at **t=257**. The statue is blue.\n\nThe question asks for the colour of the statue the **second** time it was seen.\n\nThe colour of the statue",
+   "score": 0.0,
+   "spent": 2596,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "CMP",
+   "q": "Did you see the tongs before or after the sieve? Answer 'before' or 'after'.",
+   "gold": "before",
+   "pred": "after",
+   "score": 0.0,
+   "spent": 2465,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "CMP",
+   "q": "Did you see the whisk before or after the stapler? Answer 'before' or 'after'.",
+   "gold": "before",
+   "pred": "after",
+   "score": 0.0,
+   "spent": 2465,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  }
+ ]
+}

@@ -1,0 +1,23 @@
+# Frames are not tracked: they regenerate bit-identically from a fixed seed, and
+# annotation/selftest_regen.py asserts that (all 1,200 frames and meta.json byte-identical).
+#   python annotation/generate_synthetic.py --out data/sew
+data/*/frames/
+
+# Offline keyframe caches: reproducible from the API, and large. Shipped as a release asset
+# because regenerating them costs API spend that reproducing the *numbers* does not require.
+results/cache/
+results/logs/
+
+# LaTeX build products
+paper/asp/*.aux
+paper/asp/*.bbl
+paper/asp/*.blg
+paper/asp/*.fdb_latexmk
+paper/asp/*.fls
+paper/asp/*.log
+paper/asp/*.out
+paper/asp/*.synctex.gz
+analysis/.figbaseline/
+
+__pycache__/
+*.pyc

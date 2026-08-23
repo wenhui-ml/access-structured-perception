@@ -1,0 +1,444 @@
+{
+ "model": "qwen3-vl-8b",
+ "method": "egagent",
+ "bench": "sew",
+ "subset": "TRK",
+ "budget": 4096,
+ "tau_g": 0.0,
+ "judge_deferred": 10,
+ "mean": 34.38,
+ "items": [
+  {
+   "episode": "ep1",
+   "subset": "TRK",
+   "q": "How many mugs did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "7",
+   "pred": "6",
+   "score": 0.0,
+   "spent": 3722,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "TRK",
+   "q": "How many books did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "4",
+   "pred": "4",
+   "score": 100.0,
+   "spent": 3762,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "TRK",
+   "q": "How many lamps did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "9",
+   "pred": "1",
+   "score": 0.0,
+   "spent": 3756,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "TRK",
+   "q": "How many vases did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "7",
+   "pred": "7",
+   "score": 100.0,
+   "spent": 3704,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "TRK",
+   "q": "Was the door open or closed at the end of the walkthrough?",
+   "gold": "open",
+   "pred": "To determine whether the door was open or closed at the end of the walkthrough, we need to:\n\n1. Identify the time range of the entire walkthrough.\n2. Find the time interval for the \"door\" node.\n3. Check the state of the door (open or closed) at the last time point of the walkthrough.\n\nStep 1: The walkthrough spans from time 0 to time 299 (as indicated by the \"last\" value of most nodes, including \"door\" and \"room\").\n\nStep 2: The \"door\" node has the following time intervals:\n- \"door\": {\"first\": 3, \"last\": 299, \"n\": 196}\n\nStep 3: The \"door\" is connected to \"open\" and \"closed\" via edges:\n- \"door\" \u2192 \"open\": t = [36, 38, 39, 40]\n- \"door\" \u2192 \"closed\": t = [3, 10, 11, 13]\n\nNote: The \"open\" state is only active during [36, 38, 39, 40], which is before the end of the walkthrough (time 2",
+   "score": 0.0,
+   "spent": 3817,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "TRK",
+   "q": "How many times did the door change between open and closed? Answer with a number.",
+   "gold": "7",
+   "pred": "To determine how many times the door changed between open and closed, we need to analyze the edges involving \"door\" and track transitions between \"open\" and \"closed\" states.\n\n### Subtask 1: Identify all edges involving \"door\"\nFrom the edges list, we find:\n- \"soap\" \u2192 \"door\" with time intervals: [3, 10, 11, 13]\n- \"room\" \u2192 \"door\" with time intervals: [3, 10, 11, 13]\n\nThese are the only edges involving \"door\".\n\n### Subtask 2: Determine if \"door\" transitions between \"open\" and \"closed\"\nWe need to check if \"door\" appears in edges with both \"open\" and \"closed\" as neighbors.\n\nLooking at the edges:\n- \"soap\" \u2192 \"open\" with time intervals: [36, 38, 39, 40]\n- \"soap\" \u2192 \"closed\" with time intervals: [0, 1, 2, 3]\n- \"room\" \u2192 \"open\" with time intervals: [36, 37, 38, 39]\n- \"room\" \u2192 \"closed\"",
+   "score": 0.0,
+   "spent": 3821,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "TRK",
+   "q": "How many mugs did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "8",
+   "pred": "8",
+   "score": 100.0,
+   "spent": 3699,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "TRK",
+   "q": "How many books did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "7",
+   "pred": "7",
+   "score": 100.0,
+   "spent": 3645,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "TRK",
+   "q": "How many lamps did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "6",
+   "pred": "5",
+   "score": 0.0,
+   "spent": 3686,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "TRK",
+   "q": "How many vases did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "4",
+   "pred": "4",
+   "score": 100.0,
+   "spent": 3689,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "TRK",
+   "q": "Was the door open or closed at the end of the walkthrough?",
+   "gold": "closed",
+   "pred": "To determine whether the door was open or closed at the end of the walkthrough, we need to analyze the temporal information associated with the \"door\" node and its relationship to the \"open\" state.\n\n### Subtask 1: Identify the time interval for the \"door\" node.\nFrom the nodes section:\n- \"door\": {\"first\": 1, \"last\": 299, \"n\": 220}\n\nThis indicates the door is present throughout the entire timeline (from time 1 to 299).\n\n### Subtask 2: Identify the time interval for the \"open\" state.\nFrom the nodes section:\n- \"open\": {\"first\": 71, \"last\": 287, \"n\": 69}\n\nThis indicates that the \"open\" state exists from time 71 to 287.\n\n### Subtask 3: Check if there\u2019s an edge connecting \"door\" to \"open\".\nFrom the edges section:\n- {\"a\": \"door\", \"b\": \"open\", \"t\": [71, 72, 73, 177]}\n\nThis edge shows that the door was in the \"open\" state during times 71, ",
+   "score": 25.0,
+   "spent": 3764,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "TRK",
+   "q": "How many times did the door change between open and closed? Answer with a number.",
+   "gold": "6",
+   "pred": "To determine how many times the door changed between open and closed, we need to analyze the time intervals associated with the \"door\" node and see how often its state transitions between \"open\" and \"closed\".\n\nSubtask 1: Identify all edges involving \"door\" and its state changes.\nFrom the edges list, we find:\n- Edge: {\"a\": \"room\", \"b\": \"door\", \"t\": [1, 11, 20, 22]}\nThis indicates that the door is associated with time points 1, 11, 20, and 22.\n\nSubtask 2: Identify all edges involving \"open\" and \"closed\" states.\nWe find:\n- Edge: {\"a\": \"room\", \"b\": \"open\", \"t\": [71, 72, 73, 177]}\n- Edge: {\"a\": \"room\", \"b\": \"closed\", \"t\": [0, 1, 2, 3]}\n\nSubtask 3: Check for overlaps or transitions between \"open\" and \"closed\" states at the same time points as \"door\".\nThe \"door\" edge has time points: 1, 11",
+   "score": 0.0,
+   "spent": 3768,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "TRK",
+   "q": "How many mugs did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "6",
+   "pred": "Subtask 1: Identify all nodes that represent \"mug\" in the scene graph.\n- From the \"nodes\" section, \"mug\" is listed with first=32, last=281, n=6.\n\nSubtask 2: Determine how many times the \"mug\" node appears in the edges.\n- The \"mug\" node is referenced in edges as a source or target. We need to count how many times it appears in the edges list.\n- Looking at the edges, \"mug\" appears as a target in the following edges:\n  - {\"a\": \"rug\", \"b\": \"mug\", \"t\": [32, 113, 209, 281]}\n  - {\"a\": \"candle\", \"b\": \"mug\", \"t\": [32, 113, 219, 246]}\n- That\u2019s 2 edges where \"mug\" is the target.\n\nSubtask 3: Check if \"mug\" appears as a source in any edge.\n- Scanning the edges, \"mug\" does not appear as a source in any edge.\n\nSubtask 4: Total count of",
+   "score": 0.0,
+   "spent": 3820,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "TRK",
+   "q": "How many books did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "7",
+   "pred": "6",
+   "score": 0.0,
+   "spent": 3727,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "TRK",
+   "q": "How many lamps did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "6",
+   "pred": "6",
+   "score": 100.0,
+   "spent": 3761,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "TRK",
+   "q": "How many vases did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "3",
+   "pred": "1",
+   "score": 0.0,
+   "spent": 3807,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "TRK",
+   "q": "Was the door open or closed at the end of the walkthrough?",
+   "gold": "open",
+   "pred": "To determine whether the door was open or closed at the end of the walkthrough, we need to examine the time intervals associated with the \"door\" node and the \"open\" and \"closed\" nodes, and check the state at the final time point (t=299).\n\n### Subtask 1: Identify the time intervals for the \"door\" node.\nFrom the nodes section:\n- \"door\": {\"first\": 2, \"last\": 299, \"n\": 211}\n\nThis means the door exists from time 2 to 299.\n\n### Subtask 2: Identify the time intervals for the \"open\" and \"closed\" nodes.\n- \"closed\": {\"first\": 0, \"last\": 293, \"n\": 176}\n- \"open\": {\"first\": 5, \"last\": 299, \"n\": 123}\n\n### Subtask 3: Check if there is any edge between \"door\" and \"open\" or \"closed\" that indicates state at the end (t=299).\nLooking at the edges:\n- \"rug\" \u2192 \"door\": t = [18, 20, 22",
+   "score": 0.0,
+   "spent": 3814,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "TRK",
+   "q": "How many times did the door change between open and closed? Answer with a number.",
+   "gold": "9",
+   "pred": "To determine how many times the door changed between open and closed, we need to analyze the edges involving the \"door\" node and track transitions between \"open\" and \"closed\" states.\n\n### Subtask 1: Identify all edges involving \"door\"\nFrom the edges list, we find all edges where \"door\" is either the source or target node.\n\nRelevant edges:\n- \"rug\" \u2192 \"door\" with time intervals [18, 20, 22, 23]\n- \"candle\" \u2192 \"door\" with time intervals [18, 20, 21, 22]\n- \"comb\" \u2192 \"door\" with time intervals [2, 18, 20, 21]\n\n### Subtask 2: Identify edges involving \"open\" and \"closed\"\nWe need to find edges that connect \"door\" to \"open\" or \"closed\" to track state changes.\n\nFrom the edges:\n- \"rug\" \u2192 \"open\" with time intervals [6, 7, 8, 10]\n- \"rug\" \u2192 \"closed\" with time intervals [0, 1, 3, 4]\n- \"candle\" \u2192 \"open\"",
+   "score": 0.0,
+   "spent": 3818,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "TRK",
+   "q": "How many mugs did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "4",
+   "pred": "To determine how many mugs were seen in total across the whole walkthrough, we need to:\n\n1. Identify all nodes that represent \"mug\" in the scene graph.\n2. Count how many times the \"mug\" node appears in the edges or as a standalone node \u2014 but since the question asks for \u201chow many mugs did you see,\u201d and each node represents one instance of an object, we count the number of unique appearances of the \"mug\" node.\n\nLooking at the \"nodes\" section:\n- \"mug\": {\"first\": 46, \"last\": 199, \"n\": 4}\n\nThe \"n\" field indicates the number of frames or instances where this object was present (in this case, 4). However, since this is a single node representing one mug, and the question asks for how many mugs were seen, it implies counting the number of distinct mugs observed \u2014 which is typically 1 per node unless specified otherwise.\n\nBut note: the question says \u201cHow many mugs did you see in total across the whole walkthrough?\u201d \u2014 if the node \"mug\" exists only once in the graph, then only one mug was seen.\n\nHowever, looking at the \"edges\" section, there",
+   "score": 0.0,
+   "spent": 3825,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "TRK",
+   "q": "How many books did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "4",
+   "pred": "4",
+   "score": 100.0,
+   "spent": 3741,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "TRK",
+   "q": "How many lamps did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "5",
+   "pred": "1",
+   "score": 0.0,
+   "spent": 3725,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "TRK",
+   "q": "How many vases did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "7",
+   "pred": "1",
+   "score": 0.0,
+   "spent": 3722,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "TRK",
+   "q": "Was the door open or closed at the end of the walkthrough?",
+   "gold": "closed",
+   "pred": "To determine whether the door was open or closed at the end of the walkthrough, we need to:\n\n1. Identify the time range during which the \"door\" node is associated with the \"open\" state.\n2. Check if the last time point in the entire scene graph (t=299) falls within that time range.\n3. If it does, then the door was open at the end; otherwise, it was closed.\n\nFrom the edges:\n- There is an edge: `\"a\": \"door\", \"b\": \"open\", \"t\": [15, 16, 17, 18]`\n  \u2192 This means the door was open during time intervals 15, 16, 17, and 18.\n- The overall timeline goes up to t=299.\n- Since 15\u201318 are much earlier than 299, and no other edge indicates the door was open beyond that, we must assume that after t=18, the door was not explicitly marked as open.\n\nAlso, there is an edge for \"closed\":\n- `\"a\": \"door\", \"b\": \"closed\", \"t\": [2, 4, 10,",
+   "score": 100.0,
+   "spent": 3819,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "TRK",
+   "q": "How many times did the door change between open and closed? Answer with a number.",
+   "gold": "6",
+   "pred": "To determine how many times the door changed between open and closed, we need to analyze the time intervals associated with the \"door\" node and the \"open\" node, since these are the only relevant entities for state changes (open \u2194 closed).\n\nSubtask 1: Identify all time intervals where \"door\" is present.\nFrom the edges:\n- \"door\" appears in edges with \"room\", and its time intervals are [2, 4, 10, 15] \u2014 this indicates the door was present during those time points.\n\nSubtask 2: Identify all time intervals where \"open\" is present.\nFrom the edges:\n- \"open\" appears in edges with \"room\", and its time intervals are [15, 16, 17, 18].\n\nSubtask 3: Determine if there\u2019s a transition between \"door\" and \"open\" states.\nWe must check whether the \"door\" and \"open\" nodes are connected through an edge that implies a state change. However, note that \"open\" is not directly linked to \"door\" via an edge labeled with a state change (like \u201copen\u201d \u2192 \u201cclosed\u201d or vice versa). Instead, \"open\" is an entity that may represent a",
+   "score": 0.0,
+   "spent": 3823,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  }
+ ]
+}

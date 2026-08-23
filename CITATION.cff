@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+title: "Budget-Constrained Embodied Perception: Four Resource Walls, and a Pre-Registered
+  Evaluation of Access-Structured Perception on Open Multimodal Models at <=31B"
+message: "If you use this artifact, please cite the paper."
+type: software
+abstract: >
+  Pre-registration, protocol, corpus generator, and complete per-question measurement records
+  for the ASP (Access-Structured Perception) study: four resource walls for budgeted embodied
+  perception, and an equal-budget evaluation of seven access structures over seven open
+  multimodal backbones on the synthetic SEW-Bench corpus.
+keywords:
+  - embodied perception
+  - multimodal foundation models
+  - inference budget
+  - pre-registration
+  - access structure
+license: Apache-2.0
+license-url: "https://www.apache.org/licenses/LICENSE-2.0"
+repository-code: "REPLACE-WITH-PUBLIC-URL"

@@ -1,0 +1,556 @@
+{
+ "model": "qwen3-vl-30b-a3b",
+ "method": "egagent",
+ "bench": "sew",
+ "subset": "RET",
+ "budget": 4096,
+ "tau_g": 0.0,
+ "judge_deferred": 30,
+ "mean": 0.0,
+ "items": [
+  {
+   "episode": "ep1",
+   "subset": "RET",
+   "q": "You saw a sieve exactly once during the walkthrough. What colour was it?",
+   "gold": "green",
+   "pred": "The sieve was not observed during the walkthrough, so its color cannot be determined.",
+   "score": 0.0,
+   "spent": 3617,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "RET",
+   "q": "You saw a stapler exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "C",
+   "pred": "The information is not available in the provided data.",
+   "score": 0.0,
+   "spent": 3710,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "RET",
+   "q": "You saw a colander exactly once during the walkthrough. What colour was it?",
+   "gold": "green",
+   "pred": "The colander was not observed in the scene graph, so its color cannot be determined.",
+   "score": 0.0,
+   "spent": 3683,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "RET",
+   "q": "You saw a trivet exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "B",
+   "pred": "Subtask 1: Identify all occurrences of the object \"trivet\" in the scene graph.  \n- The provided nodes and edges do not include a node named \"trivet\".  \n- However, there is a node named \"tray\" (first: 1, last: 299, n: 219).  \n- The term \"trivet\" may be confused with \"tray\", but they are distinct objects unless specified otherwise.  \n- Since \"trivet\" is not listed as a node, it may not exist in the graph or could be a misinterpretation.\n\nSubtask 2: Check if \"trivet\" appears in any edge or node label.  \n- Reviewing all nodes: no node named \"trivet\" exists.  \n- Reviewing all edges: none reference \"trivet\".\n\nSubtask 3: Determine whether \"trivet\" was mentioned in context or implied.  \n- No mention of \"trivet\" in the data.  \n- Only \"tray\" is present, which is used in edges with \"candle\", \"soap\", etc.\n\nSubtask 4: Assess whether \"trivet\" could be a synonym for \"tray\" or another object.  \n- A tr",
+   "score": 0.0,
+   "spent": 3794,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "RET",
+   "q": "You saw a kettle exactly once during the walkthrough. What colour was it?",
+   "gold": "green",
+   "pred": "The kettle was not observed in the scene graph, so its color cannot be determined.",
+   "score": 0.0,
+   "spent": 3661,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "RET",
+   "q": "You saw a teapot exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "D",
+   "pred": "The teapot was not observed in the scene graph; therefore, no capital letter can be determined.",
+   "score": 0.0,
+   "spent": 3682,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "RET",
+   "q": "You saw a ladle exactly once during the walkthrough. What colour was it?",
+   "gold": "red",
+   "pred": "Subtasks:\n\n1. Identify the object \"ladle\" in the entity scene graph.\n   - Check the list of nodes for \"ladle\".\n   - The node list includes: closed, towel, hat, cup, sock, comb, bowl, fan, pen, spoon, candle, glass, plate, fork, study, soap, ruler, belt, rug, tray, pot, brush, room, door, bedroom, clock, open, living, lamp, vase, globe, hallway, state, book, mug, statue, radio, kitchen, pantry.\n   - \"Ladle\" is not present in the list of nodes.\n\n2. Since \"ladle\" is not in the nodes, it was not observed in the scene graph.\n   - The question states: \"You saw a ladle exactly once during the walkthrough.\"\n   - This contradicts the graph data, which does not include \"ladle\".\n\n3. Re-evaluate: Could \"ladle\" be a typo or misidentification of another object?\n   - Possible candidates: \"spoon\", \"fork\", \"bowl\", \"pot\", \"tray\", \"cup\", \"plate\", \"pen\", \"brush\", \"comb\", \"ruler\", \"candle\", \"soap",
+   "score": 0.0,
+   "spent": 3790,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "RET",
+   "q": "You saw a thermos exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "E",
+   "pred": "The thermos was not present in the scene graph, so no capital letter can be identified.",
+   "score": 0.0,
+   "spent": 3643,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "RET",
+   "q": "You saw a thermos exactly once during the walkthrough. What colour was it?",
+   "gold": "yellow",
+   "pred": "Subtask 1: Identify all objects mentioned in the entity scene graph.\n- The nodes list includes: pot, fork, plate, spoon, candle, glass, closed, belt, living, towel, comb, tray, pen, room, ruler, fan, sock, bowl, soap, hat, brush, cup, rug, door, lamp, study, vase, mug, statue, book, pantry, open, clock, hallway, radio, state, globe, bedroom, kitchen.\n\nSubtask 2: Check if \"thermos\" is present in the list of nodes.\n- \"Thermos\" is not listed among the nodes.\n\nSubtask 3: Determine if \"thermos\" appears in any edge as an object.\n- Reviewing all edges, \"thermos\" does not appear as either 'a' or 'b' in any edge.\n\nSubtask 4: Conclude whether the thermos was seen during the walkthrough.\n- Since \"thermos\" is not in the graph, it was not observed during the walkthrough.\n\nSubtask 5: Answer the question based on the conclusion.\n- The question states \"You saw a thermos exactly once during the walkthrough.\" However, based on the provided graph, the thermos is not present",
+   "score": 0.0,
+   "spent": 3770,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "RET",
+   "q": "You saw a kettle exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "E",
+   "pred": "Subtask 1: Identify the object \"kettle\" in the entity scene graph.  \n- The graph contains nodes for various objects, but \"kettle\" is not explicitly listed.  \n- The closest object is \"pot\", which may be a kettle or a similar item.  \n- Check if \"pot\" is the object referred to as \"kettle\" in the context.\n\nSubtask 2: Determine if \"pot\" is the object seen once during the walkthrough.  \n- The \"pot\" node appears from time 0 to 299, with 224 instances (n=224), indicating it is present throughout the sequence.  \n- The question states the kettle was seen \"exactly once\", so \"pot\" cannot be the kettle since it appears many times.  \n- Therefore, \"kettle\" is not in the graph, or it is a different object not listed.\n\nSubtask 3: Re-examine the graph for any object that might be a kettle and appears exactly once.  \n- Look for any object with n=1 (only one instance).  \n- All objects have n \u2265 2 (minimum n=2 for \"vase\", \"statue\", \"globe\", \"mug\",",
+   "score": 0.0,
+   "spent": 3773,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "RET",
+   "q": "You saw a colander exactly once during the walkthrough. What colour was it?",
+   "gold": "green",
+   "pred": "The color of the colander cannot be determined as it is not present in the scene graph.",
+   "score": 0.0,
+   "spent": 3702,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "RET",
+   "q": "You saw a ladle exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "G",
+   "pred": "The query asks about a \"ladle\" that was seen exactly once during the walkthrough, and wants to know what single capital letter was printed on it.\n\nStep 1: Check if \"ladle\" appears in the node list.\n- Looking through the nodes: pot, fork, plate, spoon, candle, glass, closed, belt, living, towel, comb, tray, pen, room, ruler, fan, sock, bowl, soap, hat, brush, cup, rug, door, lamp, study, vase, mug, statue, book, pantry, open, clock, hallway, radio, state, globe, bedroom, kitchen.\n- \"Ladle\" is not listed among the nodes.\n\nStep 2: Consider whether \"ladle\" might be a typo or misidentification of another object.\n- The closest objects are \"spoon\", \"bowl\", \"pot\", \"tray\", etc. But none are named \"ladle\".\n- Since \"ladle\" is not in the node list, it cannot have been observed in the scene graph as per the data provided.\n\nStep 3: Determine if there's any indirect reference to a ladle.\n- No edge or node refers to a \"ladle\".\n- The only object with \"",
+   "score": 0.0,
+   "spent": 3774,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "RET",
+   "q": "You saw a whisk exactly once during the walkthrough. What colour was it?",
+   "gold": "purple",
+   "pred": "The whisk was not observed in the scene.",
+   "score": 0.0,
+   "spent": 3760,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "RET",
+   "q": "You saw a decanter exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "C",
+   "pred": "The decanter is not present in the scene graph, so no letter can be determined.",
+   "score": 0.0,
+   "spent": 3699,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "RET",
+   "q": "You saw a mortar exactly once during the walkthrough. What colour was it?",
+   "gold": "blue",
+   "pred": "The mortar is not mentioned in the scene graph, so its color cannot be determined.",
+   "score": 0.0,
+   "spent": 3737,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "RET",
+   "q": "You saw a tongs exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "E",
+   "pred": "The information is not available in the provided scene graph.",
+   "score": 0.0,
+   "spent": 3685,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "RET",
+   "q": "You saw a trivet exactly once during the walkthrough. What colour was it?",
+   "gold": "purple",
+   "pred": "The question asks: \"You saw a trivet exactly once during the walkthrough. What colour was it?\"\n\nLet\u2019s decompose this step by step:\n\n1. **Identify the object \"trivet\" in the scene graph**:\n   - The provided graph includes nodes such as \"rug\", \"towel\", \"cup\", \"sock\", \"comb\", \"bowl\", \"tray\", \"candle\", \"glass\", \"pot\", \"plate\", \"belt\", \"fork\", \"soap\", \"closed\", \"ruler\", \"spoon\", \"bedroom\", \"hat\", \"fan\", \"pen\", \"brush\", \"room\", \"door\", \"open\", \"kitchen\", \"book\", \"mug\", \"lamp\", \"clock\", \"radio\", \"statue\", \"study\", \"living\", \"state\", \"vase\", \"globe\", \"pantry\", \"hallway\".\n   - The term \"trivet\" is **not listed** as a node in the graph.\n   - However, the node \"tray\" is present. A trivet is a heat-resistant stand used to protect surfaces from hot dishes, often confused with a tray, but they are different objects.\n\n2. **Check if \"trivet",
+   "score": 0.0,
+   "spent": 3804,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "RET",
+   "q": "You saw a whisk exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "B",
+   "pred": "The whisk is not mentioned in the scene graph, so no capital letter can be determined.",
+   "score": 0.0,
+   "spent": 3730,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "RET",
+   "q": "You saw a mortar exactly once during the walkthrough. What colour was it?",
+   "gold": "purple",
+   "pred": "The mortar is not mentioned in the scene graph, so its color cannot be determined.",
+   "score": 0.0,
+   "spent": 3652,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "RET",
+   "q": "You saw a teapot exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "E",
+   "pred": "The query asks for a single capital letter printed on a teapot that was seen exactly once during the walkthrough.\n\nStep 1: Identify whether \"teapot\" is present in the entity list.\n- Reviewing the nodes, there is no entity named \"teapot\". The closest item is \"pot\", which appears in the graph with timestamps from 0 to 299.\n\nStep 2: Check if \"teapot\" might be a synonym or alternate name for an existing node.\n- The only object resembling a teapot is \"pot\", but there is no indication it is a teapot. Also, no mention of a teapot in any edge or node.\n\nStep 3: Search for any object associated with a teapot-like function or context.\n- No such object exists in the provided data. All edges and nodes are listed, and \"teapot\" does not appear.\n\nStep 4: Consider whether \"teapot\" could be inferred from other objects (e.g., \"pot\" used as a teapot).\n- Even if \"pot\" were a teapot, there is no information about any letter being printed on it. No visual description or attribute is given.\n\nStep 5: Since the teapot is mentioned as being seen exactly once,",
+   "score": 0.0,
+   "spent": 3808,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "RET",
+   "q": "You saw a colander exactly once during the walkthrough. What colour was it?",
+   "gold": "brown",
+   "pred": "The colander is not mentioned in the scene graph",
+   "score": 0.0,
+   "spent": 3804,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "RET",
+   "q": "You saw a ladle exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "A",
+   "pred": "The ladle is not present in the scene graph, so no capital letter can be determined.",
+   "score": 0.0,
+   "spent": 3680,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "RET",
+   "q": "You saw a tongs exactly once during the walkthrough. What colour was it?",
+   "gold": "purple",
+   "pred": "The color of the tongs cannot be determined from the provided data.",
+   "score": 0.0,
+   "spent": 3710,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "RET",
+   "q": "You saw a stapler exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "A",
+   "pred": "The stapler was not mentioned in the scene graph, so it cannot be determined.",
+   "score": 0.0,
+   "spent": 3650,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "RET",
+   "q": "You saw a tongs exactly once during the walkthrough. What colour was it?",
+   "gold": "green",
+   "pred": "",
+   "score": 0.0,
+   "spent": 0,
+   "n_calls": 0,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "RET",
+   "q": "You saw a sieve exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "B",
+   "pred": "The sieve is not mentioned in the scene graph, so the letter cannot be determined.",
+   "score": 0.0,
+   "spent": 3715,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "RET",
+   "q": "You saw a whisk exactly once during the walkthrough. What colour was it?",
+   "gold": "green",
+   "pred": "The whisk is not mentioned in the scene graph, so its color cannot be determined.",
+   "score": 0.0,
+   "spent": 3721,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "RET",
+   "q": "You saw a stapler exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "F",
+   "pred": "The information is not available in the provided data.",
+   "score": 0.0,
+   "spent": 3677,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "RET",
+   "q": "You saw a trivet exactly once during the walkthrough. What colour was it?",
+   "gold": "brown",
+   "pred": "The color of the trivet cannot be determined from the provided information.",
+   "score": 0.0,
+   "spent": 3658,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "RET",
+   "q": "You saw a mortar exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "H",
+   "pred": "The query asks: \"You saw a mortar exactly once during the walkthrough. What single capital letter was printed on it?\"\n\nHowever, in the provided entity scene graph, there is no mention of a \"mortar\" \u2014 neither as a node nor in any edge. The nodes include items like \"pot\", \"pan\", \"bowl\", \"tray\", \"candle\", etc., but not \"mortar\".\n\nSince the entity \"mortar\" is not present in the graph, and no information is given about any object being a mortar or having a letter printed on it, we cannot determine the letter based on the data.\n\nTherefore, the answer must be that the mortar is not in the scene graph, and thus the question cannot be answered from the given information.\n\nBut the question assumes that a mortar was seen exactly once, so we must consider whether \"mortar\" might be a misinterpretation or a synonym for another object.\n\nLet\u2019s check the nodes for possible candidates:\n- \"pot\" appears frequently (n=241)\n- \"bowl\" (n=225)\n- \"tray\" (n=221)\n- \"plate\" (n=229)\n- \"cup\" (n=220",
+   "score": 0.0,
+   "spent": 3806,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "RET",
+   "q": "You saw a colander exactly once during the walkthrough. What colour was it?",
+   "gold": "red",
+   "pred": "The colander is not mentioned in the scene graph, so its color cannot be determined.",
+   "score": 0.0,
+   "spent": 3759,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "RET",
+   "q": "You saw a teapot exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "B",
+   "pred": "The query asks: \"You saw a teapot exactly once during the walkthrough. What single capital letter was printed on it?\"\n\nLet's analyze the provided entity scene graph to determine if a \"teapot\" is mentioned.\n\nStep 1: Check for the presence of a \"teapot\" in the nodes.\n- The nodes list includes: rug, towel, hat, fan, comb, sock, tray, pen, candle, kitchen, glass, pot, brush, plate, soap, closed, ruler, belt, fork, cup, room, bowl, state, door, spoon, book, open, hallway, globe, clock, lamp, study, mug, bedroom, vase, statue, living, pantry, radio.\n- There is no node named \"teapot\" or \"teapot\" explicitly listed.\n- However, there is a node named \"pot\" which could be a teapot, but \"pot\" is not the same as \"teapot\" unless specified.\n\nStep 2: Check if \"teapot\" is a synonym or implied by another node.\n- The node \"pot\" is present, but there is no indication that it is a teapot.\n- No other node name suggests a teapot.\n\nStep 3: Check if \"te",
+   "score": 0.0,
+   "spent": 3807,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  }
+ ]
+}

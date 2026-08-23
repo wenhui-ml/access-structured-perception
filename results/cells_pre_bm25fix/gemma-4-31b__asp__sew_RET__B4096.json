@@ -1,0 +1,556 @@
+{
+ "model": "gemma-4-31b",
+ "method": "asp",
+ "bench": "sew",
+ "subset": "RET",
+ "budget": 4096,
+ "tau_g": 0.0,
+ "judge_deferred": 29,
+ "mean": 9.38,
+ "items": [
+  {
+   "episode": "ep1",
+   "subset": "RET",
+   "q": "You saw a sieve exactly once during the walkthrough. What colour was it?",
+   "gold": "green",
+   "pred": "I cannot determine the color of the sieve as it was not found in the retrieved frames.",
+   "score": 0.0,
+   "spent": 3088,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.716,
+    "Bc": 0.188,
+    "rho": 0.095
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "RET",
+   "q": "You saw a stapler exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "C",
+   "pred": "{\"counts\": {\"belt\": 157, \"ruler\": 143, \"soap\": 156, \"bowl\": 149, \"plate\": 144, \"fork\": 158, \"comb\": 153, \"cup\": 156, \"glass\": 150, \"towel\": 150, \"hat\": 149, \"candle\": 157, \"sock\": 142, \"fan\": 157, \"spoon\": 140, \"tray\": 146, \"pot\": 156, \"brush\": 152, \"rug\": 146, \"sieve\": 1, \"clock\": 1, \"lamp\": 6, \"vase\": 4, \"book\": 4, \"stapler\": 1, \"mug\": 5, \"statue\": 2, \"colander\": 1, \"trivet\": 1, \"kettle\": 1, \"teapot\": 1, \"pen\": 41, \"radio\": 2}, \"env\": {\"door\": \"open\", \"door_changes\": 6}, \"rooms_visited\": [\"study\", \"bedroom\", \"living room\", \"hallway\", \"study\", \"living room\", \"hallway\", \"living room\", \"bedroom\", \"living room\", \"bedroom\", \"kitchen\"], \"objects\": {\"rug\": {\"room\": \"kitchen\", \"last_seen\": 236}, \"plate\": {\"room\": \"kitchen\", \"last_seen\": 236}, \"candle\": {\"room\": \"kitchen\", \"last_seen\": 236}, \"belt\": {\"room\": \"kitchen\", \"last_seen\": 236}, \"hat\": {\"room\": \"kitchen\", \"last_seen\": 236}, \"cup\": {\"room\": \"kitchen\", \"last_seen\": 236}, \"glass\": {\"room\": \"kitchen\", \"last_seen\": 236}, \"pot\": {\"room\": \"kitchen\", \"last_seen\": 236}, \"pen\": {\"room\": \"kitchen\", \"last_seen\": 236}, \"fork\": {\"room\": \"kitchen\", \"last_seen\": 236}, \"towel\": {\"room\": \"kitchen\", \"last_seen\": 236}, \"tray\": {\"room\": \"kitchen\", \"last_seen\": 236}, \"bowl\": {\"room\": \"kitchen\", \"last_seen\": 236}, \"ruler\": {\"room\": \"kitchen\", \"last_seen\": 236}, \"brush\": {\"room\": \"kitchen\", \"last_seen\": 236}, \"sock\": {\"room\": \"kitchen\", \"last_seen\": 236}}, \"event_log\": [\"Objects observed in kitchen\"]}",
+   "score": 0.0,
+   "spent": 3745,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.092,
+    "Br": 0.537,
+    "Bc": 0.299,
+    "rho": 0.073
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "RET",
+   "q": "You saw a colander exactly once during the walkthrough. What colour was it?",
+   "gold": "green",
+   "pred": "{\"counts\": {\"belt\": 157, \"ruler\": 143, \"soap\": 156, \"bowl\": 149, \"plate\": 144, \"fork\": 158, \"comb\": 153, \"cup\": 156, \"glass\": 150, \"towel\": 150, \"hat\": 149, \"candle\": 157, \"sock\": 142, \"fan\": 157, \"spoon\": 140, \"tray\": 146, \"pot\": 156, \"brush\": 152, \"rug\": 146, \"sieve\": 1, \"clock\": 1, \"lamp\": 6, \"vase\": 4, \"book\": 4, \"stapler\": 1, \"mug\": 5, \"statue\": 2, \"colander\": 1, \"trivet\": 1, \"kettle\": 1, \"teapot\": 1, \"pen\": 41, \"radio\": 2}, \"env\": {\"door\": \"open\", \"door_changes\": 6}, \"rooms_visited\": [\"study\", \"bedroom\", \"living room\", \"hallway\", \"study\", \"living room\", \"hallway\", \"living room\", \"bedroom\", \"living room\", \"bedroom\", \"kitchen\"], \"objects\": {\"rug\": {\"room\": \"kitchen\", \"last_seen\": 236}, \"plate\": {\"room\": \"kitchen\", \"last_seen\": 236}, \"candle\": {\"room\": \"kitchen\", \"last_seen\": 236}, \"belt\": {\"room\": \"kitchen\", \"last_seen\": 236}, \"hat\": {\"room\": \"kitchen\", \"last_seen\": 236}, \"cup\": {\"room\": \"kitchen\", \"last_seen\": 236}, \"glass\": {\"room\": \"kitchen\", \"last_seen\": 236}, \"pot\": {\"room\": \"kitchen\", \"last_seen\": 236}, \"pen\": {\"room\": \"kitchen\", \"last_seen\": 236}, \"fork\": {\"room\": \"kitchen\", \"last_seen\": 236}, \"towel\": {\"room\": \"kitchen\", \"last_seen\": 236}, \"tray\": {\"room\": \"kitchen\", \"last_seen\": 236}, \"bowl\": {\"room\": \"kitchen\", \"last_seen\": 236}, \"ruler\": {\"room\": \"kitchen\", \"last_seen\": 236}, \"brush\": {\"room\": \"kitchen\", \"last_seen\": 236}, \"sock\": {\"room\": \"kitchen\", \"last_seen\": 236}}, \"event_log\": [\"Objects observed in kitchen\"]}",
+   "score": 0.0,
+   "spent": 3730,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.092,
+    "Br": 0.536,
+    "Bc": 0.299,
+    "rho": 0.072
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "RET",
+   "q": "You saw a trivet exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "B",
+   "pred": "I cannot determine the letter as no trivet was found in the retrieved frames.",
+   "score": 0.0,
+   "spent": 3144,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.704,
+    "Bc": 0.201,
+    "rho": 0.095
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "RET",
+   "q": "You saw a kettle exactly once during the walkthrough. What colour was it?",
+   "gold": "green",
+   "pred": "{\"counts\": {\"belt\": 157, \"ruler\": 143, \"soap\": 156, \"bowl\": 149, \"plate\": 144, \"fork\": 158, \"comb\": 153, \"cup\": 156, \"glass\": 150, \"towel\": 150, \"hat\": 149, \"candle\": 157, \"sock\": 142, \"fan\": 157, \"spoon\": 140, \"tray\": 146, \"pot\": 156, \"brush\": 152, \"rug\": 146, \"sieve\": 1, \"clock\": 1, \"lamp\": 6, \"vase\": 4, \"book\": 4, \"stapler\": 1, \"mug\": 5, \"statue\": 2, \"colander\": 1, \"trivet\": 1, \"kettle\": 1, \"teapot\": 1, \"pen\": 41, \"radio\": 2}, \"env\": {\"door\": \"open\", \"door_changes\": 6}, \"rooms_visited\": [\"study\", \"bedroom\", \"living room\", \"hallway\", \"study\", \"living room\", \"hallway\", \"living room\", \"bedroom\", \"living room\", \"bedroom\", \"kitchen\"], \"objects\": {\"rug\": {\"room\": \"kitchen\", \"last_seen\": 236}, \"plate\": {\"room\": \"kitchen\", \"last_seen\": 236}, \"candle\": {\"room\": \"kitchen\", \"last_seen\": 236}, \"belt\": {\"room\": \"kitchen\", \"last_seen\": 236}, \"hat\": {\"room\": \"kitchen\", \"last_seen\": 236}, \"cup\": {\"room\": \"kitchen\", \"last_seen\": 236}, \"glass\": {\"room\": \"kitchen\", \"last_seen\": 236}, \"pot\": {\"room\": \"kitchen\", \"last_seen\": 236}, \"pen\": {\"room\": \"kitchen\", \"last_seen\": 236}, \"fork\": {\"room\": \"kitchen\", \"last_seen\": 236}, \"towel\": {\"room\": \"kitchen\", \"last_seen\": 236}, \"tray\": {\"room\": \"kitchen\", \"last_seen\": 236}, \"bowl\": {\"room\": \"kitchen\", \"last_seen\": 236}, \"ruler\": {\"room\": \"kitchen\", \"last_seen\": 236}, \"brush\": {\"room\": \"kitchen\", \"last_seen\": 236}, \"sock\": {\"room\": \"kitchen\", \"last_seen\": 236}}, \"event_log\": [\"Objects observed in kitchen\"]}",
+   "score": 0.0,
+   "spent": 3722,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.093,
+    "Br": 0.536,
+    "Bc": 0.3,
+    "rho": 0.072
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "RET",
+   "q": "You saw a teapot exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "D",
+   "pred": "D",
+   "score": 100.0,
+   "spent": 2868,
+   "n_calls": 4,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.772,
+    "Bc": 0.124,
+    "rho": 0.104
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "RET",
+   "q": "You saw a ladle exactly once during the walkthrough. What colour was it?",
+   "gold": "red",
+   "pred": "{\"counts\": {\"belt\": 157, \"ruler\": 143, \"soap\": 156, \"bowl\": 149, \"plate\": 144, \"fork\": 158, \"comb\": 153, \"cup\": 156, \"glass\": 150, \"towel\": 150, \"hat\": 149, \"candle\": 157, \"sock\": 142, \"fan\": 157, \"spoon\": 140, \"tray\": 146, \"pot\": 156, \"brush\": 152, \"rug\": 146, \"sieve\": 1, \"clock\": 1, \"lamp\": 6, \"vase\": 4, \"book\": 4, \"stapler\": 1, \"mug\": 5, \"statue\": 2, \"colander\": 1, \"trivet\": 1, \"kettle\": 1, \"teapot\": 1, \"pen\": 41, \"radio\": 2}, \"env\": {\"door\": \"open\", \"door_changes\": 6}, \"rooms_visited\": [\"study\", \"bedroom\", \"living room\", \"hallway\", \"study\", \"living room\", \"hallway\", \"living room\", \"bedroom\", \"living room\", \"bedroom\", \"kitchen\"], \"objects\": {\"rug\": {\"room\": \"kitchen\", \"last_seen\": 236}, \"plate\": {\"room\": \"kitchen\", \"last_seen\": 236}, \"candle\": {\"room\": \"kitchen\", \"last_seen\": 236}, \"belt\": {\"room\": \"kitchen\", \"last_seen\": 236}, \"hat\": {\"room\": \"kitchen\", \"last_seen\": 236}, \"cup\": {\"room\": \"kitchen\", \"last_seen\": 236}, \"glass\": {\"room\": \"kitchen\", \"last_seen\": 236}, \"pot\": {\"room\": \"kitchen\", \"last_seen\": 236}, \"pen\": {\"room\": \"kitchen\", \"last_seen\": 236}, \"fork\": {\"room\": \"kitchen\", \"last_seen\": 236}, \"towel\": {\"room\": \"kitchen\", \"last_seen\": 236}, \"tray\": {\"room\": \"kitchen\", \"last_seen\": 236}, \"bowl\": {\"room\": \"kitchen\", \"last_seen\": 236}, \"ruler\": {\"room\": \"kitchen\", \"last_seen\": 236}, \"brush\": {\"room\": \"kitchen\", \"last_seen\": 236}, \"sock\": {\"room\": \"kitchen\", \"last_seen\": 236}}, \"event_log\": [\"Objects observed in kitchen\"]}",
+   "score": 0.0,
+   "spent": 3765,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.092,
+    "Br": 0.534,
+    "Bc": 0.304,
+    "rho": 0.071
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "RET",
+   "q": "You saw a thermos exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "E",
+   "pred": "{\"counts\": {\"belt\": 157, \"ruler\": 143, \"soap\": 156, \"bowl\": 149, \"plate\": 144, \"fork\": 158, \"comb\": 153, \"cup\": 156, \"glass\": 150, \"towel\": 150, \"hat\": 149, \"candle\": 157, \"sock\": 142, \"fan\": 157, \"spoon\": 140, \"tray\": 146, \"pot\": 156, \"brush\": 152, \"rug\": 146, \"sieve\": 1, \"clock\": 1, \"lamp\": 6, \"vase\": 4, \"book\": 4, \"stapler\": 1, \"mug\": 5, \"statue\": 2, \"colander\": 1, \"trivet\": 1, \"kettle\": 1, \"teapot\": 1, \"pen\": 41, \"radio\": 2}, \"env\": {\"door\": \"open\", \"door_changes\": 6}, \"rooms_visited\": [\"study\", \"bedroom\", \"living room\", \"hallway\", \"study\", \"living room\", \"hallway\", \"living room\", \"bedroom\", \"living room\", \"bedroom\", \"kitchen\"], \"objects\": {\"rug\": {\"room\": \"kitchen\", \"last_seen\": 236}, \"plate\": {\"room\": \"kitchen\", \"last_seen\": 236}, \"candle\": {\"room\": \"kitchen\", \"last_seen\": 236}, \"belt\": {\"room\": \"kitchen\", \"last_seen\": 236}, \"hat\": {\"room\": \"kitchen\", \"last_seen\": 236}, \"cup\": {\"room\": \"kitchen\", \"last_seen\": 236}, \"glass\": {\"room\": \"kitchen\", \"last_seen\": 236}, \"pot\": {\"room\": \"kitchen\", \"last_seen\": 236}, \"pen\": {\"room\": \"kitchen\", \"last_seen\": 236}, \"fork\": {\"room\": \"kitchen\", \"last_seen\": 236}, \"towel\": {\"room\": \"kitchen\", \"last_seen\": 236}, \"tray\": {\"room\": \"kitchen\", \"last_seen\": 236}, \"bowl\": {\"room\": \"kitchen\", \"last_seen\": 236}, \"ruler\": {\"room\": \"kitchen\", \"last_seen\": 236}, \"brush\": {\"room\": \"kitchen\", \"last_seen\": 236}, \"sock\": {\"room\": \"kitchen\", \"last_seen\": 236}}, \"event_log\": [\"Objects observed in kitchen\"]}",
+   "score": 0.0,
+   "spent": 3765,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.091,
+    "Br": 0.535,
+    "Bc": 0.302,
+    "rho": 0.072
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "RET",
+   "q": "You saw a thermos exactly once during the walkthrough. What colour was it?",
+   "gold": "yellow",
+   "pred": "yellow",
+   "score": 100.0,
+   "spent": 2807,
+   "n_calls": 4,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.784,
+    "Bc": 0.111,
+    "rho": 0.105
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "RET",
+   "q": "You saw a kettle exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "E",
+   "pred": "{\"counts\": {\"pot\": 171, \"fan\": 167, \"soap\": 171, \"bowl\": 175, \"glass\": 181, \"fork\": 182, \"plate\": 174, \"candle\": 177, \"ruler\": 163, \"tray\": 176, \"pen\": 174, \"spoon\": 165, \"belt\": 180, \"comb\": 178, \"sock\": 178, \"towel\": 181, \"brush\": 180, \"cup\": 175, \"hat\": 174, \"rug\": 177, \"lamp\": 4, \"vase\": 3, \"thermos\": 1, \"mug\": 8, \"statue\": 2, \"book\": 6, \"kettle\": 1, \"clock\": 3, \"colander\": 1, \"radio\": 2, \"globe\": 3, \"ladle\": 1, \"decanter\": 1, \"mortar\": 1}, \"env\": {\"door\": \"closed\", \"door_changes\": 4}, \"rooms_visited\": [\"living room\", \"study\", \"pantry\", \"living room\", \"study\", \"hallway\", \"living room\", \"bedroom\", \"hallway\", \"bedroom\", \"kitchen\"], \"objects\": {\"ruler\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"comb\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"glass\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"tray\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"towel\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"cup\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"candle\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"spoon\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"brush\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"pen\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"rug\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"fork\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"hat\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"plate\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"bowl\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"fan\": {\"room\": \"kitchen\", \"last_seen\": 223}}, \"event_log\": [\"Objects observed in kitchen\"]}",
+   "score": 0.0,
+   "spent": 3741,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.092,
+    "Br": 0.537,
+    "Bc": 0.299,
+    "rho": 0.073
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "RET",
+   "q": "You saw a colander exactly once during the walkthrough. What colour was it?",
+   "gold": "green",
+   "pred": "{\"counts\": {\"pot\": 171, \"fan\": 167, \"soap\": 171, \"bowl\": 175, \"glass\": 181, \"fork\": 182, \"plate\": 174, \"candle\": 177, \"ruler\": 163, \"tray\": 176, \"pen\": 174, \"spoon\": 165, \"belt\": 180, \"comb\": 178, \"sock\": 178, \"towel\": 181, \"brush\": 180, \"cup\": 175, \"hat\": 174, \"rug\": 177, \"lamp\": 4, \"vase\": 3, \"thermos\": 1, \"mug\": 8, \"statue\": 2, \"book\": 6, \"kettle\": 1, \"clock\": 3, \"colander\": 1, \"radio\": 2, \"globe\": 3, \"ladle\": 1, \"decanter\": 1, \"mortar\": 1}, \"env\": {\"door\": \"closed\", \"door_changes\": 4}, \"rooms_visited\": [\"living room\", \"study\", \"pantry\", \"living room\", \"study\", \"hallway\", \"living room\", \"bedroom\", \"hallway\", \"bedroom\", \"kitchen\"], \"objects\": {\"ruler\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"comb\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"glass\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"tray\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"towel\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"cup\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"candle\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"spoon\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"brush\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"pen\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"rug\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"fork\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"hat\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"plate\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"bowl\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"fan\": {\"room\": \"kitchen\", \"last_seen\": 223}}, \"event_log\": [\"Objects observed in kitchen\"]}",
+   "score": 0.0,
+   "spent": 3792,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.091,
+    "Br": 0.531,
+    "Bc": 0.307,
+    "rho": 0.071
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "RET",
+   "q": "You saw a ladle exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "G",
+   "pred": "{\"counts\": {\"pot\": 171, \"fan\": 167, \"soap\": 171, \"bowl\": 175, \"glass\": 181, \"fork\": 182, \"plate\": 174, \"candle\": 177, \"ruler\": 163, \"tray\": 176, \"pen\": 174, \"spoon\": 165, \"belt\": 180, \"comb\": 178, \"sock\": 178, \"towel\": 181, \"brush\": 180, \"cup\": 175, \"hat\": 174, \"rug\": 177, \"lamp\": 4, \"vase\": 3, \"thermos\": 1, \"mug\": 8, \"statue\": 2, \"book\": 6, \"kettle\": 1, \"clock\": 3, \"colander\": 1, \"radio\": 2, \"globe\": 3, \"ladle\": 1, \"decanter\": 1, \"mortar\": 1}, \"env\": {\"door\": \"closed\", \"door_changes\": 4}, \"rooms_visited\": [\"living room\", \"study\", \"pantry\", \"living room\", \"study\", \"hallway\", \"living room\", \"bedroom\", \"hallway\", \"bedroom\", \"kitchen\"], \"objects\": {\"ruler\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"comb\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"glass\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"tray\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"towel\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"cup\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"candle\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"spoon\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"brush\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"pen\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"rug\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"fork\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"hat\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"plate\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"bowl\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"fan\": {\"room\": \"kitchen\", \"last_seen\": 223}}, \"event_log\": [\"Objects observed in kitchen\"]}",
+   "score": 0.0,
+   "spent": 3745,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.092,
+    "Br": 0.536,
+    "Bc": 0.299,
+    "rho": 0.073
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "RET",
+   "q": "You saw a whisk exactly once during the walkthrough. What colour was it?",
+   "gold": "purple",
+   "pred": "{\"counts\": {\"pot\": 171, \"fan\": 167, \"soap\": 171, \"bowl\": 175, \"glass\": 181, \"fork\": 182, \"plate\": 174, \"candle\": 177, \"ruler\": 163, \"tray\": 176, \"pen\": 174, \"spoon\": 165, \"belt\": 180, \"comb\": 178, \"sock\": 178, \"towel\": 181, \"brush\": 180, \"cup\": 175, \"hat\": 174, \"rug\": 177, \"lamp\": 4, \"vase\": 3, \"thermos\": 1, \"mug\": 8, \"statue\": 2, \"book\": 6, \"kettle\": 1, \"clock\": 3, \"colander\": 1, \"radio\": 2, \"globe\": 3, \"ladle\": 1, \"decanter\": 1, \"mortar\": 1}, \"env\": {\"door\": \"closed\", \"door_changes\": 4}, \"rooms_visited\": [\"living room\", \"study\", \"pantry\", \"living room\", \"study\", \"hallway\", \"living room\", \"bedroom\", \"hallway\", \"bedroom\", \"kitchen\"], \"objects\": {\"ruler\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"comb\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"glass\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"tray\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"towel\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"cup\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"candle\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"spoon\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"brush\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"pen\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"rug\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"fork\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"hat\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"plate\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"bowl\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"fan\": {\"room\": \"kitchen\", \"last_seen\": 223}}, \"event_log\": [\"Objects observed in kitchen\"]}",
+   "score": 0.0,
+   "spent": 3772,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.092,
+    "Br": 0.531,
+    "Bc": 0.307,
+    "rho": 0.071
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "RET",
+   "q": "You saw a decanter exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "C",
+   "pred": "{\"counts\": {\"pot\": 171, \"fan\": 167, \"soap\": 171, \"bowl\": 175, \"glass\": 181, \"fork\": 182, \"plate\": 174, \"candle\": 177, \"ruler\": 163, \"tray\": 176, \"pen\": 174, \"spoon\": 165, \"belt\": 180, \"comb\": 178, \"sock\": 178, \"towel\": 181, \"brush\": 180, \"cup\": 175, \"hat\": 174, \"rug\": 177, \"lamp\": 4, \"vase\": 3, \"thermos\": 1, \"mug\": 8, \"statue\": 2, \"book\": 6, \"kettle\": 1, \"clock\": 3, \"colander\": 1, \"radio\": 2, \"globe\": 3, \"ladle\": 1, \"decanter\": 1, \"mortar\": 1}, \"env\": {\"door\": \"closed\", \"door_changes\": 4}, \"rooms_visited\": [\"living room\", \"study\", \"pantry\", \"living room\", \"study\", \"hallway\", \"living room\", \"bedroom\", \"hallway\", \"bedroom\", \"kitchen\"], \"objects\": {\"ruler\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"comb\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"glass\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"tray\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"towel\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"cup\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"candle\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"spoon\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"brush\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"pen\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"rug\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"fork\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"hat\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"plate\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"bowl\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"fan\": {\"room\": \"kitchen\", \"last_seen\": 223}}, \"event_log\": [\"Objects observed in kitchen\"]}",
+   "score": 0.0,
+   "spent": 3795,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.091,
+    "Br": 0.53,
+    "Bc": 0.307,
+    "rho": 0.072
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "RET",
+   "q": "You saw a mortar exactly once during the walkthrough. What colour was it?",
+   "gold": "blue",
+   "pred": "{\"counts\": {\"pot\": 171, \"fan\": 167, \"soap\": 171, \"bowl\": 175, \"glass\": 181, \"fork\": 182, \"plate\": 174, \"candle\": 177, \"ruler\": 163, \"tray\": 176, \"pen\": 174, \"spoon\": 165, \"belt\": 180, \"comb\": 178, \"sock\": 178, \"towel\": 181, \"brush\": 180, \"cup\": 175, \"hat\": 174, \"rug\": 177, \"lamp\": 4, \"vase\": 3, \"thermos\": 1, \"mug\": 8, \"statue\": 2, \"book\": 6, \"kettle\": 1, \"clock\": 3, \"colander\": 1, \"radio\": 2, \"globe\": 3, \"ladle\": 1, \"decanter\": 1, \"mortar\": 1}, \"env\": {\"door\": \"closed\", \"door_changes\": 4}, \"rooms_visited\": [\"living room\", \"study\", \"pantry\", \"living room\", \"study\", \"hallway\", \"living room\", \"bedroom\", \"hallway\", \"bedroom\", \"kitchen\"], \"objects\": {\"ruler\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"comb\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"glass\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"tray\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"towel\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"cup\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"candle\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"spoon\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"brush\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"pen\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"rug\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"fork\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"hat\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"plate\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"bowl\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"fan\": {\"room\": \"kitchen\", \"last_seen\": 223}}, \"event_log\": [\"Objects observed in kitchen\"]}",
+   "score": 0.0,
+   "spent": 3722,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.093,
+    "Br": 0.539,
+    "Bc": 0.296,
+    "rho": 0.072
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "RET",
+   "q": "You saw a tongs exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "E",
+   "pred": "{\"counts\": {\"pot\": 171, \"fan\": 167, \"soap\": 171, \"bowl\": 175, \"glass\": 181, \"fork\": 182, \"plate\": 174, \"candle\": 177, \"ruler\": 163, \"tray\": 176, \"pen\": 174, \"spoon\": 165, \"belt\": 180, \"comb\": 178, \"sock\": 178, \"towel\": 181, \"brush\": 180, \"cup\": 175, \"hat\": 174, \"rug\": 177, \"lamp\": 4, \"vase\": 3, \"thermos\": 1, \"mug\": 8, \"statue\": 2, \"book\": 6, \"kettle\": 1, \"clock\": 3, \"colander\": 1, \"radio\": 2, \"globe\": 3, \"ladle\": 1, \"decanter\": 1, \"mortar\": 1}, \"env\": {\"door\": \"closed\", \"door_changes\": 4}, \"rooms_visited\": [\"living room\", \"study\", \"pantry\", \"living room\", \"study\", \"hallway\", \"living room\", \"bedroom\", \"hallway\", \"bedroom\", \"kitchen\"], \"objects\": {\"ruler\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"comb\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"glass\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"tray\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"towel\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"cup\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"candle\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"spoon\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"brush\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"pen\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"rug\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"fork\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"hat\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"plate\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"bowl\": {\"room\": \"kitchen\", \"last_seen\": 223}, \"fan\": {\"room\": \"kitchen\", \"last_seen\": 223}}, \"event_log\": [\"Objects observed in kitchen\"]}",
+   "score": 0.0,
+   "spent": 3777,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.091,
+    "Br": 0.532,
+    "Bc": 0.305,
+    "rho": 0.072
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "RET",
+   "q": "You saw a trivet exactly once during the walkthrough. What colour was it?",
+   "gold": "purple",
+   "pred": "{\"counts\": {\"sock\": 195, \"pot\": 196, \"ruler\": 199, \"towel\": 186, \"tray\": 194, \"glass\": 180, \"soap\": 203, \"rug\": 208, \"spoon\": 190, \"comb\": 205, \"plate\": 189, \"belt\": 193, \"bowl\": 186, \"fork\": 194, \"candle\": 200, \"cup\": 185, \"brush\": 189, \"pen\": 193, \"hat\": 187, \"fan\": 183, \"book\": 5, \"mug\": 4, \"lamp\": 6, \"globe\": 2, \"clock\": 3, \"radio\": 2, \"statue\": 3, \"trivet\": 1, \"whisk\": 1, \"vase\": 2, \"mortar\": 1, \"teapot\": 1, \"colander\": 1, \"ladle\": 1}, \"env\": {\"door\": \"open\", \"door_changes\": 8}, \"rooms_visited\": [\"bedroom\", \"kitchen\", \"bedroom\", \"kitchen\", \"bedroom\", \"study\", \"living room\", \"kitchen\", \"bedroom\", \"study\", \"pantry\", \"kitchen\"], \"objects\": {\"sock\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"fan\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"belt\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"tray\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"candle\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"plate\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"cup\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"soap\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"towel\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"spoon\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"pot\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"comb\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"rug\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"brush\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"glass\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"hat\": {\"room\": \"kitchen\", \"last_seen\": 299}}, \"event_log\": [\"Door opened\"]}",
+   "score": 0.0,
+   "spent": 3749,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.092,
+    "Br": 0.533,
+    "Bc": 0.303,
+    "rho": 0.072
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "RET",
+   "q": "You saw a whisk exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "B",
+   "pred": "I cannot answer this question because the provided information does not specify the letter printed on the whisk.",
+   "score": 0.0,
+   "spent": 3369,
+   "n_calls": 6,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.101,
+    "Br": 0.299,
+    "Bc": 0.52,
+    "rho": 0.08
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "RET",
+   "q": "You saw a mortar exactly once during the walkthrough. What colour was it?",
+   "gold": "purple",
+   "pred": "I cannot determine the color of the mortar as it was not found in the retrieved frames.",
+   "score": 0.0,
+   "spent": 3106,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.712,
+    "Bc": 0.193,
+    "rho": 0.095
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "RET",
+   "q": "You saw a teapot exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "E",
+   "pred": "I cannot determine the letter as no teapot was found in the retrieved frames.",
+   "score": 0.0,
+   "spent": 3140,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.704,
+    "Bc": 0.2,
+    "rho": 0.095
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "RET",
+   "q": "You saw a colander exactly once during the walkthrough. What colour was it?",
+   "gold": "brown",
+   "pred": "I cannot determine the color as no colander was found in the retrieved frames.",
+   "score": 0.0,
+   "spent": 3112,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.709,
+    "Bc": 0.196,
+    "rho": 0.095
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "RET",
+   "q": "You saw a ladle exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "A",
+   "pred": "A",
+   "score": 100.0,
+   "spent": 2865,
+   "n_calls": 4,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.775,
+    "Bc": 0.121,
+    "rho": 0.104
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "RET",
+   "q": "You saw a tongs exactly once during the walkthrough. What colour was it?",
+   "gold": "purple",
+   "pred": "{\"counts\": {\"sock\": 195, \"pot\": 196, \"ruler\": 199, \"towel\": 186, \"tray\": 194, \"glass\": 180, \"soap\": 203, \"rug\": 208, \"spoon\": 190, \"comb\": 205, \"plate\": 189, \"belt\": 193, \"bowl\": 186, \"fork\": 194, \"candle\": 200, \"cup\": 185, \"brush\": 189, \"pen\": 193, \"hat\": 187, \"fan\": 183, \"book\": 5, \"mug\": 4, \"lamp\": 6, \"globe\": 2, \"clock\": 3, \"radio\": 2, \"statue\": 3, \"trivet\": 1, \"whisk\": 1, \"vase\": 2, \"mortar\": 1, \"teapot\": 1, \"colander\": 1, \"ladle\": 1}, \"env\": {\"door\": \"open\", \"door_changes\": 8}, \"rooms_visited\": [\"bedroom\", \"kitchen\", \"bedroom\", \"kitchen\", \"bedroom\", \"study\", \"living room\", \"kitchen\", \"bedroom\", \"study\", \"pantry\", \"kitchen\"], \"objects\": {\"sock\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"fan\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"belt\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"tray\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"candle\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"plate\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"cup\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"soap\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"towel\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"spoon\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"pot\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"comb\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"rug\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"brush\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"glass\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"hat\": {\"room\": \"kitchen\", \"last_seen\": 299}}, \"event_log\": [\"Door opened\"]}",
+   "score": 0.0,
+   "spent": 3945,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.088,
+    "Br": 0.511,
+    "Bc": 0.332,
+    "rho": 0.068
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "RET",
+   "q": "You saw a stapler exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "A",
+   "pred": "{\"counts\": {\"sock\": 195, \"pot\": 196, \"ruler\": 199, \"towel\": 186, \"tray\": 194, \"glass\": 180, \"soap\": 203, \"rug\": 208, \"spoon\": 190, \"comb\": 205, \"plate\": 189, \"belt\": 193, \"bowl\": 186, \"fork\": 194, \"candle\": 200, \"cup\": 185, \"brush\": 189, \"pen\": 193, \"hat\": 187, \"fan\": 183, \"book\": 5, \"mug\": 4, \"lamp\": 6, \"globe\": 2, \"clock\": 3, \"radio\": 2, \"statue\": 3, \"trivet\": 1, \"whisk\": 1, \"vase\": 2, \"mortar\": 1, \"teapot\": 1, \"colander\": 1, \"ladle\": 1}, \"env\": {\"door\": \"open\", \"door_changes\": 8}, \"rooms_visited\": [\"bedroom\", \"kitchen\", \"bedroom\", \"kitchen\", \"bedroom\", \"study\", \"living room\", \"kitchen\", \"bedroom\", \"study\", \"pantry\", \"kitchen\"], \"objects\": {\"sock\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"fan\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"belt\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"tray\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"candle\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"plate\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"cup\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"soap\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"towel\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"spoon\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"pot\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"comb\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"rug\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"brush\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"glass\": {\"room\": \"kitchen\", \"last_seen\": 299}, \"hat\": {\"room\": \"kitchen\", \"last_seen\": 299}}, \"event_log\": [\"Door opened\"]}",
+   "score": 0.0,
+   "spent": 3758,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.092,
+    "Br": 0.535,
+    "Bc": 0.301,
+    "rho": 0.073
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "RET",
+   "q": "You saw a tongs exactly once during the walkthrough. What colour was it?",
+   "gold": "green",
+   "pred": "{\"counts\": {\"glass\": 186, \"pot\": 194, \"fan\": 184, \"towel\": 187, \"tray\": 175, \"ruler\": 172, \"belt\": 171, \"comb\": 185, \"brush\": 185, \"plate\": 179, \"rug\": 197, \"pen\": 188, \"candle\": 180, \"hat\": 191, \"sock\": 199, \"soap\": 179, \"fork\": 179, \"cup\": 171, \"bowl\": 179, \"spoon\": 195, \"book\": 4, \"globe\": 3, \"tongs\": 1, \"clock\": 2, \"lamp\": 5, \"mug\": 4, \"vase\": 6, \"statue\": 2, \"whisk\": 1, \"stapler\": 1, \"trivet\": 1, \"radio\": 2, \"mortar\": 1, \"teapot\": 1}, \"env\": {\"door\": \"open\", \"door_changes\": 6}, \"rooms_visited\": [\"kitchen\", \"hallway\", \"study\", \"bedroom\", \"kitchen\", \"living room\", \"pantry\", \"study\", \"hallway\", \"study\", \"kitchen\"], \"objects\": {\"cup\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"sock\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"tray\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"candle\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"rug\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"ruler\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"plate\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"glass\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"towel\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"bowl\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"brush\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"hat\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"comb\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"pen\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"fan\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"pot\": {\"room\": \"kitchen\", \"last_seen\": 278}}, \"event_log\": [\"Observed objects in kitchen\"]}",
+   "score": 0.0,
+   "spent": 3702,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.093,
+    "Br": 0.539,
+    "Bc": 0.296,
+    "rho": 0.072
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "RET",
+   "q": "You saw a sieve exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "B",
+   "pred": "{\"counts\": {\"glass\": 186, \"pot\": 194, \"fan\": 184, \"towel\": 187, \"tray\": 175, \"ruler\": 172, \"belt\": 171, \"comb\": 185, \"brush\": 185, \"plate\": 179, \"rug\": 197, \"pen\": 188, \"candle\": 180, \"hat\": 191, \"sock\": 199, \"soap\": 179, \"fork\": 179, \"cup\": 171, \"bowl\": 179, \"spoon\": 195, \"book\": 4, \"globe\": 3, \"tongs\": 1, \"clock\": 2, \"lamp\": 5, \"mug\": 4, \"vase\": 6, \"statue\": 2, \"whisk\": 1, \"stapler\": 1, \"trivet\": 1, \"radio\": 2, \"mortar\": 1, \"teapot\": 1}, \"env\": {\"door\": \"open\", \"door_changes\": 6}, \"rooms_visited\": [\"kitchen\", \"hallway\", \"study\", \"bedroom\", \"kitchen\", \"living room\", \"pantry\", \"study\", \"hallway\", \"study\", \"kitchen\"], \"objects\": {\"cup\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"sock\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"tray\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"candle\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"rug\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"ruler\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"plate\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"glass\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"towel\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"bowl\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"brush\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"hat\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"comb\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"pen\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"fan\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"pot\": {\"room\": \"kitchen\", \"last_seen\": 278}}, \"event_log\": [\"Observed objects in kitchen\"]}",
+   "score": 0.0,
+   "spent": 3722,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.092,
+    "Br": 0.538,
+    "Bc": 0.296,
+    "rho": 0.073
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "RET",
+   "q": "You saw a whisk exactly once during the walkthrough. What colour was it?",
+   "gold": "green",
+   "pred": "{\"counts\": {\"glass\": 186, \"pot\": 194, \"fan\": 184, \"towel\": 187, \"tray\": 175, \"ruler\": 172, \"belt\": 171, \"comb\": 185, \"brush\": 185, \"plate\": 179, \"rug\": 197, \"pen\": 188, \"candle\": 180, \"hat\": 191, \"sock\": 199, \"soap\": 179, \"fork\": 179, \"cup\": 171, \"bowl\": 179, \"spoon\": 195, \"book\": 4, \"globe\": 3, \"tongs\": 1, \"clock\": 2, \"lamp\": 5, \"mug\": 4, \"vase\": 6, \"statue\": 2, \"whisk\": 1, \"stapler\": 1, \"trivet\": 1, \"radio\": 2, \"mortar\": 1, \"teapot\": 1}, \"env\": {\"door\": \"open\", \"door_changes\": 6}, \"rooms_visited\": [\"kitchen\", \"hallway\", \"study\", \"bedroom\", \"kitchen\", \"living room\", \"pantry\", \"study\", \"hallway\", \"study\", \"kitchen\"], \"objects\": {\"cup\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"sock\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"tray\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"candle\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"rug\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"ruler\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"plate\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"glass\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"towel\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"bowl\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"brush\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"hat\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"comb\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"pen\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"fan\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"pot\": {\"room\": \"kitchen\", \"last_seen\": 278}}, \"event_log\": [\"Observed objects in kitchen\"]}",
+   "score": 0.0,
+   "spent": 3734,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.092,
+    "Br": 0.535,
+    "Bc": 0.3,
+    "rho": 0.072
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "RET",
+   "q": "You saw a stapler exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "F",
+   "pred": "{\"counts\": {\"glass\": 186, \"pot\": 194, \"fan\": 184, \"towel\": 187, \"tray\": 175, \"ruler\": 172, \"belt\": 171, \"comb\": 185, \"brush\": 185, \"plate\": 179, \"rug\": 197, \"pen\": 188, \"candle\": 180, \"hat\": 191, \"sock\": 199, \"soap\": 179, \"fork\": 179, \"cup\": 171, \"bowl\": 179, \"spoon\": 195, \"book\": 4, \"globe\": 3, \"tongs\": 1, \"clock\": 2, \"lamp\": 5, \"mug\": 4, \"vase\": 6, \"statue\": 2, \"whisk\": 1, \"stapler\": 1, \"trivet\": 1, \"radio\": 2, \"mortar\": 1, \"teapot\": 1}, \"env\": {\"door\": \"open\", \"door_changes\": 6}, \"rooms_visited\": [\"kitchen\", \"hallway\", \"study\", \"bedroom\", \"kitchen\", \"living room\", \"pantry\", \"study\", \"hallway\", \"study\", \"kitchen\"], \"objects\": {\"cup\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"sock\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"tray\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"candle\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"rug\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"ruler\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"plate\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"glass\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"towel\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"bowl\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"brush\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"hat\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"comb\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"pen\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"fan\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"pot\": {\"room\": \"kitchen\", \"last_seen\": 278}}, \"event_log\": [\"Observed objects in kitchen\"]}",
+   "score": 0.0,
+   "spent": 3746,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.092,
+    "Br": 0.535,
+    "Bc": 0.301,
+    "rho": 0.073
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "RET",
+   "q": "You saw a trivet exactly once during the walkthrough. What colour was it?",
+   "gold": "brown",
+   "pred": "I cannot determine the colour of the trivet as it was not found in the retrieved frames.",
+   "score": 0.0,
+   "spent": 3124,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.709,
+    "Bc": 0.197,
+    "rho": 0.095
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "RET",
+   "q": "You saw a mortar exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "H",
+   "pred": "{\"counts\": {\"glass\": 186, \"pot\": 194, \"fan\": 184, \"towel\": 187, \"tray\": 175, \"ruler\": 172, \"belt\": 171, \"comb\": 185, \"brush\": 185, \"plate\": 179, \"rug\": 197, \"pen\": 188, \"candle\": 180, \"hat\": 191, \"sock\": 199, \"soap\": 179, \"fork\": 179, \"cup\": 171, \"bowl\": 179, \"spoon\": 195, \"book\": 4, \"globe\": 3, \"tongs\": 1, \"clock\": 2, \"lamp\": 5, \"mug\": 4, \"vase\": 6, \"statue\": 2, \"whisk\": 1, \"stapler\": 1, \"trivet\": 1, \"radio\": 2, \"mortar\": 1, \"teapot\": 1}, \"env\": {\"door\": \"open\", \"door_changes\": 6}, \"rooms_visited\": [\"kitchen\", \"hallway\", \"study\", \"bedroom\", \"kitchen\", \"living room\", \"pantry\", \"study\", \"hallway\", \"study\", \"kitchen\"], \"objects\": {\"cup\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"sock\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"tray\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"candle\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"rug\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"ruler\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"plate\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"glass\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"towel\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"bowl\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"brush\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"hat\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"comb\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"pen\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"fan\": {\"room\": \"kitchen\", \"last_seen\": 278}, \"pot\": {\"room\": \"kitchen\", \"last_seen\": 278}}, \"event_log\": [\"Observed objects in kitchen\"]}",
+   "score": 0.0,
+   "spent": 3750,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.092,
+    "Br": 0.535,
+    "Bc": 0.3,
+    "rho": 0.072
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "RET",
+   "q": "You saw a colander exactly once during the walkthrough. What colour was it?",
+   "gold": "red",
+   "pred": "I cannot find a colander in the provided visual data.",
+   "score": 0.0,
+   "spent": 3111,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.712,
+    "Bc": 0.193,
+    "rho": 0.095
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "RET",
+   "q": "You saw a teapot exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "B",
+   "pred": "I cannot answer this question because the provided retrieved information states that the teapot was not present in any of the frames.",
+   "score": 0.0,
+   "spent": 3414,
+   "n_calls": 6,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.1,
+    "Br": 0.296,
+    "Bc": 0.525,
+    "rho": 0.079
+   }
+  }
+ ]
+}

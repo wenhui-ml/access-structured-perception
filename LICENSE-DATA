@@ -1,0 +1,25 @@
+SEW-Bench corpus and measured records: Creative Commons Attribution 4.0 International
+=====================================================================================
+
+The corpus (`data/`), the per-question records (`results/`), the registration
+(`results/registered_predictions.json`), and the deviation log (`notes/deviations.md`) are
+released under CC BY 4.0: https://creativecommons.org/licenses/by/4.0/
+
+You may share and adapt this material for any purpose, including commercially, provided you
+give appropriate credit (see CITATION.cff) and indicate if changes were made.
+
+Code in `scripts/`, `analysis/`, and `annotation/` is licensed separately under Apache-2.0
+(see LICENSE).
+
+WHY TWO LICENCES.  The paper's claim that SEW-Bench is a "licence-free corpus" is a claim
+about its *provenance*: the frames are synthesised by `annotation/generate_synthetic.py` from
+a fixed seed and contain no third-party imagery, so nothing here is encumbered by an upstream
+dataset agreement of the kind that gates HM3D, ScanNet, ScanNet++ or Ego4D. That is exactly
+why an explicit outbound licence matters: provenance being clean is what makes it ours to
+grant, and without a stated grant nobody could lawfully reuse it.
+
+NOT COVERED.  The three natural-video benchmarks discussed in the paper (OpenEQA, VSI-Bench,
+EgoSchema) and the registered EW-Bench design are not distributed here and are not covered by
+this licence. EW-Bench requires habitat-sim plus an HM3D/ScanNet licence you must obtain
+yourself; `annotation/generate_ewbench.py` is released up to its rendering call for that
+reason.

@@ -1,0 +1,444 @@
+{
+ "model": "gemma-4-31b",
+ "method": "egagent",
+ "bench": "sew",
+ "subset": "CMP",
+ "budget": 4096,
+ "tau_g": 0.0,
+ "judge_deferred": 19,
+ "mean": 2.08,
+ "items": [
+  {
+   "episode": "ep1",
+   "subset": "CMP",
+   "q": "You saw a clock exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "red",
+   "pred": "To determine the color of the clock the second time it was seen, I need to identify the rooms the clock was in and the sequence of those sightings.\n\n1.  **Identify the clock's presence:** The `clock` node exists from time 33 to 202.\n2.  **Identify the rooms associated with the clock:**\n    *   The clock is linked to the `belt` node at time 33 and 202.\n    *   The `belt` node is linked to several rooms: `study` (0-3), `bedroom` (14-17), `living room` (36-42), `hallway` (49-54), `kitchen` (215-218), and `pantry` (237-240).\n    *   Looking at the clock's time interval (33-202), the rooms it could have been in are the `bedroom`, `living room`, and `hallway`.\n3.  **Determine the sequence of rooms:**\n    *   First room: `bedroom` (belt is there 14-17, but clock starts at",
+   "score": 0.0,
+   "spent": 3776,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "CMP",
+   "q": "You saw a radio exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "yellow",
+   "pred": "To answer this question, I need to identify the time intervals when the radio was visible and the rooms associated with those intervals.\n\n1.  **Identify the radio's visibility intervals:** From the scene graph, the `radio` node is present from frame 180 to 232. The edges between `belt` and `radio` (and `soap` and `radio`) show timestamps [180, 193, 232]. This suggests the radio was seen in three distinct segments or instances within that timeframe.\n2.  **Identify the rooms associated with those times:**\n    *   First instance (around frame 180): I need to check which room node is active or linked to the entities at this time.\n    *   Second instance (around frame 193): I need to check which room node is active or linked to the entities at this time.\n    *   Third instance (around frame 232): I need to check which room node is active or linked to the entities at this time.\n3.  **Determine the color of the radio during the second instance:** Once the second room/time interval is identified, I need to visually verify the color",
+   "score": 25.0,
+   "spent": 3776,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "CMP",
+   "q": "You saw a globe exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "green",
+   "pred": "To answer this question, I need to identify the time intervals when the globe was visible and the rooms associated with those intervals.\n\n1.  **Identify globe visibility:** According to the scene graph, the `globe` node is present from frame 45 to 237.\n2.  **Identify room transitions:** I need to check the edges connecting the `belt` (which seems to be the primary agent/camera entity) or `soap` to various room nodes to determine the sequence of rooms visited.\n    *   `study`: frames 0 to 3 (based on belt/soap edges).\n    *   `bedroom`: frames 14 to 20 (based on belt/soap edges).\n    *   `living room`: frames 36 to 42 (based on belt/soap edges).\n    *   `hallway`: frames 49 to 54 (based on belt/soap edges).\n    *   `kitchen`: frames 215 to 220 (based on belt/soap edges).\n    *   `pantry`: frames 237 to 240 (based on belt/soap edges).\n3.  **Correl",
+   "score": 0.0,
+   "spent": 3776,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "CMP",
+   "q": "You saw a statue exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "red",
+   "pred": "",
+   "score": 0.0,
+   "spent": 0,
+   "n_calls": 0,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "CMP",
+   "q": "Did you see the sieve before or after the stapler? Answer 'before' or 'after'.",
+   "gold": "before",
+   "pred": "",
+   "score": 0.0,
+   "spent": 0,
+   "n_calls": 0,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "CMP",
+   "q": "Did you see the colander before or after the trivet? Answer 'before' or 'after'.",
+   "gold": "before",
+   "pred": "To determine if the colander was seen before or after the trivet, I need to identify the time intervals during which these two objects were present in the scene.\n\n1.  **Search for \"colander\"**: I will check the provided entity scene graph for the node \"colander\" to find its first and last appearance.\n2.  **Search for \"trivet\"**: I will check the provided entity scene graph for the node \"trivet\" to find its first and last appearance.\n3.  **Compare timestamps**: I will compare the \"first\" appearance timestamp of the colander with the \"first\" appearance timestamp of the trivet to determine the order.\n\nLooking at the provided nodes:\n- Nodes listed: fork, cup, towel, plate, sock, ruler, candle, spoon, closed, hat, glass, soap, pen, fan, comb, study, belt, bowl, tray, rug, brush, pot, bedroom, clock, room, open, living, lamp, vase, globe, hallway, book, mug, statue, radio, kitchen, pantry.\n\nNeither \"colander\" nor \"trivet\" are present in the provided entity scene graph. Therefore, I cannot determine the answer",
+   "score": 0.0,
+   "spent": 3772,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "CMP",
+   "q": "You saw a clock exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "green",
+   "pred": "To answer this question, I need to identify the time intervals when the \"clock\" was visible and the corresponding rooms associated with those intervals.\n\n**Subtasks:**\n1. Identify all time intervals where the \"clock\" node is present or connected to other entities.\n2. Determine which room the \"clock\" was in during each of these three distinct occurrences.\n3. Identify the specific time interval for the second occurrence.\n4. Search for the visual properties (color) of the clock during that specific second time interval.\n\n**Analysis:**\n- From the scene graph, the `clock` node exists from `first: 87` to `last: 220`.\n- Edges involving `clock`:\n    - `fork` and `clock`: `[87, 220]`\n    - `closed` and `clock`: `[87, 98, 220]`\n- The question states the clock was seen three times in different rooms. I need to check the room nodes (`study`, `pantry`, `hallway`, `bedroom`, `kitchen`, `living`, `room`) and their overlap with the clock's existence.\n- Room intervals:\n    ",
+   "score": 0.0,
+   "spent": 3741,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "CMP",
+   "q": "You saw a radio exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "yellow",
+   "pred": "To determine the color of the radio the second time it was seen, I need to identify the time intervals and locations associated with the \"radio\" node.\n\n1.  **Identify the \"radio\" node and its occurrences:** The node `radio` exists from time 100 to 226.\n2.  **Identify the rooms associated with the \"radio\":** I need to look for edges between `radio` and room-related nodes (e.g., `hallway`, `bedroom`, `kitchen`, `study`, `pantry`, `living`, `room`).\n3.  **Analyze the edges for \"radio\":**\n    *   The provided edges list shows `closed` is connected to `radio` at `[100, 217, 226]`.\n    *   However, the provided edge list is truncated and does not explicitly list the room edges for the `radio` node.\n4.  **Determine the sequence of rooms:** I need to find the specific time intervals where the `radio` was present in different rooms to identify the \"second\" time.\n5.  **Visual Verification:** Since the entity scene graph provides the temporal existence of the radio but",
+   "score": 0.0,
+   "spent": 3741,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "CMP",
+   "q": "You saw a globe exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "blue",
+   "pred": "To determine the color of the globe the second time it was seen, I need to identify the time intervals when the globe was present and the rooms associated with those intervals.\n\n1.  **Identify the globe's presence:** According to the scene graph, the `globe` node exists from time 131 to 208.\n2.  **Identify the rooms associated with the globe:**\n    *   The globe is linked to the `closed` node (which often acts as a state or container) and the `fork` node.\n    *   Looking at the room nodes: `room` (0-292), `study` (25-94), `pantry` (46-69), `hallway` (95-299), `bedroom` (134-241), and `kitchen` (212-223).\n    *   The globe's interval [131, 208] overlaps with the `hallway` (95-299) and the `bedroom` (134-241).\n3.  **Determine the sequence of rooms:**\n    *   The",
+   "score": 0.0,
+   "spent": 3741,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "CMP",
+   "q": "You saw a statue exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "purple",
+   "pred": "To determine the color of the statue the second time it was seen, I need to identify the time intervals when the statue was present and the rooms it was associated with during those intervals.\n\n1.  **Identify the statue's presence:** The node `statue` is present from time 34 to 259.\n2.  **Identify the rooms associated with the statue:** I need to check the edges between the `statue` and the room nodes (`room`, `living`, `study`, `pantry`, `hallway`, `bedroom`, `kitchen`).\n    *   Looking at the edges for `statue`:\n        *   `{\"a\": \"fork\", \"b\": \"statue\", \"t\": [34, 62, 259]}` (This is an edge with `fork`, not a room).\n        *   Wait, the provided edges list does not explicitly show edges between `statue` and the room nodes. However, the `statue` node exists from 34 to 259.\n3.  **Analyze the sequence of rooms visited:**\n    *   `study`: 25 to 94\n    *   `",
+   "score": 0.0,
+   "spent": 3741,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "CMP",
+   "q": "Did you see the thermos before or after the kettle? Answer 'before' or 'after'.",
+   "gold": "before",
+   "pred": "To determine if the thermos was seen before or after the kettle, I need to identify the time intervals during which these two objects appear in the scene graph.\n\n1.  **Search for \"thermos\" in the nodes list**: I will check the `nodes` dictionary to find the `first` appearance timestamp for the \"thermos\".\n2.  **Search for \"kettle\" in the nodes list**: I will check the `nodes` dictionary to find the `first` appearance timestamp for the \"kettle\".\n3.  **Compare the timestamps**: If the `first` timestamp of the thermos is smaller than that of the kettle, the answer is 'before'; otherwise, it is 'after'.\n\nLooking at the provided entity scene graph:\n- Nodes listed: towel, ruler, room, soap, pen, belt, fork, sock, glass, closed, bowl, plate, tray, candle, spoon, fan, pot, comb, living, brush, rug, cup, hat, lamp, study, vase, mug, statue, book, pantry, open, clock, hallway, radio, globe, bedroom, kitchen.\n\nNeither \"thermos\" nor \"kettle\" are present in the provided scene graph nodes.\n\nV",
+   "score": 0.0,
+   "spent": 3735,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "CMP",
+   "q": "Did you see the colander before or after the ladle? Answer 'before' or 'after'.",
+   "gold": "before",
+   "pred": "To determine if the colander appeared before or after the ladle, I need to check the presence and time intervals of both objects in the provided entity scene graph.\n\n1.  **Search for \"colander\" in the nodes:** I will scan the `nodes` list for the entity \"colander\".\n2.  **Search for \"ladle\" in the nodes:** I will scan the `nodes` list for the entity \"ladle\".\n3.  **Compare time intervals:** If both are found, I will compare their `first` appearance timestamps to determine which occurred first.\n\nLooking at the `nodes` provided:\n- Nodes listed: towel, ruler, room, soap, pen, belt, fork, sock, glass, closed, bowl, plate, tray, candle, spoon, fan, pot, comb, living, brush, rug, cup, hat, lamp, study, vase, mug, statue, book, pantry, open, clock, hallway, radio, globe, bedroom, kitchen.\n\nNeither \"colander\" nor \"ladle\" is present in the provided entity scene graph. Since the requested entities are not in the data, I cannot determine their relative timing from the graph alone. I must verify if they appear",
+   "score": 0.0,
+   "spent": 3736,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "CMP",
+   "q": "You saw a clock exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "brown",
+   "pred": "To answer this question, I need to identify the time intervals when the clock was visible and the rooms associated with those intervals.\n\n**Subtasks:**\n1.  **Identify the time intervals for the \"clock\" node:** From the entity scene graph, the clock is present from frame 77 to 191.\n2.  **Identify the rooms associated with the clock:** I need to check the edges connecting the \"clock\" to room nodes (bedroom, kitchen, study, living room, pantry, hallway).\n3.  **Determine the sequence of rooms:**\n    *   The clock is visible from frame 77 to 191.\n    *   The \"bedroom\" is present from 0 to 171.\n    *   The \"study\" is present from 99 to 185.\n    *   The \"living room\" (room/living) is present from 112 to 137.\n4.  **Map the clock's visibility to these rooms:**\n    *   First room: Bedroom (starts at 77).\n    *   Second room: Study (starts at 99).\n    *   Third room:",
+   "score": 25.0,
+   "spent": 3803,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "CMP",
+   "q": "You saw a radio exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "purple",
+   "pred": "To answer the question, I need to identify the time intervals when the \"radio\" was present and determine which rooms it was located in during those times.\n\n1.  **Identify the \"radio\" node:** The radio is present from frame 81 to 263.\n2.  **Identify the rooms:** The rooms mentioned in the scene graph are `bedroom` (0-171), `kitchen` (20-299), `study` (99-185), `room/living` (112-137), and `pantry` (186-284).\n3.  **Determine the sequence of rooms for the radio:**\n    *   The radio first appears at frame 81. At this time, the `bedroom` is the active room (0-171).\n    *   At frame 99, the `study` becomes active (99-185).\n    *   At frame 112, the `living room` becomes active (112-137).\n    *   At frame 186, the `pantry` becomes active (186-",
+   "score": 0.0,
+   "spent": 3803,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "CMP",
+   "q": "You saw a globe exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "red",
+   "pred": "To answer this question, I need to identify the time intervals when the globe was visible and the rooms associated with those intervals.\n\n1.  **Identify Globe Occurrences:** I need to find the time intervals when the `globe` node was present. According to the nodes list, the globe was present from frame 61 to 282.\n2.  **Identify Room Transitions:** I need to check the edges connecting the `globe` (or the observer/main entity, which seems to be `rug` or `comb` based on the dense connectivity) to room nodes (`bedroom`, `kitchen`, `study`, `room`/`living`, `pantry`, `hallway`).\n3.  **Map Globe to Rooms:**\n    *   The globe first appears at frame 61.\n    *   Looking at the `rug` edges (which act as a proxy for the observer's location):\n        *   `bedroom`: frames 0-4.\n        *   `kitchen`: frames 20-24.\n        *   `study`: frames 99-102.\n        *   `room`/`living`: frames 112-115.\n",
+   "score": 0.0,
+   "spent": 3803,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "CMP",
+   "q": "You saw a statue exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "blue",
+   "pred": "To determine the color of the statue the second time it was seen, I need to identify the time intervals when the statue was present and the rooms associated with those intervals.\n\n1.  **Identify statue appearances:** From the entity scene graph, the `statue` node exists from time 91 to 212.\n2.  **Identify room associations for the statue:**\n    *   The statue is linked to the `comb` node at times `[91, 141, 212]`.\n    *   The `comb` node is linked to different rooms:\n        *   `bedroom`: times `[0, 2, 3, 4]` (Not applicable to statue's timeframe).\n        *   `kitchen`: times `[20, 21, 22, 23]` (Not applicable).\n        *   `study`: times `[100, 102, 104, 105]`.\n        *   `room`/`living`: times `[112, 113, 114, 115]`.\n        *   `pantry`:",
+   "score": 0.0,
+   "spent": 3803,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "CMP",
+   "q": "Did you see the trivet before or after the whisk? Answer 'before' or 'after'.",
+   "gold": "before",
+   "pred": "",
+   "score": 0.0,
+   "spent": 0,
+   "n_calls": 0,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "CMP",
+   "q": "Did you see the mortar before or after the teapot? Answer 'before' or 'after'.",
+   "gold": "before",
+   "pred": "",
+   "score": 0.0,
+   "spent": 0,
+   "n_calls": 0,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "CMP",
+   "q": "You saw a clock exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "purple",
+   "pred": "To determine the color of the clock the second time it was seen, I need to identify the time intervals and locations associated with the \"clock\" node.\n\n1.  **Identify the time intervals for the clock:** According to the entity scene graph, the `clock` node has a time range from `first: 25` to `last: 280`.\n2.  **Identify the rooms associated with the clock:** I need to check the edges connecting the `clock` to room nodes (`kitchen`, `hallway`, `study`, `bedroom`, `living`, `pantry`).\n    *   The graph shows edges for `sock` and `spoon` interacting with the clock, but the specific room-to-clock edges are not explicitly listed in the provided snippet (the snippet ends abruptly).\n3.  **Determine the sequence of rooms:** I need to find the three distinct time intervals where the clock was visible and which room the observer was in during those intervals.\n4.  **Identify the color:** Once the second occurrence is pinpointed in time and space, I will need to search the visual data for the color of the clock at that specific moment.\n\nSince the provided scene graph does not contain the color attribute",
+   "score": 0.0,
+   "spent": 3765,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "CMP",
+   "q": "You saw a radio exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "white",
+   "pred": "To answer this question, I need to identify the time intervals when the radio was seen and the rooms associated with those sightings.\n\n1.  **Identify the radio's presence:** According to the entity scene graph, the `radio` node exists from time 158 to 226.\n2.  **Identify the sightings:** The edges involving the `radio` are linked to `sock` and `spoon`. The time intervals for the radio are [158, 172, 226].\n3.  **Determine the rooms for each sighting:**\n    *   **First sighting (t=158):** I need to check which room node is active or linked at this time. Looking at the nodes, `pantry` starts at 164, `living` room is active from 123 to 249, and `study` is active from 40 to 265.\n    *   **Second sighting (t=172):** I need to determine the room associated with the radio at this specific timestamp.\n    *   **Third sighting (t=226):** I need to determine the room associated with the radio",
+   "score": 0.0,
+   "spent": 3765,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "CMP",
+   "q": "You saw a globe exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "yellow",
+   "pred": "To answer this question, I need to identify the time intervals when the globe was visible and the rooms associated with those intervals.\n\n1.  **Identify globe visibility:** From the entity scene graph, the `globe` node is present from time `20` to `108`.\n2.  **Identify room transitions:** I need to check which rooms the observer was in during the interval [20, 108].\n    *   `kitchen`: 0 to 278 (but the edges for `sock` and `spoon` show they are in the kitchen only at the very beginning, e.g., 0-6).\n    *   `hallway`: 15 to 231.\n    *   `study`: 40 to 265.\n    *   `bedroom`: 56 to 96.\n    *   `living room`: 123 to 249.\n3.  **Determine the sequence of rooms for the globe:**\n    *   The globe first appears at $t=20$. At $t=20$, the observer is in the `hallway` (which starts at $t=1",
+   "score": 0.0,
+   "spent": 3765,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "CMP",
+   "q": "You saw a statue exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "brown",
+   "pred": "To answer this question, I need to identify the time intervals when the \"statue\" was seen and the rooms associated with those sightings.\n\n1.  **Identify statue sightings:** According to the entity scene graph, the `statue` node exists from time 104 to 257.\n2.  **Determine the rooms for each sighting:** I need to check the edges between `statue` and room-related nodes (`kitchen`, `hallway`, `study`, `bedroom`, `room`/`living`, `pantry`).\n    *   The graph shows `sock` and `spoon` interacting with the `statue` at various times, but the `statue` node itself is present from 104 to 257.\n    *   I need to find the specific time intervals where the statue was visible and which room node was active at those times.\n    *   Looking at the room nodes:\n        *   `kitchen`: 0-278\n        *   `hallway`: 15-231\n        *   `study`: 40-265\n        *   `bedroom`: 56-96\n        *   ",
+   "score": 0.0,
+   "spent": 3765,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "CMP",
+   "q": "Did you see the tongs before or after the sieve? Answer 'before' or 'after'.",
+   "gold": "before",
+   "pred": "",
+   "score": 0.0,
+   "spent": 0,
+   "n_calls": 0,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "CMP",
+   "q": "Did you see the whisk before or after the stapler? Answer 'before' or 'after'.",
+   "gold": "before",
+   "pred": "I cannot determine if the whisk was seen before or after the stapler because neither object is present in the provided scene graph.",
+   "score": 0.0,
+   "spent": 3760,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  }
+ ]
+}

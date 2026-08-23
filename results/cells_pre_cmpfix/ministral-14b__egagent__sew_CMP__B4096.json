@@ -1,0 +1,444 @@
+{
+ "model": "ministral-14b",
+ "method": "egagent",
+ "bench": "sew",
+ "subset": "CMP",
+ "budget": 4096,
+ "tau_g": 0.0,
+ "judge_deferred": 24,
+ "mean": 4.17,
+ "items": [
+  {
+   "episode": "ep1",
+   "subset": "CMP",
+   "q": "You saw a clock exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "red",
+   "pred": "To answer the question, we need to decompose it into subtasks and analyze the given entity scene graph:\n\n### Subtasks:\n1. **Identify the \"clock\" node and its time intervals**:\n   - From the `nodes` section, the \"clock\" node has:\n     - `first`: 33, `last`: 202, `n`: 3 (meaning it appears exactly 3 times).\n     - The time intervals for the clock are not explicitly listed in the `edges`, but the `first` and `last` suggest it appears at 3 distinct points in time within [33, 202].\n\n2. **Determine the three distinct time intervals for the \"clock\"**:\n   - The edges involving \"clock\" are:\n     - `{\"a\": \"candle\", \"b\": \"clock\", \"t\": [33, 160, 202]}` (3 time points).\n     - `{\"a\": \"soap\", \"b\": \"clock\", \"t\": [160, 202]}` (2 time points, overlapping with the above).\n   - This implies the clock appears at:\n     - Time 1: 33",
+   "score": 0.0,
+   "spent": 3801,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "CMP",
+   "q": "You saw a radio exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "yellow",
+   "pred": "To answer the question about the color of the radio the second time it was seen, we need to decompose the problem into subtasks and analyze the given entity scene graph and edges.\n\n### Subtasks:\n\n1. **Identify the time intervals when the radio was seen:**\n   - The radio node has `first: 180, last: 232, n: 3`, meaning it was seen exactly 3 times (n=3) between timestamps 180 and 232.\n   - The edges involving the radio are:\n     - `{\"a\": \"candle\", \"b\": \"radio\", \"t\": [193, 232]}` (Note: This edge is incomplete; it should have 4 timestamps, but only 2 are given. This suggests the radio was seen at least once at 193 and once at 232, but the exact timestamps for all 3 sightings are unclear.)\n     - `{\"a\": \"soap\", \"b\": \"radio\", \"t\": [180, 193, 232]}` (This edge correctly shows 3 timestamps: 180, 193, and",
+   "score": 0.0,
+   "spent": 3801,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "CMP",
+   "q": "You saw a globe exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "green",
+   "pred": "To answer the question about the color of the globe the second time it was seen, we need to decompose the problem into the following subtasks:\n\n### Subtasks:\n1. **Identify the time intervals when the globe was seen**:\n   - From the `nodes` section, the globe exists from `first: 45` to `last: 237` with `n: 3` occurrences. This means the globe was seen exactly 3 times, and the time intervals for these occurrences are implied by the edges connected to it.\n\n2. **Determine the time intervals for each occurrence of the globe**:\n   - The edges involving the globe are:\n     - `{\"a\": \"candle\", \"b\": \"globe\", \"t\": [45, 207]}` (only two timestamps, likely indicating the start and end of the first occurrence).\n     - `{\"a\": \"soap\", \"b\": \"globe\", \"t\": [45, 207, 237]}` (three timestamps, likely indicating the start, middle, and end of the occurrences).\n   - The `t` field in edges typically represents time intervals where the relationship holds. For the globe,",
+   "score": 0.0,
+   "spent": 3801,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "CMP",
+   "q": "You saw a statue exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "red",
+   "pred": "To answer the question about the color of the statue the second time it was seen, we need to decompose the problem into the following subtasks:\n\n### Subtasks:\n1. **Identify the time intervals when the statue was seen**:\n   - The node `statue` has a time interval of `[78, 263]` with `n=3` occurrences. This means the statue was seen exactly 3 times within this range.\n\n2. **Determine the specific time points of each occurrence**:\n   - The `n=3` occurrences are likely spread across the interval `[78, 263]`. We need to infer or approximate the specific time points where the statue was seen. Since the edges involving the statue are not explicitly detailed in the edges list (only the `statue` node's time range is given), we rely on the `n=3` count to infer the occurrences.\n\n3. **Identify the rooms where the statue was seen**:\n   - The edges involving the statue are:\n     - `{\"a\": \"candle\", \"b\": \"statue\", \"t\": [78, 263]}` (only one edge, but the statue's node indicates it was seen ",
+   "score": 0.0,
+   "spent": 3801,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "CMP",
+   "q": "Did you see the sieve before or after the stapler? Answer 'before' or 'after'.",
+   "gold": "before",
+   "pred": "To determine whether the sieve was seen before or after the stapler, we need to analyze the given entity scene graph for the presence of these two objects and their temporal relationships.\n\n### Subtasks:\n1. **Check if \"sieve\" and \"stapler\" are present in the nodes**:\n   - Neither \"sieve\" nor \"stapler\" appears in the `nodes` section of the provided graph. This means neither object is explicitly represented in this dataset.\n\n2. **Check if there are any edges involving \"sieve\" or \"stapler\"**:\n   - There are no edges involving \"sieve\" or \"stapler\" in the `edges` section.\n\n3. **Conclusion**:\n   - Since neither \"sieve\" nor \"stapler\" is present in the graph, we cannot determine their relative temporal order based on this data.\n\n### Answer:\nSince the objects \"sieve\" and \"stapler\" are not present in the provided scene graph, we cannot answer the question.\n\n**ANSWER: Cannot determine** (or \"Not present in data\").",
+   "score": 0.0,
+   "spent": 3765,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "CMP",
+   "q": "Did you see the colander before or after the trivet? Answer 'before' or 'after'.",
+   "gold": "before",
+   "pred": "To determine whether the colander was seen before or after the trivet, we need to analyze the provided entity scene graph. Here's the decomposition of the subtasks:\n\n1. **Check if \"colander\" and \"trivet\" exist in the nodes**:\n   - Neither \"colander\" nor \"trivet\" appears in the `nodes` section of the provided graph. This means neither entity is explicitly represented in the data.\n\n2. **Check if \"colander\" or \"trivet\" appear in the edges**:\n   - Neither \"colander\" nor \"trivet\" appears in the `edges` section either.\n\nSince neither \"colander\" nor \"trivet\" is present in the graph, we cannot determine their relative temporal order based on this data.\n\n### Answer:\n**VSEARCH: colander and trivet** (visual verification needed)",
+   "score": 0.0,
+   "spent": 3717,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "CMP",
+   "q": "You saw a clock exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "green",
+   "pred": "To answer the question, we need to decompose it into subtasks and analyze the given entity scene graph:\n\n### Subtasks:\n1. **Identify the clock's appearances in different rooms**:\n   - The clock node has `first: 87, last: 220, n: 3`, meaning it was observed 3 times (once per room).\n   - The edges involving the clock are:\n     - `{\"a\": \"fork\", \"b\": \"clock\", \"t\": [87, 220]}` (Note: This edge is incomplete; it should have 4 timestamps, but only 2 are given. This suggests the clock was seen in relation to \"fork\" at `t=87` and `t=220`.)\n     - `{\"a\": \"glass\", \"b\": \"clock\", \"t\": [87, 98, 220]}` (Similarly, this edge has 3 timestamps, but the clock was seen 3 times in total.)\n     - The rooms involved with the clock are:\n       - `study` (first: 25, last: 94, n: 31)\n       - `bedroom",
+   "score": 0.0,
+   "spent": 3793,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "CMP",
+   "q": "You saw a radio exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "yellow",
+   "pred": "To answer the question, we need to decompose it into subtasks and analyze the given entity scene graph:\n\n### Subtasks:\n1. **Identify the radio's appearances in different rooms**:\n   - The radio is mentioned in the `nodes` section with `first: 100, last: 226, n: 3`, meaning it appears exactly 3 times (as per the question).\n   - The edges involving the radio are:\n     - `{\"a\": \"fork\", \"b\": \"radio\", \"t\": [100, 226]}` (Note: This edge is incomplete; the `t` array should have 4 values, but only 2 are given. This suggests the radio's interactions are sparse or the edge is truncated.)\n     - `{\"a\": \"glass\", \"b\": \"radio\", \"t\": [100, 226]}` (Same issue as above.)\n   - The radio's edges with rooms (places) are not explicitly listed in the provided `edges` section. However, we can infer the rooms where the radio appears based on the `t` intervals of the radio's edges with other objects and the rooms' `first` and `",
+   "score": 0.0,
+   "spent": 3793,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "CMP",
+   "q": "You saw a globe exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "blue",
+   "pred": "To answer the question about the color of the globe the second time it was seen, we need to decompose the problem into subtasks and analyze the given entity scene graph.\n\n### Subtasks:\n\n1. **Identify the time intervals when the globe was seen:**\n   - From the `nodes` section, the globe has the following properties:\n     - `first`: 107\n     - `last`: 208\n     - `n`: 3 (indicating it was seen exactly 3 times)\n\n   - The edges involving the globe are:\n     - `{\"a\": \"fork\", \"b\": \"globe\", \"t\": [107, 131, 208]}`\n     - `{\"a\": \"glass\", \"b\": \"globe\", \"t\": [107, 131, 208]}`\n\n   - The globe was seen at the following timestamps: 107, 131, and 208.\n\n2. **Determine the rooms where the globe was seen:**\n   - The question states that the globe was seen in three different rooms. We need to identify which rooms correspond to the timestamps 107,",
+   "score": 0.0,
+   "spent": 3793,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "CMP",
+   "q": "You saw a statue exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "purple",
+   "pred": "To answer the question, we need to decompose it into the following subtasks:\n\n1. **Identify the statue's appearances in different rooms**:\n   - The statue node has edges with time intervals indicating when it was seen in relation to other nodes (rooms).\n   - From the edges, the statue is connected to:\n     - `study` (t: [25, 26, 27, 28, 29, 30, 31]) \u2014 but this is not directly an edge with the statue, so we need to check the edges involving the statue.\n     - The edges involving the statue are:\n       - `fork` \u2192 `statue`: [62, 259]\n       - `glass` \u2192 `statue`: [34, 62]\n     - The statue's node itself has `first`: 34, `last`: 259, `n`: 3 (meaning it was seen 3 times in total).\n\n2. **Determine the rooms where the statue was seen**:\n   - The statue's edges with rooms are not directly listed, but we can infer the rooms from the edges involving the statue and other nodes (e.g., `",
+   "score": 0.0,
+   "spent": 3793,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "CMP",
+   "q": "Did you see the thermos before or after the kettle? Answer 'before' or 'after'.",
+   "gold": "before",
+   "pred": "To determine whether the thermos was seen before or after the kettle, we need to analyze the provided entity scene graph. Here's the decomposition of the subtasks:\n\n### Subtasks:\n1. **Check if \"thermos\" and \"kettle\" are present in the nodes**:\n   - Neither \"thermos\" nor \"kettle\" appears in the `nodes` section of the provided graph. This means neither object was explicitly tracked or recorded in this scene graph.\n\n2. **Check if \"thermos\" or \"kettle\" appear in the edges**:\n   - Neither \"thermos\" nor \"kettle\" appears in any of the edges, so there are no recorded interactions or temporal relationships involving these objects.\n\n3. **Conclusion**:\n   - Since neither \"thermos\" nor \"kettle\" is present in the graph, we cannot determine their relative temporal order based on this data.\n\n### Answer:\nSince the thermos and kettle are not present in the provided scene graph, we cannot answer the question. The graph does not contain information about these objects.\n\n**VSEARCH: thermos and kettle not present in graph**",
+   "score": 0.0,
+   "spent": 3771,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "CMP",
+   "q": "Did you see the colander before or after the ladle? Answer 'before' or 'after'.",
+   "gold": "before",
+   "pred": "To determine whether the colander was seen before or after the ladle, we need to analyze the given entity scene graph. Here's the decomposition of the subtasks:\n\n### Subtasks:\n1. **Check if \"colander\" and \"ladle\" are present in the nodes**:\n   - Neither \"colander\" nor \"ladle\" appears in the `nodes` section of the provided graph. This means neither object is explicitly tracked in this dataset.\n\n2. **Check if \"colander\" or \"ladle\" appear in the edges**:\n   - Neither \"colander\" nor \"ladle\" appears in any of the `edges` either. This further confirms that these objects are not part of the recorded interactions in this scene graph.\n\n3. **Conclusion**:\n   - Since neither object is present in the graph, we cannot determine their relative temporal order based on this data.\n\n### Answer:\nSince the colander and ladle are not present in the provided scene graph, we cannot answer the question.\n\n**VSEARCH: colander ladle** (visual verification needed, as the objects are not in the graph)",
+   "score": 0.0,
+   "spent": 3762,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "CMP",
+   "q": "You saw a clock exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "brown",
+   "pred": "To answer the question, we need to decompose it into subtasks and analyze the given entity scene graph:\n\n### Subtasks:\n1. **Identify the clock node and its time intervals**:\n   - The clock node is present in the `nodes` section with `first: 77, last: 191, n: 3`. This means the clock was observed exactly 3 times (as `n` indicates the number of observations), with the first observation at time 77 and the last at time 191.\n\n2. **Determine the rooms where the clock was observed**:\n   - The clock is connected to the `rug` node with the time interval `[77, 154, 191]`. This suggests the clock was observed in the context of the `rug` node (likely the same room or location where the rug is).\n   - The `rug` node is connected to other room nodes like `room`, `door`, `kitchen`, `study`, `living`, `hallway`, `pantry`, etc., with specific time intervals.\n   - The clock's observation times (`77, 154, 191`) must be cross-re",
+   "score": 0.0,
+   "spent": 3842,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "CMP",
+   "q": "You saw a radio exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "purple",
+   "pred": "To answer the question about the color of the radio the second time it was seen, we need to decompose the problem into the following subtasks:\n\n### Subtask 1: Identify the time intervals when the radio was seen\nFrom the `nodes` section, the radio appears between `first: 81` and `last: 263` with `n: 3` occurrences. This means the radio was seen exactly 3 times at the following approximate timestamps:\n- First occurrence: ~81\n- Second occurrence: ~(81 + (263 - 81)/2) \u2248 172 (midpoint between first and last)\n- Third occurrence: ~263\n\nHowever, the exact timestamps are not explicitly given, but the `edges` section does not provide direct color information. Instead, we need to infer the room where the radio was seen each time.\n\n### Subtask 2: Determine the rooms where the radio was seen\nFrom the `edges` section, the radio is connected to the `rug` node with the time interval `[147, 263]`. This suggests that the radio was seen in the same room as the `rug` during this period.\n\nFrom",
+   "score": 0.0,
+   "spent": 3842,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "CMP",
+   "q": "You saw a globe exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "red",
+   "pred": "To answer the question about the color of the globe the second time it was seen, we need to decompose the problem into subtasks and analyze the given entity scene graph.\n\n### Subtasks:\n\n1. **Identify the time intervals when the globe was seen:**\n   - From the `nodes` section, the globe appears between `first=61` and `last=282` with `n=3` occurrences. This means the globe was seen exactly 3 times at specific timestamps.\n\n2. **Determine the timestamps of the globe's appearances:**\n   - The `edges` section does not directly list the exact timestamps for each occurrence of the globe, but we can infer the timestamps from the `t` values in the edges involving the globe.\n   - The edges involving the globe are:\n     - `{\"a\": \"rug\", \"b\": \"globe\", \"t\": [61, 184, 282]}`\n     - `{\"a\": \"comb\", \"b\": \"globe\", \"t\": [184, 282]}`\n   - This suggests the globe was seen at timestamps 61, 184, and 282.\n\n3. **",
+   "score": 0.0,
+   "spent": 3842,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "CMP",
+   "q": "You saw a statue exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "blue",
+   "pred": "To answer the question, we need to decompose it into subtasks and analyze the given entity scene graph:\n\n### Subtasks:\n1. **Identify the statue's appearances**: The statue node has `first: 91`, `last: 212`, and `n: 3`, meaning it appears exactly 3 times (as specified in the question).\n2. **Determine the rooms where the statue was seen**: The edges involving the statue and rooms (or places) will indicate the rooms where it appeared. The relevant edges are:\n   - `{\"a\": \"rug\", \"b\": \"statue\", \"t\": [91, 141]}` (rug is a node, but we need to see which room it's connected to at these times).\n   - `{\"a\": \"comb\", \"b\": \"statue\", \"t\": [91, 141, 212]}` (comb is another node, but we need to see which room it's connected to at these times).\n   - The statue's appearances are at times `91`, `141`, and `212` (from the `t` intervals in the edges involving the statue).\n\n",
+   "score": 0.0,
+   "spent": 3842,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "CMP",
+   "q": "Did you see the trivet before or after the whisk? Answer 'before' or 'after'.",
+   "gold": "before",
+   "pred": "To determine whether the trivet was seen before or after the whisk, we need to analyze the given entity scene graph for the presence and timing of these two objects. Here's the decomposition:\n\n### Subtasks:\n1. **Check if \"trivet\" exists in the nodes**:\n   - The provided graph does not include a node labeled \"trivet\". This means the trivet is not explicitly tracked in this dataset.\n\n2. **Check if \"whisk\" exists in the nodes**:\n   - The provided graph does not include a node labeled \"whisk\". This means the whisk is also not explicitly tracked in this dataset.\n\n3. **Implication of missing nodes**:\n   - Since neither \"trivet\" nor \"whisk\" appear in the nodes or edges, there is no temporal or spatial relationship between them in this graph.\n\n### Conclusion:\nSince neither object is present in the graph, we cannot determine their relative order of appearance.\n\n### Answer:\n**VSEARCH: trivet and whisk** (Visual verification needed to determine their presence and order in the scene.)",
+   "score": 0.0,
+   "spent": 3797,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "CMP",
+   "q": "Did you see the mortar before or after the teapot? Answer 'before' or 'after'.",
+   "gold": "before",
+   "pred": "To determine whether the \"mortar\" was seen before or after the \"teapot,\" we need to analyze the provided entity scene graph. However, there is a critical issue:\n\n1. **Neither \"mortar\" nor \"teapot\" appears in the nodes or edges of the provided graph.**\n   - The nodes list does not include \"mortar\" or \"teapot.\"\n   - The edges list does not reference either term.\n\n### Decomposition:\n1. **Check if \"mortar\" or \"teapot\" exists in the graph:**\n   - **Nodes:** No \"mortar\" or \"teapot\" present.\n   - **Edges:** No references to \"mortar\" or \"teapot.\"\n\n2. **Conclusion:**\n   - Since neither entity is present in the graph, it is impossible to determine their relative temporal order.\n\n### Answer:\nSince the entities \"mortar\" and \"teapot\" are not present in the provided scene graph, the question cannot be answered with the given data.\n\n**VSEARCH: mortar and teapot not found in graph**",
+   "score": 0.0,
+   "spent": 3801,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "CMP",
+   "q": "You saw a clock exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "purple",
+   "pred": "To answer the question, we need to decompose it into subtasks and analyze the given entity scene graph:\n\n### **Subtasks:**\n1. **Identify the time intervals when the clock was seen.**\n   - From the `nodes` section, the clock appears between `first: 25` and `last: 280` with `n: 3` (seen exactly 3 times).\n   - The `edges` section shows the clock's interactions with other entities at specific times:\n     - `{\"a\": \"sock\", \"b\": \"clock\", \"t\": [25, 277, 280]}` (3 timestamps)\n     - `{\"a\": \"spoon\", \"b\": \"clock\", \"t\": [277, 280]}` (2 timestamps, overlapping with the above)\n     - This suggests the clock was seen at **t=25, t=277, and t=280**.\n\n2. **Determine which rooms correspond to these timestamps.**\n   - The `nodes` section lists rooms with their time intervals:\n     - `room`: `first: 4, last: 299` (always present)\n",
+   "score": 0.0,
+   "spent": 3865,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "CMP",
+   "q": "You saw a radio exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "white",
+   "pred": "To answer the question, we need to decompose it into the following subtasks:\n\n### **Subtask 1: Identify the time intervals when the radio was seen**\nFrom the `nodes` section, the `radio` node has:\n- `first`: 158\n- `last`: 226\n- `n`: 3 (seen exactly 3 times)\n\nFrom the `edges` section, the radio is connected to `sock` and `spoon` with the following time intervals:\n- `sock` \u2192 `radio`: `[158, 172, 226]`\n- `spoon` \u2192 `radio`: `[172, 226]`\n\nThis suggests the radio was seen at:\n1. **Time 158** (first occurrence)\n2. **Time 172** (second occurrence)\n3. **Time 226** (third occurrence)\n\n### **Subtask 2: Determine the rooms where the radio was seen**\nWe need to check which rooms were active at these times:\n- **Time 158**: Check `nodes` for rooms with `first \u2264 158 \u2264 last`:\n  - `",
+   "score": 0.0,
+   "spent": 3865,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "CMP",
+   "q": "You saw a globe exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "yellow",
+   "pred": "To answer the question, we need to decompose it into the following subtasks:\n\n1. **Identify the time intervals when the globe was seen**:\n   - From the node data, the globe appears between `first: 20` and `last: 108` with `n: 3` occurrences (seen exactly 3 times).\n\n2. **Determine the specific time points when the globe was seen**:\n   - Since the globe was seen exactly 3 times, we need to find the 3 distinct time intervals where it was observed. The edges involving the globe are:\n     - `{\"a\": \"spoon\", \"b\": \"globe\", \"t\": [85, 108]}`\n     - This suggests the globe was seen at least once between `85` and `108`. However, since it was seen exactly 3 times, we need to infer the specific time points from the `n: 3` count and the `first`/`last` values.\n\n3. **Determine the rooms where the globe was seen**:\n   - The edges involving the globe and rooms are:\n     - `{\"a\": \"sock\", \"b\": \"globe\", \"t\":",
+   "score": 0.0,
+   "spent": 3865,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "CMP",
+   "q": "You saw a statue exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "brown",
+   "pred": "To answer the question, we need to decompose it into the following subtasks:\n\n### **Subtask 1: Identify the time intervals when the statue was seen**\n- The `statue` node has the following time range: `first: 104, last: 257, n: 3`.\n- This means the statue was observed **exactly 3 times** (as per `n: 3`), with the first observation at time `104` and the last at `257`.\n- The edges involving the `statue` are:\n  - `{\"a\": \"sock\", \"b\": \"statue\", \"t\": [104, 238, 257]}`\n  - `{\"a\": \"spoon\", \"b\": \"statue\", \"t\": [238, 257]}`\n- This suggests the statue was seen at **three distinct time points**:\n  1. **First time**: `104`\n  2. **Second time**: `238`\n  3. **Third time**: `257`\n\n### **Subtask 2: Determine the room where the statue was",
+   "score": 100.0,
+   "spent": 3865,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "CMP",
+   "q": "Did you see the tongs before or after the sieve? Answer 'before' or 'after'.",
+   "gold": "before",
+   "pred": "To answer whether \"tongs\" were seen before or after \"sieve,\" we need to analyze the given entity scene graph. Here's the decomposition:\n\n### Subtasks:\n1. **Check if \"tongs\" and \"sieve\" exist in the nodes**:\n   - Neither \"tongs\" nor \"sieve\" appear in the `nodes` section of the graph. This means neither object is explicitly tracked in this dataset.\n\n2. **Check if \"tongs\" and \"sieve\" appear in the edges**:\n   - Neither \"tongs\" nor \"sieve\" appear in any of the edges, so there are no recorded interactions or time intervals involving these objects.\n\n3. **Conclusion**:\n   - Since neither \"tongs\" nor \"sieve\" are present in the graph, there is no temporal or spatial relationship to determine whether one was seen before or after the other.\n\n### Answer:\nSince the objects are not present in the graph, we cannot determine their relative order. However, the question implies a need for visual verification, so we output:\n\n**VSEARCH: tongs and sieve**",
+   "score": 0.0,
+   "spent": 3831,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "CMP",
+   "q": "Did you see the whisk before or after the stapler? Answer 'before' or 'after'.",
+   "gold": "before",
+   "pred": "To determine whether the whisk was seen before or after the stapler, we need to analyze the given entity scene graph for the presence and timing of these two objects. Here's the decomposition:\n\n### Subtasks:\n1. **Check if \"whisk\" exists in the nodes**:\n   - The provided graph does not include a node for \"whisk\". This means the whisk was not explicitly tracked or labeled in this dataset.\n\n2. **Check if \"stapler\" exists in the nodes**:\n   - The provided graph does not include a node for \"stapler\". This means the stapler was also not explicitly tracked or labeled in this dataset.\n\n3. **Implication of missing nodes**:\n   - Since neither \"whisk\" nor \"stapler\" appear in the nodes, we cannot determine their relative timing based on this graph.\n\n### Conclusion:\nSince neither object is present in the graph, we cannot answer the question with the given data.\n\n**ANSWER: N/A (objects not present in the graph)**",
+   "score": 0.0,
+   "spent": 3812,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  }
+ ]
+}

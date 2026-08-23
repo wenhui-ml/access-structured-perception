@@ -1,0 +1,444 @@
+{
+ "model": "qwen3-vl-8b",
+ "method": "uniform16",
+ "bench": "sew",
+ "subset": "CMP",
+ "budget": 16384,
+ "tau_g": 0.0,
+ "judge_deferred": 2,
+ "mean": 41.67,
+ "items": [
+  {
+   "episode": "ep1",
+   "subset": "CMP",
+   "q": "You saw a clock exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "red",
+   "pred": "Red",
+   "score": 100.0,
+   "spent": 16061,
+   "n_calls": 2,
+   "w_realised": 53,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "CMP",
+   "q": "You saw a radio exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "yellow",
+   "pred": "Red",
+   "score": 0.0,
+   "spent": 16061,
+   "n_calls": 2,
+   "w_realised": 53,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "CMP",
+   "q": "You saw a globe exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "green",
+   "pred": "The globe is first seen in the hallway at t=207, which is the first time. The second time it is seen is in the hallway again at t=287, which is the second occurrence. The third time it is seen is in the hallway at t=293, which is the third occurrence.\n\nLooking at the frame at t=287 (the second time), the globe is located in the top-right quadrant of the grid, and its color is **yellow**.\n\nTherefore, the answer is: yellow",
+   "score": 0.0,
+   "spent": 16171,
+   "n_calls": 2,
+   "w_realised": 53,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "CMP",
+   "q": "You saw a statue exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "red",
+   "pred": "Red",
+   "score": 100.0,
+   "spent": 16061,
+   "n_calls": 2,
+   "w_realised": 53,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "CMP",
+   "q": "Did you see the sieve before or after the stapler? Answer 'before' or 'after'.",
+   "gold": "before",
+   "pred": "after",
+   "score": 0.0,
+   "spent": 16056,
+   "n_calls": 2,
+   "w_realised": 53,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "CMP",
+   "q": "Did you see the trivet before or after the colander? Answer 'before' or 'after'.",
+   "gold": "after",
+   "pred": "after",
+   "score": 100.0,
+   "spent": 16057,
+   "n_calls": 2,
+   "w_realised": 53,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "CMP",
+   "q": "You saw a clock exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "green",
+   "pred": "White",
+   "score": 0.0,
+   "spent": 16061,
+   "n_calls": 2,
+   "w_realised": 53,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "CMP",
+   "q": "You saw a radio exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "yellow",
+   "pred": "Red",
+   "score": 0.0,
+   "spent": 16061,
+   "n_calls": 2,
+   "w_realised": 53,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "CMP",
+   "q": "You saw a globe exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "blue",
+   "pred": "The question asks for the color of the globe the SECOND time it was seen, in a sequence where it was seen exactly three times, each in a different room.\n\nLooking at the frames:\n- The globe is first seen in the **living room** at t=0. The globe is represented by the letter 'C' (green) in the top-left corner.\n- The globe is second seen in the **study** at t=28. The globe is represented by the letter 'H' (purple) in the top-right corner.\n- The globe is third seen in the **pantry** at t=46.",
+   "score": 100.0,
+   "spent": 16187,
+   "n_calls": 2,
+   "w_realised": 53,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "CMP",
+   "q": "You saw a statue exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "purple",
+   "pred": "Orange",
+   "score": 0.0,
+   "spent": 16061,
+   "n_calls": 2,
+   "w_realised": 53,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "CMP",
+   "q": "Did you see the kettle before or after the thermos? Answer 'before' or 'after'.",
+   "gold": "after",
+   "pred": "before",
+   "score": 0.0,
+   "spent": 16056,
+   "n_calls": 2,
+   "w_realised": 53,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "CMP",
+   "q": "Did you see the ladle before or after the colander? Answer 'before' or 'after'.",
+   "gold": "after",
+   "pred": "after",
+   "score": 100.0,
+   "spent": 16057,
+   "n_calls": 2,
+   "w_realised": 53,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "CMP",
+   "q": "You saw a clock exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "brown",
+   "pred": "Red",
+   "score": 0.0,
+   "spent": 16061,
+   "n_calls": 2,
+   "w_realised": 53,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "CMP",
+   "q": "You saw a radio exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "purple",
+   "pred": "Red",
+   "score": 0.0,
+   "spent": 16061,
+   "n_calls": 2,
+   "w_realised": 53,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "CMP",
+   "q": "You saw a globe exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "red",
+   "pred": "Red",
+   "score": 100.0,
+   "spent": 16061,
+   "n_calls": 2,
+   "w_realised": 53,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "CMP",
+   "q": "You saw a statue exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "blue",
+   "pred": "Green",
+   "score": 0.0,
+   "spent": 16061,
+   "n_calls": 2,
+   "w_realised": 53,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "CMP",
+   "q": "Did you see the trivet before or after the whisk? Answer 'before' or 'after'.",
+   "gold": "before",
+   "pred": "before",
+   "score": 100.0,
+   "spent": 16056,
+   "n_calls": 2,
+   "w_realised": 53,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "CMP",
+   "q": "Did you see the mortar before or after the teapot? Answer 'before' or 'after'.",
+   "gold": "before",
+   "pred": "before",
+   "score": 100.0,
+   "spent": 16056,
+   "n_calls": 2,
+   "w_realised": 53,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "CMP",
+   "q": "You saw a clock exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "purple",
+   "pred": "Red",
+   "score": 0.0,
+   "spent": 16061,
+   "n_calls": 2,
+   "w_realised": 53,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "CMP",
+   "q": "You saw a radio exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "white",
+   "pred": "White",
+   "score": 100.0,
+   "spent": 16061,
+   "n_calls": 2,
+   "w_realised": 53,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "CMP",
+   "q": "You saw a globe exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "yellow",
+   "pred": "The question asks for the color of the globe the SECOND time it was seen, given that it was seen exactly three times in different rooms.\n\n1.  First, we need to identify which object is the \"globe\". Looking at the frames, the object labeled \"G\" is consistently depicted as a globe (a spherical object) in multiple frames.\n2.  Next, we need to find the first, second, and third times this globe (\"G\") appears.\n    -   **First appearance**: At `t=0`, in the kitchen, the globe \"G\" is visible in the top row, second from the left",
+   "score": 0.0,
+   "spent": 16187,
+   "n_calls": 2,
+   "w_realised": 53,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "CMP",
+   "q": "You saw a statue exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "brown",
+   "pred": "The statue is represented by the letter **E**.\n\n- First time seen: In the kitchen at t=0, the statue (E) is in the top-right corner.\n- Second time seen: In the hallway at t=17, the statue (E) is in the top-right corner.\n- Third time seen: In the bedroom at t=57, the statue (E) is in the top-left corner.\n\nThe second time you saw it was in the **hallway**, and its color was **green**.",
+   "score": 0.0,
+   "spent": 16169,
+   "n_calls": 2,
+   "w_realised": 53,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "CMP",
+   "q": "Did you see the sieve before or after the tongs? Answer 'before' or 'after'.",
+   "gold": "after",
+   "pred": "after",
+   "score": 100.0,
+   "spent": 16056,
+   "n_calls": 2,
+   "w_realised": 53,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "CMP",
+   "q": "Did you see the whisk before or after the stapler? Answer 'before' or 'after'.",
+   "gold": "before",
+   "pred": "after",
+   "score": 0.0,
+   "spent": 16056,
+   "n_calls": 2,
+   "w_realised": 53,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  }
+ ]
+}

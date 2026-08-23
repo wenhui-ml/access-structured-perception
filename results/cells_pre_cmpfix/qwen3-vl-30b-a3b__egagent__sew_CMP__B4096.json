@@ -1,0 +1,444 @@
+{
+ "model": "qwen3-vl-30b-a3b",
+ "method": "egagent",
+ "bench": "sew",
+ "subset": "CMP",
+ "budget": 4096,
+ "tau_g": 0.0,
+ "judge_deferred": 24,
+ "mean": 0.0,
+ "items": [
+  {
+   "episode": "ep1",
+   "subset": "CMP",
+   "q": "You saw a clock exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "red",
+   "pred": "To answer the question, we need to determine:\n\n1. **When and where the clock was seen** (i.e., in which time intervals and which rooms).\n2. **Which of the three times corresponds to the second time**.\n3. **What color the clock was during that second sighting**.\n\nHowever, the provided data does not include **color information** for any object, including the clock. The graph only contains:\n- Nodes: entities (people, objects, places)\n- Edges: relationships between entities with time intervals\n- No attributes like color, material, or visual properties.\n\nTherefore, we cannot determine the color of the clock, even if we could identify the second time it was seen.\n\nLet\u2019s proceed step by step:\n\n---\n\n### Step 1: Find all instances where the clock was seen\nFrom the node data:\n- `\"clock\": {\"first\": 33, \"last\": 202, \"n\": 3}` \u2192 The clock appears in **3 time intervals**.\n\nFrom the edges:\n- `\"soap\", \"clock\", t: [160, 202]` \u2192 This is a connection between soap and clock at times 160 and 202.\n- `\"candle",
+   "score": 0.0,
+   "spent": 3799,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "CMP",
+   "q": "You saw a radio exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "yellow",
+   "pred": "To determine the color of the radio the second time it was seen, we need to:\n\n1. Identify all instances where the radio appears in the scene graph.\n2. Determine the order in which the radio is seen (i.e., the time intervals).\n3. Identify the second time the radio appears.\n4. Determine the color of the radio at that time.\n\nHowever, the provided data does not include any information about the **color** of the radio or any object. The graph only includes:\n- Nodes (objects, people, places)\n- Time intervals for when nodes appear\n- Edges (relationships between nodes at specific times)\n\nThere is no attribute data (like color) associated with any node.\n\nTherefore, we cannot determine the color of the radio, even if we know when it appears.\n\nSubtasks:\n1. Find all time intervals when the radio appears: from the edge list, \"radio\" appears in edges with \"soap\" and \"candle\" at times [193, 232].\n2. Confirm it appears exactly three times: but the edge list only shows one edge involving \"radio\" with \"soap\" and one with \"candle\", both with the same time interval [193, 232]. So",
+   "score": 0.0,
+   "spent": 3799,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "CMP",
+   "q": "You saw a globe exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "green",
+   "pred": "Subtask 1: Identify all instances when the \"globe\" was seen, based on the edges involving \"globe\".\n- From the data: \n  - \"globe\" is connected to \"soap\" with time intervals: [45, 207, 237]\n  - \"globe\" is connected to \"candle\" with time intervals: [45, 207]\n\nSo, the times when \"globe\" appears are:\n- With soap: at t = 45, 207, 237\n- With candle: at t = 45, 207\n\nCombined unique timestamps: 45, 207, 237 \u2192 three distinct times.\n\nSubtask 2: Determine which of these times corresponds to the second sighting.\n- Sorted by time: 45 (first), 207 (second), 237 (third)\n\nSo the second time the globe was seen is at t = 207.\n\nSubtask 3: Determine in which room the globe was seen at t = 207.\n- At t = 207, \"globe\" is connected to \"soap",
+   "score": 0.0,
+   "spent": 3799,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "CMP",
+   "q": "You saw a statue exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "red",
+   "pred": "To determine the color of the statue the second time it was seen, we need to:\n\n1. Identify all instances when the statue was seen (i.e., when the \"soap\" or \"candle\" node is connected to \"statue\" via an edge).\n2. Determine the order in which the statue was seen (based on time intervals).\n3. Identify the second time the statue was seen.\n4. Determine the color of the statue at that time.\n\nHowever, the provided data does not include any information about the **color** of the statue. The only information is that the statue appears in the graph with time intervals:\n\n- \"soap\" \u2192 \"statue\" at times: [78, 263]\n- \"candle\" \u2192 \"statue\" at times: [78, 263]\n\nSo the statue is seen at time 78 and 263 (from both soap and candle), but only two instances are listed, not three. The question says \"you saw a statue exactly three times\", but the graph only shows two time points (78 and 263) for the statue.\n\nWait \u2014 let's recheck the edges:\n\nFrom the data:\n- \"soap\" \u2192 \"stat",
+   "score": 0.0,
+   "spent": 3799,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "CMP",
+   "q": "Did you see the sieve before or after the stapler? Answer 'before' or 'after'.",
+   "gold": "before",
+   "pred": "neither",
+   "score": 0.0,
+   "spent": 3718,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "CMP",
+   "q": "Did you see the colander before or after the trivet? Answer 'before' or 'after'.",
+   "gold": "before",
+   "pred": "cannot determine",
+   "score": 0.0,
+   "spent": 3582,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "CMP",
+   "q": "You saw a clock exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "green",
+   "pred": "Subtask 1: Identify all instances where the clock appears in the scene graph.\n- From the edges, find all edges involving \"clock\":\n  - \"door\" \u2192 \"clock\": t = [87, 98, 220]\n  - \"glass\" \u2192 \"clock\": t = [87, 98, 220]\n  - \"room\" \u2192 \"clock\": (no direct edge)\n  - \"study\" \u2192 \"clock\": (no edge)\n  - \"hallway\" \u2192 \"clock\": (no edge)\n  - \"bedroom\" \u2192 \"clock\": (no edge)\n  - \"kitchen\" \u2192 \"clock\": (no edge)\n\nBut note: The clock is connected to \"door\" and \"glass\", but not directly to any room. However, we need to determine **in which rooms** the clock was seen.\n\nWait \u2014 the question says: \"You saw a clock exactly three times, each in a different room.\"\n\nSo we must infer the **rooms** in which the clock was observed.\n\nThe only way to associate the clock with a room is via indirect paths.\n\nLet\u2019s examine:\n\n- The clock appears at time intervals: 87, 98, ",
+   "score": 0.0,
+   "spent": 3779,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "CMP",
+   "q": "You saw a radio exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "yellow",
+   "pred": "Subtask 1: Identify all instances where the radio appears in the scene graph.\n- Look through the edges to find all entries involving \"radio\" as either node \"a\" or \"b\".\n- From the data, the edges involving \"radio\" are:\n  - {\"a\": \"door\", \"b\": \"radio\", \"t\": [100, 217, 226]}\n  - {\"a\": \"glass\", \"b\": \"radio\", \"t\": [100, 226]}\n\nSubtask 2: Determine which of these times correspond to seeing the radio in a different room.\n- The question states that the radio was seen exactly three times, each in a different room.\n- We need to identify the rooms associated with each appearance of the radio.\n\nSubtask 3: Find the room for each time the radio is seen.\n- The radio appears at times: 100, 217, 226 (from edge: door \u2192 radio).\n- Also, at time 100 and 226 from glass \u2192 radio, but this may be the same event.\n- So total unique times: 100, 217, ",
+   "score": 0.0,
+   "spent": 3779,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "CMP",
+   "q": "You saw a globe exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "blue",
+   "pred": "Subtask 1: Identify the node \"globe\" and its time intervals of presence in the scene graph.  \n- From the nodes section: \"globe\": {\"first\": 107, \"last\": 208, \"n\": 2}  \n- The \"n\" value is 2, meaning the globe appears in 2 time intervals, not 3.  \n- But the question says: \"You saw a globe exactly three times, each in a different room.\"  \n- This contradicts the data: only 2 appearances.  \n- However, the edges show \"door\" \u2192 \"globe\" at [107, 208] and \"glass\" \u2192 \"globe\" at [107, 208].  \n- The globe appears in two time intervals: 107 and 208? But the edge list shows only one edge: {\"a\": \"door\", \"b\": \"globe\", \"t\": [107, 208]} \u2014 this is a single time interval?  \n- Wait: the edge has a list of time points: [107, 208] \u2014 but that's two values, not",
+   "score": 0.0,
+   "spent": 3779,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "CMP",
+   "q": "You saw a statue exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "purple",
+   "pred": "To determine the color of the statue the second time it was seen, we need to:\n\n1. Identify all instances where the statue was seen (i.e., edges involving \"statue\").\n2. Determine the order in which the statue was seen (by time).\n3. Identify the second time the statue was seen.\n4. Determine the room in which it was seen during that second instance.\n5. Determine the color of the statue in that room.\n\nHowever, the provided data does not include any information about the color of the statue or any visual attributes. The only information is about the presence of the statue in the graph and the time intervals when it was connected to other nodes.\n\nLet\u2019s proceed step by step:\n\n### Step 1: Find all edges involving \"statue\"\nFrom the edges:\n- `door` \u2192 `statue` at times: [34, 62, 259]\n- `glass` \u2192 `statue` at times: [34, 62]\n\nSo the statue appears in connections at:\n- Time 34 (via door and glass)\n- Time 62 (via door and glass)\n- Time 259 (via door)\n\nSo the statue is seen at times: 3",
+   "score": 0.0,
+   "spent": 3779,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "CMP",
+   "q": "Did you see the thermos before or after the kettle? Answer 'before' or 'after'.",
+   "gold": "before",
+   "pred": "neither",
+   "score": 0.0,
+   "spent": 3699,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "CMP",
+   "q": "Did you see the colander before or after the ladle? Answer 'before' or 'after'.",
+   "gold": "before",
+   "pred": "cannot determine",
+   "score": 0.0,
+   "spent": 3567,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "CMP",
+   "q": "You saw a clock exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "brown",
+   "pred": "The color of the clock the second time it was seen cannot be determined from the provided data.",
+   "score": 0.0,
+   "spent": 3767,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "CMP",
+   "q": "You saw a radio exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "purple",
+   "pred": "To determine the color of the radio the second time it was seen, we need to:\n\n1. Identify all instances where the radio appears in the scene graph.\n2. Determine the rooms in which the radio appears.\n3. Confirm that it appears exactly three times, each in a different room.\n4. Identify the second time it was seen (in chronological order).\n5. Determine the color of the radio at that time.\n\nHowever, the provided data does not include any information about the **color** of the radio or any object. The graph only includes:\n- Nodes (objects, places, people)\n- Edges (relationships between nodes)\n- Time intervals (when relationships occur)\n\nThere is no attribute data (like color) associated with any node.\n\nTherefore, we cannot determine the color of the radio at any point in time.\n\nSubtasks:\n1. Check if the radio appears exactly three times in different rooms.\n   - From the edges: radio appears in:\n     - \"soap\" \u2192 \"radio\" at times [81, 147, 263] \u2192 3 instances\n     - \"comb\" \u2192 \"radio\" at times [147, 263] \u2192 2 instances\n     - So total appearances:",
+   "score": 0.0,
+   "spent": 3813,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "CMP",
+   "q": "You saw a globe exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "red",
+   "pred": "Subtask 1: Identify the node \"globe\" and its time intervals of presence in the scene graph.  \n- From the nodes section: \"globe\" has first = 184, last = 282, n = 2.  \n- This indicates the globe appears at 2 time points: 184 and 282.  \n- But the question says \"you saw a globe exactly three times\", which contradicts the data (n=2).  \n- Recheck: \"globe\" has n=2, so it appears only twice.  \n- But the question says \"exactly three times\", so there may be an error in interpretation.\n\nWait \u2014 the \"n\" value in the node data is the number of time intervals (edges) where the node appears. But the \"globe\" node has n=2, meaning it appears in 2 time intervals. But the question says \"you saw a globe exactly three times\", so perhaps \"saw\" refers to the number of times it appears in edges, not the number of time points.\n\nBut the \"n\" value is the number of time intervals (edges) where the node is involved. So \"globe\" appears in 2",
+   "score": 0.0,
+   "spent": 3813,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "CMP",
+   "q": "You saw a statue exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "blue",
+   "pred": "Subtask 1: Identify all instances where the \"statue\" was seen, based on the edges involving \"statue\".\n- From the data: \n  - \"soap\" \u2192 \"statue\": [141, 212] (two time points)\n  - \"comb\" \u2192 \"statue\": [91, 141, 212] (three time points)\n\nWait \u2014 there is a conflict. The edge between \"soap\" and \"statue\" has timestamps [141, 212], and \"comb\" and \"statue\" has [91, 141, 212]. So total unique times when \"statue\" appears:\n- 91 (from comb-statue)\n- 141 (shared by both soap-statue and comb-statue)\n- 212 (shared)\n\nSo total appearances: three times \u2014 at t=91, t=141, t=212.\n\nBut the question says: \"You saw a statue exactly three times, each in a different room.\" So we need to determine which room it was in during each of these sightings.\n\nNow, for each time point, determine which",
+   "score": 0.0,
+   "spent": 3813,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "CMP",
+   "q": "Did you see the trivet before or after the whisk? Answer 'before' or 'after'.",
+   "gold": "before",
+   "pred": "neither",
+   "score": 0.0,
+   "spent": 3590,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "CMP",
+   "q": "Did you see the mortar before or after the teapot? Answer 'before' or 'after'.",
+   "gold": "before",
+   "pred": "cannot determine",
+   "score": 0.0,
+   "spent": 3659,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "CMP",
+   "q": "You saw a clock exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "purple",
+   "pred": "To answer the question, we need to determine:\n\n1. **When and where the clock was seen** (i.e., in which time intervals and in which rooms).\n2. **Which of the three times corresponds to the second time** the clock was seen.\n3. **What color the clock was during that second sighting**.\n\nHowever, the provided data does not include **color information** for any object, including the clock. The only information available is:\n- The **nodes** (objects, places, people) and their **time intervals**.\n- The **edges** (relationships between nodes) and their **time intervals**.\n\nWe are told:\n- The clock was seen **exactly three times**, each in a **different room**.\n- We are to determine the **color** of the clock the **second time** it was seen.\n\nBut **no color data** is present in the graph.\n\nTherefore, we cannot determine the color of the clock, even if we could identify the second time it was seen.\n\nLet\u2019s proceed step by step:\n\n---\n\n### Subtask 1: Identify all times the clock was seen\nFrom the node data:\n- `\"clock\": {\"first\": 25, \"last\": 280, \"n",
+   "score": 0.0,
+   "spent": 3812,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "CMP",
+   "q": "You saw a radio exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "white",
+   "pred": "The color of the radio cannot be determined from the given data.",
+   "score": 0.0,
+   "spent": 3749,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "CMP",
+   "q": "You saw a globe exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "yellow",
+   "pred": "Subtask 1: Identify all instances where the \"globe\" was seen.\n- From the edges, the \"globe\" appears in the following relationships:\n  - \"spoon\" \u2192 \"globe\" at times [85, 108]\n  - No other edges involve \"globe\" as a node.\n\nSubtask 2: Determine the time points when the \"globe\" was seen.\n- The \"globe\" is connected to \"spoon\" at times 85 and 108.\n- So, the globe was seen at time 85 and time 108.\n\nWait \u2014 the question says \"You saw a globe exactly three times, each in a different room.\" But from the data, the globe only appears in two time points: 85 and 108. This contradicts the premise.\n\nBut let's double-check: the \"globe\" node has:\n- \"first\": 20\n- \"last\": 108\n- \"n\": 3\n\nWait \u2014 \"n\": 3 means it appears in 3 time intervals. But in the edges, it only appears in one edge: \"spoon\" \u2192 \"globe\" at [",
+   "score": 0.0,
+   "spent": 3812,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "CMP",
+   "q": "You saw a statue exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "brown",
+   "pred": "Subtask 1: Identify all instances when the \"statue\" was seen in the scene graph.  \n- From the edges, we see:  \n  - \"sock\" \u2192 \"statue\" at times [104, 238, 257]  \n  - \"spoon\" \u2192 \"statue\" at times [238, 257]  \n\nSo the statue appears at times: 104, 238, 257 (with 238 and 257 repeated). But since it's said \"you saw a statue exactly three times\", we assume these are three distinct events.\n\nBut wait \u2014 the question says \"each in a different room\". So we need to determine which rooms the statue was seen in during those sightings.\n\nSubtask 2: For each time the statue was seen, identify the room where it was located.  \nWe look at the connections between \"statue\" and rooms via other nodes.\n\nFrom the edges:\n- \"sock\" \u2192 \"statue\" at times [104, 238, 257]\n- \"spoon\" \u2192 \"statue\" at times [238, 25",
+   "score": 0.0,
+   "spent": 3812,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "CMP",
+   "q": "Did you see the tongs before or after the sieve? Answer 'before' or 'after'.",
+   "gold": "before",
+   "pred": "neither",
+   "score": 0.0,
+   "spent": 3636,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "CMP",
+   "q": "Did you see the whisk before or after the stapler? Answer 'before' or 'after'.",
+   "gold": "before",
+   "pred": "cannot determine",
+   "score": 0.0,
+   "spent": 3633,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  }
+ ]
+}

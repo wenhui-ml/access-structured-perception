@@ -1,0 +1,588 @@
+{
+ "model": "gemma-4-31b",
+ "method": "egagent",
+ "bench": "sew",
+ "subset": "RET",
+ "budget": 4096,
+ "tau_g": 0.0,
+ "judge_deferred": 20,
+ "mean": 0.0,
+ "items": [
+  {
+   "episode": "ep1",
+   "subset": "RET",
+   "q": "You saw a sieve exactly once during the walkthrough. What colour was it?",
+   "gold": "green",
+   "pred": "To answer the question \"What colour was the sieve?\", I need to determine if a \"sieve\" was present in the scene graph and, if not, search for it in the visual data.\n\n1.  **Analyze the Entity Scene Graph**: I will check the `nodes` list to see if \"sieve\" is listed as an entity.\n2.  **Check for \"sieve\" in nodes**: Scanning the provided nodes: `towel`, `study`, `bowl`, `hat`, `candle`, `sock`, `soap`, `spoon`, `fork`, `plate`, `ruler`, `cup`, `comb`, `closed`, `pen`, `glass`, `fan`, `belt`, `tray`, `rug`, `brush`, `pot`, `bedroom`, `clock`, `open`, `room`, `living`, `lamp`, `vase`, `globe`, `hallway`, `book`, `mug`, `statue`, `radio`, `kitchen`, `pantry`.\n3.  **Conclusion from Graph**: The entity \"sieve\" is not present in the provided scene graph.\n4.  **Visual Search**: Since the scene graph does not contain the object, but the question asserts that a sieve",
+   "score": 0.0,
+   "spent": 3747,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "RET",
+   "q": "You saw a stapler exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "C",
+   "pred": "",
+   "score": 0.0,
+   "spent": 0,
+   "n_calls": 0,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "RET",
+   "q": "You saw a colander exactly once during the walkthrough. What colour was it?",
+   "gold": "green",
+   "pred": "To answer the question \"What colour was the colander?\", I need to determine if a \"colander\" was present in the scene and, if so, identify its color.\n\n1.  **Analyze the Entity Scene Graph**: I will check the `nodes` list to see if \"colander\" is listed as an entity.\n2.  **Search for the Entity**: Looking through the provided nodes: `towel`, `study`, `bowl`, `hat`, `candle`, `sock`, `soap`, `spoon`, `fork`, `plate`, `ruler`, `cup`, `comb`, `closed`, `pen`, `glass`, `fan`, `belt`, `tray`, `rug`, `brush`, `pot`, `bedroom`, `clock`, `open`, `room`, `living`, `lamp`, `vase`, `globe`, `hallway`, `book`, `mug`, `statue`, `radio`, `kitchen`, `pantry`.\n3.  **Conclusion**: The entity \"colander\" is not present in the provided scene graph. Since the scene graph is the primary record of entities seen during the walkthrough, and \"colander\" is missing, I cannot determine its color from the provided data. However",
+   "score": 0.0,
+   "spent": 3748,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "RET",
+   "q": "You saw a trivet exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "B",
+   "pred": "",
+   "score": 0.0,
+   "spent": 0,
+   "n_calls": 0,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "RET",
+   "q": "You saw a kettle exactly once during the walkthrough. What colour was it?",
+   "gold": "green",
+   "pred": "To answer the question \"What colour was the kettle?\", I need to determine if a \"kettle\" was present in the scene graph and, if not, search the visual data.\n\n1.  **Analyze the Entity Scene Graph**: I will scan the `nodes` list for the entity \"kettle\".\n2.  **Check for \"kettle\" in nodes**: Looking through the provided nodes: `towel`, `study`, `bowl`, `hat`, `candle`, `sock`, `soap`, `spoon`, `fork`, `plate`, `ruler`, `cup`, `comb`, `closed`, `pen`, `glass`, `fan`, `belt`, `tray`, `rug`, `brush`, `pot`, `bedroom`, `clock`, `open`, `room`, `living`, `lamp`, `vase`, `globe`, `hallway`, `book`, `mug`, `statue`, `radio`, `kitchen`, `pantry`.\n3.  **Result**: The entity \"kettle\" is not listed in the scene graph.\n4.  **Conclusion**: Since the scene graph does not contain the \"kettle\", I must perform a visual search to find the object and identify its color.\n\nV",
+   "score": 0.0,
+   "spent": 3747,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "RET",
+   "q": "You saw a teapot exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "D",
+   "pred": "To answer the question, I need to identify the presence of a \"teapot\" in the provided entity scene graph and then determine the capital letter printed on it.\n\n1.  **Analyze the Entity Scene Graph**: I will scan the `nodes` list for the entity \"teapot\".\n2.  **Check for \"teapot\"**: Looking through the nodes: `towel`, `study`, `bowl`, `hat`, `candle`, `sock`, `soap`, `spoon`, `fork`, `plate`, `ruler`, `cup`, `comb`, `closed`, `pen`, `glass`, `fan`, `belt`, `tray`, `rug`, `brush`, `pot`, `bedroom`, `clock`, `open`, `room`, `living`, `lamp`, `vase`, `globe`, `hallway`, `book`, `mug`, `statue`, `radio`, `kitchen`, `pantry`.\n3.  **Observation**: The entity \"teapot\" is not listed in the provided scene graph nodes. However, there is a \"pot\" listed. In many datasets, \"pot\" might refer to a teapot or a cooking pot.\n4.  **Visual Verification**: Since the scene graph does not explicitly list a \"",
+   "score": 0.0,
+   "spent": 3751,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "RET",
+   "q": "You saw a ladle exactly once during the walkthrough. What colour was it?",
+   "gold": "red",
+   "pred": "To determine the color of the ladle, I need to identify when and where it appeared in the scene.\n\n1.  **Analyze the Entity Scene Graph**: I will check the provided nodes and edges for any mention of a \"ladle\".\n2.  **Search for the Entity**: Reviewing the `nodes` list: `towel`, `study`, `bowl`, `hat`, `candle`, `sock`, `soap`, `spoon`, `fork`, `plate`, `ruler`, `cup`, `comb`, `closed`, `pen`, `glass`, `fan`, `belt`, `tray`, `rug`, `brush`, `pot`, `bedroom`, `clock`, `open`, `room`, `living`, `lamp`, `vase`, `globe`, `hallway`, `book`, `mug`, `statue`, `radio`, `kitchen`, `pantry`.\n3.  **Observation**: The entity \"ladle\" is not present in the provided scene graph. Since the scene graph is a summary of detected entities and their interactions, and the question specifies the ladle was seen \"exactly once,\" it may have been a transient object or not captured in the high-level graph.\n4.  **Visual Verification**:",
+   "score": 0.0,
+   "spent": 3747,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "RET",
+   "q": "You saw a thermos exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "E",
+   "pred": "",
+   "score": 0.0,
+   "spent": 0,
+   "n_calls": 0,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "RET",
+   "q": "You saw a thermos exactly once during the walkthrough. What colour was it?",
+   "gold": "yellow",
+   "pred": "",
+   "score": 0.0,
+   "spent": 0,
+   "n_calls": 0,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "RET",
+   "q": "You saw a kettle exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "E",
+   "pred": "",
+   "score": 0.0,
+   "spent": 0,
+   "n_calls": 0,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "RET",
+   "q": "You saw a colander exactly once during the walkthrough. What colour was it?",
+   "gold": "green",
+   "pred": "To answer the question, I need to determine if a \"colander\" was present in the scene and, if so, what its color was.\n\n1.  **Analyze the Entity Scene Graph**: I will search the provided nodes list for \"colander\".\n2.  **Check for \"colander\"**: Scanning the nodes: `towel`, `bowl`, `candle`, `plate`, `room`, `spoon`, `sock`, `living`, `soap`, `pot`, `ruler`, `fan`, `fork`, `pen`, `closed`, `belt`, `tray`, `glass`, `comb`, `cup`, `rug`, `brush`, `hat`, `lamp`, `study`, `vase`, `mug`, `statue`, `book`, `pantry`, `open`, `clock`, `hallway`, `radio`, `globe`, `bedroom`, `kitchen`.\n3.  **Observation**: The entity \"colander\" is not listed in the provided scene graph nodes.\n4.  **Conclusion**: Since the scene graph is the primary source of entities detected during the walkthrough and \"colander\" is missing, I cannot determine its color from the provided data. However, the prompt implies a colander was",
+   "score": 0.0,
+   "spent": 3732,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "RET",
+   "q": "You saw a ladle exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "G",
+   "pred": "",
+   "score": 0.0,
+   "spent": 0,
+   "n_calls": 0,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "RET",
+   "q": "You saw a whisk exactly once during the walkthrough. What colour was it?",
+   "gold": "purple",
+   "pred": "",
+   "score": 0.0,
+   "spent": 0,
+   "n_calls": 0,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "RET",
+   "q": "You saw a decanter exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "C",
+   "pred": "To determine the capital letter printed on the decanter, I need to identify when and where the decanter appeared in the scene.\n\n1.  **Analyze the Entity Scene Graph**: I have reviewed the provided nodes and edges. The list of nodes includes items like `towel`, `bowl`, `candle`, `plate`, `room`, `spoon`, `sock`, `living`, `soap`, `pot`, `ruler`, `fan`, `fork`, `pen`, `closed`, `belt`, `tray`, `glass`, `comb`, `cup`, `rug`, `brush`, `hat`, `lamp`, `study`, `vase`, `mug`, `statue`, `book`, `pantry`, `open`, `clock`, `hallway`, `radio`, `globe`, `bedroom`, and `kitchen`.\n2.  **Search for \"Decanter\"**: I have scanned the entire node list and the edges. The word \"decanter\" does not appear in the provided entity scene graph.\n3.  **Conclusion**: Since the entity scene graph is a summary of the objects detected in the video, and the decanter is missing from this graph, I cannot determine the letter from the provided text data. I need",
+   "score": 0.0,
+   "spent": 3736,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "RET",
+   "q": "You saw a mortar exactly once during the walkthrough. What colour was it?",
+   "gold": "blue",
+   "pred": "",
+   "score": 0.0,
+   "spent": 0,
+   "n_calls": 0,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "RET",
+   "q": "You saw a tongs exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "E",
+   "pred": "The provided entity scene graph contains a comprehensive list of nodes (objects, people, places) and their temporal occurrences, as well as the edges (relationships/interactions) between them.\n\n1.  **Analyze the Nodes:** I have scanned the list of nodes provided in the scene graph: `towel`, `bowl`, `candle`, `plate`, `room`, `spoon`, `sock`, `living`, `soap`, `pot`, `ruler`, `fan`, `fork`, `pen`, `closed`, `belt`, `tray`, `glass`, `comb`, `cup`, `rug`, `brush`, `hat`, `lamp`, `study`, `vase`, `mug`, `statue`, `book`, `pantry`, `open`, `clock`, `hallway`, `radio`, `globe`, `bedroom`, `kitchen`.\n2.  **Search for \"Tongs\":** I am looking for the entity \"tongs\" within the nodes list.\n3.  **Observation:** The entity \"tongs\" is not present in the provided scene graph.\n\nSince the scene graph is the primary source of truth for the entities encountered during the walkthrough and \"tongs\" is missing from this data, I cannot determine the",
+   "score": 0.0,
+   "spent": 3735,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "RET",
+   "q": "You saw a trivet exactly once during the walkthrough. What colour was it?",
+   "gold": "purple",
+   "pred": "To determine the color of the trivet, I need to first identify if a \"trivet\" exists in the provided entity scene graph and then locate the visual information associated with it.\n\n1.  **Analyze the Entity Scene Graph**: I will scan the `nodes` list for the entity \"trivet\".\n2.  **Check for Presence**: Looking through the nodes: `towel`, `tray`, `comb`, `bowl`, `bedroom`, `candle`, `rug`, `soap`, `pot`, `fork`, `glass`, `ruler`, `plate`, `spoon`, `closed`, `cup`, `sock`, `belt`, `hat`, `brush`, `pen`, `fan`, `open`, `kitchen`, `book`, `mug`, `lamp`, `globe`, `clock`, `radio`, `statue`, `study`, `room`, `living`, `vase`, `pantry`, `hallway`.\n3.  **Observation**: The entity \"trivet\" is not listed in the provided scene graph nodes. However, the question asserts that a trivet was seen exactly once. This suggests the trivet might be a mislabeled object in the graph or requires a visual search of the video frames",
+   "score": 0.0,
+   "spent": 3794,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "RET",
+   "q": "You saw a whisk exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "B",
+   "pred": "To determine the capital letter printed on the whisk, I need to first locate the whisk in the scene.\n\n1.  **Analyze the provided entity scene graph**: I will check the `nodes` list to see if \"whisk\" is listed as an entity.\n2.  **Search for the whisk**: Looking through the `nodes` dictionary: `towel`, `tray`, `comb`, `bowl`, `bedroom`, `candle`, `rug`, `soap`, `pot`, `fork`, `glass`, `ruler`, `plate`, `spoon`, `closed`, `cup`, `sock`, `belt`, `hat`, `brush`, `pen`, `fan`, `open`, `kitchen`, `book`, `mug`, `lamp`, `globe`, `clock`, `radio`, `statue`, `study`, `room`, `living`, `vase`, `pantry`, `hallway`.\n3.  **Observation**: The \"whisk\" is not present in the provided entity scene graph. This means the scene graph is incomplete or the whisk was not captured in the node list, but the question asserts it was seen exactly once.\n4.  **Visual Search**: Since the entity graph does not contain the whisk,",
+   "score": 0.0,
+   "spent": 3797,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "RET",
+   "q": "You saw a mortar exactly once during the walkthrough. What colour was it?",
+   "gold": "purple",
+   "pred": "To determine the color of the mortar, I need to identify if a \"mortar\" exists in the provided entity scene graph and then find its visual properties.\n\n1.  **Analyze the Entity Scene Graph**: I will scan the `nodes` list for the entity \"mortar\".\n2.  **Check for Presence**: Looking through the nodes: `towel`, `tray`, `comb`, `bowl`, `bedroom`, `candle`, `rug`, `soap`, `pot`, `fork`, `glass`, `ruler`, `plate`, `spoon`, `closed`, `cup`, `sock`, `belt`, `hat`, `brush`, `pen`, `fan`, `open`, `kitchen`, `book`, `mug`, `lamp`, `globe`, `clock`, `radio`, `statue`, `study`, `room`, `living`, `vase`, `pantry`, `hallway`.\n3.  **Conclusion**: The entity \"mortar\" is not present in the provided scene graph. Since the scene graph is the primary record of entities seen during the walkthrough, and \"mortar\" is missing, I cannot determine its color from the provided data. However, the question implies it was seen exactly once. I must search the visual data",
+   "score": 0.0,
+   "spent": 3793,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "RET",
+   "q": "You saw a teapot exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "E",
+   "pred": "The provided entity scene graph contains a comprehensive list of nodes (objects, people, places) and their interactions (edges) over time. I need to determine if a \"teapot\" is present in the graph and if there is any associated information regarding a capital letter printed on it.\n\n1.  **Scan the nodes list** for the entity \"teapot\".\n2.  **Review the nodes list**: The nodes listed are: towel, tray, comb, bowl, bedroom, candle, rug, soap, pot, fork, glass, ruler, plate, spoon, closed, cup, sock, belt, hat, brush, pen, fan, open, kitchen, book, mug, lamp, globe, clock, radio, statue, study, room, living, vase, pantry, and hallway.\n3.  **Observation**: The entity \"teapot\" is not present in the provided scene graph. However, there is a \"pot\" listed.\n4.  **Check for \"teapot\" specifically**: The question asks about a \"teapot\". Since it is not in the graph, I cannot determine the letter from the provided text data.\n5.  **Visual Verification**: Since the scene graph is a summary of a walkthrough and the specific detail (a",
+   "score": 0.0,
+   "spent": 3797,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "RET",
+   "q": "You saw a colander exactly once during the walkthrough. What colour was it?",
+   "gold": "brown",
+   "pred": "To answer the question \"You saw a colander exactly once during the walkthrough. What colour was it?\", I need to determine if a \"colander\" was present in the scene graph and, if so, identify its color.\n\n1.  **Analyze the Entity Scene Graph**: I will scan the `nodes` list in the provided scene graph to see if \"colander\" is listed as an entity.\n2.  **Check for \"colander\"**: Looking through the nodes: `towel`, `tray`, `comb`, `bowl`, `bedroom`, `candle`, `rug`, `soap`, `pot`, `fork`, `glass`, `ruler`, `plate`, `spoon`, `closed`, `cup`, `sock`, `belt`, `hat`, `brush`, `pen`, `fan`, `open`, `kitchen`, `book`, `mug`, `lamp`, `globe`, `clock`, `radio`, `statue`, `study`, `room`, `living`, `vase`, `pantry`, `hallway`.\n3.  **Conclusion**: The entity \"colander\" is not present in the provided scene graph. Since the scene graph is the primary record of entities seen during the walkthrough, and the col",
+   "score": 0.0,
+   "spent": 3794,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "RET",
+   "q": "You saw a ladle exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "A",
+   "pred": "To answer the question \"You saw a ladle exactly once during the walkthrough. What single capital letter was printed on it?\", I need to identify the presence of a \"ladle\" in the provided entity scene graph.\n\n1.  **Analyze the Entity Scene Graph**: I will scan the `nodes` list for the entity \"ladle\".\n2.  **Check for \"ladle\"**: Looking through the nodes: `towel`, `tray`, `comb`, `bowl`, `bedroom`, `candle`, `rug`, `soap`, `pot`, `fork`, `glass`, `ruler`, `plate`, `spoon`, `closed`, `cup`, `sock`, `belt`, `hat`, `brush`, `pen`, `fan`, `open`, `kitchen`, `book`, `mug`, `lamp`, `globe`, `clock`, `radio`, `statue`, `study`, `room`, `living`, `vase`, `pantry`, `hallway`.\n3.  **Observation**: The entity \"ladle\" is not present in the provided scene graph.\n\nSince the scene graph is the primary source of truth for entities encountered during the walkthrough and the \"ladle\" is missing from the nodes, I cannot determine",
+   "score": 0.0,
+   "spent": 3797,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "RET",
+   "q": "You saw a tongs exactly once during the walkthrough. What colour was it?",
+   "gold": "purple",
+   "pred": "",
+   "score": 0.0,
+   "spent": 0,
+   "n_calls": 0,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "RET",
+   "q": "You saw a stapler exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "A",
+   "pred": "",
+   "score": 0.0,
+   "spent": 0,
+   "n_calls": 0,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "RET",
+   "q": "You saw a tongs exactly once during the walkthrough. What colour was it?",
+   "gold": "green",
+   "pred": "To answer the question \"What colour was the tongs?\", I need to determine if a \"tongs\" entity exists in the provided scene graph and, if so, identify its properties.\n\n1.  **Analyze the Entity Scene Graph**: I will scan the `nodes` list for the entity \"tongs\".\n2.  **Check for Existence**:\n    *   Nodes listed: towel, tray, hat, candle, rug, brush, soap, pot, kitchen, pen, glass, ruler, plate, comb, closed, fan, sock, belt, bowl, fork, cup, spoon, hallway, open, book, globe, clock, lamp, study, mug, bedroom, vase, statue, living, room, radio, pantry.\n    *   The entity \"tongs\" is not present in the provided scene graph.\n3.  **Conclusion**: Since the entity \"tongs\" is not mentioned in the nodes or edges of the provided scene graph, I cannot determine its color from the given data. However, the question implies that a tongs was seen exactly once. Since the scene graph is a summary of the walkthrough, and \"tongs\" is missing, I must search the visual data to find the object and its color.",
+   "score": 0.0,
+   "spent": 3755,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "RET",
+   "q": "You saw a sieve exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "B",
+   "pred": "",
+   "score": 0.0,
+   "spent": 0,
+   "n_calls": 0,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "RET",
+   "q": "You saw a whisk exactly once during the walkthrough. What colour was it?",
+   "gold": "green",
+   "pred": "To determine the color of the whisk, I need to first identify if and when a \"whisk\" appeared in the scene.\n\n1.  **Analyze the Entity Scene Graph**: I will check the `nodes` list for the entity \"whisk\".\n2.  **Verify Presence**: Looking through the provided nodes: `towel`, `tray`, `hat`, `candle`, `rug`, `brush`, `soap`, `pot`, `kitchen`, `pen`, `glass`, `ruler`, `plate`, `comb`, `closed`, `fan`, `sock`, `belt`, `bowl`, `fork`, `cup`, `spoon`, `hallway`, `open`, `book`, `globe`, `clock`, `lamp`, `study`, `mug`, `bedroom`, `vase`, `statue`, `living`, `room`, `radio`, `pantry`.\n3.  **Observation**: The entity \"whisk\" is not present in the provided scene graph.\n\nSince the scene graph is the primary source of entity tracking and the whisk is not listed, I cannot determine its color from the provided data. However, the question asserts that a whisk was seen exactly once. This suggests the whisk might be an object not captured",
+   "score": 0.0,
+   "spent": 3755,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "RET",
+   "q": "You saw a stapler exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "F",
+   "pred": "",
+   "score": 0.0,
+   "spent": 0,
+   "n_calls": 0,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "RET",
+   "q": "You saw a trivet exactly once during the walkthrough. What colour was it?",
+   "gold": "brown",
+   "pred": "To answer the question \"What colour was the trivet?\", I need to determine if a \"trivet\" was present in the scene and, if so, identify its color.\n\n1.  **Analyze the Entity Scene Graph**: I will search the provided nodes for \"trivet\".\n2.  **Check for existence**: Looking through the nodes list: `towel`, `tray`, `hat`, `candle`, `rug`, `brush`, `soap`, `pot`, `kitchen`, `pen`, `glass`, `ruler`, `plate`, `comb`, `closed`, `fan`, `sock`, `belt`, `bowl`, `fork`, `cup`, `spoon`, `hallway`, `open`, `book`, `globe`, `clock`, `lamp`, `study`, `mug`, `bedroom`, `vase`, `statue`, `living`, `room`, `radio`, `pantry`.\n3.  **Conclusion from Graph**: The entity \"trivet\" is not present in the provided scene graph. However, the question asserts that a trivet was seen exactly once. This suggests the object might be visually present but not labeled in the graph, or I need to search the visual data.\n\nSince",
+   "score": 0.0,
+   "spent": 3756,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "RET",
+   "q": "You saw a mortar exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "H",
+   "pred": "To determine the capital letter printed on the mortar, I need to identify when and where the mortar appeared in the scene.\n\n1.  **Analyze the Entity Scene Graph**: I have reviewed the provided nodes and edges. The nodes list includes items like `towel`, `tray`, `hat`, `candle`, `rug`, `brush`, `soap`, `pot`, `kitchen`, `pen`, `glass`, `ruler`, `plate`, `comb`, `closed`, `fan`, `sock`, `belt`, `bowl`, `fork`, `cup`, `spoon`, `hallway`, `open`, `book`, `globe`, `clock`, `lamp`, `study`, `mug`, `bedroom`, `vase`, `statue`, `living`, `room`, `radio`, and `pantry`.\n2.  **Search for \"Mortar\"**: I have scanned the entire list of nodes and edges. The word \"mortar\" does not appear in the provided entity scene graph.\n3.  **Conclusion**: Since the entity scene graph is the primary source of truth for objects encountered during the walkthrough and the \"mortar\" is missing from this data, I must perform a visual search to locate the object and identify the letter printed on",
+   "score": 0.0,
+   "spent": 3759,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "RET",
+   "q": "You saw a colander exactly once during the walkthrough. What colour was it?",
+   "gold": "red",
+   "pred": "To determine the color of the colander, I need to first identify if a \"colander\" exists in the provided entity scene graph.\n\n1.  **Scan the nodes list**: I will check the `nodes` dictionary for any entry labeled \"colander\".\n2.  **Analyze the nodes**: Looking through the provided nodes: `towel`, `tray`, `hat`, `candle`, `rug`, `brush`, `soap`, `pot`, `kitchen`, `pen`, `glass`, `ruler`, `plate`, `comb`, `closed`, `fan`, `sock`, `belt`, `bowl`, `fork`, `cup`, `spoon`, `hallway`, `open`, `book`, `globe`, `clock`, `lamp`, `study`, `mug`, `bedroom`, `vase`, `statue`, `living`, `room`, `radio`, `pantry`.\n3.  **Conclusion**: The entity \"colander\" is not present in the provided scene graph. Since the scene graph is the primary source of truth for entities encountered during the walkthrough, and it does not list a colander, I cannot determine its color from the provided data. However, the question implies a colander was seen. Since it",
+   "score": 0.0,
+   "spent": 3756,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "RET",
+   "q": "You saw a teapot exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "B",
+   "pred": "To answer the question \"You saw a teapot exactly once during the walkthrough. What single capital letter was printed on it?\", I need to identify when and where the teapot appeared and then find the specific detail (the capital letter) associated with it.\n\n1.  **Identify the teapot in the scene graph:** I will search the provided entity scene graph for a node labeled \"teapot\".\n2.  **Analyze the scene graph:** Looking through the `nodes` list: `towel`, `tray`, `hat`, `candle`, `rug`, `brush`, `soap`, `pot`, `kitchen`, `pen`, `glass`, `ruler`, `plate`, `comb`, `closed`, `fan`, `sock`, `belt`, `bowl`, `fork`, `cup`, `spoon`, `hallway`, `open`, `book`, `globe`, `clock`, `lamp`, `study`, `mug`, `bedroom`, `vase`, `statue`, `living`, `room`, `radio`, `pantry`.\n3.  **Observation:** The word \"teapot\" does not appear in the provided entity scene graph. However, there is a \"pot\". It is possible the \"pot\" refers to the teapot, or the teapot",
+   "score": 0.0,
+   "spent": 3759,
+   "n_calls": 1,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  }
+ ]
+}

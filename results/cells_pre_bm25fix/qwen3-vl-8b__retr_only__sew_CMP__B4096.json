@@ -1,0 +1,420 @@
+{
+ "model": "qwen3-vl-8b",
+ "method": "retr_only",
+ "bench": "sew",
+ "subset": "CMP",
+ "budget": 4096,
+ "tau_g": 0.0,
+ "judge_deferred": 11,
+ "mean": 19.79,
+ "items": [
+  {
+   "episode": "ep1",
+   "subset": "CMP",
+   "q": "You saw a clock exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "red",
+   "pred": "The question asks for the color of the clock the SECOND time it was seen.\n\nLooking at the keyframes, we need to find instances where a clock is visible.\n\n- The first instance (t=188) shows a blue clock (C) in the top-left corner.\n- The second instance (t=125) shows a purple clock (E) in the top-left corner.\n- The third instance (t=173) shows a white clock (H) in the top-middle position.\n\nTherefore, the SECOND time you saw the clock, it was **purple**.",
+   "score": 75.0,
+   "spent": 2586,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "CMP",
+   "q": "You saw a radio exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "yellow",
+   "pred": "The radio is shown in the bottom right corner of each frame. The color of the radio in the second instance (t=175) is **blue**.\n\n**Answer: Blue**",
+   "score": 0.0,
+   "spent": 2504,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "CMP",
+   "q": "You saw a globe exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "green",
+   "pred": "The question asks for the color of the globe the SECOND time it was seen, but none of the provided images show a globe. All images display various colored rectangular objects labeled with letters A-H, arranged in a grid, with room and time information.\n\nTherefore, based on the given information, it is impossible to determine the color of a globe that was not depicted. The answer is **not determinable** from the provided data.",
+   "score": 0.0,
+   "spent": 2551,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "CMP",
+   "q": "You saw a statue exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "red",
+   "pred": "White",
+   "score": 0.0,
+   "spent": 2466,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "CMP",
+   "q": "Did you see the sieve before or after the stapler? Answer 'before' or 'after'.",
+   "gold": "before",
+   "pred": "before",
+   "score": 100.0,
+   "spent": 2461,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "CMP",
+   "q": "Did you see the colander before or after the trivet? Answer 'before' or 'after'.",
+   "gold": "before",
+   "pred": "before",
+   "score": 100.0,
+   "spent": 2462,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "CMP",
+   "q": "You saw a clock exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "green",
+   "pred": "The question asks for the color of the clock the SECOND time it was seen.\n\nHowever, none of the provided keyframes contain a clock. All images show various household items (like pots, spoons, brushes) arranged in a grid, each with a letter and color. There is no object labeled \"clock\" in any of the images.\n\nTherefore, it is impossible to determine the color of the clock the second time you saw it, as the clock was never shown.\n\n**Answer: Not shown**",
+   "score": 0.0,
+   "spent": 2566,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "CMP",
+   "q": "You saw a radio exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "yellow",
+   "pred": "The question asks for the color of the radio the SECOND time it was seen.\n\nHowever, none of the provided images show a \"radio\". All images display various household items (like cups, spoons, towels, etc.) arranged in a grid, each with a letter (A-H) inside. There is no item labeled \"radio\".\n\nTherefore, based on the information given, it is impossible to determine the color of a radio that was never shown.\n\n**Answer: Not enough information.**",
+   "score": 0.0,
+   "spent": 2564,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "CMP",
+   "q": "You saw a globe exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "blue",
+   "pred": "The question asks for the color of the globe the SECOND time it was seen, but none of the provided images show a globe. All images depict a grid of colored rectangular objects with letters, each labeled with an item name (e.g., fan, pot, glass). There is no object labeled \"globe\" in any of the images.\n\nTherefore, it is impossible to determine the color of the globe based on the given information.\n\n**Answer: Not specified (no globe shown)**",
+   "score": 0.0,
+   "spent": 2562,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "CMP",
+   "q": "You saw a statue exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "purple",
+   "pred": "Red",
+   "score": 0.0,
+   "spent": 2466,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "CMP",
+   "q": "Did you see the thermos before or after the kettle? Answer 'before' or 'after'.",
+   "gold": "before",
+   "pred": "after",
+   "score": 0.0,
+   "spent": 2461,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "CMP",
+   "q": "Did you see the colander before or after the ladle? Answer 'before' or 'after'.",
+   "gold": "before",
+   "pred": "before",
+   "score": 100.0,
+   "spent": 2462,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "CMP",
+   "q": "You saw a clock exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "brown",
+   "pred": "Red",
+   "score": 0.0,
+   "spent": 2466,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "CMP",
+   "q": "You saw a radio exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "purple",
+   "pred": "The question asks for the color of the radio the SECOND time it was seen.\n\nLooking at the provided keyframes, none of them show a \"radio\". The items shown are various household objects like bowls, spoons, forks, etc., each labeled with a letter (A-H) and a color.\n\nSince there is no object labeled as a \"radio\" in any of the images, it is impossible to determine its color.\n\nTherefore, the answer is: **Not specified / No radio shown**",
+   "score": 0.0,
+   "spent": 2565,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "CMP",
+   "q": "You saw a globe exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "red",
+   "pred": "The question asks for the color of the globe the SECOND time it was seen, but none of the provided images show a globe. All images depict various colored items (like cups, spoons, bowls) in a grid, with letters (A-H) indicating their color or type.\n\nTherefore, based on the information given, it is impossible to determine the color of a globe that was never shown. The answer is not derivable from the provided data.",
+   "score": 0.0,
+   "spent": 2556,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "CMP",
+   "q": "You saw a statue exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "blue",
+   "pred": "The statue is represented by the letter **H**.\n\nLooking at the images in chronological order (by time `t`), the statue (H) appears:\n- First at `t=120`\n- Second at `t=121`\n- Third at `t=124`\n\nAt `t=121`, the statue (H) is located in the **top-right corner**, and its color is **purple**.\n\nTherefore, the color of the statue the SECOND time you saw it was **purple**.",
+   "score": 0.0,
+   "spent": 2575,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "CMP",
+   "q": "Did you see the trivet before or after the whisk? Answer 'before' or 'after'.",
+   "gold": "before",
+   "pred": "after",
+   "score": 0.0,
+   "spent": 2461,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "CMP",
+   "q": "Did you see the mortar before or after the teapot? Answer 'before' or 'after'.",
+   "gold": "before",
+   "pred": "before",
+   "score": 100.0,
+   "spent": 2461,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "CMP",
+   "q": "You saw a clock exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "purple",
+   "pred": "The question asks for the color of the clock the SECOND time it was seen.\n\nHowever, none of the provided keyframes contain a clock. All images show various objects (like cups, spoons, hats) arranged in a grid, each with a letter (A-H) and a color.\n\nSince there is no clock depicted in any of the frames, it is impossible to determine its color at any time.\n\nTherefore, the question cannot be answered based on the given information.\n\n**Answer: Not enough information.**",
+   "score": 0.0,
+   "spent": 2568,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "CMP",
+   "q": "You saw a radio exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "white",
+   "pred": "The question asks for the color of the radio the SECOND time it was seen, but none of the provided images show a radio. All images depict various objects (like pots, spoons, brushes) in different rooms and at different times, but no radio is visible. Therefore, it is impossible to determine the color of the radio the second time it was seen, as it was never seen at all in the provided images.",
+   "score": 0.0,
+   "spent": 2550,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "CMP",
+   "q": "You saw a globe exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "yellow",
+   "pred": "The question asks for the color of the globe the SECOND time it was seen. However, none of the provided keyframes show a globe. All images depict a grid of items (like cups, spoons, hats) with letters (A, B, C, D, E, F, G, H) inside them, but no globe is visible.\n\nTherefore, it is impossible to determine the color of the globe the second time it was seen, as it was never shown in any of the keyframes.\n\n**Answer: Not shown**",
+   "score": 0.0,
+   "spent": 2574,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "CMP",
+   "q": "You saw a statue exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "brown",
+   "pred": "The statue is not visible in any of the provided keyframes. Therefore, it is impossible to determine its color.",
+   "score": 0.0,
+   "spent": 2488,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "CMP",
+   "q": "Did you see the tongs before or after the sieve? Answer 'before' or 'after'.",
+   "gold": "before",
+   "pred": "after",
+   "score": 0.0,
+   "spent": 2461,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "CMP",
+   "q": "Did you see the whisk before or after the stapler? Answer 'before' or 'after'.",
+   "gold": "before",
+   "pred": "after",
+   "score": 0.0,
+   "spent": 2461,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 1.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  }
+ ]
+}

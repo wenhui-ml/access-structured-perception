@@ -1,0 +1,588 @@
+{
+ "model": "qwen3.8-27b",
+ "method": "uniform16",
+ "bench": "sew",
+ "subset": "RET",
+ "budget": 2048,
+ "tau_g": 0.0,
+ "judge_deferred": 27,
+ "mean": 0.0,
+ "items": [
+  {
+   "episode": "ep1",
+   "subset": "RET",
+   "q": "You saw a sieve exactly once during the walkthrough. What colour was it?",
+   "gold": "green",
+   "pred": "Based on the provided frames, the object \"sieve\" does not appear in any of the lists of items seen in the study, hallway, living room, or pantry.\n\nTherefore, it is not possible to determine the color of a sieve from this walkthrough, as it was not seen.",
+   "score": 0.0,
+   "spent": 1919,
+   "n_calls": 2,
+   "w_realised": 6,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "RET",
+   "q": "You saw a stapler exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "C",
+   "pred": "Looking through the frames, I need to find the object labeled \"stapler\".\n\n- Frame 1 (t=0, study): Objects are belt, ruler, soap, bowl, plate, fork, comb, cup, pen, glass, towel, hat, candle, sock, fan, spoon. No stapler.\n- Frame 2 (t=59, hallway): Objects are fork, hat, spoon, pot, pen, cup, glass, fan, belt, soap, brush, rug, bowl, towel, plate, comb. No stapler.\n- Frame 3 (t=11",
+   "score": 0.0,
+   "spent": 1992,
+   "n_calls": 2,
+   "w_realised": 6,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "RET",
+   "q": "You saw a colander exactly once during the walkthrough. What colour was it?",
+   "gold": "green",
+   "pred": "Based on the provided frames, the object \"colander\" does not appear in any of the lists of items seen in the study, hallway, living room, or pantry.\n\nTherefore, it is not possible to determine the color of a colander from this walkthrough, as it was not seen.",
+   "score": 0.0,
+   "spent": 1921,
+   "n_calls": 2,
+   "w_realised": 6,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "RET",
+   "q": "You saw a trivet exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "B",
+   "pred": "Looking through the frames, I need to find the object labeled \"trivet\".\n\n- Frame 1 (t=0, study): No trivet.\n- Frame 2 (t=59, hallway): No trivet.\n- Frame 3 (t=119, hallway): No trivet.\n- Frame 4 (t=179, living room): No trivet.\n- Frame 5 (t=239, pantry): No trivet.\n- Frame 6 (t=299, living room): No trivet.\n\nWait, I don",
+   "score": 0.0,
+   "spent": 1992,
+   "n_calls": 2,
+   "w_realised": 6,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "RET",
+   "q": "You saw a kettle exactly once during the walkthrough. What colour was it?",
+   "gold": "green",
+   "pred": "Based on the provided frames, there is no object labeled \"kettle\" visible in any of the images. The objects shown include items like a belt, ruler, soap, bowl, plate, fork, comb, cup, pen, glass, towel, hat, candle, sock, fan, spoon, tray, pot, brush, and rug.\n\nTherefore, it is not possible to determine the color of a kettle from this walkthrough.",
+   "score": 0.0,
+   "spent": 1948,
+   "n_calls": 2,
+   "w_realised": 6,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "RET",
+   "q": "You saw a teapot exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "D",
+   "pred": "Looking through the frames, I need to find the teapot.\n\n- Frame 1 (t=0, study): No teapot.\n- Frame 2 (t=59, hallway): No teapot.\n- Frame 3 (t=119, hallway): No teapot.\n- Frame 4 (t=179, living room): No teapot.\n- Frame 5 (t=239, pantry): No teapot.\n- Frame 6 (t=299, living room): In the top row, third item is labeled \"pot\"",
+   "score": 0.0,
+   "spent": 1992,
+   "n_calls": 2,
+   "w_realised": 6,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "RET",
+   "q": "You saw a ladle exactly once during the walkthrough. What colour was it?",
+   "gold": "red",
+   "pred": "Based on the provided frames, let's locate the ladle.\n\n- Frame 1 (t=0): No ladle.\n- Frame 2 (t=59): No ladle.\n- Frame 3 (t=119): No ladle.\n- Frame 4 (t=179): No ladle.\n- Frame 5 (t=239): No ladle.\n- Frame 6 (t=299): In the bottom right corner, there is an object labeled \"spoon\". However, looking closely at the shape, it is a",
+   "score": 0.0,
+   "spent": 1988,
+   "n_calls": 2,
+   "w_realised": 6,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "RET",
+   "q": "You saw a thermos exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "E",
+   "pred": "Looking through the frames, I need to find the object labeled \"thermos\".\n\n- Frame 1 (t=0, study): Objects are belt, ruler, soap, bowl, plate, fork, comb, cup, pen, glass, towel, hat, candle, sock, fan, spoon. No thermos.\n- Frame 2 (t=59, hallway): Objects are fork, hat, spoon, pot, pen, cup, glass, fan, belt, soap, brush, rug, bowl, towel, plate, comb. No thermos.\n- Frame 3 (t=119",
+   "score": 0.0,
+   "spent": 1992,
+   "n_calls": 2,
+   "w_realised": 6,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "RET",
+   "q": "You saw a thermos exactly once during the walkthrough. What colour was it?",
+   "gold": "yellow",
+   "pred": "Based on the provided frames, there is no object labeled \"thermos\" in any of the scenes. The objects shown include items like a pot, fan, soap, bowl, glass, fork, plate, candle, ruler, tray, pen, spoon, belt, comb, sock, towel, brush, cup, rug, hat, and fan.\n\nTherefore, it is not possible to determine the color of a thermos as it does not appear in the walkthrough.",
+   "score": 0.0,
+   "spent": 1956,
+   "n_calls": 2,
+   "w_realised": 6,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "RET",
+   "q": "You saw a kettle exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "E",
+   "pred": "Looking through the frames, I need to find the object labeled \"kettle\".\n\nScanning each frame:\n- Frame 1 (t=0): Objects are pot, fan, soap, bowl, glass, fork, plate, candle, ruler, tray, pen, spoon, belt, comb, sock, towel. No kettle.\n- Frame 2 (t=59): Objects are brush, plate, cup, glass, belt, candle, sock, tray, fan, spoon, comb, bowl, rug, pot, ruler, soap. No kettle.\n- Frame 3 (t=119",
+   "score": 0.0,
+   "spent": 1991,
+   "n_calls": 2,
+   "w_realised": 6,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "RET",
+   "q": "You saw a colander exactly once during the walkthrough. What colour was it?",
+   "gold": "green",
+   "pred": "Based on the provided frames, the object \"colander\" does not appear in any of the lists of items shown in the living room, pantry, hallway, or bedroom.\n\nTherefore, it is not possible to determine the color of a colander from the given images, as it was not seen.",
+   "score": 0.0,
+   "spent": 1922,
+   "n_calls": 2,
+   "w_realised": 6,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "RET",
+   "q": "You saw a ladle exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "G",
+   "pred": "A",
+   "score": 0.0,
+   "spent": 1866,
+   "n_calls": 2,
+   "w_realised": 6,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "RET",
+   "q": "You saw a whisk exactly once during the walkthrough. What colour was it?",
+   "gold": "purple",
+   "pred": "Based on the provided frames, the object \"whisk\" does not appear in any of the lists of items shown. The items listed across all frames are: pot, fan, soap, bowl, glass, fork, plate, candle, ruler, tray, pen, spoon, belt, comb, sock, towel, brush, cup, rug, hat.\n\nTherefore, it is not possible to determine the color of a whisk from this walkthrough, as it was never seen.",
+   "score": 0.0,
+   "spent": 1956,
+   "n_calls": 2,
+   "w_realised": 6,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "RET",
+   "q": "You saw a decanter exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "C",
+   "pred": "A",
+   "score": 0.0,
+   "spent": 1866,
+   "n_calls": 2,
+   "w_realised": 6,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "RET",
+   "q": "You saw a mortar exactly once during the walkthrough. What colour was it?",
+   "gold": "blue",
+   "pred": "Based on the provided frames, the object \"mortar\" does not appear in any of the lists of items seen in the living room, pantry, hallway, or bedroom.\n\nTherefore, it is not possible to determine the color of a mortar from this walkthrough, as it was never seen.",
+   "score": 0.0,
+   "spent": 1919,
+   "n_calls": 2,
+   "w_realised": 6,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "RET",
+   "q": "You saw a tongs exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "E",
+   "pred": "H",
+   "score": 0.0,
+   "spent": 1866,
+   "n_calls": 2,
+   "w_realised": 6,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "RET",
+   "q": "You saw a trivet exactly once during the walkthrough. What colour was it?",
+   "gold": "purple",
+   "pred": "Based on the provided frames, the object \"trivet\" does not appear in any of the lists of items seen in the bedroom, kitchen, living room, or study.\n\nTherefore, it is not possible to determine the color of a trivet from this walkthrough, as it was never seen.",
+   "score": 0.0,
+   "spent": 1921,
+   "n_calls": 2,
+   "w_realised": 6,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "RET",
+   "q": "You saw a whisk exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "B",
+   "pred": "Looking through the frames, I need to find the object labeled \"whisk\".\n\n- Frame 1 (bedroom, t=0): No whisk.\n- Frame 2 (kitchen, t=59): No whisk.\n- Frame 3 (living room, t=119): No whisk.\n- Frame 4 (study, t=179): No whisk.\n- Frame 5 (kitchen, t=239): No whisk.\n- Frame 6 (kitchen, t=299): No whisk.\n\nWait, I don't see a",
+   "score": 0.0,
+   "spent": 1991,
+   "n_calls": 2,
+   "w_realised": 6,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "RET",
+   "q": "You saw a mortar exactly once during the walkthrough. What colour was it?",
+   "gold": "purple",
+   "pred": "Based on the provided frames, the object \"mortar\" does not appear in any of the lists of items seen in the bedroom, kitchen, living room, or study.\n\nTherefore, it is not possible to determine the color of a mortar from this walkthrough, as it was never seen.",
+   "score": 0.0,
+   "spent": 1919,
+   "n_calls": 2,
+   "w_realised": 6,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "RET",
+   "q": "You saw a teapot exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "E",
+   "pred": "Based on the provided frames, let's locate the teapot (labeled as \"pot\" in the images).\n\n1.  **Frame 1 (t=0, bedroom):** There is a \"pot\" with the letter **D**.\n2.  **Frame 2 (t=59, kitchen):** There is a \"pot\" with the letter **B**.\n3.  **Frame 3 (t=119, living room):** There is a \"pot\" with the letter **F**.\n4.  **Frame 4 (t=179, study):** There is a",
+   "score": 0.0,
+   "spent": 1992,
+   "n_calls": 2,
+   "w_realised": 6,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "RET",
+   "q": "You saw a colander exactly once during the walkthrough. What colour was it?",
+   "gold": "brown",
+   "pred": "Looking through the frames, the object \"colander\" does not appear in any of the provided lists of items.\n\nThe items listed across all frames are:\n- **Bedroom (t=0):** sock, pot, ruler, towel, tray, glass, soap, rug, spoon, comb, plate, belt, bowl, fork, candle, cup\n- **Kitchen (t=59):** glass, ruler, spoon, brush, fork, candle, belt, pot, comb, sock, plate, tray, pen, rug, soap, towel\n- **Living Room (t=119):** tray,",
+   "score": 0.0,
+   "spent": 1988,
+   "n_calls": 2,
+   "w_realised": 6,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "RET",
+   "q": "You saw a ladle exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "A",
+   "pred": "C",
+   "score": 0.0,
+   "spent": 1866,
+   "n_calls": 2,
+   "w_realised": 6,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "RET",
+   "q": "You saw a tongs exactly once during the walkthrough. What colour was it?",
+   "gold": "purple",
+   "pred": "Based on the provided frames, the object \"tongs\" does not appear in any of the lists of items seen in the bedroom, kitchen, living room, or study.\n\nTherefore, it is not possible to determine the color of the tongs from the given information, as they were not seen in any of the provided frames.",
+   "score": 0.0,
+   "spent": 1928,
+   "n_calls": 2,
+   "w_realised": 6,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "RET",
+   "q": "You saw a stapler exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "A",
+   "pred": "Looking at the provided frames, we need to find the object labeled \"stapler\".\n\nScanning through all the objects listed in each frame:\n\n*   **Frame 1 (bedroom, t=0):** sock, pot, ruler, towel, tray, glass, soap, rug, spoon, comb, plate, belt, bowl, fork, candle, cup. (No stapler)\n*   **Frame 2 (kitchen, t=59):** glass, ruler, spoon, brush, fork, candle, belt, pot, comb, sock, plate, tray, pen, rug, soap,",
+   "score": 0.0,
+   "spent": 1992,
+   "n_calls": 2,
+   "w_realised": 6,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "RET",
+   "q": "You saw a tongs exactly once during the walkthrough. What colour was it?",
+   "gold": "green",
+   "pred": "Based on the provided frames, the object \"tongs\" does not appear in any of the lists of items. The items listed across all frames are: glass, pot, fan, towel, tray, ruler, belt, comb, brush, plate, rug, pen, candle, hat, sock, soap, bowl, fork, cup, spoon.\n\nSince the object \"tongs\" is not present in any of the frames, it was not seen during the walkthrough.\n\nTherefore, the premise of the question is incorrect based on the visual evidence.",
+   "score": 0.0,
+   "spent": 1973,
+   "n_calls": 2,
+   "w_realised": 6,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "RET",
+   "q": "You saw a sieve exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "B",
+   "pred": "The letter printed on the sieve was **G**.",
+   "score": 0.0,
+   "spent": 1874,
+   "n_calls": 2,
+   "w_realised": 6,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "RET",
+   "q": "You saw a whisk exactly once during the walkthrough. What colour was it?",
+   "gold": "green",
+   "pred": "Based on the provided frames, the object \"whisk\" does not appear in any of the lists of items seen in the kitchen, bedroom, pantry, or living room.\n\nTherefore, it is not possible to determine the color of a whisk from this walkthrough, as it was never seen.",
+   "score": 0.0,
+   "spent": 1919,
+   "n_calls": 2,
+   "w_realised": 6,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "RET",
+   "q": "You saw a stapler exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "F",
+   "pred": "Looking at the provided frames, we need to find the object labeled \"stapler\".\n\nScanning through all the objects listed in each frame:\n\n*   **Frame 1 (t=0, kitchen):** glass, pot, fan, towel, tray, ruler, belt, comb, brush, plate, rug, pen, candle, hat, sock, soap. (No stapler)\n*   **Frame 2 (t=59, bedroom):** soap, rug, bowl, fork, cup, sock, pot, towel, plate, hat, pen, brush, candle, belt, fan, glass.",
+   "score": 0.0,
+   "spent": 1992,
+   "n_calls": 2,
+   "w_realised": 6,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "RET",
+   "q": "You saw a trivet exactly once during the walkthrough. What colour was it?",
+   "gold": "brown",
+   "pred": "Based on the provided frames, the object \"trivet\" does not appear in any of the lists of items shown. The items listed across all frames are: glass, pot, fan, towel, tray, ruler, belt, comb, brush, plate, rug, pen, candle, hat, sock, soap, spoon, bowl, fork, cup, and glass.\n\nSince the trivet is not present in any of the frames, it is not possible to determine its color from this walkthrough.\n\nHowever, if we assume there might be a typo in the question and it meant to ask about an object that *is* present",
+   "score": 0.0,
+   "spent": 1988,
+   "n_calls": 2,
+   "w_realised": 6,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "RET",
+   "q": "You saw a mortar exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "H",
+   "pred": "Looking through the frames, the object \"mortar\" does not appear in any of the provided images. The objects listed are: glass, pot, fan, towel, tray, ruler, belt, comb, brush, plate, rug, pen, candle, hat, sock, soap, spoon, bowl, fork, cup.\n\nSince \"mortar\" is not present in any frame, the premise of the question (\"You saw a mortar exactly once\") is false based on the given data.\n\nHowever, if we must answer based on the assumption that the question is valid and there is a typo or mislabeling, and if",
+   "score": 0.0,
+   "spent": 1991,
+   "n_calls": 2,
+   "w_realised": 6,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "RET",
+   "q": "You saw a colander exactly once during the walkthrough. What colour was it?",
+   "gold": "red",
+   "pred": "Based on the provided frames, there is no object labeled \"colander\" visible in any of the scenes. The objects shown include items like a glass, pot, fan, towel, tray, ruler, belt, comb, brush, plate, rug, pen, candle, hat, sock, soap, spoon, bowl, and fork.\n\nTherefore, it is not possible to determine the color of a colander from this walkthrough.",
+   "score": 0.0,
+   "spent": 1948,
+   "n_calls": 2,
+   "w_realised": 6,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "RET",
+   "q": "You saw a teapot exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "B",
+   "pred": "Looking through the frames, the object \"teapot\" does not appear. However, the object \"pot\" appears multiple times.\n\nLet's check the letter on the \"pot\" in each frame:\n- Frame 1 (t=0): pot has letter **D**\n- Frame 2 (t=59): pot has letter **F**\n- Frame 3 (t=119): pot has letter **A**\n- Frame 4 (t=179): pot has letter **G**\n- Frame 5 (t=239): pot has letter **E**",
+   "score": 0.0,
+   "spent": 1992,
+   "n_calls": 2,
+   "w_realised": 6,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  }
+ ]
+}

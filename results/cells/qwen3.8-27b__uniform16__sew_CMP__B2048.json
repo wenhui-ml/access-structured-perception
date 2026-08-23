@@ -1,0 +1,444 @@
+{
+ "model": "qwen3.8-27b",
+ "method": "uniform16",
+ "bench": "sew",
+ "subset": "CMP",
+ "budget": 2048,
+ "tau_g": 0.0,
+ "judge_deferred": 15,
+ "mean": 21.88,
+ "items": [
+  {
+   "episode": "ep1",
+   "subset": "CMP",
+   "q": "You saw a clock exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "red",
+   "pred": "Based on the provided frames, let's track the appearances of the clock:\n\n1.  **First appearance:** In the **study** (t=0), the clock is labeled **A** and is **red**.\n2.  **Second appearance:** In the **hallway** (t=59), the clock is labeled **A** and is **blue**.\n3.  **Third appearance:** In the **living room** (t=179), the clock is labeled **A** and is **blue**.\n\nThe question asks for the color of the clock the **second** time you saw it",
+   "score": 25.0,
+   "spent": 1997,
+   "n_calls": 2,
+   "w_realised": 6,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "CMP",
+   "q": "You saw a radio exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "yellow",
+   "pred": "Based on the provided frames, let's track the appearances of the radio:\n\n1.  **First appearance:** In the first frame (room: study, t=0), there is no radio visible. Wait, looking closely at the items listed: belt, ruler, soap, bowl, plate, fork, comb, cup, pen, glass, towel, hat, candle, sock, fan, spoon. No radio here.\n2.  **Second appearance:** In the second frame (room: hallway, t=59), the items are: fork, hat, spoon, pot, pen, cup, glass, fan",
+   "score": 0.0,
+   "spent": 1997,
+   "n_calls": 2,
+   "w_realised": 6,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "CMP",
+   "q": "You saw a globe exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "green",
+   "pred": "Based on the provided frames, let's track the appearances of the globe.\n\n1.  **First Appearance:**\n    *   **Frame 1 (t=0, room: study):** The object labeled \"globe\" is not present. Wait, looking closely at the first image, there is no \"globe\". Let me re-examine the images.\n    *   Ah, I see \"globe\" is not explicitly labeled in the first image. Let me look for the word \"globe\" in the labels.\n    *   Image 1 (study): belt, ruler, soap, bowl,",
+   "score": 0.0,
+   "spent": 1997,
+   "n_calls": 2,
+   "w_realised": 6,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "CMP",
+   "q": "You saw a statue exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "red",
+   "pred": "Based on the provided frames, let's track the appearances of a statue.\n\n1.  **First Appearance:** In the first frame (room: study, t=0), there is an object labeled **A** which is red.\n2.  **Second Appearance:** In the second frame (room: hallway, t=59), there is an object labeled **A** which is blue.\n3.  **Third Appearance:** In the fourth frame (room: living room, t=179), there are two objects labeled **A**. One is blue and one is green. Let's assume the question refers",
+   "score": 75.0,
+   "spent": 1997,
+   "n_calls": 2,
+   "w_realised": 6,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "CMP",
+   "q": "Did you see the sieve before or after the stapler? Answer 'before' or 'after'.",
+   "gold": "before",
+   "pred": "after",
+   "score": 0.0,
+   "spent": 1866,
+   "n_calls": 2,
+   "w_realised": 6,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "CMP",
+   "q": "Did you see the trivet before or after the colander? Answer 'before' or 'after'.",
+   "gold": "after",
+   "pred": "after",
+   "score": 100.0,
+   "spent": 1867,
+   "n_calls": 2,
+   "w_realised": 6,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "CMP",
+   "q": "You saw a clock exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "green",
+   "pred": "white",
+   "score": 0.0,
+   "spent": 1871,
+   "n_calls": 2,
+   "w_realised": 6,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "CMP",
+   "q": "You saw a radio exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "yellow",
+   "pred": "Based on the provided frames, let's track the appearances of the radio.\n\n1.  **First Appearance:**\n    *   **Frame:** `t=0` (living room)\n    *   **Object:** `radio`\n    *   **Colour:** The box is **green**.\n\n2.  **Second Appearance:**\n    *   **Frame:** `t=59` (pantry)\n    *   **Object:** `radio`\n    *   **Colour:** The box is **orange**.\n\n3.  **Third Appearance:**\n    *   **Frame:** `t=",
+   "score": 25.0,
+   "spent": 1997,
+   "n_calls": 2,
+   "w_realised": 6,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "CMP",
+   "q": "You saw a globe exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "blue",
+   "pred": "Based on the provided frames, let's track the appearances of the globe (labeled 'G'):\n\n1.  **First appearance:** In the first frame (living room, t=0), there is a red rectangle labeled **G** above the word \"glass\".\n2.  **Second appearance:** In the second frame (pantry, t=59), there are three instances of 'G'. The question implies a single object seen in different rooms. Let's look for a unique instance or the most prominent one. There is an orange 'G' (brush), a yellow 'G' (belt), and a",
+   "score": 0.0,
+   "spent": 1997,
+   "n_calls": 2,
+   "w_realised": 6,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "CMP",
+   "q": "You saw a statue exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "purple",
+   "pred": "Based on the provided frames, let's track the appearances of the statue.\n\n1.  **First Appearance:**\n    *   **Frame 1 (t=0, living room):** The object labeled **statue** is in the top-left corner. Its color is **green**.\n\n2.  **Second Appearance:**\n    *   **Frame 2 (t=59, pantry):** The object labeled **statue** is in the bottom-right corner. Its color is **yellow**.\n\n3.  **Third Appearance:**\n    *   **Frame 3 (t=119, living room",
+   "score": 0.0,
+   "spent": 1997,
+   "n_calls": 2,
+   "w_realised": 6,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "CMP",
+   "q": "Did you see the kettle before or after the thermos? Answer 'before' or 'after'.",
+   "gold": "after",
+   "pred": "after",
+   "score": 100.0,
+   "spent": 1866,
+   "n_calls": 2,
+   "w_realised": 6,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "CMP",
+   "q": "Did you see the ladle before or after the colander? Answer 'before' or 'after'.",
+   "gold": "after",
+   "pred": "after",
+   "score": 100.0,
+   "spent": 1867,
+   "n_calls": 2,
+   "w_realised": 6,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "CMP",
+   "q": "You saw a clock exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "brown",
+   "pred": "Looking at the frames in order, we need to find the object \"clock\". However, upon reviewing all the objects listed in each frame (bedroom, kitchen, living room, study, kitchen, kitchen), the word \"clock\" does not appear in any of them.\n\nThe objects listed are:\n- Bedroom: sock, pot, ruler, towel, tray, glass, soap, rug, spoon, comb, plate, belt, bowl, fork, candle, cup\n- Kitchen (t=59): glass, ruler, spoon, brush, fork, candle, belt, pot, comb, sock, plate, tray",
+   "score": 0.0,
+   "spent": 1997,
+   "n_calls": 2,
+   "w_realised": 6,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "CMP",
+   "q": "You saw a radio exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "purple",
+   "pred": "Based on the provided frames, let's track the appearances of the radio.\n\n1.  **First Appearance:**\n    *   **Frame:** `room: bedroom, t=0`\n    *   **Object:** `radio` is not explicitly listed, but let's look for an object that could be a radio. Wait, the prompt says \"You saw a radio exactly three times\". Let's re-examine the objects.\n    *   Actually, let's look at the objects listed.\n        *   Frame 1 (bedroom): sock, pot, ruler, towel, tray, glass, soap,",
+   "score": 0.0,
+   "spent": 1997,
+   "n_calls": 2,
+   "w_realised": 6,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "CMP",
+   "q": "You saw a globe exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "red",
+   "pred": "Based on the provided frames, let's track the appearances of the globe (labeled 'G'):\n\n1.  **First appearance:** In the **bedroom** (t=0), the globe is on the rug and is **brown**.\n2.  **Second appearance:** In the **kitchen** (t=59), the globe is on the belt and is **brown**.\n3.  **Third appearance:** In the **living room** (t=119), the globe is on the tray and is **orange**.\n\nThe question asks for the colour of the globe the **second** time",
+   "score": 0.0,
+   "spent": 1997,
+   "n_calls": 2,
+   "w_realised": 6,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "CMP",
+   "q": "You saw a statue exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "blue",
+   "pred": "Based on the provided frames, let's track the appearances of the statue. The prompt states the statue was seen exactly three times, each in a different room. We need to identify which object represents the statue and find its color on the second sighting.\n\nLooking at the objects, \"statue\" is not explicitly listed as a label. However, the prompt implies one of the labeled objects *is* the statue. Let's look for an object that appears in three different rooms.\n\nLet's check the object **\"candle\"**:\n1.  **Frame 1 (t=0, bedroom):** \"candle\" is",
+   "score": 0.0,
+   "spent": 1997,
+   "n_calls": 2,
+   "w_realised": 6,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "CMP",
+   "q": "Did you see the trivet before or after the whisk? Answer 'before' or 'after'.",
+   "gold": "before",
+   "pred": "after",
+   "score": 0.0,
+   "spent": 1866,
+   "n_calls": 2,
+   "w_realised": 6,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "CMP",
+   "q": "Did you see the mortar before or after the teapot? Answer 'before' or 'after'.",
+   "gold": "before",
+   "pred": "after",
+   "score": 0.0,
+   "spent": 1866,
+   "n_calls": 2,
+   "w_realised": 6,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "CMP",
+   "q": "You saw a clock exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "purple",
+   "pred": "Based on the provided frames, let's track the appearances of the clock.\n\n1.  **First Appearance:**\n    *   **Frame:** `room: kitchen`, `t=0`\n    *   **Object:** `clock` is not explicitly listed, but let's look for a clock-like object. Wait, the prompt says \"You saw a clock\". Let's re-examine the objects.\n    *   Actually, looking closely at the objects, there is no object explicitly named \"clock\". Let's re-read the prompt. \"You saw a clock exactly three times\". This implies one of the labeled objects",
+   "score": 0.0,
+   "spent": 1997,
+   "n_calls": 2,
+   "w_realised": 6,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "CMP",
+   "q": "You saw a radio exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "white",
+   "pred": "Based on the provided frames, let's track the appearances of the radio:\n\n1.  **First appearance:** In the first frame (room: kitchen, t=0), there is no radio.\n2.  **Second appearance:** In the second frame (room: bedroom, t=59), there is no radio.\n3.  **Third appearance:** In the third frame (room: kitchen, t=119), there is no radio.\n4.  **Fourth appearance:** In the fourth frame (room: pantry, t=179), there is no radio.\n5. ",
+   "score": 0.0,
+   "spent": 1997,
+   "n_calls": 2,
+   "w_realised": 6,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "CMP",
+   "q": "You saw a globe exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "yellow",
+   "pred": "Based on the provided frames, let's track the appearances of the \"globe\".\n\nLooking through the items listed in each frame:\n- **Frame 1 (Kitchen, t=0):** glass, pot, fan, towel, tray, ruler, belt, comb, brush, plate, rug, pen, candle, hat, sock, soap. (No globe)\n- **Frame 2 (Bedroom, t=59):** soap, rug, bowl, fork, cup, sock, pot, towel, plate, hat, pen, brush, candle, belt, fan, glass. (No globe)\n",
+   "score": 0.0,
+   "spent": 1997,
+   "n_calls": 2,
+   "w_realised": 6,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "CMP",
+   "q": "You saw a statue exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "brown",
+   "pred": "Based on the provided frames, let's track the appearances of the statue.\n\n1.  **First Appearance:**\n    *   **Frame:** `room: kitchen, t=0`\n    *   **Object:** `statue` is not explicitly listed, but let's look for a consistent object. Wait, the prompt says \"You saw a statue\". Let's re-examine the objects.\n    *   Actually, let's look for an object that appears in three different rooms.\n    *   Let's check the object `glass`.\n        *   Frame 1 (kitchen): `glass`",
+   "score": 0.0,
+   "spent": 1997,
+   "n_calls": 2,
+   "w_realised": 6,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "CMP",
+   "q": "Did you see the sieve before or after the tongs? Answer 'before' or 'after'.",
+   "gold": "after",
+   "pred": "after",
+   "score": 100.0,
+   "spent": 1866,
+   "n_calls": 2,
+   "w_realised": 6,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "CMP",
+   "q": "Did you see the whisk before or after the stapler? Answer 'before' or 'after'.",
+   "gold": "before",
+   "pred": "after",
+   "score": 0.0,
+   "spent": 1866,
+   "n_calls": 2,
+   "w_realised": 6,
+   "w_limited_by": "budget",
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 1.0,
+    "rho": 0.0
+   }
+  }
+ ]
+}

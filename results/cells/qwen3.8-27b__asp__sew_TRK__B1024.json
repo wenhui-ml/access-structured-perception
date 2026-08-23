@@ -1,0 +1,444 @@
+{
+ "model": "qwen3.8-27b",
+ "method": "asp",
+ "bench": "sew",
+ "subset": "TRK",
+ "budget": 1024,
+ "tau_g": 0.0,
+ "judge_deferred": 14,
+ "mean": 4.17,
+ "items": [
+  {
+   "episode": "ep1",
+   "subset": "TRK",
+   "q": "How many mugs did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "7",
+   "pred": "{\"counts\": {\"belt\": 2, \"ruler\": 2, \"soap\": 1, \"bowl\": 1, \"plate\": 2, \"fork\": 2, \"comb\": 2, \"cup\": 2, \"pen\": 2, \"glass\": 2, \"towel\": 1, \"hat\": 2, \"candle\": 2, \"sock\": 2, \"fan\": 2, \"spoon\": 1, \"brush\": 1, \"rug\": 1, \"tray\": 1, \"pot\": 1}, \"env\": {\"door\": \"closed\", \"door_changes\": 1}, \"rooms_visited\": [\"study\", \"pantry\"], \"objects\": {\"hat\": {\"room\": \"pantry\", \"last_seen\": 244}, \"brush\": {\"room\": \"pantry\", \"last_seen\": 244}, \"candle\": {\"room\": \"pantry\", \"last_seen\": 244}, \"rug\": {\"room\": \"pantry\", \"last_seen\": 244}, \"sock\": {\"room\": \"pantry",
+   "score": 0.0,
+   "spent": 1048,
+   "n_calls": 3,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.284,
+    "Br": 0.0,
+    "Bc": 0.533,
+    "rho": 0.183
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "TRK",
+   "q": "How many books did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "4",
+   "pred": "{\"counts\": {\"belt\": 2, \"ruler\": 2, \"soap\": 1, \"bowl\": 1, \"plate\": 2, \"fork\": 2, \"comb\": 2, \"cup\": 2, \"pen\": 2, \"glass\": 2, \"towel\": 1, \"hat\": 2, \"candle\": 2, \"sock\": 2, \"fan\": 2, \"spoon\": 1, \"brush\": 1, \"rug\": 1, \"tray\": 1, \"pot\": 1}, \"env\": {\"door\": \"closed\", \"door_changes\": 1}, \"rooms_visited\": [\"study\", \"pantry\"], \"objects\": {\"hat\": {\"room\": \"pantry\", \"last_seen\": 244}, \"brush\": {\"room\": \"pantry\", \"last_seen\": 244}, \"candle\": {\"room\": \"pantry\", \"last_seen\": 244}, \"rug\": {\"room\": \"pantry\", \"last_seen\": 244}, \"sock\": {\"room\": \"pantry\", \"",
+   "score": 0.0,
+   "spent": 1042,
+   "n_calls": 3,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.285,
+    "Br": 0.0,
+    "Bc": 0.532,
+    "rho": 0.183
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "TRK",
+   "q": "How many lamps did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "9",
+   "pred": "{\"counts\": {\"belt\": 2, \"ruler\": 2, \"soap\": 1, \"bowl\": 1, \"plate\": 2, \"fork\": 2, \"comb\": 2, \"cup\": 2, \"pen\": 2, \"glass\": 2, \"towel\": 1, \"hat\": 2, \"candle\": 2, \"sock\": 2, \"fan\": 2, \"spoon\": 1, \"brush\": 1, \"rug\": 1, \"tray\": 1, \"pot\": 1}, \"env\": {\"door\": \"closed\", \"door_changes\": 1}, \"rooms_visited\": [\"study\", \"pantry\"], \"objects\": {\"hat\": {\"room\": \"pantry\", \"last_seen\": 244}, \"brush\": {\"room\": \"pantry\", \"last_seen\": 244}, \"candle\": {\"room\": \"pantry\", \"last_seen\": 244}, \"rug\": {\"room\": \"pantry\", \"last_seen\": 244}, \"sock\": {\"room\": \"pantry\", \"last_seen\": 244}, \"fork\": {\"room\": \"pantry\", \"last_seen\": 244}, \"comb\": {\"room\": \"pantry\", \"last_seen\": 244}, \"plate\": {\"room\": \"pantry\", \"last_seen\": 244}, \"fan\": {\"room\": \"pantry\", \"last_seen\": 244}, \"tray\": {\"room\": \"pantry\", \"last_seen\": 244}, \"cup\": {\"room\": \"pantry\", \"last_seen\": 244}, \"ruler\": {\"room\": \"pantry\", \"last_seen\": 244}, \"glass\": {\"room\": \"pantry\", \"last_seen\": 244}, \"belt\": {\"room\": \"pantry\", \"last_seen\": 244}, \"pot\": {\"room\": \"pantry\", \"last_seen\": 244}, \"pen\": {\"room\": \"pantry\", \"last_seen\": 244}}, \"event_log\": [\"Entered pantry. Door is closed.\"]}",
+   "score": 0.0,
+   "spent": 1078,
+   "n_calls": 3,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.206,
+    "Br": 0.0,
+    "Bc": 0.597,
+    "rho": 0.197
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "TRK",
+   "q": "How many vases did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "7",
+   "pred": "{\"counts\": {\"belt\": 2, \"ruler\": 2, \"soap\": 1, \"bowl\": 1, \"plate\": 2, \"fork\": 2, \"comb\": 2, \"cup\": 2, \"pen\": 2, \"glass\": 2, \"towel\": 1, \"hat\": 2, \"candle\": 2, \"sock\": 2, \"fan\": 2, \"spoon\": 1, \"brush\": 1, \"rug\": 1, \"tray\": 1, \"pot\": 1}, \"env\": {\"door\": \"closed\", \"door_changes\": 1}, \"rooms_visited\": [\"study\", \"pantry\"], \"objects\": {\"hat\": {\"room\": \"pantry\", \"last_seen\": 244}, \"brush\": {\"room\": \"pantry\", \"last_seen\": 244}, \"candle\": {\"room\": \"pantry\", \"last_seen\": 244}, \"rug\": {\"room\": \"pantry\", \"last_seen\": 244}, \"sock\": {\"room\": \"pantry\", \"last_seen\": 244}, \"fork\": {\"room\": \"pantry\", \"last_seen\": 244}, \"comb\": {\"room\": \"pantry\", \"last_seen\": 244}, \"plate\": {\"room\": \"pantry\", \"last_seen\": 244}, \"fan\": {\"room\": \"pantry\", \"last_seen\": 244}, \"tray\": {\"room\": \"pantry\", \"last_seen\": 244}, \"cup\": {\"room\": \"pantry\", \"last_seen\": 244}, \"ruler\": {\"room\": \"pantry\", \"last_seen\": 244}, \"glass\": {\"room\": \"pantry\", \"last_seen\": 244}, \"belt\": {\"room\": \"pantry\", \"last_seen\": 244}, \"pot\": {\"room\": \"pantry\", \"last_seen\": 244}, \"pen\": {\"room\": \"pantry\", \"last_seen\": 244}}, \"event_log\": [\"Entered pantry. Door is closed.\"]}",
+   "score": 0.0,
+   "spent": 1079,
+   "n_calls": 3,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.206,
+    "Br": 0.0,
+    "Bc": 0.597,
+    "rho": 0.197
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "TRK",
+   "q": "Was the door open or closed at the end of the walkthrough?",
+   "gold": "open",
+   "pred": "{\"counts\": {\"belt\": 2, \"ruler\": 2, \"soap\": 1, \"bowl\": 1, \"plate\": 2, \"fork\": 2, \"comb\": 2, \"cup\": 2, \"pen\": 2, \"glass\": 2, \"towel\": 1, \"hat\": 2, \"candle\": 2, \"sock\": 2, \"fan\": 2, \"spoon\": 1, \"brush\": 1, \"rug\": 1, \"tray\": 1, \"pot\": 1}, \"env\": {\"door\": \"closed\", \"door_changes\": 1}, \"rooms_visited\": [\"study\", \"pantry\"], \"objects\": {\"hat\": {\"room\": \"pantry\", \"last_seen\": 244}, \"brush\": {\"room\": \"pantry\", \"last_seen\": 244}, \"candle\": {\"room\": \"pantry\", \"last_seen\": 244}, \"rug\": {\"room\": \"pantry\", \"last_seen\": 244}, \"sock\": {\"room\": \"pantry\", \"last_seen\":",
+   "score": 0.0,
+   "spent": 1032,
+   "n_calls": 3,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.289,
+    "Br": 0.0,
+    "Bc": 0.531,
+    "rho": 0.181
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "TRK",
+   "q": "How many times did the door change between open and closed? Answer with a number.",
+   "gold": "7",
+   "pred": "{\"counts\": {\"belt\": 2, \"ruler\": 2, \"soap\": 1, \"bowl\": 1, \"plate\": 2, \"fork\": 2, \"comb\": 2, \"cup\": 2, \"pen\": 2, \"glass\": 2, \"towel\": 1, \"hat\": 2, \"candle\": 2, \"sock\": 2, \"fan\": 2, \"spoon\": 1, \"brush\": 1, \"rug\": 1, \"tray\": 1, \"pot\": 1}, \"env\": {\"door\": \"closed\", \"door_changes\": 1}, \"rooms_visited\": [\"study\", \"pantry\"], \"objects\": {\"hat\": {\"room\": \"pantry\", \"last_seen\": 244}, \"brush\": {\"room\": \"pantry\", \"last_seen\": 244}, \"candle\": {\"room\": \"pantry\", \"last_seen\": 244}, \"rug\": {\"room\": \"pantry\", \"last_seen\": 244}, \"sock\": {\"room\": \"pantry\", \"",
+   "score": 0.0,
+   "spent": 1039,
+   "n_calls": 3,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.286,
+    "Br": 0.0,
+    "Bc": 0.531,
+    "rho": 0.183
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "TRK",
+   "q": "How many mugs did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "8",
+   "pred": "{\"counts\": {\"comb\": 1, \"tray\": 1, \"brush\": 1, \"fork\": 1, \"plate\": 1, \"pot\": 1, \"ruler\": 1, \"sock\": 1, \"pen\": 1, \"soap\": 1, \"cup\": 1, \"hat\": 1, \"belt\": 1, \"rug\": 1, \"spoon\": 1, \"glass\": 1}, \"env\": {\"door\": \"closed\", \"door_changes\": 1}, \"rooms_visited\": [\"living room\"], \"objects\": {\"comb\": {\"room\": \"living room\", \"last_seen\": 1}, \"tray\": {\"room\": \"living room\", \"last_seen\": 1}, \"brush\": {\"room\": \"living room\", \"last_seen\": 1}, \"fork\": {\"room\": \"living room\", \"last_seen\": 1}, \"plate\": {\"room\": \"living room\", \"last_seen\": 1}, \"pot\": {\"room\": \"living room\", \"last_seen\": 1}, \"ruler\": {\"room\": \"living room\", \"last_seen\": 1}, \"sock\": {\"room\": \"living room\", \"last_seen\": 1}, \"pen\": {\"room\": \"living room\", \"last_seen\": 1}, \"soap\": {\"room\": \"living room\", \"last_seen\": 1}, \"cup\": {\"room\": \"living room\", \"last_seen\": 1}, \"hat\": {\"room\": \"living room\", \"last_seen\": 1}, \"belt\": {\"room\": \"living room\", \"last_seen\": 1}, \"rug\": {\"room\": \"living room\", \"last_seen\": 1}, \"spoon\": {\"room\": \"living room\", \"last_seen\": 1}, \"glass\": {\"room\": \"living room\", \"last_seen\": 1}}, \"event_log\": [\"Entered living room, door is closed\"]}",
+   "score": 0.0,
+   "spent": 1032,
+   "n_calls": 3,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.213,
+    "Br": 0.0,
+    "Bc": 0.592,
+    "rho": 0.194
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "TRK",
+   "q": "How many books did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "7",
+   "pred": "{\"counts\": {\"comb\": 1, \"tray\": 1, \"brush\": 1, \"fork\": 1, \"plate\": 1, \"pot\": 1, \"ruler\": 1, \"sock\": 1, \"pen\": 1, \"soap\": 1, \"cup\": 1, \"hat\": 1, \"belt\": 1, \"rug\": 1, \"spoon\": 1, \"glass\": 1}, \"env\": {\"door\": \"closed\", \"door_changes\": 1}, \"rooms_visited\": [\"living room\"], \"objects\": {\"comb\": {\"room\": \"living room\", \"last_seen\": 1}, \"tray\": {\"room\": \"living room\", \"last_seen\": 1}, \"brush\": {\"room\": \"living room\", \"last_seen\": 1}, \"fork\": {\"room\": \"living room\", \"last_seen\": 1}, \"plate\": {\"room\": \"living room\", \"last_seen\": 1}, \"pot\": {\"room\": \"living room\", \"last_seen\": 1}, \"ruler\": {\"room\": \"living room\", \"last_seen\": 1}, \"sock\": {\"room\": \"living room\", \"last_seen\": 1}, \"pen\": {\"room\": \"living room\", \"last_seen\": 1}, \"soap\": {\"room\": \"living room\", \"last_seen\": 1}, \"cup\": {\"room\": \"living room\", \"last_seen\": 1}, \"hat\": {\"room\": \"living room\", \"last_seen\": 1}, \"belt\": {\"room\": \"living room\", \"last_seen\": 1}, \"rug\": {\"room\": \"living room\", \"last_seen\": 1}, \"spoon\": {\"room\": \"living room\", \"last_seen\": 1}, \"glass\": {\"room\": \"living room\", \"last_seen\": 1}}, \"event_log\": [\"Entered living room, door is closed\"]}",
+   "score": 0.0,
+   "spent": 993,
+   "n_calls": 3,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.22,
+    "Br": 0.0,
+    "Bc": 0.581,
+    "rho": 0.2
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "TRK",
+   "q": "How many lamps did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "6",
+   "pred": "{\"counts\": {\"comb\": 1, \"tray\": 1, \"brush\": 1, \"fork\": 1, \"plate\": 1, \"pot\": 1, \"ruler\": 1, \"sock\": 1, \"pen\": 1, \"soap\": 1, \"cup\": 1, \"hat\": 1, \"belt\": 1, \"rug\": 1, \"spoon\": 1, \"glass\": 1}, \"env\": {\"door\": \"closed\", \"door_changes\": 1}, \"rooms_visited\": [\"living room\"], \"objects\": {\"comb\": {\"room\": \"living room\", \"last_seen\": 1}, \"tray\": {\"room\": \"living room\", \"last_seen\": 1}, \"brush\": {\"room\": \"living room\", \"last_seen\": 1}, \"fork\": {\"room\": \"living room\", \"last_seen\": 1}, \"plate\": {\"room\": \"living room\", \"last_seen\": 1}, \"pot\": {\"room\": \"living room\", \"last_seen\":",
+   "score": 0.0,
+   "spent": 963,
+   "n_calls": 3,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.305,
+    "Br": 0.0,
+    "Bc": 0.512,
+    "rho": 0.183
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "TRK",
+   "q": "How many vases did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "4",
+   "pred": "{\"counts\": {\"comb\": 1, \"tray\": 1, \"brush\": 1, \"fork\": 1, \"plate\": 1, \"pot\": 1, \"ruler\": 1, \"sock\": 1, \"pen\": 1, \"soap\": 1, \"cup\": 1, \"hat\": 1, \"belt\": 1, \"rug\": 1, \"spoon\": 1, \"glass\": 1}, \"env\": {\"door\": \"closed\", \"door_changes\": 1}, \"rooms_visited\": [\"living room\"], \"objects\": {\"comb\": {\"room\": \"living room\", \"last_seen\": 1}, \"tray\": {\"room\": \"living room\", \"last_seen\": 1}, \"brush\": {\"room\": \"living room\", \"last_seen\": 1}, \"fork\": {\"room\": \"living room\", \"last_seen\": 1}, \"plate\": {\"room\": \"living room\", \"last_seen\": 1}, \"pot\": {\"room\": \"living room\", \"last_seen\": 1}, \"ruler\": {\"room\": \"living room\", \"last_seen\": 1}, \"sock\": {\"room\": \"living room\", \"last_seen\": 1}, \"pen\": {\"room\": \"living room\", \"last_seen\": 1}, \"soap\": {\"room\": \"living room\", \"last_seen\": 1}, \"cup\": {\"room\": \"living room\", \"last_seen\": 1}, \"hat\": {\"room\": \"living room\", \"last_seen\": 1}, \"belt\": {\"room\": \"living room\", \"last_seen\": 1}, \"rug\": {\"room\": \"living room\", \"last_seen\": 1}, \"spoon\": {\"room\": \"living room\", \"last_seen\": 1}, \"glass\": {\"room\": \"living room\", \"last_seen\": 1}}, \"event_log\": [\"Entered living room, door is closed\"]}",
+   "score": 0.0,
+   "spent": 1003,
+   "n_calls": 3,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.218,
+    "Br": 0.0,
+    "Bc": 0.583,
+    "rho": 0.199
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "TRK",
+   "q": "Was the door open or closed at the end of the walkthrough?",
+   "gold": "closed",
+   "pred": "{\"counts\": {\"comb\": 1, \"tray\": 1, \"brush\": 1, \"fork\": 1, \"plate\": 1, \"pot\": 1, \"ruler\": 1, \"sock\": 1, \"pen\": 1, \"soap\": 1, \"cup\": 1, \"hat\": 1, \"belt\": 1, \"rug\": 1, \"spoon\": 1, \"glass\": 1}, \"env\": {\"door\": \"closed\", \"door_changes\": 1}, \"rooms_visited\": [\"living room\"], \"objects\": {\"comb\": {\"room\": \"living room\", \"last_seen\": 1}, \"tray\": {\"room\": \"living room\", \"last_seen\": 1}, \"brush\": {\"room\": \"living room\", \"last_seen\": 1}, \"fork\": {\"room\": \"living room\", \"last_seen\": 1}, \"plate\": {\"room\": \"living room\", \"last_seen\": 1}, \"pot\": {\"room\": \"living room\", \"last_seen\": 1}, \"ruler\":",
+   "score": 100.0,
+   "spent": 947,
+   "n_calls": 3,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.31,
+    "Br": 0.0,
+    "Bc": 0.508,
+    "rho": 0.181
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "TRK",
+   "q": "How many times did the door change between open and closed? Answer with a number.",
+   "gold": "6",
+   "pred": "1",
+   "score": 0.0,
+   "spent": 972,
+   "n_calls": 3,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.224,
+    "Br": 0.0,
+    "Bc": 0.574,
+    "rho": 0.202
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "TRK",
+   "q": "How many mugs did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "6",
+   "pred": "{\"counts\": {\"sock\": 1, \"pot\": 1, \"ruler\": 1, \"towel\": 1, \"tray\": 1, \"glass\": 1, \"soap\": 1, \"rug\": 1, \"spoon\": 1, \"comb\": 1, \"plate\": 1, \"belt\": 1, \"bowl\": 1, \"fork\": 1, \"candle\": 1, \"cup\": 1}, \"env\": {\"door\": \"closed\", \"door_changes\": 1}, \"rooms_visited\": [\"bedroom\"], \"objects\": {\"sock\": {\"room\": \"bedroom\", \"last_seen\": 0}, \"pot\": {\"room\": \"bedroom\", \"last_seen\": 0}, \"ruler\": {\"room\": \"bedroom\", \"last_seen\": 0}, \"towel\": {\"room\": \"bedroom\", \"last_seen\": 0}, \"tray\": {\"room\": \"bedroom\", \"last_seen\": 0}, \"glass\": {\"room\": \"bedroom\", \"last_seen\": 0}, \"soap\": {\"room\": \"bedroom\", \"last_seen\": 0}, \"rug\": {\"room\": \"bedroom\", \"la",
+   "score": 0.0,
+   "spent": 984,
+   "n_calls": 3,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.3,
+    "Br": 0.0,
+    "Bc": 0.517,
+    "rho": 0.184
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "TRK",
+   "q": "How many books did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "7",
+   "pred": "{\"counts\": {\"sock\": 1, \"pot\": 1, \"ruler\": 1, \"towel\": 1, \"tray\": 1, \"glass\": 1, \"soap\": 1, \"rug\": 1, \"spoon\": 1, \"comb\": 1, \"plate\": 1, \"belt\": 1, \"bowl\": 1, \"fork\": 1, \"candle\": 1, \"cup\": 1}, \"env\": {\"door\": \"closed\", \"door_changes\": 1}, \"rooms_visited\": [\"bedroom\"], \"objects\": {\"sock\": {\"room\": \"bedroom\", \"last_seen\": 0}, \"pot\": {\"room\": \"bedroom\", \"last_seen\": 0}, \"ruler\": {\"room\": \"bedroom\", \"last_seen\": 0}, \"towel\": {\"room\": \"bedroom\", \"last_seen\": 0}, \"tray\": {\"room\": \"bedroom\", \"last_seen\": 0}, \"glass\": {\"room\": \"bedroom\", \"last_seen\": 0}, \"soap\": {\"room\": \"bedroom\", \"last_seen\": 0}, \"rug\": {\"room\": \"bedroom\", \"last_seen\": 0}, \"spoon\": {\"room\": \"bedroom\", \"last_seen\": 0}, \"comb\": {\"room\": \"bedroom\", \"last_seen\": 0}, \"plate\": {\"room\": \"bedroom\", \"last_seen\": 0}, \"belt\": {\"room\": \"bedroom\", \"last_seen\": 0}, \"bowl\": {\"room\": \"bedroom\", \"last_seen\": 0}, \"fork\": {\"room\": \"bedroom\", \"last_seen\": 0}, \"candle\": {\"room\": \"bedroom\", \"last_seen\": 0}, \"cup\": {\"room\": \"bedroom\", \"last_seen\": 0}}, \"event_log\": [\"Entered bedroom. Door is closed.\"]}",
+   "score": 0.0,
+   "spent": 1007,
+   "n_calls": 3,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.208,
+    "Br": 0.0,
+    "Bc": 0.59,
+    "rho": 0.202
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "TRK",
+   "q": "How many lamps did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "6",
+   "pred": "{\"counts\": {\"sock\": 1, \"pot\": 1, \"ruler\": 1, \"towel\": 1, \"tray\": 1, \"glass\": 1, \"soap\": 1, \"rug\": 1, \"spoon\": 1, \"comb\": 1, \"plate\": 1, \"belt\": 1, \"bowl\": 1, \"fork\": 1, \"candle\": 1, \"cup\": 1}, \"env\": {\"door\": \"closed\", \"door_changes\": 1}, \"rooms_visited\": [\"bedroom\"], \"objects\": {\"sock\": {\"room\": \"bedroom\", \"last_seen\": 0}, \"pot\": {\"room\": \"bedroom\", \"last_seen\": 0}, \"ruler\": {\"room\": \"bedroom\", \"last_seen\": 0}, \"towel\": {\"room\": \"bedroom\", \"last_seen\": 0}, \"tray\": {\"room\": \"bedroom\", \"last_seen\": 0}, \"glass\": {\"room\": \"bedroom\", \"last_seen\": 0}, \"soap\": {\"room\": \"bedroom\", \"last_seen\": 0}, \"rug\": {\"room\": \"bedroom\", \"last_seen\": 0}, \"spoon\": {\"room\": \"bedroom\", \"last_seen\": 0}, \"comb\": {\"room\": \"bedroom\", \"last_seen\": 0}, \"plate\": {\"room\": \"bedroom\", \"last_seen\": 0}, \"belt\": {\"room\": \"bedroom\", \"last_seen\": 0}, \"bowl\": {\"room\": \"bedroom\", \"last_seen\": 0}, \"fork\": {\"room\": \"bedroom\", \"last_seen\": 0}, \"candle\": {\"room\": \"bedroom\", \"last_seen\": 0}, \"cup\": {\"room\": \"bedroom\", \"last_seen\": 0}}, \"event_log\": [\"Entered bedroom. Door is closed.\"]}",
+   "score": 0.0,
+   "spent": 1004,
+   "n_calls": 3,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.208,
+    "Br": 0.0,
+    "Bc": 0.589,
+    "rho": 0.203
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "TRK",
+   "q": "How many vases did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "3",
+   "pred": "{\"counts\": {\"sock\": 1, \"pot\": 1, \"ruler\": 1, \"towel\": 1, \"tray\": 1, \"glass\": 1, \"soap\": 1, \"rug\": 1, \"spoon\": 1, \"comb\": 1, \"plate\": 1, \"belt\": 1, \"bowl\": 1, \"fork\": 1, \"candle\": 1, \"cup\": 1}, \"env\": {\"door\": \"closed\", \"door_changes\": 1}, \"rooms_visited\": [\"bedroom\"], \"objects\": {\"sock\": {\"room\": \"bedroom\", \"last_seen\": 0}, \"pot\": {\"room\": \"bedroom\", \"last_seen\": 0}, \"ruler\": {\"room\": \"bedroom\", \"last_seen\": 0}, \"towel\": {\"room\": \"bedroom\", \"last_seen\": 0}, \"tray\": {\"room\": \"bedroom\", \"last_seen\": 0}, \"glass\": {\"room\": \"bedroom\", \"last_seen\": 0}, \"soap\": {\"room\": \"bedroom\", \"last_seen\": 0}, \"rug\": {\"room\": \"bedroom\", \"last_seen\": 0}, \"spoon\": {\"room\": \"bedroom\", \"last_seen\": 0}, \"comb\": {\"room\": \"bedroom\", \"last_seen\": 0}, \"plate\": {\"room\": \"bedroom\", \"last_seen\": 0}, \"belt\": {\"room\": \"bedroom\", \"last_seen\": 0}, \"bowl\": {\"room\": \"bedroom\", \"last_seen\": 0}, \"fork\": {\"room\": \"bedroom\", \"last_seen\": 0}, \"candle\": {\"room\": \"bedroom\", \"last_seen\": 0}, \"cup\": {\"room\": \"bedroom\", \"last_seen\": 0}}, \"event_log\": [\"Entered bedroom. Door is closed.\"]}",
+   "score": 0.0,
+   "spent": 1011,
+   "n_calls": 3,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.207,
+    "Br": 0.0,
+    "Bc": 0.591,
+    "rho": 0.202
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "TRK",
+   "q": "Was the door open or closed at the end of the walkthrough?",
+   "gold": "open",
+   "pred": "closed",
+   "score": 0.0,
+   "spent": 989,
+   "n_calls": 3,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.211,
+    "Br": 0.0,
+    "Bc": 0.588,
+    "rho": 0.201
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "TRK",
+   "q": "How many times did the door change between open and closed? Answer with a number.",
+   "gold": "9",
+   "pred": "{\"counts\": {\"sock\": 1, \"pot\": 1, \"ruler\": 1, \"towel\": 1, \"tray\": 1, \"glass\": 1, \"soap\": 1, \"rug\": 1, \"spoon\": 1, \"comb\": 1, \"plate\": 1, \"belt\": 1, \"bowl\": 1, \"fork\": 1, \"candle\": 1, \"cup\": 1}, \"env\": {\"door\": \"closed\", \"door_changes\": 1}, \"rooms_visited\": [\"bedroom\"], \"objects\": {\"sock\": {\"room\": \"bedroom\", \"last_seen\": 0}, \"pot\": {\"room\": \"bedroom\", \"last_seen\": 0}, \"ruler\": {\"room\": \"bedroom\", \"last_seen\": 0}, \"towel\": {\"room\": \"bedroom\", \"last_seen\": 0}, \"tray\": {\"room\": \"bedroom\", \"last_seen\": 0}, \"glass\": {\"room\": \"bedroom\", \"last_seen\": 0}, \"soap\": {\"room\": \"bedroom\", \"last_seen\": 0}, \"rug\": {\"room\": \"bedroom\", \"last_s",
+   "score": 0.0,
+   "spent": 960,
+   "n_calls": 3,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.305,
+    "Br": 0.0,
+    "Bc": 0.509,
+    "rho": 0.185
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "TRK",
+   "q": "How many mugs did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "4",
+   "pred": "{\"counts\": {\"glass\": 1, \"pot\": 2, \"fan\": 2, \"towel\": 2, \"tray\": 2, \"ruler\": 2, \"belt\": 2, \"comb\": 1, \"brush\": 2, \"plate\": 2, \"rug\": 2, \"pen\": 2, \"candle\": 2, \"hat\": 2, \"sock\": 1, \"soap\": 2, \"fork\": 1, \"spoon\": 1, \"cup\": 1}, \"env\": {\"door\": \"open\", \"door_changes\": 2}, \"rooms_visited\": [\"kitchen\", \"study\"], \"objects\": {\"tray\": {\"room\": \"study\", \"last_seen\": 259}, \"soap\": {\"room\": \"study\", \"last_seen\": 259}, \"fork\": {\"room\": \"study\", \"last_seen\": 259}, \"plate\": {\"room\": \"study\", \"last_seen\": 259}, \"hat\": {\"room\": \"study\", \"last_seen\": 25",
+   "score": 0.0,
+   "spent": 1031,
+   "n_calls": 3,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.287,
+    "Br": 0.0,
+    "Bc": 0.529,
+    "rho": 0.184
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "TRK",
+   "q": "How many books did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "4",
+   "pred": "{\"counts\": {\"glass\": 1, \"pot\": 2, \"fan\": 2, \"towel\": 2, \"tray\": 2, \"ruler\": 2, \"belt\": 2, \"comb\": 1, \"brush\": 2, \"plate\": 2, \"rug\": 2, \"pen\": 2, \"candle\": 2, \"hat\": 2, \"sock\": 1, \"soap\": 2, \"fork\": 1, \"spoon\": 1, \"cup\": 1}, \"env\": {\"door\": \"open\", \"door_changes\": 2}, \"rooms_visited\": [\"kitchen\", \"study\"], \"objects\": {\"tray\": {\"room\": \"study\", \"last_seen\": 259}, \"soap\": {\"room\": \"study\", \"last_seen\": 259}, \"fork\": {\"room\": \"study\", \"last_seen\": 259}, \"plate\": {\"room\": \"study\", \"last_seen\": 259}, \"hat\": {\"room\": \"study\", \"last_seen\": 259},",
+   "score": 0.0,
+   "spent": 1061,
+   "n_calls": 3,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.282,
+    "Br": 0.0,
+    "Bc": 0.539,
+    "rho": 0.179
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "TRK",
+   "q": "How many lamps did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "5",
+   "pred": "{\"counts\": {\"glass\": 1, \"pot\": 2, \"fan\": 2, \"towel\": 2, \"tray\": 2, \"ruler\": 2, \"belt\": 2, \"comb\": 1, \"brush\": 2, \"plate\": 2, \"rug\": 2, \"pen\": 2, \"candle\": 2, \"hat\": 2, \"sock\": 1, \"soap\": 2, \"fork\": 1, \"spoon\": 1, \"cup\": 1}, \"env\": {\"door\": \"open\", \"door_changes\": 2}, \"rooms_visited\": [\"kitchen\", \"study\"], \"objects\": {\"tray\": {\"room\": \"study\", \"last_seen\": 259}, \"soap\": {\"room\": \"study\", \"last_seen\": 259}, \"fork\": {\"room\": \"study\", \"last_seen\": 259}, \"plate\": {\"room\": \"study\", \"last_seen\": 259}, \"hat\": {\"room\": \"study\", \"last_seen\": 259},",
+   "score": 0.0,
+   "spent": 1026,
+   "n_calls": 3,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.289,
+    "Br": 0.0,
+    "Bc": 0.527,
+    "rho": 0.184
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "TRK",
+   "q": "How many vases did you see in total across the whole walkthrough? Answer with a number.",
+   "gold": "7",
+   "pred": "{\"counts\": {\"glass\": 1, \"pot\": 2, \"fan\": 2, \"towel\": 2, \"tray\": 2, \"ruler\": 2, \"belt\": 2, \"comb\": 1, \"brush\": 2, \"plate\": 2, \"rug\": 2, \"pen\": 2, \"candle\": 2, \"hat\": 2, \"sock\": 1, \"soap\": 2, \"fork\": 1, \"spoon\": 1, \"cup\": 1}, \"env\": {\"door\": \"open\", \"door_changes\": 2}, \"rooms_visited\": [\"kitchen\", \"study\"], \"objects\": {\"tray\": {\"room\": \"study\", \"last_seen\": 259}, \"soap\": {\"room\": \"study\", \"last_seen\": 259}, \"fork\": {\"room\": \"study\", \"last_seen\": 259}, \"plate\": {\"room\": \"study\", \"last_seen\": 259}, \"hat\": {\"room\": \"study\", \"last_seen\": 25",
+   "score": 0.0,
+   "spent": 1032,
+   "n_calls": 3,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.287,
+    "Br": 0.0,
+    "Bc": 0.529,
+    "rho": 0.184
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "TRK",
+   "q": "Was the door open or closed at the end of the walkthrough?",
+   "gold": "closed",
+   "pred": "open",
+   "score": 0.0,
+   "spent": 1057,
+   "n_calls": 3,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.21,
+    "Br": 0.0,
+    "Bc": 0.596,
+    "rho": 0.194
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "TRK",
+   "q": "How many times did the door change between open and closed? Answer with a number.",
+   "gold": "6",
+   "pred": "2",
+   "score": 0.0,
+   "spent": 1044,
+   "n_calls": 3,
+   "w_realised": null,
+   "w_limited_by": null,
+   "split": {
+    "Bs": 0.212,
+    "Br": 0.0,
+    "Bc": 0.589,
+    "rho": 0.199
+   }
+  }
+ ]
+}

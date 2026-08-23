@@ -1,0 +1,88 @@
+{
+  "main": {
+    "qwen3-vl-8b": {
+      "uniform16": {
+        "measured": [
+          null,
+          null,
+          null,
+          19.5,
+          8.3,
+          41.7
+        ]
+      }
+    },
+    "qwen3.8-27b": {
+      "uniform16": {
+        "measured": [
+          null,
+          null,
+          null,
+          34.4,
+          20.8,
+          33.3
+        ]
+      }
+    },
+    "qwen3-vl-30b-a3b": {
+      "uniform16": {
+        "measured": [
+          null,
+          null,
+          null,
+          15.6,
+          4.2,
+          33.3
+        ]
+      }
+    },
+    "gemma-4-31b": {
+      "uniform16": {
+        "measured": [
+          null,
+          null,
+          null,
+          21.9,
+          16.7,
+          25.0
+        ]
+      }
+    },
+    "ministral-14b": {
+      "uniform16": {
+        "measured": [
+          null,
+          null,
+          null,
+          9.4,
+          8.3,
+          38.5
+        ]
+      }
+    },
+    "ministral-3b": {
+      "uniform16": {
+        "measured": [
+          null,
+          null,
+          null,
+          21.9,
+          20.8,
+          29.2
+        ]
+      }
+    },
+    "gemma-3-12b": {
+      "uniform16": {
+        "measured": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          29.2
+        ]
+      }
+    }
+  }
+}

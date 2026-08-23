@@ -1,0 +1,5 @@
+requests>=2.31
+numpy>=1.26
+scipy>=1.11            # analysis/analyze.py: paired Wilcoxon signed-rank
+sentence-transformers>=3.0
+pillow

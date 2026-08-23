@@ -1,0 +1,420 @@
+{
+ "model": "ministral-3b",
+ "method": "state_only",
+ "bench": "sew",
+ "subset": "CMP",
+ "budget": 4096,
+ "tau_g": 0.0,
+ "judge_deferred": 18,
+ "mean": 0.0,
+ "items": [
+  {
+   "episode": "ep1",
+   "subset": "CMP",
+   "q": "You saw a clock exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "red",
+   "pred": "The compressed data does not include any information about a clock or its color. Therefore, I cannot determine the color of the clock based on the provided scene state.",
+   "score": 0.0,
+   "spent": 484,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 1.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "CMP",
+   "q": "You saw a radio exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "yellow",
+   "pred": "The radio was not mentioned in the provided scene state, so no color information is available.",
+   "score": 0.0,
+   "spent": 470,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 1.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "CMP",
+   "q": "You saw a globe exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "green",
+   "pred": "The compressed scene state does not mention a **globe**, so no color can be determined.",
+   "score": 0.0,
+   "spent": 471,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 1.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "CMP",
+   "q": "You saw a statue exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "red",
+   "pred": "The statue was **not** mentioned in the provided data. Based on the given scene state, no statue is referenced.\n\nIf you meant a **rug** (which appears 3 times in `rooms_visited`), it was last seen in the **hallway** (last entry in `objects`), but that doesn\u2019t answer the color question.\n\n*Assuming a typo and asking about the \"hat\" (also seen 3x):*\n- **Second time seen in hallway** (color not specified).",
+   "score": 0.0,
+   "spent": 553,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 1.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "CMP",
+   "q": "Did you see the sieve before or after the stapler? Answer 'before' or 'after'.",
+   "gold": "before",
+   "pred": "Neither. The sieve and stapler are not mentioned in the provided scene state.",
+   "score": 0.0,
+   "spent": 463,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 1.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "CMP",
+   "q": "Did you see the colander before or after the trivet? Answer 'before' or 'after'.",
+   "gold": "before",
+   "pred": "Neither (colander not in data).",
+   "score": 0.0,
+   "spent": 456,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 1.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "CMP",
+   "q": "You saw a clock exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "green",
+   "pred": "The scene state does not mention a clock or its color. Based on the provided data, no information about a clock is available.",
+   "score": 0.0,
+   "spent": 621,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 1.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "CMP",
+   "q": "You saw a radio exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "yellow",
+   "pred": "The radio is represented by **\"G\"** in the data.\n\nFrom the `event_log`, the second time you saw it was in the **study** (since you first saw it in the **living room** and then in the **study**).\n\nThe color of **G** is **green**.",
+   "score": 0.0,
+   "spent": 658,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 1.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "CMP",
+   "q": "You saw a globe exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "blue",
+   "pred": "The second time you saw the globe (G), it was **black** (implied by the letter \"B\" in the counts, where \"B\" = 2). However, since the color isn't specified, the answer is based on the letter codes in the data.\n\nGiven the event log and the counts, the second time you saw it, it was likely **black** (B).",
+   "score": 0.0,
+   "spent": 676,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 1.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "CMP",
+   "q": "You saw a statue exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "purple",
+   "pred": "The statue was **green** (from the `G: 23` count in `counts`). Since it was seen in different rooms, the second time you saw it was likely in the **study** (where the `E` count is high, implying environmental/statue-related items). Thus, the color was **green**.",
+   "score": 0.0,
+   "spent": 665,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 1.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "CMP",
+   "q": "Did you see the thermos before or after the kettle? Answer 'before' or 'after'.",
+   "gold": "before",
+   "pred": "The data does not include either a thermos or a kettle, so neither can be determined.",
+   "score": 0.0,
+   "spent": 610,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 1.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "CMP",
+   "q": "Did you see the colander before or after the ladle? Answer 'before' or 'after'.",
+   "gold": "before",
+   "pred": "The scene state does not mention either a **colander** or **ladle**, so neither was observed in the provided data.",
+   "score": 0.0,
+   "spent": 616,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 1.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "CMP",
+   "q": "You saw a clock exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "brown",
+   "pred": "The compressed scene state does not mention a **clock** at all, so no information is available about its color or sightings.",
+   "score": 0.0,
+   "spent": 472,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 1.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "CMP",
+   "q": "You saw a radio exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "purple",
+   "pred": "The radio was not mentioned in the provided scene state, so no information is available about its color or sightings.",
+   "score": 0.0,
+   "spent": 469,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 1.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "CMP",
+   "q": "You saw a globe exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "red",
+   "pred": "The compressed scene state does not mention a **globe** at all, so no information is available about its color or appearance.",
+   "score": 0.0,
+   "spent": 472,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 1.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "CMP",
+   "q": "You saw a statue exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "blue",
+   "pred": "The compressed scene state does not mention a statue or its color. Therefore, no information is available to determine its color.",
+   "score": 0.0,
+   "spent": 470,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 1.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "CMP",
+   "q": "Did you see the trivet before or after the whisk? Answer 'before' or 'after'.",
+   "gold": "before",
+   "pred": "**After** (not listed in `objects` or `event_log`).",
+   "score": 0.0,
+   "spent": 455,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 1.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "CMP",
+   "q": "Did you see the mortar before or after the teapot? Answer 'before' or 'after'.",
+   "gold": "before",
+   "pred": "**After**",
+   "score": 0.0,
+   "spent": 443,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 1.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "CMP",
+   "q": "You saw a clock exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "purple",
+   "pred": "The second time you saw the clock, it was **black**. (From the `event_log` and `counts` data, the clock appears only once, but the question implies a hypothetical scenario where it was seen in different rooms.) Given the context, the clock is likely black based on typical depictions in such puzzles.",
+   "score": 0.0,
+   "spent": 612,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 1.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "CMP",
+   "q": "You saw a radio exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "white",
+   "pred": "The radio was **not mentioned** in the provided data, so its color cannot be determined. The scene state does not include any radio-related information.",
+   "score": 0.0,
+   "spent": 575,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 1.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "CMP",
+   "q": "You saw a globe exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "yellow",
+   "pred": "The globe was not mentioned in the provided data. However, based on the event log, the second time you saw the objects in the pantry, you saw a **belt** (not a globe).\n\nIf we assume the globe is represented by \"G\" (from the object counts and last_seen), the second time you saw it was in the pantry (last_seen 299), but the color isn't specified.\n\nSince the question is hypothetical and the data doesn't provide color details, no color can be determined.",
+   "score": 0.0,
+   "spent": 655,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 1.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "CMP",
+   "q": "You saw a statue exactly three times, each in a different room. What colour was it the SECOND time you saw it?",
+   "gold": "brown",
+   "pred": "The statue was **blue** the second time (implied by the **B** label in the event log).",
+   "score": 0.0,
+   "spent": 568,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 1.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "CMP",
+   "q": "Did you see the tongs before or after the sieve? Answer 'before' or 'after'.",
+   "gold": "before",
+   "pred": "Neither (tongs not mentioned in data).",
+   "score": 0.0,
+   "spent": 549,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 1.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "CMP",
+   "q": "Did you see the whisk before or after the stapler? Answer 'before' or 'after'.",
+   "gold": "before",
+   "pred": "**After** (whisk = **whisker** not listed; stapler = **pen** with 45 counts, last seen in pantry at step 299).",
+   "score": 0.0,
+   "spent": 578,
+   "n_calls": 1,
+   "w_realised": null,
+   "split": {
+    "Bs": 1.0,
+    "Br": 0.0,
+    "Bc": 0.0,
+    "rho": 0.0
+   }
+  }
+ ]
+}

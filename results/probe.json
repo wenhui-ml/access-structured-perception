@@ -1,0 +1,2410 @@
+{
+ "qwen3-vl-8b": {
+  "model": "qwen3-vl-8b",
+  "slug": "qwen/qwen3-vl-8b-instruct",
+  "attr": [
+   {
+    "ep": "ep1",
+    "t": 19,
+    "gold": "green",
+    "pred": "green",
+    "score": 1.0
+   },
+   {
+    "ep": "ep1",
+    "t": 62,
+    "gold": "C",
+    "pred": "C",
+    "score": 1.0
+   },
+   {
+    "ep": "ep1",
+    "t": 97,
+    "gold": "green",
+    "pred": "green",
+    "score": 1.0
+   },
+   {
+    "ep": "ep1",
+    "t": 98,
+    "gold": "B",
+    "pred": "B",
+    "score": 1.0
+   },
+   {
+    "ep": "ep1",
+    "t": 118,
+    "gold": "green",
+    "pred": "green",
+    "score": 1.0
+   },
+   {
+    "ep": "ep1",
+    "t": 135,
+    "gold": "D",
+    "pred": "D",
+    "score": 1.0
+   },
+   {
+    "ep": "ep1",
+    "t": 187,
+    "gold": "red",
+    "pred": "red",
+    "score": 1.0
+   },
+   {
+    "ep": "ep1",
+    "t": 274,
+    "gold": "E",
+    "pred": "E",
+    "score": 1.0
+   },
+   {
+    "ep": "ep2",
+    "t": 29,
+    "gold": "yellow",
+    "pred": "yellow",
+    "score": 1.0
+   },
+   {
+    "ep": "ep2",
+    "t": 83,
+    "gold": "E",
+    "pred": "E",
+    "score": 1.0
+   },
+   {
+    "ep": "ep2",
+    "t": 89,
+    "gold": "green",
+    "pred": "white",
+    "score": 0.0
+   },
+   {
+    "ep": "ep2",
+    "t": 141,
+    "gold": "G",
+    "pred": "G",
+    "score": 1.0
+   },
+   {
+    "ep": "ep2",
+    "t": 184,
+    "gold": "purple",
+    "pred": "purple",
+    "score": 1.0
+   },
+   {
+    "ep": "ep2",
+    "t": 204,
+    "gold": "C",
+    "pred": "C",
+    "score": 1.0
+   },
+   {
+    "ep": "ep2",
+    "t": 209,
+    "gold": "blue",
+    "pred": "blue",
+    "score": 1.0
+   },
+   {
+    "ep": "ep2",
+    "t": 237,
+    "gold": "E",
+    "pred": "E",
+    "score": 1.0
+   },
+   {
+    "ep": "ep3",
+    "t": 111,
+    "gold": "purple",
+    "pred": "purple",
+    "score": 1.0
+   },
+   {
+    "ep": "ep3",
+    "t": 136,
+    "gold": "B",
+    "pred": "B",
+    "score": 1.0
+   },
+   {
+    "ep": "ep3",
+    "t": 188,
+    "gold": "purple",
+    "pred": "purple",
+    "score": 1.0
+   },
+   {
+    "ep": "ep3",
+    "t": 189,
+    "gold": "E",
+    "pred": "E",
+    "score": 1.0
+   },
+   {
+    "ep": "ep3",
+    "t": 235,
+    "gold": "brown",
+    "pred": "brown",
+    "score": 1.0
+   },
+   {
+    "ep": "ep3",
+    "t": 237,
+    "gold": "A",
+    "pred": "A",
+    "score": 1.0
+   },
+   {
+    "ep": "ep3",
+    "t": 250,
+    "gold": "purple",
+    "pred": "purple",
+    "score": 1.0
+   },
+   {
+    "ep": "ep3",
+    "t": 270,
+    "gold": "A",
+    "pred": "A",
+    "score": 1.0
+   },
+   {
+    "ep": "ep4",
+    "t": 23,
+    "gold": "green",
+    "pred": "green",
+    "score": 1.0
+   },
+   {
+    "ep": "ep4",
+    "t": 31,
+    "gold": "B",
+    "pred": "B",
+    "score": 1.0
+   },
+   {
+    "ep": "ep4",
+    "t": 121,
+    "gold": "green",
+    "pred": "orange",
+    "score": 0.0
+   },
+   {
+    "ep": "ep4",
+    "t": 129,
+    "gold": "F",
+    "pred": "F",
+    "score": 1.0
+   },
+   {
+    "ep": "ep4",
+    "t": 139,
+    "gold": "brown",
+    "pred": "brown",
+    "score": 1.0
+   },
+   {
+    "ep": "ep4",
+    "t": 178,
+    "gold": "H",
+    "pred": "H",
+    "score": 1.0
+   },
+   {
+    "ep": "ep4",
+    "t": 249,
+    "gold": "red",
+    "pred": "red",
+    "score": 1.0
+   },
+   {
+    "ep": "ep4",
+    "t": 263,
+    "gold": "B",
+    "pred": "B",
+    "score": 1.0
+   }
+  ],
+  "step": [
+   {
+    "ep": "ep1",
+    "cls": "clock",
+    "gold": "first",
+    "pred": "first",
+    "score": 1.0
+   },
+   {
+    "ep": "ep1",
+    "cls": "radio",
+    "gold": "first",
+    "pred": "first",
+    "score": 1.0
+   },
+   {
+    "ep": "ep1",
+    "cls": "globe",
+    "gold": "first",
+    "pred": "first",
+    "score": 1.0
+   },
+   {
+    "ep": "ep1",
+    "cls": "statue",
+    "gold": "second",
+    "pred": "second",
+    "score": 1.0
+   },
+   {
+    "ep": "ep2",
+    "cls": "clock",
+    "gold": "second",
+    "pred": "first",
+    "score": 0.0
+   },
+   {
+    "ep": "ep2",
+    "cls": "radio",
+    "gold": "first",
+    "pred": "first",
+    "score": 1.0
+   },
+   {
+    "ep": "ep2",
+    "cls": "globe",
+    "gold": "second",
+    "pred": "second",
+    "score": 1.0
+   },
+   {
+    "ep": "ep2",
+    "cls": "statue",
+    "gold": "second",
+    "pred": "second",
+    "score": 1.0
+   },
+   {
+    "ep": "ep3",
+    "cls": "clock",
+    "gold": "first",
+    "pred": "first",
+    "score": 1.0
+   },
+   {
+    "ep": "ep3",
+    "cls": "radio",
+    "gold": "first",
+    "pred": "first",
+    "score": 1.0
+   },
+   {
+    "ep": "ep3",
+    "cls": "globe",
+    "gold": "second",
+    "pred": "first",
+    "score": 0.0
+   },
+   {
+    "ep": "ep3",
+    "cls": "statue",
+    "gold": "second",
+    "pred": "second",
+    "score": 1.0
+   },
+   {
+    "ep": "ep4",
+    "cls": "clock",
+    "gold": "second",
+    "pred": "first",
+    "score": 0.0
+   },
+   {
+    "ep": "ep4",
+    "cls": "radio",
+    "gold": "first",
+    "pred": "first",
+    "score": 1.0
+   },
+   {
+    "ep": "ep4",
+    "cls": "globe",
+    "gold": "first",
+    "pred": "first",
+    "score": 1.0
+   },
+   {
+    "ep": "ep4",
+    "cls": "statue",
+    "gold": "second",
+    "pred": "second",
+    "score": 1.0
+   }
+  ]
+ },
+ "ministral-3b": {
+  "model": "ministral-3b",
+  "slug": "mistralai/ministral-3b-2512",
+  "attr": [
+   {
+    "ep": "ep1",
+    "t": 19,
+    "gold": "green",
+    "pred": "Green.",
+    "score": 1.0
+   },
+   {
+    "ep": "ep1",
+    "t": 62,
+    "gold": "C",
+    "pred": "C",
+    "score": 1.0
+   },
+   {
+    "ep": "ep1",
+    "t": 97,
+    "gold": "green",
+    "pred": "Green.",
+    "score": 1.0
+   },
+   {
+    "ep": "ep1",
+    "t": 98,
+    "gold": "B",
+    "pred": "B",
+    "score": 1.0
+   },
+   {
+    "ep": "ep1",
+    "t": 118,
+    "gold": "green",
+    "pred": "Green.",
+    "score": 1.0
+   },
+   {
+    "ep": "ep1",
+    "t": 135,
+    "gold": "D",
+    "pred": "D",
+    "score": 1.0
+   },
+   {
+    "ep": "ep1",
+    "t": 187,
+    "gold": "red",
+    "pred": "Red.",
+    "score": 1.0
+   },
+   {
+    "ep": "ep1",
+    "t": 274,
+    "gold": "E",
+    "pred": "E",
+    "score": 1.0
+   },
+   {
+    "ep": "ep2",
+    "t": 29,
+    "gold": "yellow",
+    "pred": "Yellow.",
+    "score": 1.0
+   },
+   {
+    "ep": "ep2",
+    "t": 83,
+    "gold": "E",
+    "pred": "E",
+    "score": 1.0
+   },
+   {
+    "ep": "ep2",
+    "t": 89,
+    "gold": "green",
+    "pred": "Green.",
+    "score": 1.0
+   },
+   {
+    "ep": "ep2",
+    "t": 141,
+    "gold": "G",
+    "pred": "G",
+    "score": 1.0
+   },
+   {
+    "ep": "ep2",
+    "t": 184,
+    "gold": "purple",
+    "pred": "Purple.",
+    "score": 1.0
+   },
+   {
+    "ep": "ep2",
+    "t": 204,
+    "gold": "C",
+    "pred": "C",
+    "score": 1.0
+   },
+   {
+    "ep": "ep2",
+    "t": 209,
+    "gold": "blue",
+    "pred": "Blue.",
+    "score": 1.0
+   },
+   {
+    "ep": "ep2",
+    "t": 237,
+    "gold": "E",
+    "pred": "E",
+    "score": 1.0
+   },
+   {
+    "ep": "ep3",
+    "t": 111,
+    "gold": "purple",
+    "pred": "Purple.",
+    "score": 1.0
+   },
+   {
+    "ep": "ep3",
+    "t": 136,
+    "gold": "B",
+    "pred": "B",
+    "score": 1.0
+   },
+   {
+    "ep": "ep3",
+    "t": 188,
+    "gold": "purple",
+    "pred": "Purple.",
+    "score": 1.0
+   },
+   {
+    "ep": "ep3",
+    "t": 189,
+    "gold": "E",
+    "pred": "E",
+    "score": 1.0
+   },
+   {
+    "ep": "ep3",
+    "t": 235,
+    "gold": "brown",
+    "pred": "Brown.",
+    "score": 1.0
+   },
+   {
+    "ep": "ep3",
+    "t": 237,
+    "gold": "A",
+    "pred": "A",
+    "score": 1.0
+   },
+   {
+    "ep": "ep3",
+    "t": 250,
+    "gold": "purple",
+    "pred": "Purple.",
+    "score": 1.0
+   },
+   {
+    "ep": "ep3",
+    "t": 270,
+    "gold": "A",
+    "pred": "A",
+    "score": 1.0
+   },
+   {
+    "ep": "ep4",
+    "t": 23,
+    "gold": "green",
+    "pred": "Green.",
+    "score": 1.0
+   },
+   {
+    "ep": "ep4",
+    "t": 31,
+    "gold": "B",
+    "pred": "B",
+    "score": 1.0
+   },
+   {
+    "ep": "ep4",
+    "t": 121,
+    "gold": "green",
+    "pred": "Green.",
+    "score": 1.0
+   },
+   {
+    "ep": "ep4",
+    "t": 129,
+    "gold": "F",
+    "pred": "F",
+    "score": 1.0
+   },
+   {
+    "ep": "ep4",
+    "t": 139,
+    "gold": "brown",
+    "pred": "Brown.",
+    "score": 1.0
+   },
+   {
+    "ep": "ep4",
+    "t": 178,
+    "gold": "H",
+    "pred": "H.",
+    "score": 1.0
+   },
+   {
+    "ep": "ep4",
+    "t": 249,
+    "gold": "red",
+    "pred": "Red.",
+    "score": 1.0
+   },
+   {
+    "ep": "ep4",
+    "t": 263,
+    "gold": "B",
+    "pred": "B",
+    "score": 1.0
+   }
+  ],
+  "step": [
+   {
+    "ep": "ep1",
+    "cls": "clock",
+    "gold": "first",
+    "pred": "The clock in the first image (frame index not explicitly sho",
+    "score": 1.0
+   },
+   {
+    "ep": "ep1",
+    "cls": "radio",
+    "gold": "first",
+    "pred": "second\n\nThe radio in the second image (frame index 232) was ",
+    "score": 0.0
+   },
+   {
+    "ep": "ep1",
+    "cls": "globe",
+    "gold": "first",
+    "pred": "The globe in the first image (labeled G in the \"globe\" row o",
+    "score": 1.0
+   },
+   {
+    "ep": "ep1",
+    "cls": "statue",
+    "gold": "second",
+    "pred": "The statue in the first image (labeled \"D\" under \"candle\") a",
+    "score": 0.0
+   },
+   {
+    "ep": "ep2",
+    "cls": "clock",
+    "gold": "second",
+    "pred": "To determine which clock was seen earlier, we need to identi",
+    "score": null
+   },
+   {
+    "ep": "ep2",
+    "cls": "radio",
+    "gold": "first",
+    "pred": "To determine which radio appeared first in the walkthrough, ",
+    "score": 1.0
+   },
+   {
+    "ep": "ep2",
+    "cls": "globe",
+    "gold": "second",
+    "pred": "The globe in the first image (frame index 208) is labeled wi",
+    "score": 0.0
+   },
+   {
+    "ep": "ep2",
+    "cls": "statue",
+    "gold": "second",
+    "pred": "In the first image (frame index 259), the statue is labeled ",
+    "score": 0.0
+   },
+   {
+    "ep": "ep3",
+    "cls": "clock",
+    "gold": "first",
+    "pred": "To determine which clock appeared earlier in the walkthrough",
+    "score": null
+   },
+   {
+    "ep": "ep3",
+    "cls": "radio",
+    "gold": "first",
+    "pred": "The radio labeled \"H\" in the first image (bedroom, t=81) is ",
+    "score": 1.0
+   },
+   {
+    "ep": "ep3",
+    "cls": "globe",
+    "gold": "second",
+    "pred": "The globe appears in the second image.\n\nsecond",
+    "score": 1.0
+   },
+   {
+    "ep": "ep3",
+    "cls": "statue",
+    "gold": "second",
+    "pred": "The statue in the first image (frame with the statue in the ",
+    "score": 0.0
+   },
+   {
+    "ep": "ep4",
+    "cls": "clock",
+    "gold": "second",
+    "pred": "The clock labeled \"C\" in the first image (pantry) appears ea",
+    "score": 0.0
+   },
+   {
+    "ep": "ep4",
+    "cls": "radio",
+    "gold": "first",
+    "pred": "The radio in the first image (frame with radio labeled C) ap",
+    "score": 1.0
+   },
+   {
+    "ep": "ep4",
+    "cls": "globe",
+    "gold": "first",
+    "pred": "second\n\nThe globe in the second image (frame t=108) was seen",
+    "score": 0.0
+   },
+   {
+    "ep": "ep4",
+    "cls": "statue",
+    "gold": "second",
+    "pred": "To determine which statue was seen earlier, we need to ident",
+    "score": 0.0
+   }
+  ]
+ },
+ "gemma-3-12b": {
+  "model": "gemma-3-12b",
+  "slug": "google/gemma-3-12b-it",
+  "attr": [
+   {
+    "ep": "ep1",
+    "t": 19,
+    "gold": "green",
+    "pred": "Green",
+    "score": 1.0
+   },
+   {
+    "ep": "ep1",
+    "t": 62,
+    "gold": "C",
+    "pred": "C",
+    "score": 1.0
+   },
+   {
+    "ep": "ep1",
+    "t": 97,
+    "gold": "green",
+    "pred": "Green",
+    "score": 1.0
+   },
+   {
+    "ep": "ep1",
+    "t": 98,
+    "gold": "B",
+    "pred": "B",
+    "score": 1.0
+   },
+   {
+    "ep": "ep1",
+    "t": 118,
+    "gold": "green",
+    "pred": "Green",
+    "score": 1.0
+   },
+   {
+    "ep": "ep1",
+    "t": 135,
+    "gold": "D",
+    "pred": "D",
+    "score": 1.0
+   },
+   {
+    "ep": "ep1",
+    "t": 187,
+    "gold": "red",
+    "pred": "Purple",
+    "score": 0.0
+   },
+   {
+    "ep": "ep1",
+    "t": 274,
+    "gold": "E",
+    "pred": "E",
+    "score": 1.0
+   },
+   {
+    "ep": "ep2",
+    "t": 29,
+    "gold": "yellow",
+    "pred": "Orange",
+    "score": 0.0
+   },
+   {
+    "ep": "ep2",
+    "t": 83,
+    "gold": "E",
+    "pred": "E",
+    "score": 1.0
+   },
+   {
+    "ep": "ep2",
+    "t": 89,
+    "gold": "green",
+    "pred": "Green",
+    "score": 1.0
+   },
+   {
+    "ep": "ep2",
+    "t": 141,
+    "gold": "G",
+    "pred": "G",
+    "score": 1.0
+   },
+   {
+    "ep": "ep2",
+    "t": 184,
+    "gold": "purple",
+    "pred": "Green",
+    "score": 0.0
+   },
+   {
+    "ep": "ep2",
+    "t": 204,
+    "gold": "C",
+    "pred": "C",
+    "score": 1.0
+   },
+   {
+    "ep": "ep2",
+    "t": 209,
+    "gold": "blue",
+    "pred": "Blue",
+    "score": 1.0
+   },
+   {
+    "ep": "ep2",
+    "t": 237,
+    "gold": "E",
+    "pred": "D",
+    "score": 0.0
+   },
+   {
+    "ep": "ep3",
+    "t": 111,
+    "gold": "purple",
+    "pred": "Brown",
+    "score": 0.0
+   },
+   {
+    "ep": "ep3",
+    "t": 136,
+    "gold": "B",
+    "pred": "W",
+    "score": null
+   },
+   {
+    "ep": "ep3",
+    "t": 188,
+    "gold": "purple",
+    "pred": "Purple",
+    "score": 1.0
+   },
+   {
+    "ep": "ep3",
+    "t": 189,
+    "gold": "E",
+    "pred": "E",
+    "score": 1.0
+   },
+   {
+    "ep": "ep3",
+    "t": 235,
+    "gold": "brown",
+    "pred": "Brown",
+    "score": 1.0
+   },
+   {
+    "ep": "ep3",
+    "t": 237,
+    "gold": "A",
+    "pred": "B",
+    "score": 0.0
+   },
+   {
+    "ep": "ep3",
+    "t": 250,
+    "gold": "purple",
+    "pred": "Brown",
+    "score": 0.0
+   },
+   {
+    "ep": "ep3",
+    "t": 270,
+    "gold": "A",
+    "pred": "E",
+    "score": 0.0
+   },
+   {
+    "ep": "ep4",
+    "t": 23,
+    "gold": "green",
+    "pred": "Green",
+    "score": 1.0
+   },
+   {
+    "ep": "ep4",
+    "t": 31,
+    "gold": "B",
+    "pred": "B",
+    "score": 1.0
+   },
+   {
+    "ep": "ep4",
+    "t": 121,
+    "gold": "green",
+    "pred": "Green",
+    "score": 1.0
+   },
+   {
+    "ep": "ep4",
+    "t": 129,
+    "gold": "F",
+    "pred": "F",
+    "score": 1.0
+   },
+   {
+    "ep": "ep4",
+    "t": 139,
+    "gold": "brown",
+    "pred": "Brown",
+    "score": 1.0
+   },
+   {
+    "ep": "ep4",
+    "t": 178,
+    "gold": "H",
+    "pred": "H",
+    "score": 1.0
+   },
+   {
+    "ep": "ep4",
+    "t": 249,
+    "gold": "red",
+    "pred": "Red",
+    "score": 1.0
+   },
+   {
+    "ep": "ep4",
+    "t": 263,
+    "gold": "B",
+    "pred": "G",
+    "score": 0.0
+   }
+  ],
+  "step": [
+   {
+    "ep": "ep1",
+    "cls": "clock",
+    "gold": "first",
+    "pred": "second",
+    "score": 0.0
+   },
+   {
+    "ep": "ep1",
+    "cls": "radio",
+    "gold": "first",
+    "pred": "first",
+    "score": 1.0
+   },
+   {
+    "ep": "ep1",
+    "cls": "globe",
+    "gold": "first",
+    "pred": "second",
+    "score": 0.0
+   },
+   {
+    "ep": "ep1",
+    "cls": "statue",
+    "gold": "second",
+    "pred": "second",
+    "score": 1.0
+   },
+   {
+    "ep": "ep2",
+    "cls": "clock",
+    "gold": "second",
+    "pred": "second",
+    "score": 1.0
+   },
+   {
+    "ep": "ep2",
+    "cls": "radio",
+    "gold": "first",
+    "pred": "second",
+    "score": 0.0
+   },
+   {
+    "ep": "ep2",
+    "cls": "globe",
+    "gold": "second",
+    "pred": "first",
+    "score": 0.0
+   },
+   {
+    "ep": "ep2",
+    "cls": "statue",
+    "gold": "second",
+    "pred": "first",
+    "score": 0.0
+   },
+   {
+    "ep": "ep3",
+    "cls": "clock",
+    "gold": "first",
+    "pred": "first",
+    "score": 1.0
+   },
+   {
+    "ep": "ep3",
+    "cls": "radio",
+    "gold": "first",
+    "pred": "first",
+    "score": 1.0
+   },
+   {
+    "ep": "ep3",
+    "cls": "globe",
+    "gold": "second",
+    "pred": "second",
+    "score": 1.0
+   },
+   {
+    "ep": "ep3",
+    "cls": "statue",
+    "gold": "second",
+    "pred": "second",
+    "score": 1.0
+   },
+   {
+    "ep": "ep4",
+    "cls": "clock",
+    "gold": "second",
+    "pred": "first",
+    "score": 0.0
+   },
+   {
+    "ep": "ep4",
+    "cls": "radio",
+    "gold": "first",
+    "pred": "second",
+    "score": 0.0
+   },
+   {
+    "ep": "ep4",
+    "cls": "globe",
+    "gold": "first",
+    "pred": "second",
+    "score": 0.0
+   },
+   {
+    "ep": "ep4",
+    "cls": "statue",
+    "gold": "second",
+    "pred": "first",
+    "score": 0.0
+   }
+  ]
+ },
+ "ministral-14b": {
+  "model": "ministral-14b",
+  "slug": "mistralai/ministral-14b-2512",
+  "attr": [
+   {
+    "ep": "ep1",
+    "t": 19,
+    "gold": "green",
+    "pred": "Green",
+    "score": 1.0
+   },
+   {
+    "ep": "ep1",
+    "t": 62,
+    "gold": "C",
+    "pred": "C",
+    "score": 1.0
+   },
+   {
+    "ep": "ep1",
+    "t": 97,
+    "gold": "green",
+    "pred": "Green.",
+    "score": 1.0
+   },
+   {
+    "ep": "ep1",
+    "t": 98,
+    "gold": "B",
+    "pred": "B",
+    "score": 1.0
+   },
+   {
+    "ep": "ep1",
+    "t": 118,
+    "gold": "green",
+    "pred": "Green",
+    "score": 1.0
+   },
+   {
+    "ep": "ep1",
+    "t": 135,
+    "gold": "D",
+    "pred": "D",
+    "score": 1.0
+   },
+   {
+    "ep": "ep1",
+    "t": 187,
+    "gold": "red",
+    "pred": "Red",
+    "score": 1.0
+   },
+   {
+    "ep": "ep1",
+    "t": 274,
+    "gold": "E",
+    "pred": "E",
+    "score": 1.0
+   },
+   {
+    "ep": "ep2",
+    "t": 29,
+    "gold": "yellow",
+    "pred": "Yellow",
+    "score": 1.0
+   },
+   {
+    "ep": "ep2",
+    "t": 83,
+    "gold": "E",
+    "pred": "E",
+    "score": 1.0
+   },
+   {
+    "ep": "ep2",
+    "t": 89,
+    "gold": "green",
+    "pred": "Green.",
+    "score": 1.0
+   },
+   {
+    "ep": "ep2",
+    "t": 141,
+    "gold": "G",
+    "pred": "G",
+    "score": 1.0
+   },
+   {
+    "ep": "ep2",
+    "t": 184,
+    "gold": "purple",
+    "pred": "Purple",
+    "score": 1.0
+   },
+   {
+    "ep": "ep2",
+    "t": 204,
+    "gold": "C",
+    "pred": "C",
+    "score": 1.0
+   },
+   {
+    "ep": "ep2",
+    "t": 209,
+    "gold": "blue",
+    "pred": "Blue",
+    "score": 1.0
+   },
+   {
+    "ep": "ep2",
+    "t": 237,
+    "gold": "E",
+    "pred": "E",
+    "score": 1.0
+   },
+   {
+    "ep": "ep3",
+    "t": 111,
+    "gold": "purple",
+    "pred": "Purple",
+    "score": 1.0
+   },
+   {
+    "ep": "ep3",
+    "t": 136,
+    "gold": "B",
+    "pred": "B",
+    "score": 1.0
+   },
+   {
+    "ep": "ep3",
+    "t": 188,
+    "gold": "purple",
+    "pred": "Purple",
+    "score": 1.0
+   },
+   {
+    "ep": "ep3",
+    "t": 189,
+    "gold": "E",
+    "pred": "E",
+    "score": 1.0
+   },
+   {
+    "ep": "ep3",
+    "t": 235,
+    "gold": "brown",
+    "pred": "Brown.",
+    "score": 1.0
+   },
+   {
+    "ep": "ep3",
+    "t": 237,
+    "gold": "A",
+    "pred": "A",
+    "score": 1.0
+   },
+   {
+    "ep": "ep3",
+    "t": 250,
+    "gold": "purple",
+    "pred": "Purple",
+    "score": 1.0
+   },
+   {
+    "ep": "ep3",
+    "t": 270,
+    "gold": "A",
+    "pred": "A",
+    "score": 1.0
+   },
+   {
+    "ep": "ep4",
+    "t": 23,
+    "gold": "green",
+    "pred": "Green.",
+    "score": 1.0
+   },
+   {
+    "ep": "ep4",
+    "t": 31,
+    "gold": "B",
+    "pred": "B",
+    "score": 1.0
+   },
+   {
+    "ep": "ep4",
+    "t": 121,
+    "gold": "green",
+    "pred": "Green.",
+    "score": 1.0
+   },
+   {
+    "ep": "ep4",
+    "t": 129,
+    "gold": "F",
+    "pred": "F",
+    "score": 1.0
+   },
+   {
+    "ep": "ep4",
+    "t": 139,
+    "gold": "brown",
+    "pred": "Brown.",
+    "score": 1.0
+   },
+   {
+    "ep": "ep4",
+    "t": 178,
+    "gold": "H",
+    "pred": "H",
+    "score": 1.0
+   },
+   {
+    "ep": "ep4",
+    "t": 249,
+    "gold": "red",
+    "pred": "Red",
+    "score": 1.0
+   },
+   {
+    "ep": "ep4",
+    "t": 263,
+    "gold": "B",
+    "pred": "B",
+    "score": 1.0
+   }
+  ],
+  "step": [
+   {
+    "ep": "ep1",
+    "cls": "clock",
+    "gold": "first",
+    "pred": "second",
+    "score": 0.0
+   },
+   {
+    "ep": "ep1",
+    "cls": "radio",
+    "gold": "first",
+    "pred": "second",
+    "score": 0.0
+   },
+   {
+    "ep": "ep1",
+    "cls": "globe",
+    "gold": "first",
+    "pred": "second",
+    "score": 0.0
+   },
+   {
+    "ep": "ep1",
+    "cls": "statue",
+    "gold": "second",
+    "pred": "second",
+    "score": 1.0
+   },
+   {
+    "ep": "ep2",
+    "cls": "clock",
+    "gold": "second",
+    "pred": "second",
+    "score": 1.0
+   },
+   {
+    "ep": "ep2",
+    "cls": "radio",
+    "gold": "first",
+    "pred": "second",
+    "score": 0.0
+   },
+   {
+    "ep": "ep2",
+    "cls": "globe",
+    "gold": "second",
+    "pred": "second",
+    "score": 1.0
+   },
+   {
+    "ep": "ep2",
+    "cls": "statue",
+    "gold": "second",
+    "pred": "second",
+    "score": 1.0
+   },
+   {
+    "ep": "ep3",
+    "cls": "clock",
+    "gold": "first",
+    "pred": "second",
+    "score": 0.0
+   },
+   {
+    "ep": "ep3",
+    "cls": "radio",
+    "gold": "first",
+    "pred": "second",
+    "score": 0.0
+   },
+   {
+    "ep": "ep3",
+    "cls": "globe",
+    "gold": "second",
+    "pred": "second",
+    "score": 1.0
+   },
+   {
+    "ep": "ep3",
+    "cls": "statue",
+    "gold": "second",
+    "pred": "second",
+    "score": 1.0
+   },
+   {
+    "ep": "ep4",
+    "cls": "clock",
+    "gold": "second",
+    "pred": "second",
+    "score": 1.0
+   },
+   {
+    "ep": "ep4",
+    "cls": "radio",
+    "gold": "first",
+    "pred": "second",
+    "score": 0.0
+   },
+   {
+    "ep": "ep4",
+    "cls": "globe",
+    "gold": "first",
+    "pred": "second",
+    "score": 0.0
+   },
+   {
+    "ep": "ep4",
+    "cls": "statue",
+    "gold": "second",
+    "pred": "second",
+    "score": 1.0
+   }
+  ]
+ },
+ "qwen3.8-27b": {
+  "model": "qwen3.8-27b",
+  "slug": "qwen/qwen3.8-27b",
+  "attr": [
+   {
+    "ep": "ep1",
+    "t": 19,
+    "gold": "green",
+    "pred": "Green",
+    "score": 1.0
+   },
+   {
+    "ep": "ep1",
+    "t": 62,
+    "gold": "C",
+    "pred": "C",
+    "score": 1.0
+   },
+   {
+    "ep": "ep1",
+    "t": 97,
+    "gold": "green",
+    "pred": "green",
+    "score": 1.0
+   },
+   {
+    "ep": "ep1",
+    "t": 98,
+    "gold": "B",
+    "pred": "B",
+    "score": 1.0
+   },
+   {
+    "ep": "ep1",
+    "t": 118,
+    "gold": "green",
+    "pred": "green",
+    "score": 1.0
+   },
+   {
+    "ep": "ep1",
+    "t": 135,
+    "gold": "D",
+    "pred": "D",
+    "score": 1.0
+   },
+   {
+    "ep": "ep1",
+    "t": 187,
+    "gold": "red",
+    "pred": "red",
+    "score": 1.0
+   },
+   {
+    "ep": "ep1",
+    "t": 274,
+    "gold": "E",
+    "pred": "E",
+    "score": 1.0
+   },
+   {
+    "ep": "ep2",
+    "t": 29,
+    "gold": "yellow",
+    "pred": "yellow",
+    "score": 1.0
+   },
+   {
+    "ep": "ep2",
+    "t": 83,
+    "gold": "E",
+    "pred": "E",
+    "score": 1.0
+   },
+   {
+    "ep": "ep2",
+    "t": 89,
+    "gold": "green",
+    "pred": "Green",
+    "score": 1.0
+   },
+   {
+    "ep": "ep2",
+    "t": 141,
+    "gold": "G",
+    "pred": "G",
+    "score": 1.0
+   },
+   {
+    "ep": "ep2",
+    "t": 184,
+    "gold": "purple",
+    "pred": "Purple",
+    "score": 1.0
+   },
+   {
+    "ep": "ep2",
+    "t": 204,
+    "gold": "C",
+    "pred": "C",
+    "score": 1.0
+   },
+   {
+    "ep": "ep2",
+    "t": 209,
+    "gold": "blue",
+    "pred": "blue",
+    "score": 1.0
+   },
+   {
+    "ep": "ep2",
+    "t": 237,
+    "gold": "E",
+    "pred": "E",
+    "score": 1.0
+   },
+   {
+    "ep": "ep3",
+    "t": 111,
+    "gold": "purple",
+    "pred": "Purple",
+    "score": 1.0
+   },
+   {
+    "ep": "ep3",
+    "t": 136,
+    "gold": "B",
+    "pred": "B",
+    "score": 1.0
+   },
+   {
+    "ep": "ep3",
+    "t": 188,
+    "gold": "purple",
+    "pred": "Purple",
+    "score": 1.0
+   },
+   {
+    "ep": "ep3",
+    "t": 189,
+    "gold": "E",
+    "pred": "E",
+    "score": 1.0
+   },
+   {
+    "ep": "ep3",
+    "t": 235,
+    "gold": "brown",
+    "pred": "brown",
+    "score": 1.0
+   },
+   {
+    "ep": "ep3",
+    "t": 237,
+    "gold": "A",
+    "pred": "A",
+    "score": 1.0
+   },
+   {
+    "ep": "ep3",
+    "t": 250,
+    "gold": "purple",
+    "pred": "purple",
+    "score": 1.0
+   },
+   {
+    "ep": "ep3",
+    "t": 270,
+    "gold": "A",
+    "pred": "A",
+    "score": 1.0
+   },
+   {
+    "ep": "ep4",
+    "t": 23,
+    "gold": "green",
+    "pred": "green",
+    "score": 1.0
+   },
+   {
+    "ep": "ep4",
+    "t": 31,
+    "gold": "B",
+    "pred": "B",
+    "score": 1.0
+   },
+   {
+    "ep": "ep4",
+    "t": 121,
+    "gold": "green",
+    "pred": "Green",
+    "score": 1.0
+   },
+   {
+    "ep": "ep4",
+    "t": 129,
+    "gold": "F",
+    "pred": "F",
+    "score": 1.0
+   },
+   {
+    "ep": "ep4",
+    "t": 139,
+    "gold": "brown",
+    "pred": "brown",
+    "score": 1.0
+   },
+   {
+    "ep": "ep4",
+    "t": 178,
+    "gold": "H",
+    "pred": "H",
+    "score": 1.0
+   },
+   {
+    "ep": "ep4",
+    "t": 249,
+    "gold": "red",
+    "pred": "red",
+    "score": 1.0
+   },
+   {
+    "ep": "ep4",
+    "t": 263,
+    "gold": "B",
+    "pred": "B",
+    "score": 1.0
+   }
+  ],
+  "step": [
+   {
+    "ep": "ep1",
+    "cls": "clock",
+    "gold": "first",
+    "pred": "first",
+    "score": 1.0
+   },
+   {
+    "ep": "ep1",
+    "cls": "radio",
+    "gold": "first",
+    "pred": "The first image has a timestamp of t=180, and the second ima",
+    "score": 1.0
+   },
+   {
+    "ep": "ep1",
+    "cls": "globe",
+    "gold": "first",
+    "pred": "The user wants to know which globe was seen earlier in the w",
+    "score": 1.0
+   },
+   {
+    "ep": "ep1",
+    "cls": "statue",
+    "gold": "second",
+    "pred": "second",
+    "score": 1.0
+   },
+   {
+    "ep": "ep2",
+    "cls": "clock",
+    "gold": "second",
+    "pred": "second",
+    "score": 1.0
+   },
+   {
+    "ep": "ep2",
+    "cls": "radio",
+    "gold": "first",
+    "pred": "first",
+    "score": 1.0
+   },
+   {
+    "ep": "ep2",
+    "cls": "globe",
+    "gold": "second",
+    "pred": "The first image has a timestamp of `t=208`.\nThe second image",
+    "score": 0.0
+   },
+   {
+    "ep": "ep2",
+    "cls": "statue",
+    "gold": "second",
+    "pred": "The first image has a timestamp of `t=259`.\nThe second image",
+    "score": 0.0
+   },
+   {
+    "ep": "ep3",
+    "cls": "clock",
+    "gold": "first",
+    "pred": "first",
+    "score": 1.0
+   },
+   {
+    "ep": "ep3",
+    "cls": "radio",
+    "gold": "first",
+    "pred": "The user wants to know which radio was seen earlier in the w",
+    "score": 1.0
+   },
+   {
+    "ep": "ep3",
+    "cls": "globe",
+    "gold": "second",
+    "pred": "second",
+    "score": 1.0
+   },
+   {
+    "ep": "ep3",
+    "cls": "statue",
+    "gold": "second",
+    "pred": "The user wants to know which statue was seen earlier in the ",
+    "score": 0.0
+   },
+   {
+    "ep": "ep4",
+    "cls": "clock",
+    "gold": "second",
+    "pred": "second",
+    "score": 1.0
+   },
+   {
+    "ep": "ep4",
+    "cls": "radio",
+    "gold": "first",
+    "pred": "first",
+    "score": 1.0
+   },
+   {
+    "ep": "ep4",
+    "cls": "globe",
+    "gold": "first",
+    "pred": "first",
+    "score": 1.0
+   },
+   {
+    "ep": "ep4",
+    "cls": "statue",
+    "gold": "second",
+    "pred": "The statue in the second image was seen earlier in the walkt",
+    "score": 0.0
+   }
+  ]
+ },
+ "qwen3-vl-30b-a3b": {
+  "model": "qwen3-vl-30b-a3b",
+  "slug": "qwen/qwen3-vl-30b-a3b-instruct",
+  "attr": [
+   {
+    "ep": "ep1",
+    "t": 19,
+    "gold": "green",
+    "pred": "green",
+    "score": 1.0
+   },
+   {
+    "ep": "ep1",
+    "t": 62,
+    "gold": "C",
+    "pred": "C",
+    "score": 1.0
+   },
+   {
+    "ep": "ep1",
+    "t": 97,
+    "gold": "green",
+    "pred": "Green",
+    "score": 1.0
+   },
+   {
+    "ep": "ep1",
+    "t": 98,
+    "gold": "B",
+    "pred": "B",
+    "score": 1.0
+   },
+   {
+    "ep": "ep1",
+    "t": 118,
+    "gold": "green",
+    "pred": "Green",
+    "score": 1.0
+   },
+   {
+    "ep": "ep1",
+    "t": 135,
+    "gold": "D",
+    "pred": "B",
+    "score": 0.0
+   },
+   {
+    "ep": "ep1",
+    "t": 187,
+    "gold": "red",
+    "pred": "red",
+    "score": 1.0
+   },
+   {
+    "ep": "ep1",
+    "t": 274,
+    "gold": "E",
+    "pred": "E",
+    "score": 1.0
+   },
+   {
+    "ep": "ep2",
+    "t": 29,
+    "gold": "yellow",
+    "pred": "yellow",
+    "score": 1.0
+   },
+   {
+    "ep": "ep2",
+    "t": 83,
+    "gold": "E",
+    "pred": "E",
+    "score": 1.0
+   },
+   {
+    "ep": "ep2",
+    "t": 89,
+    "gold": "green",
+    "pred": "Green",
+    "score": 1.0
+   },
+   {
+    "ep": "ep2",
+    "t": 141,
+    "gold": "G",
+    "pred": "G",
+    "score": 1.0
+   },
+   {
+    "ep": "ep2",
+    "t": 184,
+    "gold": "purple",
+    "pred": "purple",
+    "score": 1.0
+   },
+   {
+    "ep": "ep2",
+    "t": 204,
+    "gold": "C",
+    "pred": "E",
+    "score": 0.0
+   },
+   {
+    "ep": "ep2",
+    "t": 209,
+    "gold": "blue",
+    "pred": "blue",
+    "score": 1.0
+   },
+   {
+    "ep": "ep2",
+    "t": 237,
+    "gold": "E",
+    "pred": "E",
+    "score": 1.0
+   },
+   {
+    "ep": "ep3",
+    "t": 111,
+    "gold": "purple",
+    "pred": "Purple",
+    "score": 1.0
+   },
+   {
+    "ep": "ep3",
+    "t": 136,
+    "gold": "B",
+    "pred": "B",
+    "score": 1.0
+   },
+   {
+    "ep": "ep3",
+    "t": 188,
+    "gold": "purple",
+    "pred": "purple",
+    "score": 1.0
+   },
+   {
+    "ep": "ep3",
+    "t": 189,
+    "gold": "E",
+    "pred": "E",
+    "score": 1.0
+   },
+   {
+    "ep": "ep3",
+    "t": 235,
+    "gold": "brown",
+    "pred": "brown",
+    "score": 1.0
+   },
+   {
+    "ep": "ep3",
+    "t": 237,
+    "gold": "A",
+    "pred": "A",
+    "score": 1.0
+   },
+   {
+    "ep": "ep3",
+    "t": 250,
+    "gold": "purple",
+    "pred": "purple",
+    "score": 1.0
+   },
+   {
+    "ep": "ep3",
+    "t": 270,
+    "gold": "A",
+    "pred": "A",
+    "score": 1.0
+   },
+   {
+    "ep": "ep4",
+    "t": 23,
+    "gold": "green",
+    "pred": "green",
+    "score": 1.0
+   },
+   {
+    "ep": "ep4",
+    "t": 31,
+    "gold": "B",
+    "pred": "B",
+    "score": 1.0
+   },
+   {
+    "ep": "ep4",
+    "t": 121,
+    "gold": "green",
+    "pred": "green",
+    "score": 1.0
+   },
+   {
+    "ep": "ep4",
+    "t": 129,
+    "gold": "F",
+    "pred": "F",
+    "score": 1.0
+   },
+   {
+    "ep": "ep4",
+    "t": 139,
+    "gold": "brown",
+    "pred": "Brown",
+    "score": 1.0
+   },
+   {
+    "ep": "ep4",
+    "t": 178,
+    "gold": "H",
+    "pred": "H",
+    "score": 1.0
+   },
+   {
+    "ep": "ep4",
+    "t": 249,
+    "gold": "red",
+    "pred": "red",
+    "score": 1.0
+   },
+   {
+    "ep": "ep4",
+    "t": 263,
+    "gold": "B",
+    "pred": "B",
+    "score": 1.0
+   }
+  ],
+  "step": [
+   {
+    "ep": "ep1",
+    "cls": "clock",
+    "gold": "first",
+    "pred": "first",
+    "score": 1.0
+   },
+   {
+    "ep": "ep1",
+    "cls": "radio",
+    "gold": "first",
+    "pred": "first",
+    "score": 1.0
+   },
+   {
+    "ep": "ep1",
+    "cls": "globe",
+    "gold": "first",
+    "pred": "first",
+    "score": 1.0
+   },
+   {
+    "ep": "ep1",
+    "cls": "statue",
+    "gold": "second",
+    "pred": "first",
+    "score": 0.0
+   },
+   {
+    "ep": "ep2",
+    "cls": "clock",
+    "gold": "second",
+    "pred": "first",
+    "score": 0.0
+   },
+   {
+    "ep": "ep2",
+    "cls": "radio",
+    "gold": "first",
+    "pred": "first",
+    "score": 1.0
+   },
+   {
+    "ep": "ep2",
+    "cls": "globe",
+    "gold": "second",
+    "pred": "first",
+    "score": 0.0
+   },
+   {
+    "ep": "ep2",
+    "cls": "statue",
+    "gold": "second",
+    "pred": "first",
+    "score": 0.0
+   },
+   {
+    "ep": "ep3",
+    "cls": "clock",
+    "gold": "first",
+    "pred": "first",
+    "score": 1.0
+   },
+   {
+    "ep": "ep3",
+    "cls": "radio",
+    "gold": "first",
+    "pred": "first",
+    "score": 1.0
+   },
+   {
+    "ep": "ep3",
+    "cls": "globe",
+    "gold": "second",
+    "pred": "first",
+    "score": 0.0
+   },
+   {
+    "ep": "ep3",
+    "cls": "statue",
+    "gold": "second",
+    "pred": "first",
+    "score": 0.0
+   },
+   {
+    "ep": "ep4",
+    "cls": "clock",
+    "gold": "second",
+    "pred": "first",
+    "score": 0.0
+   },
+   {
+    "ep": "ep4",
+    "cls": "radio",
+    "gold": "first",
+    "pred": "first",
+    "score": 1.0
+   },
+   {
+    "ep": "ep4",
+    "cls": "globe",
+    "gold": "first",
+    "pred": "first",
+    "score": 1.0
+   },
+   {
+    "ep": "ep4",
+    "cls": "statue",
+    "gold": "second",
+    "pred": "first",
+    "score": 0.0
+   }
+  ]
+ },
+ "gemma-4-31b": {
+  "model": "gemma-4-31b",
+  "slug": "google/gemma-4-31b-it",
+  "attr": [
+   {
+    "ep": "ep1",
+    "t": 19,
+    "gold": "green",
+    "pred": "Green",
+    "score": 1.0
+   },
+   {
+    "ep": "ep1",
+    "t": 62,
+    "gold": "C",
+    "pred": "C",
+    "score": 1.0
+   },
+   {
+    "ep": "ep1",
+    "t": 97,
+    "gold": "green",
+    "pred": "Green",
+    "score": 1.0
+   },
+   {
+    "ep": "ep1",
+    "t": 98,
+    "gold": "B",
+    "pred": "B",
+    "score": 1.0
+   },
+   {
+    "ep": "ep1",
+    "t": 118,
+    "gold": "green",
+    "pred": "Green",
+    "score": 1.0
+   },
+   {
+    "ep": "ep1",
+    "t": 135,
+    "gold": "D",
+    "pred": "D",
+    "score": 1.0
+   },
+   {
+    "ep": "ep1",
+    "t": 187,
+    "gold": "red",
+    "pred": "Red",
+    "score": 1.0
+   },
+   {
+    "ep": "ep1",
+    "t": 274,
+    "gold": "E",
+    "pred": "E",
+    "score": 1.0
+   },
+   {
+    "ep": "ep2",
+    "t": 29,
+    "gold": "yellow",
+    "pred": "Yellow",
+    "score": 1.0
+   },
+   {
+    "ep": "ep2",
+    "t": 83,
+    "gold": "E",
+    "pred": "E",
+    "score": 1.0
+   },
+   {
+    "ep": "ep2",
+    "t": 89,
+    "gold": "green",
+    "pred": "Green",
+    "score": 1.0
+   },
+   {
+    "ep": "ep2",
+    "t": 141,
+    "gold": "G",
+    "pred": "G",
+    "score": 1.0
+   },
+   {
+    "ep": "ep2",
+    "t": 184,
+    "gold": "purple",
+    "pred": "Purple",
+    "score": 1.0
+   },
+   {
+    "ep": "ep2",
+    "t": 204,
+    "gold": "C",
+    "pred": "C",
+    "score": 1.0
+   },
+   {
+    "ep": "ep2",
+    "t": 209,
+    "gold": "blue",
+    "pred": "Blue",
+    "score": 1.0
+   },
+   {
+    "ep": "ep2",
+    "t": 237,
+    "gold": "E",
+    "pred": "E",
+    "score": 1.0
+   },
+   {
+    "ep": "ep3",
+    "t": 111,
+    "gold": "purple",
+    "pred": "Purple",
+    "score": 1.0
+   },
+   {
+    "ep": "ep3",
+    "t": 136,
+    "gold": "B",
+    "pred": "B",
+    "score": 1.0
+   },
+   {
+    "ep": "ep3",
+    "t": 188,
+    "gold": "purple",
+    "pred": "Purple",
+    "score": 1.0
+   },
+   {
+    "ep": "ep3",
+    "t": 189,
+    "gold": "E",
+    "pred": "E",
+    "score": 1.0
+   },
+   {
+    "ep": "ep3",
+    "t": 235,
+    "gold": "brown",
+    "pred": "Brown",
+    "score": 1.0
+   },
+   {
+    "ep": "ep3",
+    "t": 237,
+    "gold": "A",
+    "pred": "A",
+    "score": 1.0
+   },
+   {
+    "ep": "ep3",
+    "t": 250,
+    "gold": "purple",
+    "pred": "Purple",
+    "score": 1.0
+   },
+   {
+    "ep": "ep3",
+    "t": 270,
+    "gold": "A",
+    "pred": "A",
+    "score": 1.0
+   },
+   {
+    "ep": "ep4",
+    "t": 23,
+    "gold": "green",
+    "pred": "Green",
+    "score": 1.0
+   },
+   {
+    "ep": "ep4",
+    "t": 31,
+    "gold": "B",
+    "pred": "B",
+    "score": 1.0
+   },
+   {
+    "ep": "ep4",
+    "t": 121,
+    "gold": "green",
+    "pred": "Green",
+    "score": 1.0
+   },
+   {
+    "ep": "ep4",
+    "t": 129,
+    "gold": "F",
+    "pred": "F",
+    "score": 1.0
+   },
+   {
+    "ep": "ep4",
+    "t": 139,
+    "gold": "brown",
+    "pred": "Brown",
+    "score": 1.0
+   },
+   {
+    "ep": "ep4",
+    "t": 178,
+    "gold": "H",
+    "pred": "H",
+    "score": 1.0
+   },
+   {
+    "ep": "ep4",
+    "t": 249,
+    "gold": "red",
+    "pred": "Red",
+    "score": 1.0
+   },
+   {
+    "ep": "ep4",
+    "t": 263,
+    "gold": "B",
+    "pred": "B",
+    "score": 1.0
+   }
+  ],
+  "step": [
+   {
+    "ep": "ep1",
+    "cls": "clock",
+    "gold": "first",
+    "pred": "first",
+    "score": 1.0
+   },
+   {
+    "ep": "ep1",
+    "cls": "radio",
+    "gold": "first",
+    "pred": "first",
+    "score": 1.0
+   },
+   {
+    "ep": "ep1",
+    "cls": "globe",
+    "gold": "first",
+    "pred": "first",
+    "score": 1.0
+   },
+   {
+    "ep": "ep1",
+    "cls": "statue",
+    "gold": "second",
+    "pred": "second",
+    "score": 1.0
+   },
+   {
+    "ep": "ep2",
+    "cls": "clock",
+    "gold": "second",
+    "pred": "second",
+    "score": 1.0
+   },
+   {
+    "ep": "ep2",
+    "cls": "radio",
+    "gold": "first",
+    "pred": "first",
+    "score": 1.0
+   },
+   {
+    "ep": "ep2",
+    "cls": "globe",
+    "gold": "second",
+    "pred": "second",
+    "score": 1.0
+   },
+   {
+    "ep": "ep2",
+    "cls": "statue",
+    "gold": "second",
+    "pred": "second",
+    "score": 1.0
+   },
+   {
+    "ep": "ep3",
+    "cls": "clock",
+    "gold": "first",
+    "pred": "first",
+    "score": 1.0
+   },
+   {
+    "ep": "ep3",
+    "cls": "radio",
+    "gold": "first",
+    "pred": "first",
+    "score": 1.0
+   },
+   {
+    "ep": "ep3",
+    "cls": "globe",
+    "gold": "second",
+    "pred": "second",
+    "score": 1.0
+   },
+   {
+    "ep": "ep3",
+    "cls": "statue",
+    "gold": "second",
+    "pred": "second",
+    "score": 1.0
+   },
+   {
+    "ep": "ep4",
+    "cls": "clock",
+    "gold": "second",
+    "pred": "second",
+    "score": 1.0
+   },
+   {
+    "ep": "ep4",
+    "cls": "radio",
+    "gold": "first",
+    "pred": "first",
+    "score": 1.0
+   },
+   {
+    "ep": "ep4",
+    "cls": "globe",
+    "gold": "first",
+    "pred": "first",
+    "score": 1.0
+   },
+   {
+    "ep": "ep4",
+    "cls": "statue",
+    "gold": "second",
+    "pred": "second",
+    "score": 1.0
+   }
+  ]
+ }
+}

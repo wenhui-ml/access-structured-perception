@@ -1,0 +1,556 @@
+{
+ "model": "qwen3.8-27b",
+ "method": "asp_r5",
+ "bench": "sew",
+ "subset": "RET",
+ "budget": 4096,
+ "tau_g": 0.0,
+ "judge_deferred": 27,
+ "mean": 9.38,
+ "items": [
+  {
+   "episode": "ep1",
+   "subset": "RET",
+   "q": "You saw a sieve exactly once during the walkthrough. What colour was it?",
+   "gold": "green",
+   "pred": "It was not seen.",
+   "score": 0.0,
+   "spent": 4260,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.082,
+    "Br": 0.55,
+    "Bc": 0.311,
+    "rho": 0.057
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "RET",
+   "q": "You saw a stapler exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "C",
+   "pred": "{\"counts\": {\"belt\": 2, \"ruler\": 2, \"soap\": 1, \"bowl\": 1, \"plate\": 2, \"fork\": 2, \"comb\": 2, \"cup\": 2, \"pen\": 2, \"glass\": 2, \"towel\": 1, \"hat\": 2, \"candle\": 2, \"sock\": 2, \"fan\": 2, \"spoon\": 1, \"brush\": 1, \"rug\": 1, \"tray\": 1, \"pot\": 1}, \"env\": {\"door\": \"closed\", \"door_changes\": 1}, \"rooms_visited\": [\"study\", \"pantry\"], \"objects\": {\"hat\": {\"room\": \"pantry\", \"last_seen\": 244}, \"brush\": {\"room\": \"pantry\", \"last_seen\": 244}, \"candle\": {\"room\": \"pantry\", \"last_seen\": 244}, \"rug\": {\"room\": \"pantry\", \"last_seen\": 244}, \"sock\": {\"room\": \"pantry\", \"last_seen\": 244}, \"fork\": {\"room\": \"pantry\", \"last_seen\": 244}, \"comb\": {\"room\": \"pantry\", \"last_seen\": 244}, \"plate\": {\"room\": \"pantry\", \"last_seen\": 244}, \"fan\": {\"room\": \"pantry\", \"last_seen\": 244}, \"tray\": {\"room\": \"pantry\", \"last_seen\": 244}, \"cup\": {\"room\": \"pantry\", \"last_seen\": 244}, \"ruler\": {\"room\": \"pantry\", \"last_seen\": 244}, \"glass\": {\"room\": \"pantry\", \"last_seen\": 244}, \"belt\": {\"room\": \"pantry\", \"last_seen\": 244}, \"pot\": {\"room\": \"pantry\", \"last_seen\": 244}, \"pen\": {\"room\": \"pantry\", \"last_seen\": 244}}, \"event_log\": [\"Entered pantry. Door is closed.\"]}",
+   "score": 0.0,
+   "spent": 3654,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.095,
+    "Br": 0.638,
+    "Bc": 0.201,
+    "rho": 0.066
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "RET",
+   "q": "You saw a colander exactly once during the walkthrough. What colour was it?",
+   "gold": "green",
+   "pred": "Not found",
+   "score": 0.0,
+   "spent": 4126,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.085,
+    "Br": 0.552,
+    "Bc": 0.304,
+    "rho": 0.059
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "RET",
+   "q": "You saw a trivet exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "B",
+   "pred": "B",
+   "score": 100.0,
+   "spent": 1566,
+   "n_calls": 6,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.0,
+    "Br": 0.0,
+    "Bc": 0.829,
+    "rho": 0.171
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "RET",
+   "q": "You saw a kettle exactly once during the walkthrough. What colour was it?",
+   "gold": "green",
+   "pred": "Cannot be determined",
+   "score": 0.0,
+   "spent": 4131,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.085,
+    "Br": 0.551,
+    "Bc": 0.305,
+    "rho": 0.058
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "RET",
+   "q": "You saw a teapot exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "D",
+   "pred": "{\"counts\": {\"belt\": 2, \"ruler\": 2, \"soap\": 1, \"bowl\": 1, \"plate\": 2, \"fork\": 2, \"comb\": 2, \"cup\": 2, \"pen\": 2, \"glass\": 2, \"towel\": 1, \"hat\": 2, \"candle\": 2, \"sock\": 2, \"fan\": 2, \"spoon\": 1, \"brush\": 1, \"rug\": 1, \"tray\": 1, \"pot\": 1}, \"env\": {\"door\": \"closed\", \"door_changes\": 1}, \"rooms_visited\": [\"study\", \"pantry\"], \"objects\": {\"hat\": {\"room\": \"pantry\", \"last_seen\": 244}, \"brush\": {\"room\": \"pantry\", \"last_seen\": 244}, \"candle\": {\"room\": \"pantry\", \"last_seen\": 244}, \"rug\": {\"room\": \"pantry\", \"last_seen\": 244}, \"sock\": {\"room\": \"pantry\", \"last_seen\": 244}, \"fork\": {\"room\": \"pantry\", \"last_seen\": 244}, \"comb\": {\"room\": \"pantry\", \"last_seen\": 244}, \"plate\": {\"room\": \"pantry\", \"last_seen\": 244}, \"fan\": {\"room\": \"pantry\", \"last_seen\": 244}, \"tray\": {\"room\": \"pantry\", \"last_seen\": 244}, \"cup\": {\"room\": \"pantry\", \"last_seen\": 244}, \"ruler\": {\"room\": \"pantry\", \"last_seen\": 244}, \"glass\": {\"room\": \"pantry\", \"last_seen\": 244}, \"belt\": {\"room\": \"pantry\", \"last_seen\": 244}, \"pot\": {\"room\": \"pantry\", \"last_seen\": 244}, \"pen\": {\"room\": \"pantry\", \"last_seen\": 244}}, \"event_log\": [\"Entered pantry. Door is closed.\"]}",
+   "score": 0.0,
+   "spent": 4068,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.086,
+    "Br": 0.57,
+    "Bc": 0.284,
+    "rho": 0.06
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "RET",
+   "q": "You saw a ladle exactly once during the walkthrough. What colour was it?",
+   "gold": "red",
+   "pred": "Not found",
+   "score": 0.0,
+   "spent": 4192,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.084,
+    "Br": 0.551,
+    "Bc": 0.308,
+    "rho": 0.058
+   }
+  },
+  {
+   "episode": "ep1",
+   "subset": "RET",
+   "q": "You saw a thermos exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "E",
+   "pred": "Therefore, it is not possible to identify a single capital letter printed on a thermos because no thermos appears in the walkthrough.",
+   "score": 0.0,
+   "spent": 3651,
+   "n_calls": 4,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.095,
+    "Br": 0.636,
+    "Bc": 0.202,
+    "rho": 0.066
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "RET",
+   "q": "You saw a thermos exactly once during the walkthrough. What colour was it?",
+   "gold": "yellow",
+   "pred": "Not found",
+   "score": 0.0,
+   "spent": 3983,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.088,
+    "Br": 0.569,
+    "Bc": 0.286,
+    "rho": 0.057
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "RET",
+   "q": "You saw a kettle exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "E",
+   "pred": "K",
+   "score": 0.0,
+   "spent": 4125,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.085,
+    "Br": 0.564,
+    "Bc": 0.294,
+    "rho": 0.056
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "RET",
+   "q": "You saw a colander exactly once during the walkthrough. What colour was it?",
+   "gold": "green",
+   "pred": "Not found",
+   "score": 0.0,
+   "spent": 3980,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.088,
+    "Br": 0.569,
+    "Bc": 0.285,
+    "rho": 0.058
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "RET",
+   "q": "You saw a ladle exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "G",
+   "pred": "B",
+   "score": 0.0,
+   "spent": 1751,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.18,
+    "Br": 0.0,
+    "Bc": 0.701,
+    "rho": 0.119
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "RET",
+   "q": "You saw a whisk exactly once during the walkthrough. What colour was it?",
+   "gold": "purple",
+   "pred": "Not found",
+   "score": 0.0,
+   "spent": 4054,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.087,
+    "Br": 0.568,
+    "Bc": 0.29,
+    "rho": 0.056
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "RET",
+   "q": "You saw a decanter exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "C",
+   "pred": "N",
+   "score": 0.0,
+   "spent": 4033,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.087,
+    "Br": 0.566,
+    "Bc": 0.29,
+    "rho": 0.058
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "RET",
+   "q": "You saw a mortar exactly once during the walkthrough. What colour was it?",
+   "gold": "blue",
+   "pred": "Not found",
+   "score": 0.0,
+   "spent": 4121,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.085,
+    "Br": 0.567,
+    "Bc": 0.292,
+    "rho": 0.055
+   }
+  },
+  {
+   "episode": "ep2",
+   "subset": "RET",
+   "q": "You saw a tongs exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "E",
+   "pred": "- In the eighth image (living room, t=",
+   "score": 0.0,
+   "spent": 3676,
+   "n_calls": 4,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.095,
+    "Br": 0.655,
+    "Bc": 0.187,
+    "rho": 0.063
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "RET",
+   "q": "You saw a trivet exactly once during the walkthrough. What colour was it?",
+   "gold": "purple",
+   "pred": "Not present",
+   "score": 0.0,
+   "spent": 4122,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.085,
+    "Br": 0.565,
+    "Bc": 0.293,
+    "rho": 0.056
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "RET",
+   "q": "You saw a whisk exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "B",
+   "pred": "N",
+   "score": 0.0,
+   "spent": 4050,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.086,
+    "Br": 0.563,
+    "Bc": 0.292,
+    "rho": 0.058
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "RET",
+   "q": "You saw a mortar exactly once during the walkthrough. What colour was it?",
+   "gold": "purple",
+   "pred": "Not visible",
+   "score": 0.0,
+   "spent": 4125,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.085,
+    "Br": 0.566,
+    "Bc": 0.293,
+    "rho": 0.056
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "RET",
+   "q": "You saw a teapot exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "E",
+   "pred": "The premise of the question states that the teapot was seen \"exactly once\". However, the object labeled \"pot\" appears in multiple frames with different letters. If we assume the question implies a unique instance or there is a specific context not fully captured",
+   "score": 0.0,
+   "spent": 3702,
+   "n_calls": 4,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.094,
+    "Br": 0.651,
+    "Bc": 0.192,
+    "rho": 0.063
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "RET",
+   "q": "You saw a colander exactly once during the walkthrough. What colour was it?",
+   "gold": "brown",
+   "pred": "Not found",
+   "score": 0.0,
+   "spent": 4010,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.087,
+    "Br": 0.567,
+    "Bc": 0.288,
+    "rho": 0.058
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "RET",
+   "q": "You saw a ladle exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "A",
+   "pred": "B",
+   "score": 0.0,
+   "spent": 4128,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.085,
+    "Br": 0.587,
+    "Bc": 0.27,
+    "rho": 0.057
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "RET",
+   "q": "You saw a tongs exactly once during the walkthrough. What colour was it?",
+   "gold": "purple",
+   "pred": "Not found",
+   "score": 0.0,
+   "spent": 4128,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.085,
+    "Br": 0.565,
+    "Bc": 0.293,
+    "rho": 0.056
+   }
+  },
+  {
+   "episode": "ep3",
+   "subset": "RET",
+   "q": "You saw a stapler exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "A",
+   "pred": "N/A",
+   "score": 100.0,
+   "spent": 4213,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.083,
+    "Br": 0.557,
+    "Bc": 0.304,
+    "rho": 0.056
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "RET",
+   "q": "You saw a tongs exactly once during the walkthrough. What colour was it?",
+   "gold": "green",
+   "pred": "Cannot be determined",
+   "score": 0.0,
+   "spent": 4150,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.084,
+    "Br": 0.555,
+    "Bc": 0.303,
+    "rho": 0.058
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "RET",
+   "q": "You saw a sieve exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "B",
+   "pred": "B",
+   "score": 100.0,
+   "spent": 4231,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.083,
+    "Br": 0.554,
+    "Bc": 0.306,
+    "rho": 0.057
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "RET",
+   "q": "You saw a whisk exactly once during the walkthrough. What colour was it?",
+   "gold": "green",
+   "pred": "Cannot be determined",
+   "score": 0.0,
+   "spent": 4093,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.086,
+    "Br": 0.556,
+    "Bc": 0.3,
+    "rho": 0.058
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "RET",
+   "q": "You saw a stapler exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "F",
+   "pred": "{\"counts\": {\"glass\": 1, \"pot\": 2, \"fan\": 2, \"towel\": 2, \"tray\": 2, \"ruler\": 2, \"belt\": 2, \"comb\": 1, \"brush\": 2, \"plate\": 2, \"rug\": 2, \"pen\": 2, \"candle\": 2, \"hat\": 2, \"sock\": 1, \"soap\": 2, \"fork\": 1, \"spoon\": 1, \"cup\": 1}, \"env\": {\"door\": \"open\", \"door_changes\": 2}, \"rooms_visited\": [\"kitchen\", \"study\"], \"objects\": {\"tray\": {\"room\": \"study\", \"last_seen\": 259}, \"soap\": {\"room\": \"study\", \"last_seen\": 259}, \"fork\": {\"room\": \"study\", \"last_seen\": 259}, \"plate\": {\"room\": \"study\", \"last_seen\": 259}, \"hat\": {\"room\": \"study\", \"last_seen\": 259}, \"rug\": {\"room\": \"study\", \"last_seen\": 259}, \"brush\": {\"room\": \"study\", \"last_seen\": 259}, \"candle\": {\"room\": \"study\", \"last_seen\": 259}, \"belt\": {\"room\": \"study\", \"last_seen\": 259}, \"towel\": {\"room\": \"study\", \"last_seen\": 259}, \"spoon\": {\"room\": \"study\", \"last_seen\": 259}, \"cup\": {\"room\": \"study\", \"last_seen\": 259}, \"fan\": {\"room\": \"study\", \"last_seen\": 259}, \"pen\": {\"room\": \"study\", \"last_seen\": 259}, \"ruler\": {\"room\": \"study\", \"last_seen\": 259}, \"pot\": {\"room\": \"study\", \"last_seen\": 259}}, \"event_log\": [\"Entered kitchen, door is closed\", \"Entered study, door is open\"]}",
+   "score": 0.0,
+   "spent": 3620,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.096,
+    "Br": 0.641,
+    "Bc": 0.197,
+    "rho": 0.066
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "RET",
+   "q": "You saw a trivet exactly once during the walkthrough. What colour was it?",
+   "gold": "brown",
+   "pred": "Not visible",
+   "score": 0.0,
+   "spent": 4233,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.083,
+    "Br": 0.553,
+    "Bc": 0.307,
+    "rho": 0.057
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "RET",
+   "q": "You saw a mortar exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "H",
+   "pred": "Therefore, it is not possible to identify a capital letter printed on a mortar from these frames.",
+   "score": 0.0,
+   "spent": 3617,
+   "n_calls": 4,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.096,
+    "Br": 0.639,
+    "Bc": 0.199,
+    "rho": 0.066
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "RET",
+   "q": "You saw a colander exactly once during the walkthrough. What colour was it?",
+   "gold": "red",
+   "pred": "Cannot be determined",
+   "score": 0.0,
+   "spent": 4102,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.085,
+    "Br": 0.555,
+    "Bc": 0.301,
+    "rho": 0.058
+   }
+  },
+  {
+   "episode": "ep4",
+   "subset": "RET",
+   "q": "You saw a teapot exactly once during the walkthrough. What single capital letter was printed on it?",
+   "gold": "B",
+   "pred": "{\"counts\": {\"glass\": 1, \"pot\": 2, \"fan\": 2, \"towel\": 2, \"tray\": 2, \"ruler\": 2, \"belt\": 2, \"comb\": 1, \"brush\": 2, \"plate\": 2, \"rug\": 2, \"pen\": 2, \"candle\": 2, \"hat\": 2, \"sock\": 1, \"soap\": 2, \"fork\": 1, \"spoon\": 1, \"cup\": 1}, \"env\": {\"door\": \"open\", \"door_changes\": 2}, \"rooms_visited\": [\"kitchen\", \"study\"], \"objects\": {\"tray\": {\"room\": \"study\", \"last_seen\": 259}, \"soap\": {\"room\": \"study\", \"last_seen\": 259}, \"fork\": {\"room\": \"study\", \"last_seen\": 259}, \"plate\": {\"room\": \"study\", \"last_seen\": 259}, \"hat\": {\"room\": \"study\", \"last_seen\": 259}, \"rug\": {\"room\": \"study\", \"last_seen\": 259}, \"brush\": {\"room\": \"study\", \"last_seen\": 259}, \"candle\": {\"room\": \"study\", \"last_seen\": 259}, \"belt\": {\"room\": \"study\", \"last_seen\": 259}, \"towel\": {\"room\": \"study\", \"last_seen\": 259}, \"spoon\": {\"room\": \"study\", \"last_seen\": 259}, \"cup\": {\"room\": \"study\", \"last_seen\": 259}, \"fan\": {\"room\": \"study\", \"last_seen\": 259}, \"pen\": {\"room\": \"study\", \"last_seen\": 259}, \"ruler\": {\"room\": \"study\", \"last_seen\": 259}, \"pot\": {\"room\": \"study\", \"last_seen\": 259}}, \"event_log\": [\"Entered kitchen, door is closed\", \"Entered study, door is open\"]}",
+   "score": 0.0,
+   "spent": 3980,
+   "n_calls": 5,
+   "w_realised": null,
+   "split": {
+    "Bs": 0.088,
+    "Br": 0.577,
+    "Bc": 0.274,
+    "rho": 0.061
+   }
+  }
+ ]
+}
